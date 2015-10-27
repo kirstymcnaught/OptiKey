@@ -279,6 +279,10 @@ namespace JuliusSweetland.OptiKey.UI.Controls
             {
                 newContent = new CommonViews.YesNoQuestion { DataContext = Keyboard };
             }
+            else if (Keyboard is ViewModelKeyboards.Minecraft)
+            {
+                newContent = new CommonViews.Minecraft { DataContext = Keyboard };
+            }
 
             Content = newContent;
         }
