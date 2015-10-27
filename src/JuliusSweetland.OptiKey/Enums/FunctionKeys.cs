@@ -65,6 +65,7 @@
         Menu,
         MenuKeyboard,
         Minimise,
+        MinecraftKeyboard,
         MouseDrag,
         MouseKeyboard,
         MouseLeftClick,

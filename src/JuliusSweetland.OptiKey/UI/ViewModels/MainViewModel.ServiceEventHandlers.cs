@@ -405,6 +405,11 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                         Keyboard = new Menu(() => Keyboard = currentKeyboard);
                         break;
 
+                    case FunctionKeys.MinecraftKeyboard:
+                        Log.Info("Changing keyboard to MinecraftKeyboard.");
+                        Keyboard = new Minecraft(() => Keyboard = currentKeyboard);       
+                        break;
+
                     case FunctionKeys.Minimise:
                         Log.Info("Minimising window.");
                         mainWindowManipulationService.Minimise();

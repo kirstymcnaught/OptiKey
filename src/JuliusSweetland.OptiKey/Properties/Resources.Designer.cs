@@ -1517,6 +1517,15 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to MINECRAFT.
+        /// </summary>
+        public static string MINECRAFT_LAYOUT {
+            get {
+                return ResourceManager.GetString("MINECRAFT_LAYOUT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MINIMISE.
         /// </summary>
         public static string MINIMISE {

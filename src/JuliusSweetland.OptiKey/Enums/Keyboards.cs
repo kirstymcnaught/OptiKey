@@ -12,6 +12,7 @@
         Diacritics3,
         Menu,
         Minimised,
+        Minecraft,
         Mouse,
         NumericAndSymbols1,
         NumericAndSymbols2,

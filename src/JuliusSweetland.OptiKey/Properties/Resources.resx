@@ -1217,6 +1217,9 @@ You can turn off update checks from the Management Console (ALT + M).</value>
   <data name="GERMAN_GERMANY" xml:space="preserve">
     <value>German (Germany) / Deutsch (Deutschland)</value>
   </data>
+  <data name="MINECRAFT_LAYOUT" xml:space="preserve">
+    <value>MINECRAFT</value>
+  </data>
   <data name="UI_LANGUAGE_DESCRIPTION" xml:space="preserve">
     <value>User interface language: {0}</value>
   </data>
