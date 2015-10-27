@@ -1220,6 +1220,17 @@ You can turn off update checks from the Management Console (ALT + M).</value>
   <data name="MINECRAFT_LAYOUT" xml:space="preserve">
     <value>MINECRAFT</value>
   </data>
+  <data name="MINECRAFT_BWD" xml:space="preserve">
+    <value>Move
+Back</value>
+  </data>
+  <data name="MINECRAFT_FWD" xml:space="preserve">
+    <value>Move
+Forward</value>
+  </data>
+  <data name="MINECRAFT_JUMP" xml:space="preserve">
+    <value>Jump</value>
+  </data>
   <data name="UI_LANGUAGE_DESCRIPTION" xml:space="preserve">
     <value>User interface language: {0}</value>
   </data>

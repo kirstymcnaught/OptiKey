@@ -1517,6 +1517,35 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Move
+        ///Back.
+        /// </summary>
+        public static string MINECRAFT_BWD {
+            get {
+                return ResourceManager.GetString("MINECRAFT_BWD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Move
+        ///Forward.
+        /// </summary>
+        public static string MINECRAFT_FWD {
+            get {
+                return ResourceManager.GetString("MINECRAFT_FWD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Jump.
+        /// </summary>
+        public static string MINECRAFT_JUMP {
+            get {
+                return ResourceManager.GetString("MINECRAFT_JUMP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MINECRAFT.
         /// </summary>
         public static string MINECRAFT_LAYOUT {

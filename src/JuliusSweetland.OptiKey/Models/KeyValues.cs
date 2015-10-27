@@ -73,6 +73,11 @@ namespace JuliusSweetland.OptiKey.Models
         public static readonly KeyValue Suggestion5Key = new KeyValue { FunctionKey = FunctionKeys.Suggestion5 };
         public static readonly KeyValue Suggestion6Key = new KeyValue { FunctionKey = FunctionKeys.Suggestion6 };
         public static readonly KeyValue SleepKey = new KeyValue { FunctionKey = FunctionKeys.Sleep };
+        public static readonly KeyValue ToggleWKey = new KeyValue { FunctionKey = FunctionKeys.WKeyToggle };
+        public static readonly KeyValue ToggleAKey = new KeyValue { FunctionKey = FunctionKeys.AKeyToggle };
+        public static readonly KeyValue ToggleSKey = new KeyValue { FunctionKey = FunctionKeys.SKeyToggle };
+        public static readonly KeyValue ToggleDKey = new KeyValue { FunctionKey = FunctionKeys.DKeyToggle };
+        public static readonly KeyValue ToggleSpace = new KeyValue { FunctionKey = FunctionKeys.SpaceToggle };
 
         private static readonly Dictionary<Languages, List<KeyValue>> multiKeySelectionKeys;
 
@@ -111,7 +116,12 @@ namespace JuliusSweetland.OptiKey.Models
                     MouseMagnifierKey,
                     MouseMiddleDownUpKey,
                     MouseRightDownUpKey,
-                    MultiKeySelectionKey
+                    MultiKeySelectionKey,
+                    ToggleWKey,
+                    ToggleAKey,
+                    ToggleSKey,
+                    ToggleDKey,
+                    ToggleSpace
                 };
             }
         }
@@ -150,7 +160,7 @@ namespace JuliusSweetland.OptiKey.Models
                 {
                     LeftAltKey,
                     LeftCtrlKey,
-                    LeftWinKey
+                    LeftWinKey,
                 };
             }
         }
@@ -195,7 +205,12 @@ namespace JuliusSweetland.OptiKey.Models
                     new KeyValue {FunctionKey = FunctionKeys.SelectAll},
                     new KeyValue {FunctionKey = FunctionKeys.Cut},
                     new KeyValue {FunctionKey = FunctionKeys.Copy},
-                    new KeyValue {FunctionKey = FunctionKeys.Paste}
+                    new KeyValue {FunctionKey = FunctionKeys.Paste},
+                    new KeyValue {FunctionKey = FunctionKeys.WKeyToggle},
+                    new KeyValue {FunctionKey = FunctionKeys.AKeyToggle},
+                    new KeyValue {FunctionKey = FunctionKeys.SKeyToggle},
+                    new KeyValue {FunctionKey = FunctionKeys.DKeyToggle},
+                    new KeyValue {FunctionKey = FunctionKeys.SpaceToggle}
                 };
             }
         }

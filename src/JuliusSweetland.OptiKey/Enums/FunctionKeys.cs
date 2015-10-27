@@ -144,6 +144,11 @@
         Suggestion4,
         Suggestion5,
         Suggestion6,
-        YesQuestionResult
+        YesQuestionResult,
+        WKeyToggle,
+        AKeyToggle,
+        SKeyToggle,
+        DKeyToggle,
+        SpaceToggle
     }
 }

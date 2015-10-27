@@ -11,6 +11,21 @@ namespace JuliusSweetland.OptiKey.Extensions
         {
             switch (functionKey)
             {
+                case FunctionKeys.WKeyToggle:
+                    return VirtualKeyCode.VK_W;
+
+                case FunctionKeys.AKeyToggle:
+                    return VirtualKeyCode.VK_A;
+
+                case FunctionKeys.SKeyToggle:
+                    return VirtualKeyCode.VK_S;
+
+                case FunctionKeys.DKeyToggle:
+                    return VirtualKeyCode.VK_D;
+
+                case FunctionKeys.SpaceToggle:
+                    return VirtualKeyCode.SPACE;        
+
                 case FunctionKeys.BackOne:
                     return VirtualKeyCode.BACK;
 
