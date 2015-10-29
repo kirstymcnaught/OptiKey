@@ -22,5 +22,6 @@ namespace JuliusSweetland.OptiKey.Services
         void Restore();
         void SetOpacity(double opacity);
         void Shrink(ShrinkFromDirections direction, double amountInPx);
+        bool IsPointInAppBar(Point point);
     }
 }
