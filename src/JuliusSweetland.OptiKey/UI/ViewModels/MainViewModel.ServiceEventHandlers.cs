@@ -31,11 +31,18 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                 CurrentPositionPoint = tuple.Item1;
                 CurrentPositionKey = tuple.Item2;
 
-                if (keyStateService.KeyDownStates[KeyValues.MouseMagneticCursorKey].Value.IsDownOrLockedDown()
+                if ((keyStateService.KeyDownStates[KeyValues.MouseMagneticCursorKey].Value.IsDownOrLockedDown()
+                     || keyStateService.KeyDownStates[KeyValues.MinecraftMoveWithMouseKey].Value.IsDownOrLockedDown() )
                     && !keyStateService.KeyDownStates[KeyValues.SleepKey].Value.IsDownOrLockedDown() &&
                     !mainWindowManipulationService.IsPointInAppBar(CurrentPositionPoint))
                 {
                     mouseOutputService.MoveTo(CurrentPositionPoint);
+                    
+                    // Also tell minecraft to go forward a fixed amount.
+                    if (keyStateService.KeyDownStates[KeyValues.MinecraftMoveWithMouseKey].Value.IsDownOrLockedDown())
+                    {   
+                        keyboardOutputService.ProcessSingleKeyText("p");
+                    }
                 }
             };
 

@@ -68,6 +68,7 @@
         MinecraftKeyboard,
         MinecraftMoveMode,
         MinecraftLookMode,
+        MinecraftMoveWithMouse,
         MouseDrag,
         MouseKeyboard,
         MouseLeftClick,

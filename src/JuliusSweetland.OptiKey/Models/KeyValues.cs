@@ -80,8 +80,8 @@ namespace JuliusSweetland.OptiKey.Models
         public static readonly KeyValue ToggleSpace = new KeyValue { FunctionKey = FunctionKeys.SpaceToggle };
         public static readonly KeyValue MinecraftMoveModeKey = new KeyValue { FunctionKey = FunctionKeys.MinecraftMoveMode };
         public static readonly KeyValue MinecraftLookModeKey = new KeyValue { FunctionKey = FunctionKeys.MinecraftLookMode };
-
-
+        public static readonly KeyValue MinecraftMoveWithMouseKey = new KeyValue { FunctionKey = FunctionKeys.MinecraftMoveWithMouse };
+        
         private static readonly Dictionary<Languages, List<KeyValue>> multiKeySelectionKeys;
 
         static KeyValues()
@@ -126,7 +126,8 @@ namespace JuliusSweetland.OptiKey.Models
                     ToggleDKey,
                     ToggleSpace,
                     MinecraftLookModeKey,
-                    MinecraftMoveModeKey
+                    MinecraftMoveModeKey,
+                    MinecraftMoveWithMouseKey
                 };
             }
         }

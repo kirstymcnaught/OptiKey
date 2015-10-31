@@ -260,9 +260,12 @@
                                                     </controls:Key.Value>
                                                 </controls:Key>
 
-                                                <!-- empty key at the mo -->
-                                                <controls:Key Grid.Row="7" Grid.Column="4" Grid.ColumnSpan="4" Grid.RowSpan="2">
-                                                    
+                                                <controls:Key Grid.Row="7" Grid.Column="4" Grid.ColumnSpan="4" Grid.RowSpan="2"
+                                                              SymbolGeometry="{StaticResource MinecraftMoveWithCursor}"
+                                                              Text="Walk with gaze">
+                                                    <controls:Key.Value>
+                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftMoveWithMouse}" />
+                                                    </controls:Key.Value>
                                                 </controls:Key>
 
                                                 <controls:Key Grid.Row="7" Grid.Column="8" Grid.ColumnSpan="6" Grid.RowSpan="2"
