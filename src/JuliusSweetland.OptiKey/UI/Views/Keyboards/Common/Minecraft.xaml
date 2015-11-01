@@ -81,34 +81,58 @@
                                                 </controls:Key>
 
                                                 <controls:Key Grid.Row="0" Grid.Column="1"
-                                                                      SharedSizeGroup="KeyWithSymbolAndText">
+                                                              SymbolGeometry="{StaticResource ArrowPointingToTopLeftIcon}"
+                                                              SharedSizeGroup="KeyWithSymbolAndText">
                                                 </controls:Key>
                                                 <controls:Key Grid.Row="1" Grid.Column="1"
+                                                              SymbolGeometry="{StaticResource ArrowPointingToLeftIcon}"
                                                                       SharedSizeGroup="KeyWithSymbolAndText">
+                                                    <controls:Key.Value>
+                                                        <!--TODO: The amount in pixels is set in the mouse page.-->
+                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MouseMoveToLeft}" />
+                                                    </controls:Key.Value>
                                                 </controls:Key>
                                                 <controls:Key Grid.Row="2" Grid.Column="1"
+                                                              SymbolGeometry="{StaticResource ArrowPointingToBottomLeftIcon}"
                                                                       SharedSizeGroup="KeyWithSymbolAndText">
                                                 </controls:Key>
-
                                                 <controls:Key Grid.Row="0" Grid.Column="2"
+                                                              SymbolGeometry="{StaticResource ArrowPointingToTopIcon}"
                                                                       SharedSizeGroup="KeyWithSymbolAndText">
+                                                    <controls:Key.Value>
+                                                        <!--TODO: The amount in pixels is set in the mouse page.-->
+                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MouseMoveToTop}" />
+                                                    </controls:Key.Value>
                                                 </controls:Key>
+                                                <!-- TODO: Make "LOOK" text a resource -->
                                                 <controls:Key Grid.Row="1" Grid.Column="2"
+                                                              Text="LOOK"
                                                                       SharedSizeGroup="KeyWithSymbolAndText">
                                                 </controls:Key>
                                                 <controls:Key Grid.Row="2" Grid.Column="2"
+                                                              SymbolGeometry="{StaticResource ArrowPointingToBottomIcon}"
                                                                       SharedSizeGroup="KeyWithSymbolAndText">
+                                                    <controls:Key.Value>
+                                                        <!--TODO: The amount in pixels is set in the mouse page.-->
+                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MouseMoveToBottom}" />
+                                                    </controls:Key.Value>
                                                 </controls:Key>
 
                                                 <controls:Key Grid.Row="0" Grid.Column="3"
+                                                              SymbolGeometry="{StaticResource ArrowPointingToTopRightIcon}"
                                                                       SharedSizeGroup="KeyWithSymbolAndText">
                                                    
                                                 </controls:Key>
                                                 <controls:Key Grid.Row="1" Grid.Column="3"
+                                                              SymbolGeometry="{StaticResource ArrowPointingToRightIcon}"
                                                                       SharedSizeGroup="KeyWithSymbolAndText">
-                                                   
+                                                    <controls:Key.Value>
+                                                        <!--TODO: The amount in pixels is set in the mouse page.-->
+                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MouseMoveToRight}" />
+                                                    </controls:Key.Value>
                                                 </controls:Key>
                                                 <controls:Key Grid.Row="2" Grid.Column="3"
+                                                              SymbolGeometry="{StaticResource ArrowPointingToBottomRightIcon}"
                                                                       SharedSizeGroup="KeyWithSymbolAndText">
                                                 </controls:Key>
 
