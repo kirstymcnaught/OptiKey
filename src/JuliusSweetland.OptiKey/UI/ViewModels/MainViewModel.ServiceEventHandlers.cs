@@ -902,6 +902,46 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                         simulateMoveToTop();
                         break;
 
+                    case FunctionKeys.MouseMoveNorth200:
+                        Log.Info("Mouse move to north selected.");
+                        SimulateMouseDelta(0, -200);
+                        break;
+
+                    case FunctionKeys.MouseMoveNorthEast200:
+                        Log.Info("Mouse move to north-east selected.");
+                        SimulateMouseDelta(200, -200);
+                        break;
+
+                    case FunctionKeys.MouseMoveEast200:
+                        Log.Info("Mouse move to east selected.");
+                        SimulateMouseDelta(200, 0);
+                        break;
+
+                    case FunctionKeys.MouseMoveSouthEast200:
+                        Log.Info("Mouse move to south-east selected.");
+                        SimulateMouseDelta(200, 200);
+                        break;
+
+                    case FunctionKeys.MouseMoveSouth200:
+                        Log.Info("Mouse move to south selected.");
+                        SimulateMouseDelta(0, 200);
+                        break;
+
+                    case FunctionKeys.MouseMoveSouthWest200:
+                        Log.Info("Mouse move to south-west selected.");
+                        SimulateMouseDelta(-200, 200);
+                        break;
+
+                    case FunctionKeys.MouseMoveWest200: 
+                        Log.Info("Mouse move to west selected.");
+                        SimulateMouseDelta(-200, 0);
+                        break;
+
+                    case FunctionKeys.MouseMoveNorthWest200:
+                        Log.Info("Mouse move to north-west selected.");
+                        SimulateMouseDelta(-200, -200);
+                        break;
+
                     case FunctionKeys.MouseRightClick:
                         var rightClickPoint = mouseOutputService.GetCursorPosition();
                         Log.InfoFormat("Mouse right click selected at point ({0},{1}).", rightClickPoint.X, rightClickPoint.Y);
@@ -1233,6 +1273,18 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
 
             SelectionMode = SelectionModes.Point;
             ShowCursor = true;
+        }
+
+        private void SimulateMouseDelta(int x, int y)
+        {
+            Action simulateMoveDelta = () =>
+            {
+                var delta = new Point(x, y);
+                Log.InfoFormat("Performing mouse move by delta ({0},{1}).", delta.X, delta.Y);
+                mouseOutputService.MoveBy(delta);
+            };
+            lastMouseActionStateManager.LastMouseAction = simulateMoveDelta;
+            simulateMoveDelta();
         }
 
         private void ResetAndCleanupAfterMouseAction()
