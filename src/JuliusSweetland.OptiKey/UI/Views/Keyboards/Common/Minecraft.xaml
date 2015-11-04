@@ -229,9 +229,9 @@
                                                 </controls:Key>
 
                                                 <controls:Key Grid.Row="5" Grid.Column="12" Case="None"  Grid.ColumnSpan="2" Grid.RowSpan="2"
-                                                              Text="6" SharedSizeGroup="KeyWithSingleLetter">
+                                                              Text="E" SharedSizeGroup="KeyWithSingleLetter">
                                                     <controls:Key.Value>
-                                                        <models:KeyValue String="6" />
+                                                        <models:KeyValue String="E" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
 
