@@ -902,42 +902,42 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                         simulateMoveToTop();
                         break;
 
-                    case FunctionKeys.MouseMoveNorth200:
+                    case FunctionKeys.MinecraftNorth:
                         Log.Info("Mouse move to north selected.");
                         SimulateMouseDelta(0, -200);
                         break;
 
-                    case FunctionKeys.MouseMoveNorthEast200:
+                    case FunctionKeys.MinecraftNorthEast:
                         Log.Info("Mouse move to north-east selected.");
                         SimulateMouseDelta(200, -200);
                         break;
 
-                    case FunctionKeys.MouseMoveEast200:
+                    case FunctionKeys.MinecraftEast:
                         Log.Info("Mouse move to east selected.");
                         SimulateMouseDelta(200, 0);
                         break;
 
-                    case FunctionKeys.MouseMoveSouthEast200:
+                    case FunctionKeys.MinecraftSouthEast:
                         Log.Info("Mouse move to south-east selected.");
                         SimulateMouseDelta(200, 200);
                         break;
 
-                    case FunctionKeys.MouseMoveSouth200:
+                    case FunctionKeys.MinecraftSouth:
                         Log.Info("Mouse move to south selected.");
                         SimulateMouseDelta(0, 200);
                         break;
 
-                    case FunctionKeys.MouseMoveSouthWest200:
+                    case FunctionKeys.MinecraftSouthWest:
                         Log.Info("Mouse move to south-west selected.");
                         SimulateMouseDelta(-200, 200);
                         break;
 
-                    case FunctionKeys.MouseMoveWest200: 
+                    case FunctionKeys.MinecraftWest: 
                         Log.Info("Mouse move to west selected.");
                         SimulateMouseDelta(-200, 0);
                         break;
 
-                    case FunctionKeys.MouseMoveNorthWest200:
+                    case FunctionKeys.MinecraftNorthWest:
                         Log.Info("Mouse move to north-west selected.");
                         SimulateMouseDelta(-200, -200);
                         break;

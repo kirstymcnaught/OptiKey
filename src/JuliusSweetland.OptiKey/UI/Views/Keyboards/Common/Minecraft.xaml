@@ -106,28 +106,28 @@
                                                               SymbolGeometry="{StaticResource ArrowPointingToTopLeftIcon}"
                                                               SharedSizeGroup="KeyWithSymbolAndText">
                                                     <controls:Key.Value>
-                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MouseMoveNorthWest200}" />
+                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftNorthWest}" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
                                                 <controls:Key Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" Grid.RowSpan="2"
                                                               SymbolGeometry="{StaticResource ArrowPointingToLeftIcon}"
                                                                       SharedSizeGroup="KeyWithSymbolAndText">
                                                     <controls:Key.Value>
-                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MouseMoveWest200}" />
+                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftWest}" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
                                                 <controls:Key Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2" Grid.RowSpan="2"
                                                               SymbolGeometry="{StaticResource ArrowPointingToBottomLeftIcon}"
                                                                       SharedSizeGroup="KeyWithSymbolAndText">
                                                     <controls:Key.Value>
-                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MouseMoveSouthWest200}" />
+                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftSouthWest}" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
                                                 <controls:Key Grid.Row="1" Grid.Column="4" Grid.ColumnSpan="2" Grid.RowSpan="2"
                                                               SymbolGeometry="{StaticResource ArrowPointingToTopIcon}"
                                                                       SharedSizeGroup="KeyWithSymbolAndText">
                                                     <controls:Key.Value>
-                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MouseMoveNorth200}" />
+                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftNorth}" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
                                                 <!-- TODO: Make "LOOK" text a resource -->
@@ -139,7 +139,7 @@
                                                               SymbolGeometry="{StaticResource ArrowPointingToBottomIcon}"
                                                                       SharedSizeGroup="KeyWithSymbolAndText">
                                                     <controls:Key.Value>
-                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MouseMoveSouth200}" />
+                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftSouth}" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
 
@@ -147,21 +147,21 @@
                                                               SymbolGeometry="{StaticResource ArrowPointingToTopRightIcon}"
                                                                       SharedSizeGroup="KeyWithSymbolAndText">
                                                     <controls:Key.Value>
-                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MouseMoveNorthEast200}" />
+                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftNorthEast}" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
                                                 <controls:Key Grid.Row="3" Grid.Column="6" Grid.ColumnSpan="2" Grid.RowSpan="2"
                                                               SymbolGeometry="{StaticResource ArrowPointingToRightIcon}"
                                                                       SharedSizeGroup="KeyWithSymbolAndText">
                                                     <controls:Key.Value>
-                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MouseMoveEast200}" />
+                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftEast}" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
                                                 <controls:Key Grid.Row="5" Grid.Column="6" Grid.ColumnSpan="2" Grid.RowSpan="2"
                                                               SymbolGeometry="{StaticResource ArrowPointingToBottomRightIcon}"
                                                                       SharedSizeGroup="KeyWithSymbolAndText">
                                                     <controls:Key.Value>
-                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MouseMoveSouthEast200}" />
+                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftSouthEast}" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
 
