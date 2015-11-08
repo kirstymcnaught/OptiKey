@@ -1,4 +1,5 @@
 using System;
+using System.Threading;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
@@ -19,6 +20,8 @@ namespace JuliusSweetland.OptiKey.Services
         #region Private Member Vars
 
         private readonly static ILog Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
+        private const int MINECRAFT_SLEEP_MS = 60;
 
         private readonly IKeyStateService keyStateService;
         private readonly ISuggestionStateService suggestionService;
@@ -247,6 +250,7 @@ namespace JuliusSweetland.OptiKey.Services
             ProcessText(capturedText, true);
             lastTextChangeWasSuggestion = false;
         }
+
 
         public void ProcessMultiKeyTextAndSuggestions(List<string> captureAndSuggestions)
         {

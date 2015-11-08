@@ -130,11 +130,25 @@
                                                         <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftNorth}" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
+                                                
+                                                
                                                 <!-- TODO: Make "LOOK" text a resource -->
-                                                <controls:Key Grid.Row="3" Grid.Column="4" Grid.ColumnSpan="2" Grid.RowSpan="2"
-                                                              Text="LOOK"
-                                                                      SharedSizeGroup="KeyWithSymbolAndText">
+                                                <controls:Key Grid.Row="3" Grid.Column="4" Grid.ColumnSpan="1" Grid.RowSpan="2"
+                                                              Text="LOOK" SharedSizeGroup="KeyWithText">
+                                                    <controls:Key.Value>
+                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftLookMode}" />
+                                                    </controls:Key.Value>
                                                 </controls:Key>
+
+                                                <!-- TODO: Make "MOVE" text a resource -->
+                                                <controls:Key Grid.Row="3" Grid.Column="5" Grid.ColumnSpan="1" Grid.RowSpan="2"
+                                                              Text="MOVE" SharedSizeGroup="KeyWithText">
+                                                    <controls:Key.Value>
+                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftMoveMode}" />
+                                                    </controls:Key.Value>
+                                                </controls:Key>
+
+
                                                 <controls:Key Grid.Row="5" Grid.Column="4" Grid.ColumnSpan="2" Grid.RowSpan="2"
                                                               SymbolGeometry="{StaticResource ArrowPointingToBottomIcon}"
                                                                       SharedSizeGroup="KeyWithSymbolAndText">

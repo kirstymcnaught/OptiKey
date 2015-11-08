@@ -411,6 +411,21 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                         Keyboard = new Minecraft(() => Keyboard = currentKeyboard);       
                         break;
 
+                    // Look mode and Move mode are mutually exclusive.
+                    case FunctionKeys.MinecraftLookMode:
+                        if (keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value.IsDownOrLockedDown())
+                        {
+                            keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value = KeyDownStates.Up;
+                        }
+                        break;
+
+                    case FunctionKeys.MinecraftMoveMode:
+                        if (keyStateService.KeyDownStates[KeyValues.MinecraftLookModeKey].Value.IsDownOrLockedDown())
+                        {
+                            keyStateService.KeyDownStates[KeyValues.MinecraftLookModeKey].Value = KeyDownStates.Up;
+                        }
+                        break;
+
                     case FunctionKeys.Minimise:
                         Log.Info("Minimising window.");
                         mainWindowManipulationService.Minimise();
@@ -904,42 +919,126 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
 
                     case FunctionKeys.MinecraftNorth:
                         Log.Info("Mouse move to north selected.");
-                        SimulateMouseDelta(0, -200);
+                        if (keyStateService.KeyDownStates[KeyValues.MinecraftLookModeKey].Value.IsDownOrLockedDown())
+                        {
+                            SimulateMouseDelta(0, -200);
+                        }
+                        else if (keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value.IsDownOrLockedDown())
+                        {
+                            keyboardOutputService.ProcessSingleKeyText("p");
+                        }
+
                         break;
 
                     case FunctionKeys.MinecraftNorthEast:
                         Log.Info("Mouse move to north-east selected.");
-                        SimulateMouseDelta(200, -200);
+                        if (keyStateService.KeyDownStates[KeyValues.MinecraftLookModeKey].Value.IsDownOrLockedDown())
+                        {
+                            SimulateMouseDelta(200, -200);
+                        }
+                        else if (keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value.IsDownOrLockedDown())
+                        {
+                            keyboardOutputService.ProcessSingleKeyText("o");
+                            keyboardOutputService.ProcessSingleKeyText("p");
+                        }
                         break;
 
                     case FunctionKeys.MinecraftEast:
                         Log.Info("Mouse move to east selected.");
-                        SimulateMouseDelta(200, 0);
+                        if (keyStateService.KeyDownStates[KeyValues.MinecraftLookModeKey].Value.IsDownOrLockedDown())
+                        {
+                            SimulateMouseDelta(200, 0);
+                        }
+                        else if (keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value.IsDownOrLockedDown())
+                        {
+                            for (int i = 0; i < 2; ++i)
+                            {
+                                keyboardOutputService.ProcessSingleKeyText("o");
+                            }
+                            keyboardOutputService.ProcessSingleKeyText("p");
+                        }
                         break;
 
                     case FunctionKeys.MinecraftSouthEast:
                         Log.Info("Mouse move to south-east selected.");
-                        SimulateMouseDelta(200, 200);
+                        if (keyStateService.KeyDownStates[KeyValues.MinecraftLookModeKey].Value.IsDownOrLockedDown())
+                        {
+                            SimulateMouseDelta(200, 200);
+                        }
+                        else if (keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value.IsDownOrLockedDown())
+                        {
+                            for (int i = 0; i < 3; ++i)
+                            {
+                                keyboardOutputService.ProcessSingleKeyText("o");
+                            }
+                            keyboardOutputService.ProcessSingleKeyText("p");
+
+                        }
                         break;
 
                     case FunctionKeys.MinecraftSouth:
                         Log.Info("Mouse move to south selected.");
-                        SimulateMouseDelta(0, 200);
+                        if (keyStateService.KeyDownStates[KeyValues.MinecraftLookModeKey].Value.IsDownOrLockedDown())
+                        {
+                            SimulateMouseDelta(0, 200);
+                        }
+                        else if (keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value.IsDownOrLockedDown())
+                        {
+                            for (int i = 0; i < 4; ++i)
+                            {
+                                keyboardOutputService.ProcessSingleKeyText("o");
+                            }
+                            keyboardOutputService.ProcessSingleKeyText("p");
+                        }
                         break;
 
                     case FunctionKeys.MinecraftSouthWest:
                         Log.Info("Mouse move to south-west selected.");
-                        SimulateMouseDelta(-200, 200);
+                        if (keyStateService.KeyDownStates[KeyValues.MinecraftLookModeKey].Value.IsDownOrLockedDown())
+                        {
+
+                            SimulateMouseDelta(-200, 200);
+                        }
+                        else if (keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value.IsDownOrLockedDown())
+                        {
+                            for (int i = 0; i < 5; ++i)
+                            {
+                                keyboardOutputService.ProcessSingleKeyText("o");
+                            }
+                            keyboardOutputService.ProcessSingleKeyText("p");
+                        }
                         break;
 
-                    case FunctionKeys.MinecraftWest: 
+                    case FunctionKeys.MinecraftWest:
                         Log.Info("Mouse move to west selected.");
-                        SimulateMouseDelta(-200, 0);
+                        if (keyStateService.KeyDownStates[KeyValues.MinecraftLookModeKey].Value.IsDownOrLockedDown())
+                        {
+                            SimulateMouseDelta(-200, 0);
+                        }
+                        else if (keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value.IsDownOrLockedDown())
+                        {
+                            for (int i = 0; i < 6; ++i)
+                            {
+                                keyboardOutputService.ProcessSingleKeyText("o");
+                            }
+                            keyboardOutputService.ProcessSingleKeyText("p");
+                        }
                         break;
 
                     case FunctionKeys.MinecraftNorthWest:
                         Log.Info("Mouse move to north-west selected.");
-                        SimulateMouseDelta(-200, -200);
+                        if (keyStateService.KeyDownStates[KeyValues.MinecraftLookModeKey].Value.IsDownOrLockedDown())
+                        {
+                            SimulateMouseDelta(-200, -200);
+                        }
+                        else if (keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value.IsDownOrLockedDown())
+                        {
+                            for (int i = 0; i < 7; ++i)
+                            {
+                                keyboardOutputService.ProcessSingleKeyText("o");
+                            }
+                            keyboardOutputService.ProcessSingleKeyText("p");
+                        }
                         break;
 
                     case FunctionKeys.MouseRightClick:
