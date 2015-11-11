@@ -119,15 +119,13 @@ namespace JuliusSweetland.OptiKey.Models
                     MouseMagnifierKey,
                     MouseMiddleDownUpKey,
                     MouseRightDownUpKey,
-                    MultiKeySelectionKey,
                     ToggleWKey,
                     ToggleAKey,
                     ToggleSKey,
                     ToggleDKey,
                     ToggleSpace,
-                    MinecraftLookModeKey,
-                    MinecraftMoveModeKey,
-                    MinecraftMoveWithMouseKey
+                    MultiKeySelectionKey,    
+                    MouseMoveAndLeftClickKey        
                 };
             }
         }
@@ -145,7 +143,16 @@ namespace JuliusSweetland.OptiKey.Models
                     MouseMagneticCursorKey,
                     MouseMagnifierKey,
                     MultiKeySelectionKey,
-                    SleepKey
+                    SleepKey,
+                    MinecraftLookModeKey,
+                    MinecraftMoveModeKey,
+                    MinecraftMoveWithMouseKey,
+                    ToggleWKey,
+                    ToggleAKey,
+                    ToggleSKey,
+                    ToggleDKey,
+                    ToggleSpace,
+                    MouseMoveAndLeftClickKey
                 };
             }
         }
