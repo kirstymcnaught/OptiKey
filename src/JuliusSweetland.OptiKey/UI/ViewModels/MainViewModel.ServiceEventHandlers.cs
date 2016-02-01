@@ -415,7 +415,37 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
 
                     case FunctionKeys.MinecraftKeyboard:
                         Log.Info("Changing keyboard to MinecraftKeyboard.");
-                        Keyboard = new Minecraft(() => Keyboard = currentKeyboard);       
+                        
+                        // Default to MinecraftLookMode, unless already in MinecraftMoveMode
+                        // Also turn off any modifier keys.
+                        Action backActionMC;
+                        
+                        var lastLeftShiftValueMC = keyStateService.KeyDownStates[KeyValues.LeftShiftKey].Value;
+                        var lastLeftCtrlValueMC = keyStateService.KeyDownStates[KeyValues.LeftCtrlKey].Value;
+                        var lastLeftWinValueMC = keyStateService.KeyDownStates[KeyValues.LeftWinKey].Value;
+                        var lastLeftAltValueMC = keyStateService.KeyDownStates[KeyValues.LeftAltKey].Value;
+                            
+                        keyStateService.KeyDownStates[KeyValues.LeftShiftKey].Value = KeyDownStates.Up;
+                        keyStateService.KeyDownStates[KeyValues.LeftCtrlKey].Value = KeyDownStates.Up;
+                        keyStateService.KeyDownStates[KeyValues.LeftWinKey].Value = KeyDownStates.Up;
+                        keyStateService.KeyDownStates[KeyValues.LeftAltKey].Value = KeyDownStates.Up;
+                        backActionMC = () =>
+                        {
+                            keyStateService.KeyDownStates[KeyValues.LeftShiftKey].Value = lastLeftShiftValueMC;
+                            keyStateService.KeyDownStates[KeyValues.LeftCtrlKey].Value = lastLeftCtrlValueMC;
+                            keyStateService.KeyDownStates[KeyValues.LeftWinKey].Value = lastLeftWinValueMC;
+                            keyStateService.KeyDownStates[KeyValues.LeftAltKey].Value = lastLeftAltValueMC;
+                            keyStateService.KeyDownStates[KeyValues.MinecraftLookModeKey].Value = KeyDownStates.Up;
+                            keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value = KeyDownStates.Up;
+                            Keyboard = currentKeyboard;
+                        };
+                        
+                        Keyboard = new Minecraft(backActionMC);
+
+                        keyStateService.KeyDownStates[KeyValues.MinecraftLookModeKey].Value = KeyDownStates.LockedDown;
+                        keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value = KeyDownStates.Up;
+                        keyStateService.KeyDownStates[KeyValues.LeftShiftKey].Value = KeyDownStates.Up;
+                        keyStateService.KeyDownStates[KeyValues.LeftShiftKey].Value = KeyDownStates.Up;
                         break;
 
                     // Look mode and Move mode are mutually exclusive.
@@ -424,6 +454,10 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                         {
                             keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value = KeyDownStates.Up;
                         }
+                        else if (!keyStateService.KeyDownStates[KeyValues.MinecraftLookModeKey].Value.IsDownOrLockedDown())
+                        {
+                            keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value = KeyDownStates.LockedDown;
+                        }
                         break;
 
                     case FunctionKeys.MinecraftMoveMode:
@@ -431,8 +465,11 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                         {
                             keyStateService.KeyDownStates[KeyValues.MinecraftLookModeKey].Value = KeyDownStates.Up;
                         }
+                        else if (!keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value.IsDownOrLockedDown())
+                        {
+                            keyStateService.KeyDownStates[KeyValues.MinecraftLookModeKey].Value = KeyDownStates.LockedDown;
+                        }
                         break;
-
                     case FunctionKeys.Minimise:
                         Log.Info("Minimising window.");
                         mainWindowManipulationService.Minimise();
