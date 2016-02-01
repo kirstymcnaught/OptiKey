@@ -47,6 +47,8 @@ namespace JuliusSweetland.OptiKey.UI.Controls
             {
                 contentDp.AddValueChanged(this, ContentChangedHandler);
             }
+
+            this.MouseEnter += this.OnMouseEnter;
         }
 
         #endregion
@@ -302,6 +304,19 @@ namespace JuliusSweetland.OptiKey.UI.Controls
                 {
                     keyboardHost.InputService.RequestResume();
                 }
+            }
+        }
+
+        private void OnMouseEnter(object sender, System.EventArgs e)
+        {
+            if (Settings.Default.PointsSource == PointsSources.MousePosition &&
+                Settings.Default.PointsMousePositionHideCursor)
+            {
+                this.Cursor = System.Windows.Input.Cursors.None;
+            }
+            else
+            {
+                this.Cursor = System.Windows.Input.Cursors.Arrow;
             }
         }
         

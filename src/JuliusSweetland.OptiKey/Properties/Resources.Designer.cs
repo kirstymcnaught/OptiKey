@@ -1042,6 +1042,15 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Hide cursor.
+        /// </summary>
+        public static string HIDE_CURSOR_LABEL {
+            get {
+                return ResourceManager.GetString("HIDE_CURSOR_LABEL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to High.
         /// </summary>
         public static string HIGH {
