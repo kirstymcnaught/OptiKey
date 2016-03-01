@@ -378,6 +378,12 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                         windowManipulationService.Restore();
                         mainWindowManipulationService.ResizeDockToFull();
                         break;
+
+                    case Enums.Keyboards.MinecraftSurvivalInventory:
+                        Keyboard = new MinecraftSurvivalInventory(() => Keyboard = new Menu(() => Keyboard = new Alpha()));
+                        windowManipulationService.Restore();
+                        mainWindowManipulationService.ResizeDockToFull();
+                        break;
                 }
             }
         }

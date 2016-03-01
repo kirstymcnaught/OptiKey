@@ -13,6 +13,7 @@
         Menu,
         Minimised,
         Minecraft,
+        MinecraftSurvivalInventory,
         Mouse,
         NumericAndSymbols1,
         NumericAndSymbols2,
