@@ -439,6 +439,10 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                             keyStateService.KeyDownStates[KeyValues.MinecraftLookModeKey].Value = KeyDownStates.Up;
                             keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value = KeyDownStates.Up;
                             Keyboard = currentKeyboard;
+
+                            // Clear the keyboard when leaving minecraft keyboard.
+                            keyboardOutputService.ProcessFunctionKey(FunctionKeys.ClearScratchpad);
+
                         };
                         
                         Keyboard = new Minecraft(backActionMC);
