@@ -41,6 +41,7 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                     // Also tell minecraft to go forward a fixed amount.
                     if (keyStateService.KeyDownStates[KeyValues.MinecraftMoveWithMouseKey].Value.IsDownOrLockedDown())
                     {   
+                        //TODO: Bad things happen if points are coming in > 30 Hz. Should we check the time stamp or something?
                         keyboardOutputService.ProcessSingleKeyText("p");
                     }
                 }
