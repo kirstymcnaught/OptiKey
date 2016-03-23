@@ -425,11 +425,14 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                         var lastLeftCtrlValueMC = keyStateService.KeyDownStates[KeyValues.LeftCtrlKey].Value;
                         var lastLeftWinValueMC = keyStateService.KeyDownStates[KeyValues.LeftWinKey].Value;
                         var lastLeftAltValueMC = keyStateService.KeyDownStates[KeyValues.LeftAltKey].Value;
-                            
+                        var lastScrollSetting = Settings.Default.MouseScrollAmountInClicks;
+
                         keyStateService.KeyDownStates[KeyValues.LeftShiftKey].Value = KeyDownStates.Up;
                         keyStateService.KeyDownStates[KeyValues.LeftCtrlKey].Value = KeyDownStates.Up;
                         keyStateService.KeyDownStates[KeyValues.LeftWinKey].Value = KeyDownStates.Up;
                         keyStateService.KeyDownStates[KeyValues.LeftAltKey].Value = KeyDownStates.Up;
+                        Settings.Default.MouseScrollAmountInClicks = 1;    
+
                         backActionMC = () =>
                         {
                             keyStateService.KeyDownStates[KeyValues.LeftShiftKey].Value = lastLeftShiftValueMC;
@@ -438,6 +441,7 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                             keyStateService.KeyDownStates[KeyValues.LeftAltKey].Value = lastLeftAltValueMC;
                             keyStateService.KeyDownStates[KeyValues.MinecraftLookModeKey].Value = KeyDownStates.Up;
                             keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value = KeyDownStates.Up;
+                            Settings.Default.MouseScrollAmountInClicks = lastScrollSetting;    
                             Keyboard = currentKeyboard;
 
                             // Clear the keyboard when leaving minecraft keyboard.
@@ -451,6 +455,30 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                         keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value = KeyDownStates.Up;
                         keyStateService.KeyDownStates[KeyValues.LeftShiftKey].Value = KeyDownStates.Up;
                         keyStateService.KeyDownStates[KeyValues.LeftShiftKey].Value = KeyDownStates.Up;
+                        break;
+
+                    case FunctionKeys.MinecraftInventoryKeyboard:
+                        Log.Info("Changing keyboard to MinecraftInventoryKeyboard.");
+
+                        // Default to MinecraftLookMode, unless already in MinecraftMoveMode
+                        // Also turn off any modifier keys.
+                        Action backActionMCInventory;
+
+                        var lastMagnifierValue = keyStateService.KeyDownStates[KeyValues.MouseMagnifierKey].Value;
+
+                        backActionMCInventory = () =>
+                        {
+                            Keyboard = currentKeyboard;
+                            keyStateService.KeyDownStates[KeyValues.MouseMagnifierKey].Value = lastMagnifierValue;
+
+                            // Clear the keyboard when leaving minecraft keyboard.
+                            keyboardOutputService.ProcessFunctionKey(FunctionKeys.ClearScratchpad);
+
+                        };
+
+                        keyStateService.KeyDownStates[KeyValues.MouseMagnifierKey].Value = KeyDownStates.LockedDown;
+                        Keyboard = new MinecraftSurvivalInventory(backActionMCInventory);
+
                         break;
 
                     // Look mode and Move mode are mutually exclusive.
@@ -894,6 +922,52 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
 
                             ResetAndCleanupAfterMouseAction();
                         }, suppressMagnification: true);
+                        break;
+
+                    case FunctionKeys.MouseScrollToTop:
+
+                        var currentPoint = mouseOutputService.GetCursorPosition();
+                        Log.InfoFormat("Mouse scroll to top selected at point ({0},{1}).", currentPoint.X, currentPoint.Y);
+                        Action<Point?> performScroll = point =>
+                        {
+                            if (point != null)
+                            {
+                                Action<Point> simulateScrollToTop = fp =>
+                                {
+                                    Log.InfoFormat("Performing mouse scroll to top at point ({0},{1}).", fp.X, fp.Y);
+                                    audioService.PlaySound(Settings.Default.MouseScrollSoundFile, Settings.Default.MouseScrollSoundVolume);
+                                    mouseOutputService.MoveAndScrollWheelUp(fp, Settings.Default.MouseScrollAmountInClicks, true);
+                                };
+                                lastMouseActionStateManager.LastMouseAction = () => simulateScrollToTop(point.Value);
+                                simulateScrollToTop(point.Value);
+                            }
+                        };
+                        performScroll(currentPoint);
+                        ResetAndCleanupAfterMouseAction();
+
+                        break;
+
+                    case FunctionKeys.MouseScrollToBottom:
+
+                        var currentPointScroll = mouseOutputService.GetCursorPosition();
+                        Log.InfoFormat("Mouse scroll to top selected at point ({0},{1}).", currentPointScroll.X, currentPointScroll.Y);
+                        Action<Point?> performScrollDown = point =>
+                        {
+                            if (point != null)
+                            {
+                                Action<Point> simulateScrollToBottom = fp =>
+                                {
+                                    Log.InfoFormat("Performing mouse scroll to top at point ({0},{1}).", fp.X, fp.Y);
+                                    audioService.PlaySound(Settings.Default.MouseScrollSoundFile, Settings.Default.MouseScrollSoundVolume);
+                                    mouseOutputService.MoveAndScrollWheelDown(fp, Settings.Default.MouseScrollAmountInClicks, true);
+                                };
+                                lastMouseActionStateManager.LastMouseAction = () => simulateScrollToBottom(point.Value);
+                                simulateScrollToBottom(point.Value);
+                            }
+                        };
+                        performScrollDown(currentPointScroll);
+                        ResetAndCleanupAfterMouseAction();
+
                         break;
 
                     case FunctionKeys.MouseMoveTo:
