@@ -81,7 +81,7 @@
 
                                                 <controls:Key Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="2"
                                                               Text="Fly up"
-                                                              SymbolGeometry="{StaticResource MinecraftFlying}"                                                              
+                                                              SymbolGeometry="{StaticResource MinecraftFlyUp}"                                                              
                                                               SharedSizeGroup="KeyWithSymbolAndText">
                                                     <controls:Key.Value>
                                                         <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.ArrowUp}" />
@@ -90,7 +90,8 @@
 
 
                                                 <controls:Key Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="2"
-                                                              Text="Stop flying"
+                                                              Text="Stop flying"                                                                                                                            
+                                                              SymbolGeometry="{StaticResource MinecraftFlyStop}"                                                              
                                                               SharedSizeGroup="KeyWithSymbolAndText">
                                                     <controls:Key.Value>
                                                         <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.ArrowDown}" />
@@ -108,7 +109,8 @@
                                                 </controls:Key>
 
                                                 <controls:Key Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" Grid.RowSpan="2"
-                                                              Text="Attack x1"
+                                                              Text="Attack x1"                                                                                                      
+                                                              SymbolGeometry="{StaticResource MinecraftAttackOnce}"                                                              
                                                               SharedSizeGroup="KeyWithSymbolAndText">
                                                     <controls:Key.Value>
                                                         <models:KeyValue String="t" />
@@ -117,6 +119,7 @@
 
                                                 <controls:Key Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" Grid.RowSpan="2"
                                                               Text="Attack!"
+                                                              SymbolGeometry="{StaticResource MinecraftAttackContinuous}"                                                              
                                                               SharedSizeGroup="KeyWithSymbolAndText">
                                                     <controls:Key.Value>
                                                         <models:KeyValue String="r" />
@@ -131,6 +134,7 @@
 
                                                 <controls:Key Grid.Row="5" Grid.Column="4" Grid.ColumnSpan="2" Grid.RowSpan="2"
                                                               Text="Sneak"
+                                                               SymbolGeometry="{StaticResource MinecraftSneak}"                                                              
                                                               SharedSizeGroup="KeyWithSymbolAndText">
                                                     <!-- TODO -->
                                                 </controls:Key>

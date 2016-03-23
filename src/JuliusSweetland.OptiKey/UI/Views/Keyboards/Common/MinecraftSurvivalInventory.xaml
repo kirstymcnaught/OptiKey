@@ -78,63 +78,72 @@
                                                 </controls:Key>
 
                                                 <controls:Key Grid.Row="0" Grid.Column="1" Case="None"  Grid.ColumnSpan="1" Grid.RowSpan="1"
-                                                              Text="IN" SharedSizeGroup="KeyWithSingleLetter">
+                                                              Text="IN" SharedSizeGroup="KeyWithSingleLetter"
+                                                              SymbolGeometry="{StaticResource MinecraftInventoryBlank}" >
                                                     <controls:Key.Value>
                                                         <models:KeyValue String="r" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
 
                                                 <controls:Key Grid.Row="0" Grid.Column="2" Case="None"  Grid.ColumnSpan="1" Grid.RowSpan="1"
-                                                              Text="IN" SharedSizeGroup="KeyWithSingleLetter">
+                                                              Text="IN" SharedSizeGroup="KeyWithSingleLetter"
+                                                              SymbolGeometry="{StaticResource MinecraftInventoryTopMid}" >
                                                     <controls:Key.Value>
                                                         <models:KeyValue String="t" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
 
                                                 <controls:Key Grid.Row="0" Grid.Column="3" Case="None"  Grid.ColumnSpan="1" Grid.RowSpan="1"
-                                                              Text="IN" SharedSizeGroup="KeyWithSingleLetter">
+                                                              Text="IN" SharedSizeGroup="KeyWithSingleLetter"
+                                                              SymbolGeometry="{StaticResource MinecraftInventoryTopRight}" >
                                                     <controls:Key.Value>
                                                         <models:KeyValue String="y" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
 
                                                 <controls:Key Grid.Row="1" Grid.Column="1" Case="None"  Grid.ColumnSpan="1" Grid.RowSpan="1"
-                                                              Text="IN" SharedSizeGroup="KeyWithSingleLetter">
+                                                              Text="IN" SharedSizeGroup="KeyWithSingleLetter"
+                                                              SymbolGeometry="{StaticResource MinecraftInventoryBlank}" >
                                                     <controls:Key.Value>
                                                         <models:KeyValue String="f" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
 
                                                 <controls:Key Grid.Row="1" Grid.Column="2" Case="None"  Grid.ColumnSpan="1" Grid.RowSpan="1"
-                                                              Text="IN" SharedSizeGroup="KeyWithSingleLetter">
+                                                              Text="IN" SharedSizeGroup="KeyWithSingleLetter"
+                                                              SymbolGeometry="{StaticResource MinecraftInventoryMidMid}" >
                                                     <controls:Key.Value>
                                                         <models:KeyValue String="g" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
 
                                                 <controls:Key Grid.Row="1" Grid.Column="3" Case="None"  Grid.ColumnSpan="1" Grid.RowSpan="1"
-                                                              Text="IN" SharedSizeGroup="KeyWithSingleLetter">
+                                                              Text="IN" SharedSizeGroup="KeyWithSingleLetter"
+                                                              SymbolGeometry="{StaticResource MinecraftInventoryMidRight}" >
                                                     <controls:Key.Value>
                                                         <models:KeyValue String="h" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
 
                                                 <controls:Key Grid.Row="2" Grid.Column="1" Case="None"  Grid.ColumnSpan="1" Grid.RowSpan="1"
-                                                              Text="IN" SharedSizeGroup="KeyWithSingleLetter">
+                                                              Text="IN" SharedSizeGroup="KeyWithSingleLetter"
+                                                              SymbolGeometry="{StaticResource MinecraftInventoryBlank}" >
                                                     <controls:Key.Value>
                                                         <models:KeyValue String="v" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
 
                                                 <controls:Key Grid.Row="2" Grid.Column="2" Case="None"  Grid.ColumnSpan="1" Grid.RowSpan="1"
-                                                              Text="IN" SharedSizeGroup="KeyWithSingleLetter">
+                                                              Text="IN" SharedSizeGroup="KeyWithSingleLetter"
+                                                              SymbolGeometry="{StaticResource MinecraftInventoryBlank}" >
                                                     <controls:Key.Value>
                                                         <models:KeyValue String="b" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
 
                                                 <controls:Key Grid.Row="2" Grid.Column="3" Case="None"  Grid.ColumnSpan="1" Grid.RowSpan="1"
-                                                              Text="IN" SharedSizeGroup="KeyWithSingleLetter">
+                                                              Text="IN" SharedSizeGroup="KeyWithSingleLetter"
+                                                              SymbolGeometry="{StaticResource MinecraftInventoryBlank}" >
                                                     <controls:Key.Value>
                                                         <models:KeyValue String="n" />
                                                     </controls:Key.Value>
@@ -142,7 +151,8 @@
 
                                                 <controls:Key Grid.Row="0" Grid.Column="4" Grid.ColumnSpan="1" Grid.RowSpan="1"
                                                               Text="hover item"
-                                                              SharedSizeGroup="KeyWithSymbolAndText">
+                                                              SharedSizeGroup="KeyWithSymbolAndText"
+                                                              SymbolGeometry="{StaticResource MouseMoveToIcon}" >
                                                     <controls:Key.Value>
                                                         <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MouseMoveTo}" />
                                                     </controls:Key.Value>
@@ -150,7 +160,8 @@
 
 
                                                 <controls:Key Grid.Row="1" Grid.Column="4" Case="None"  Grid.ColumnSpan="1" Grid.RowSpan="1"
-                                                              Text="OUT" SharedSizeGroup="KeyWithSingleLetter">
+                                                              Text="OUT" SharedSizeGroup="KeyWithSingleLetter"
+                                                              SymbolGeometry="{StaticResource MinecraftInventoryOut}" >
                                                     <controls:Key.Value>
                                                         <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.LeftCtrl}" />
                                                     </controls:Key.Value>
