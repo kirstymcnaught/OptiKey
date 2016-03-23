@@ -417,7 +417,6 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                     case FunctionKeys.MinecraftKeyboard:
                         Log.Info("Changing keyboard to MinecraftKeyboard.");
                         
-                        // Default to MinecraftLookMode, unless already in MinecraftMoveMode
                         // Also turn off any modifier keys.
                         Action backActionMC;
                         
@@ -426,13 +425,7 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                         var lastLeftWinValueMC = keyStateService.KeyDownStates[KeyValues.LeftWinKey].Value;
                         var lastLeftAltValueMC = keyStateService.KeyDownStates[KeyValues.LeftAltKey].Value;
                         var lastScrollSetting = Settings.Default.MouseScrollAmountInClicks;
-
-                        keyStateService.KeyDownStates[KeyValues.LeftShiftKey].Value = KeyDownStates.Up;
-                        keyStateService.KeyDownStates[KeyValues.LeftCtrlKey].Value = KeyDownStates.Up;
-                        keyStateService.KeyDownStates[KeyValues.LeftWinKey].Value = KeyDownStates.Up;
-                        keyStateService.KeyDownStates[KeyValues.LeftAltKey].Value = KeyDownStates.Up;
-                        Settings.Default.MouseScrollAmountInClicks = 1;    
-
+                        
                         backActionMC = () =>
                         {
                             keyStateService.KeyDownStates[KeyValues.LeftShiftKey].Value = lastLeftShiftValueMC;
@@ -451,10 +444,16 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                         
                         Keyboard = new Minecraft(backActionMC);
 
+                        // Default to MinecraftLookMode
                         keyStateService.KeyDownStates[KeyValues.MinecraftLookModeKey].Value = KeyDownStates.LockedDown;
                         keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value = KeyDownStates.Up;
+
+                        // Set everything else appropriately
                         keyStateService.KeyDownStates[KeyValues.LeftShiftKey].Value = KeyDownStates.Up;
-                        keyStateService.KeyDownStates[KeyValues.LeftShiftKey].Value = KeyDownStates.Up;
+                        keyStateService.KeyDownStates[KeyValues.LeftWinKey].Value = KeyDownStates.Up;
+                        keyStateService.KeyDownStates[KeyValues.LeftCtrlKey].Value = KeyDownStates.Up;
+                        Settings.Default.MouseScrollAmountInClicks = 1;
+
                         break;
 
                     case FunctionKeys.MinecraftInventoryKeyboard:
@@ -465,11 +464,24 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                         Action backActionMCInventory;
 
                         var lastMagnifierValue = keyStateService.KeyDownStates[KeyValues.MouseMagnifierKey].Value;
+                        var lastLeftShiftValueMCI = keyStateService.KeyDownStates[KeyValues.LeftShiftKey].Value;
+                        var lastLeftCtrlValueMCI = keyStateService.KeyDownStates[KeyValues.LeftCtrlKey].Value;
+                        var lastLeftWinValueMCI = keyStateService.KeyDownStates[KeyValues.LeftWinKey].Value;
+                        var lastLeftAltValueMCI = keyStateService.KeyDownStates[KeyValues.LeftAltKey].Value;
+                        var lastMagneticCursorKeyValue = keyStateService.KeyDownStates[KeyValues.MouseMagneticCursorKey].Value;
 
                         backActionMCInventory = () =>
                         {
                             Keyboard = currentKeyboard;
                             keyStateService.KeyDownStates[KeyValues.MouseMagnifierKey].Value = lastMagnifierValue;
+
+                            keyStateService.KeyDownStates[KeyValues.LeftShiftKey].Value = lastLeftShiftValueMCI;
+                            keyStateService.KeyDownStates[KeyValues.LeftCtrlKey].Value = lastLeftCtrlValueMCI;
+                            keyStateService.KeyDownStates[KeyValues.LeftWinKey].Value = lastLeftWinValueMCI;
+                            keyStateService.KeyDownStates[KeyValues.LeftAltKey].Value = lastLeftAltValueMCI;
+                            keyStateService.KeyDownStates[KeyValues.MinecraftLookModeKey].Value = KeyDownStates.Up;
+                            keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value = KeyDownStates.Up;
+                            keyStateService.KeyDownStates[KeyValues.MouseMagneticCursorKey].Value = lastMagneticCursorKeyValue;
 
                             // Clear the keyboard when leaving minecraft keyboard.
                             keyboardOutputService.ProcessFunctionKey(FunctionKeys.ClearScratchpad);
@@ -478,6 +490,14 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
 
                         keyStateService.KeyDownStates[KeyValues.MouseMagnifierKey].Value = KeyDownStates.LockedDown;
                         Keyboard = new MinecraftSurvivalInventory(backActionMCInventory);
+
+                        // Set everything else appropriately
+                        keyStateService.KeyDownStates[KeyValues.LeftShiftKey].Value = KeyDownStates.Up;
+                        keyStateService.KeyDownStates[KeyValues.LeftWinKey].Value = KeyDownStates.Up;
+                        keyStateService.KeyDownStates[KeyValues.LeftCtrlKey].Value = KeyDownStates.Up;
+                        keyStateService.KeyDownStates[KeyValues.MouseMagneticCursorKey].Value = KeyDownStates.Up;
+
+                        Settings.Default.MouseScrollAmountInClicks = 1;
 
                         break;
 
