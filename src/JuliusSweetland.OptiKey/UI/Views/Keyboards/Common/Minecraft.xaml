@@ -84,7 +84,7 @@
                                                               SymbolGeometry="{StaticResource MinecraftFlying}"                                                              
                                                               SharedSizeGroup="KeyWithSymbolAndText">
                                                     <controls:Key.Value>
-                                                        <models:KeyValue String="+" />
+                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.ArrowUp}" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
 
@@ -93,7 +93,7 @@
                                                               Text="Stop flying"
                                                               SharedSizeGroup="KeyWithSymbolAndText">
                                                     <controls:Key.Value>
-                                                        <models:KeyValue String="-" />
+                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.ArrowDown}" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
 
@@ -251,10 +251,9 @@
                                                 </controls:Key>
 
                                                 <controls:Key Grid.Row="3" Grid.Column="4" Grid.ColumnSpan="2" Grid.RowSpan="2"
-                                                              SymbolGeometry="{StaticResource MinecraftMoveWithCursor}"
-                                                              Text="Walk with gaze">
+                                                              Text="Walk">
                                                     <controls:Key.Value>
-                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftMoveWithMouse}" />
+                                                        <models:KeyValue String="h" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
 
