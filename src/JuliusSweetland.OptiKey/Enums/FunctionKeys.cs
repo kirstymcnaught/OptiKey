@@ -70,7 +70,6 @@
         MinecraftMoveMode,
         MinecraftLookMode,
         MinecraftMoveAmount,
-        MinecraftMoveWithMouse,
         MouseDrag,
         MouseKeyboard,
         MouseLeftClick,
