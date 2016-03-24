@@ -136,7 +136,9 @@
                                                               Text="Sneak"
                                                                SymbolGeometry="{StaticResource MinecraftSneak}"                                                              
                                                               SharedSizeGroup="KeyWithSymbolAndText">
-                                                    <!-- TODO -->
+                                                    <controls:Key.Value>
+                                                        <models:KeyValue String="z" />
+                                                    </controls:Key.Value>
                                                 </controls:Key>
 
                                                 <controls:Key Grid.Row="1" Grid.Column="6" Grid.ColumnSpan="2" Grid.RowSpan="2"
