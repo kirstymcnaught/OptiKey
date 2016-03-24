@@ -54,6 +54,7 @@
                                                     <ColumnDefinition Width="*" />
                                                     <ColumnDefinition Width="*" />
                                                     <ColumnDefinition Width="*" />
+                                                    <ColumnDefinition Width="*" />
                                                 </Grid.ColumnDefinitions>
 
                                                 <controls:Key Grid.Row="0" Grid.Column="0" Case="None"  Grid.ColumnSpan="1" Grid.RowSpan="1"
@@ -238,7 +239,7 @@
                                                     </controls:Key.Value>
                                                 </controls:Key>
 
-                                                <controls:Key Grid.Row="0" Grid.Column="8" Grid.ColumnSpan="1"  Grid.RowSpan="1"
+                                                <controls:Key Grid.Row="0" Grid.Column="9" Grid.ColumnSpan="1"  Grid.RowSpan="1"
                                                               Text="{x:Static resx:Resources.ESC}"
                                                               SharedSizeGroup="KeyWithSymbolAndText">
                                                     <controls:Key.Value>
@@ -246,7 +247,7 @@
                                                     </controls:Key.Value>
                                                 </controls:Key>
                                                 
-                                                <controls:Key Grid.Row="1" Grid.Column="8" Grid.ColumnSpan="1"  Grid.RowSpan="1"
+                                                <controls:Key Grid.Row="1" Grid.Column="9" Grid.ColumnSpan="1"  Grid.RowSpan="1"
                                                               SymbolGeometry="{StaticResource MouseMagnifierIcon}"
                                                               Text="{x:Static resx:Resources.MAGNIFIER}"
                                                               SharedSizeGroup="KeyWithSymbolAndText">
@@ -255,12 +256,26 @@
                                                     </controls:Key.Value>
                                                 </controls:Key>
                                                 
-                                                <controls:Key Grid.Row="2" Grid.Column="8" Grid.ColumnSpan="1" Grid.RowSpan="1"
+                                                <controls:Key Grid.Row="2" Grid.Column="9" Grid.ColumnSpan="1" Grid.RowSpan="1"
                                                               SymbolGeometry="{StaticResource BackIcon}"
                                                               Text="{x:Static resx:Resources.BACK}"
                                                               SharedSizeGroup="KeyWithSymbolAndText">
                                                     <controls:Key.Value>
                                                         <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.BackFromKeyboard}" />
+                                                    </controls:Key.Value>
+                                                </controls:Key>
+
+                                                <controls:Key Grid.Row="0" Grid.Column="8"
+                                                              Text="scroll up">
+                                                    <controls:Key.Value>
+                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MouseScrollToTop}" />
+                                                    </controls:Key.Value>
+                                                </controls:Key>
+
+                                                <controls:Key Grid.Row="1" Grid.Column="8"
+                                                              Text="scroll down">
+                                                    <controls:Key.Value>
+                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MouseScrollToBottom}" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
                                             </Grid>
