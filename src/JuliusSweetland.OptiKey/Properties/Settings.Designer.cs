@@ -713,6 +713,38 @@ namespace JuliusSweetland.OptiKey.Properties {
                 this["MouseScrollAmountInClicks"] = value;
             }
         }
+
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("3")]
+        [global::System.Configuration.SettingsManageabilityAttribute(global::System.Configuration.SettingsManageability.Roaming)]
+        public int MinecraftMoveAmount
+        {
+            get
+            {
+                return ((int)(this["MinecraftMoveAmount"]));
+            }
+            set
+            {
+                this["MinecraftMoveAmount"] = value;
+            }
+        }
+
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("200")]
+        [global::System.Configuration.SettingsManageabilityAttribute(global::System.Configuration.SettingsManageability.Roaming)]
+        public int MinecraftLookDelta
+        {
+            get
+            {
+                return ((int)(this["MinecraftLookDelta"]));
+            }
+            set
+            {
+                this["MinecraftLookDelta"] = value;
+            }
+        }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

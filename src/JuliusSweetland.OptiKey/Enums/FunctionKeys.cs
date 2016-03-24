@@ -69,6 +69,7 @@
         MinecraftInventoryKeyboard,
         MinecraftMoveMode,
         MinecraftLookMode,
+        MinecraftMoveAmount,
         MinecraftMoveWithMouse,
         MouseDrag,
         MouseKeyboard,

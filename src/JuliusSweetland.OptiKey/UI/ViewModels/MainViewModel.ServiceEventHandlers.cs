@@ -1084,10 +1084,7 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                         }
                         else if (keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value.IsDownOrLockedDown())
                         {
-                            for (int j = 0; j < Settings.Default.MinecraftMoveAmount; j++)
-                            {
-                                keyboardOutputService.ProcessSingleKeyText("p");
-                            }
+                            HandleMinecraftManualMove(0);
                         }
 
                         break;
@@ -1103,11 +1100,7 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                         }
                         else if (keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value.IsDownOrLockedDown())
                         {
-                            for (int j = 0; j < Settings.Default.MinecraftMoveAmount; j++)
-                            {
-                                keyboardOutputService.ProcessSingleKeyText("o");
-                                keyboardOutputService.ProcessSingleKeyText("p");
-                            }
+                            HandleMinecraftManualMove(1);
                         }
                         break;
 
@@ -1122,14 +1115,7 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                         }
                         else if (keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value.IsDownOrLockedDown())
                         {
-                            for (int j = 0; j < Settings.Default.MinecraftMoveAmount; j++)
-                            {
-                                for (int i = 0; i < 2; ++i)
-                                {
-                                    keyboardOutputService.ProcessSingleKeyText("o");
-                                }
-                                keyboardOutputService.ProcessSingleKeyText("p");
-                            }
+                            HandleMinecraftManualMove(2);
                         }
                         break;
 
@@ -1144,15 +1130,7 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                         }
                         else if (keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value.IsDownOrLockedDown())
                         {
-                            for (int j = 0; j < Settings.Default.MinecraftMoveAmount; j++)
-                            {
-                                for (int i = 0; i < 3; ++i)
-                                {
-                                    keyboardOutputService.ProcessSingleKeyText("o");
-                                }
-                                keyboardOutputService.ProcessSingleKeyText("p");
-                            }
-
+                            HandleMinecraftManualMove(3);
                         }
                         break;
 
@@ -1167,14 +1145,7 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                         }
                         else if (keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value.IsDownOrLockedDown())
                         {
-                            for (int j = 0; j < Settings.Default.MinecraftMoveAmount; j++)
-                            {
-                                for (int i = 0; i < 4; ++i)
-                                {
-                                    keyboardOutputService.ProcessSingleKeyText("o");
-                                }
-                                keyboardOutputService.ProcessSingleKeyText("p");
-                            }
+                            HandleMinecraftManualMove(4);
                         }
                         break;
 
@@ -1189,14 +1160,7 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                         }
                         else if (keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value.IsDownOrLockedDown())
                         {
-                            for (int j = 0; j < Settings.Default.MinecraftMoveAmount; j++)
-                            {
-                                for (int i = 0; i < 5; ++i)
-                                {
-                                    keyboardOutputService.ProcessSingleKeyText("o");
-                                }
-                                keyboardOutputService.ProcessSingleKeyText("p");
-                            }
+                            HandleMinecraftManualMove(5);
                         }
                         break;
 
@@ -1211,14 +1175,7 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                         }
                         else if (keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value.IsDownOrLockedDown())
                         {
-                            for (int j = 0; j < Settings.Default.MinecraftMoveAmount; j++)
-                            {
-                                for (int i = 0; i < 6; ++i)
-                                {
-                                    keyboardOutputService.ProcessSingleKeyText("o");
-                                }
-                                keyboardOutputService.ProcessSingleKeyText("p");
-                            }
+                            HandleMinecraftManualMove(6);
                         }
                         break;
 
@@ -1233,14 +1190,7 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                         }
                         else if (keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value.IsDownOrLockedDown())
                         {
-                            for (int j = 0; j < Settings.Default.MinecraftMoveAmount; j++)
-                            {
-                                for (int i = 0; i < 7; ++i)
-                                {
-                                    keyboardOutputService.ProcessSingleKeyText("o");
-                                }
-                                keyboardOutputService.ProcessSingleKeyText("p");
-                            }
+                            HandleMinecraftManualMove(7);
                         }
                         break;
 

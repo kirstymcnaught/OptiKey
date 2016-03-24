@@ -284,7 +284,17 @@
                                                     </controls:Key.Value>
                                                 </controls:Key>
 
-                                                <controls:Key Grid.Row="5" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="2" 
+                                                <controls:Key Grid.Row="5" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="2"
+                                                              Text="{Binding Source={x:Static properties:Settings.Default}, 
+                                                                             Path=MinecraftMoveAmount, 
+                                                                             Converter={StaticResource IntToSingularPluralStringFormatter}, 
+                                                                             ConverterParameter=x {0}|x {0}}">
+                                                    <controls:Key.Value>
+                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftMoveAmount}" />
+                                                    </controls:Key.Value>
+                                                </controls:Key>
+
+                                                <controls:Key Grid.Row="5" Grid.Column="14" Grid.ColumnSpan="2" Grid.RowSpan="2" 
                                                               SymbolGeometry="{StaticResource MouseLeftClickIcon}"
                                                               Text="Move and click"
                                                               SharedSizeGroup="KeyWithSymbolAndText">
@@ -293,10 +303,6 @@
                                                     </controls:Key.Value>
                                                 </controls:Key>
 
-                                                <controls:Key Grid.Row="5" Grid.Column="14" Grid.ColumnSpan="2" Grid.RowSpan="2"
-                                                              Text="">
-                                                    <!-- placeholder -->
-                                                </controls:Key>
                                                 <controls:Key Grid.Row="5" Grid.Column="16" Grid.ColumnSpan="2" Grid.RowSpan="2"
                                                               SymbolGeometry="{StaticResource BackIcon}"
                                                               Text="{x:Static resx:Resources.BACK}"
