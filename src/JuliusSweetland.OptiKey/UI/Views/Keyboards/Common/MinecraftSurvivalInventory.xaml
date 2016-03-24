@@ -87,7 +87,7 @@
 
                                                 <controls:Key Grid.Row="0" Grid.Column="2" Case="None"  Grid.ColumnSpan="1" Grid.RowSpan="1"
                                                               Text="IN" SharedSizeGroup="KeyWithSingleLetter"
-                                                              SymbolGeometry="{StaticResource MinecraftInventoryTopMid}" >
+                                                              SymbolGeometry="{StaticResource MinecraftInventoryBlank}" >
                                                     <controls:Key.Value>
                                                         <models:KeyValue String="t" />
                                                     </controls:Key.Value>
@@ -95,7 +95,7 @@
 
                                                 <controls:Key Grid.Row="0" Grid.Column="3" Case="None"  Grid.ColumnSpan="1" Grid.RowSpan="1"
                                                               Text="IN" SharedSizeGroup="KeyWithSingleLetter"
-                                                              SymbolGeometry="{StaticResource MinecraftInventoryTopRight}" >
+                                                              SymbolGeometry="{StaticResource MinecraftInventoryBlank}" >
                                                     <controls:Key.Value>
                                                         <models:KeyValue String="y" />
                                                     </controls:Key.Value>
@@ -119,7 +119,7 @@
 
                                                 <controls:Key Grid.Row="1" Grid.Column="3" Case="None"  Grid.ColumnSpan="1" Grid.RowSpan="1"
                                                               Text="IN" SharedSizeGroup="KeyWithSingleLetter"
-                                                              SymbolGeometry="{StaticResource MinecraftInventoryMidRight}" >
+                                                              SymbolGeometry="{StaticResource MinecraftInventoryBlank}" >
                                                     <controls:Key.Value>
                                                         <models:KeyValue String="h" />
                                                     </controls:Key.Value>
