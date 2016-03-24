@@ -158,6 +158,19 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
             }
         }
 
+        // orientation = 0 for due north, and +1 for every 45 degrees clockwise
+        private void HandleMinecraftManualMove(int orientation)
+        {
+            for (int j = 0; j < Settings.Default.MinecraftMoveAmount; j++)
+            {
+                for (int i = 0; i < orientation; ++i)
+                {
+                    keyboardOutputService.ProcessSingleKeyText("o");
+                }
+                keyboardOutputService.ProcessSingleKeyText("p");
+            }
+        }
+
         private void HandleFunctionKeySelectionResult(KeyValue singleKeyValue)
         {
             if (singleKeyValue.FunctionKey != null)
@@ -1064,11 +1077,17 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                         Log.Info("Mouse move to north selected.");
                         if (keyStateService.KeyDownStates[KeyValues.MinecraftLookModeKey].Value.IsDownOrLockedDown())
                         {
-                            SimulateMouseDelta(0, -200);
+                            for (int j = 0; j < Settings.Default.MinecraftMoveAmount; j++)
+                            {
+                                SimulateMouseDelta(0, -Settings.Default.MinecraftLookDelta);
+                            }
                         }
                         else if (keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value.IsDownOrLockedDown())
                         {
-                            keyboardOutputService.ProcessSingleKeyText("p");
+                            for (int j = 0; j < Settings.Default.MinecraftMoveAmount; j++)
+                            {
+                                keyboardOutputService.ProcessSingleKeyText("p");
+                            }
                         }
 
                         break;
@@ -1077,12 +1096,18 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                         Log.Info("Mouse move to north-east selected.");
                         if (keyStateService.KeyDownStates[KeyValues.MinecraftLookModeKey].Value.IsDownOrLockedDown())
                         {
-                            SimulateMouseDelta(200, -200);
+                            for (int j = 0; j < Settings.Default.MinecraftMoveAmount; j++)
+                            {
+                                SimulateMouseDelta(Settings.Default.MinecraftLookDelta, -Settings.Default.MinecraftLookDelta);
+                            }
                         }
                         else if (keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value.IsDownOrLockedDown())
                         {
-                            keyboardOutputService.ProcessSingleKeyText("o");
-                            keyboardOutputService.ProcessSingleKeyText("p");
+                            for (int j = 0; j < Settings.Default.MinecraftMoveAmount; j++)
+                            {
+                                keyboardOutputService.ProcessSingleKeyText("o");
+                                keyboardOutputService.ProcessSingleKeyText("p");
+                            }
                         }
                         break;
 
@@ -1090,15 +1115,21 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                         Log.Info("Mouse move to east selected.");
                         if (keyStateService.KeyDownStates[KeyValues.MinecraftLookModeKey].Value.IsDownOrLockedDown())
                         {
-                            SimulateMouseDelta(200, 0);
+                            for (int j = 0; j < Settings.Default.MinecraftMoveAmount; j++)
+                            {
+                                SimulateMouseDelta(Settings.Default.MinecraftLookDelta, 0);
+                            }
                         }
                         else if (keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value.IsDownOrLockedDown())
                         {
-                            for (int i = 0; i < 2; ++i)
+                            for (int j = 0; j < Settings.Default.MinecraftMoveAmount; j++)
                             {
-                                keyboardOutputService.ProcessSingleKeyText("o");
+                                for (int i = 0; i < 2; ++i)
+                                {
+                                    keyboardOutputService.ProcessSingleKeyText("o");
+                                }
+                                keyboardOutputService.ProcessSingleKeyText("p");
                             }
-                            keyboardOutputService.ProcessSingleKeyText("p");
                         }
                         break;
 
@@ -1106,15 +1137,21 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                         Log.Info("Mouse move to south-east selected.");
                         if (keyStateService.KeyDownStates[KeyValues.MinecraftLookModeKey].Value.IsDownOrLockedDown())
                         {
-                            SimulateMouseDelta(200, 200);
+                            for (int j = 0; j < Settings.Default.MinecraftMoveAmount; j++)
+                            {
+                                SimulateMouseDelta(Settings.Default.MinecraftLookDelta, Settings.Default.MinecraftLookDelta);
+                            }
                         }
                         else if (keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value.IsDownOrLockedDown())
                         {
-                            for (int i = 0; i < 3; ++i)
+                            for (int j = 0; j < Settings.Default.MinecraftMoveAmount; j++)
                             {
-                                keyboardOutputService.ProcessSingleKeyText("o");
+                                for (int i = 0; i < 3; ++i)
+                                {
+                                    keyboardOutputService.ProcessSingleKeyText("o");
+                                }
+                                keyboardOutputService.ProcessSingleKeyText("p");
                             }
-                            keyboardOutputService.ProcessSingleKeyText("p");
 
                         }
                         break;
@@ -1123,15 +1160,21 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                         Log.Info("Mouse move to south selected.");
                         if (keyStateService.KeyDownStates[KeyValues.MinecraftLookModeKey].Value.IsDownOrLockedDown())
                         {
-                            SimulateMouseDelta(0, 200);
+                            for (int j = 0; j < Settings.Default.MinecraftMoveAmount; j++)
+                            {
+                                SimulateMouseDelta(0, Settings.Default.MinecraftLookDelta);
+                            }
                         }
                         else if (keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value.IsDownOrLockedDown())
                         {
-                            for (int i = 0; i < 4; ++i)
+                            for (int j = 0; j < Settings.Default.MinecraftMoveAmount; j++)
                             {
-                                keyboardOutputService.ProcessSingleKeyText("o");
+                                for (int i = 0; i < 4; ++i)
+                                {
+                                    keyboardOutputService.ProcessSingleKeyText("o");
+                                }
+                                keyboardOutputService.ProcessSingleKeyText("p");
                             }
-                            keyboardOutputService.ProcessSingleKeyText("p");
                         }
                         break;
 
@@ -1139,16 +1182,21 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                         Log.Info("Mouse move to south-west selected.");
                         if (keyStateService.KeyDownStates[KeyValues.MinecraftLookModeKey].Value.IsDownOrLockedDown())
                         {
-
-                            SimulateMouseDelta(-200, 200);
+                            for (int j = 0; j < Settings.Default.MinecraftMoveAmount; j++)
+                            {
+                                SimulateMouseDelta(-Settings.Default.MinecraftLookDelta, Settings.Default.MinecraftLookDelta);
+                            }
                         }
                         else if (keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value.IsDownOrLockedDown())
                         {
-                            for (int i = 0; i < 5; ++i)
+                            for (int j = 0; j < Settings.Default.MinecraftMoveAmount; j++)
                             {
-                                keyboardOutputService.ProcessSingleKeyText("o");
+                                for (int i = 0; i < 5; ++i)
+                                {
+                                    keyboardOutputService.ProcessSingleKeyText("o");
+                                }
+                                keyboardOutputService.ProcessSingleKeyText("p");
                             }
-                            keyboardOutputService.ProcessSingleKeyText("p");
                         }
                         break;
 
@@ -1156,15 +1204,21 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                         Log.Info("Mouse move to west selected.");
                         if (keyStateService.KeyDownStates[KeyValues.MinecraftLookModeKey].Value.IsDownOrLockedDown())
                         {
-                            SimulateMouseDelta(-200, 0);
+                            for (int j = 0; j < Settings.Default.MinecraftMoveAmount; j++)
+                            {
+                                SimulateMouseDelta(-Settings.Default.MinecraftLookDelta, 0);
+                            }
                         }
                         else if (keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value.IsDownOrLockedDown())
                         {
-                            for (int i = 0; i < 6; ++i)
+                            for (int j = 0; j < Settings.Default.MinecraftMoveAmount; j++)
                             {
-                                keyboardOutputService.ProcessSingleKeyText("o");
+                                for (int i = 0; i < 6; ++i)
+                                {
+                                    keyboardOutputService.ProcessSingleKeyText("o");
+                                }
+                                keyboardOutputService.ProcessSingleKeyText("p");
                             }
-                            keyboardOutputService.ProcessSingleKeyText("p");
                         }
                         break;
 
@@ -1172,15 +1226,21 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                         Log.Info("Mouse move to north-west selected.");
                         if (keyStateService.KeyDownStates[KeyValues.MinecraftLookModeKey].Value.IsDownOrLockedDown())
                         {
-                            SimulateMouseDelta(-200, -200);
+                            for (int j = 0; j < Settings.Default.MinecraftMoveAmount; j++)
+                            {
+                                SimulateMouseDelta(-Settings.Default.MinecraftLookDelta, -Settings.Default.MinecraftLookDelta);
+                            }
                         }
                         else if (keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value.IsDownOrLockedDown())
                         {
-                            for (int i = 0; i < 7; ++i)
+                            for (int j = 0; j < Settings.Default.MinecraftMoveAmount; j++)
                             {
-                                keyboardOutputService.ProcessSingleKeyText("o");
+                                for (int i = 0; i < 7; ++i)
+                                {
+                                    keyboardOutputService.ProcessSingleKeyText("o");
+                                }
+                                keyboardOutputService.ProcessSingleKeyText("p");
                             }
-                            keyboardOutputService.ProcessSingleKeyText("p");
                         }
                         break;
 
@@ -1270,6 +1330,32 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
 
                             default:
                                 Settings.Default.MouseScrollAmountInClicks = 1;
+                                break;
+                        }
+                        break;
+
+                    case FunctionKeys.MinecraftMoveAmount:
+                        Log.Info("Progressing MinecraftMoveAmount.");
+                        switch (Settings.Default.MinecraftMoveAmount)
+                        {
+                            case 1:
+                                Settings.Default.MinecraftMoveAmount = 3;
+                                break;
+
+                            case 3:
+                                Settings.Default.MinecraftMoveAmount = 5;
+                                break;
+
+                            case 5:
+                                Settings.Default.MinecraftMoveAmount = 10;
+                                break;
+
+                            case 10:
+                                Settings.Default.MinecraftMoveAmount = 25;
+                                break;
+
+                            default:
+                                Settings.Default.MinecraftMoveAmount = 1;
                                 break;
                         }
                         break;
