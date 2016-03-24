@@ -1277,23 +1277,20 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                         break;
 
                     case FunctionKeys.MinecraftMoveAmount:
+                        Settings.Default.MinecraftLookDelta = 50;
                         Log.Info("Progressing MinecraftMoveAmount.");
                         switch (Settings.Default.MinecraftMoveAmount)
                         {
                             case 1:
-                                Settings.Default.MinecraftMoveAmount = 3;
+                                Settings.Default.MinecraftMoveAmount = 2;
                                 break;
 
-                            case 3:
-                                Settings.Default.MinecraftMoveAmount = 5;
+                            case 2:
+                                Settings.Default.MinecraftMoveAmount = 4;
                                 break;
 
-                            case 5:
-                                Settings.Default.MinecraftMoveAmount = 10;
-                                break;
-
-                            case 10:
-                                Settings.Default.MinecraftMoveAmount = 25;
+                            case 4:
+                                Settings.Default.MinecraftMoveAmount = 8;
                                 break;
 
                             default:
