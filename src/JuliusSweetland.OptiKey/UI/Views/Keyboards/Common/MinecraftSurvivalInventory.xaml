@@ -164,7 +164,7 @@
                                                               Text="OUT" SharedSizeGroup="KeyWithSingleLetter"
                                                               SymbolGeometry="{StaticResource MinecraftInventoryOut}" >
                                                     <controls:Key.Value>
-                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.LeftCtrl}" />
+                                                        <models:KeyValue String="u" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
 
