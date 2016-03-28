@@ -127,9 +127,11 @@
                                                 </controls:Key>
 
                                                 <controls:Key Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2" Grid.RowSpan="2"
-                                                              Text="Swim"
+                                                              Text="Gather"
                                                               SharedSizeGroup="KeyWithSymbolAndText">
-                                                    <!-- TODO -->
+                                                    <controls:Key.Value>
+                                                        <models:KeyValue String="x" />
+                                                    </controls:Key.Value>
                                                 </controls:Key>
 
                                                 <controls:Key Grid.Row="5" Grid.Column="4" Grid.ColumnSpan="2" Grid.RowSpan="2"
