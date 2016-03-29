@@ -484,8 +484,6 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                             keyStateService.KeyDownStates[KeyValues.LeftCtrlKey].Value = lastLeftCtrlValueMCI;
                             keyStateService.KeyDownStates[KeyValues.LeftWinKey].Value = lastLeftWinValueMCI;
                             keyStateService.KeyDownStates[KeyValues.LeftAltKey].Value = lastLeftAltValueMCI;
-                            keyStateService.KeyDownStates[KeyValues.MinecraftLookModeKey].Value = KeyDownStates.Up;
-                            keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value = KeyDownStates.Up;
                             keyStateService.KeyDownStates[KeyValues.MouseMagneticCursorKey].Value = lastMagneticCursorKeyValue;
 
                             // Clear the keyboard when leaving minecraft keyboard.
