@@ -424,7 +424,8 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                         
                         // Also turn off any modifier keys.
                         Action backActionMC;
-                        
+
+                        var lastMagnifierValueMC = keyStateService.KeyDownStates[KeyValues.MouseMagnifierKey].Value;
                         var lastLeftShiftValueMC = keyStateService.KeyDownStates[KeyValues.LeftShiftKey].Value;
                         var lastLeftCtrlValueMC = keyStateService.KeyDownStates[KeyValues.LeftCtrlKey].Value;
                         var lastLeftWinValueMC = keyStateService.KeyDownStates[KeyValues.LeftWinKey].Value;
@@ -439,6 +440,8 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                             keyStateService.KeyDownStates[KeyValues.LeftAltKey].Value = lastLeftAltValueMC;
                             keyStateService.KeyDownStates[KeyValues.MinecraftLookModeKey].Value = KeyDownStates.Up;
                             keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value = KeyDownStates.Up;
+                            keyStateService.KeyDownStates[KeyValues.MouseMagnifierKey].Value = lastMagnifierValueMC;
+
                             Settings.Default.MouseScrollAmountInClicks = lastScrollSetting;    
                             Keyboard = currentKeyboard;
 
@@ -450,13 +453,14 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                         Keyboard = new Minecraft(backActionMC);
 
                         // Default to MinecraftLookMode
-                        keyStateService.KeyDownStates[KeyValues.MinecraftLookModeKey].Value = KeyDownStates.LockedDown;
-                        keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value = KeyDownStates.Up;
+                        keyStateService.KeyDownStates[KeyValues.MinecraftLookModeKey].Value = KeyDownStates.Up;
+                        keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value = KeyDownStates.LockedDown;
 
                         // Set everything else appropriately
                         keyStateService.KeyDownStates[KeyValues.LeftShiftKey].Value = KeyDownStates.Up;
                         keyStateService.KeyDownStates[KeyValues.LeftWinKey].Value = KeyDownStates.Up;
                         keyStateService.KeyDownStates[KeyValues.LeftCtrlKey].Value = KeyDownStates.Up;
+                        keyStateService.KeyDownStates[KeyValues.MouseMagnifierKey].Value = KeyDownStates.LockedDown;
                         Settings.Default.MouseScrollAmountInClicks = 1;
 
                         break;
