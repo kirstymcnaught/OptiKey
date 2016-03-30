@@ -151,15 +151,31 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
         }
 
         // orientation = 0 for due north, and +1 for every 45 degrees clockwise
-        private void HandleMinecraftManualMove(int orientation)
+        private void HandleMinecraftManualLookOrMove(int orientation)
         {
+            string firstLetter = "";
+            string secondLetter = "";
+
+            if (keyStateService.KeyDownStates[KeyValues.MinecraftLookModeKey].Value.IsDownOrLockedDown())
+            {
+                Log.Info("Minecraft looking mode.");
+                firstLetter = "u";
+                secondLetter = "i";
+            }
+            else if (keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value.IsDownOrLockedDown())
+            {
+                Log.Info("Minecraft moving mode.");
+                firstLetter = "o";
+                secondLetter = "p";
+            }
+
             for (int j = 0; j < Settings.Default.MinecraftMoveAmount; j++)
             {
                 for (int i = 0; i < orientation; ++i)
                 {
-                    keyboardOutputService.ProcessSingleKeyText("o");
+                    keyboardOutputService.ProcessSingleKeyText(firstLetter);
                 }
-                keyboardOutputService.ProcessSingleKeyText("p");
+                keyboardOutputService.ProcessSingleKeyText(secondLetter);
             }
         }
 
@@ -1068,124 +1084,43 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                         break;
 
                     case FunctionKeys.MinecraftNorth:
-                        Log.Info("Mouse move to north selected.");
-                        if (keyStateService.KeyDownStates[KeyValues.MinecraftLookModeKey].Value.IsDownOrLockedDown())
-                        {
-                            for (int j = 0; j < Settings.Default.MinecraftMoveAmount; j++)
-                            {
-                                SimulateMouseDelta(0, -Settings.Default.MinecraftLookDelta);
-                            }
-                        }
-                        else if (keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value.IsDownOrLockedDown())
-                        {
-                            HandleMinecraftManualMove(0);
-                        }
-
+                        Log.Info("Minecraft move/look to north selected.");
+                        HandleMinecraftManualLookOrMove(0);
                         break;
 
                     case FunctionKeys.MinecraftNorthEast:
-                        Log.Info("Mouse move to north-east selected.");
-                        if (keyStateService.KeyDownStates[KeyValues.MinecraftLookModeKey].Value.IsDownOrLockedDown())
-                        {
-                            for (int j = 0; j < Settings.Default.MinecraftMoveAmount; j++)
-                            {
-                                SimulateMouseDelta(Settings.Default.MinecraftLookDelta, -Settings.Default.MinecraftLookDelta);
-                            }
-                        }
-                        else if (keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value.IsDownOrLockedDown())
-                        {
-                            HandleMinecraftManualMove(1);
-                        }
+                        Log.Info("Minecraft move/look to north-east selected.");
+                        HandleMinecraftManualLookOrMove(1);
                         break;
 
                     case FunctionKeys.MinecraftEast:
-                        Log.Info("Mouse move to east selected.");
-                        if (keyStateService.KeyDownStates[KeyValues.MinecraftLookModeKey].Value.IsDownOrLockedDown())
-                        {
-                            for (int j = 0; j < Settings.Default.MinecraftMoveAmount; j++)
-                            {
-                                SimulateMouseDelta(Settings.Default.MinecraftLookDelta, 0);
-                            }
-                        }
-                        else if (keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value.IsDownOrLockedDown())
-                        {
-                            HandleMinecraftManualMove(2);
-                        }
+                        Log.Info("Minecraft move/look to east selected.");
+                        HandleMinecraftManualLookOrMove(2);
                         break;
 
                     case FunctionKeys.MinecraftSouthEast:
-                        Log.Info("Mouse move to south-east selected.");
-                        if (keyStateService.KeyDownStates[KeyValues.MinecraftLookModeKey].Value.IsDownOrLockedDown())
-                        {
-                            for (int j = 0; j < Settings.Default.MinecraftMoveAmount; j++)
-                            {
-                                SimulateMouseDelta(Settings.Default.MinecraftLookDelta, Settings.Default.MinecraftLookDelta);
-                            }
-                        }
-                        else if (keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value.IsDownOrLockedDown())
-                        {
-                            HandleMinecraftManualMove(3);
-                        }
+                        Log.Info("Minecraft move/look to south-east selected.");
+                        HandleMinecraftManualLookOrMove(3);
                         break;
 
                     case FunctionKeys.MinecraftSouth:
-                        Log.Info("Mouse move to south selected.");
-                        if (keyStateService.KeyDownStates[KeyValues.MinecraftLookModeKey].Value.IsDownOrLockedDown())
-                        {
-                            for (int j = 0; j < Settings.Default.MinecraftMoveAmount; j++)
-                            {
-                                SimulateMouseDelta(0, Settings.Default.MinecraftLookDelta);
-                            }
-                        }
-                        else if (keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value.IsDownOrLockedDown())
-                        {
-                            HandleMinecraftManualMove(4);
-                        }
+                        Log.Info("Minecraft move/look to south selected.");
+                        HandleMinecraftManualLookOrMove(4);
                         break;
 
                     case FunctionKeys.MinecraftSouthWest:
-                        Log.Info("Mouse move to south-west selected.");
-                        if (keyStateService.KeyDownStates[KeyValues.MinecraftLookModeKey].Value.IsDownOrLockedDown())
-                        {
-                            for (int j = 0; j < Settings.Default.MinecraftMoveAmount; j++)
-                            {
-                                SimulateMouseDelta(-Settings.Default.MinecraftLookDelta, Settings.Default.MinecraftLookDelta);
-                            }
-                        }
-                        else if (keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value.IsDownOrLockedDown())
-                        {
-                            HandleMinecraftManualMove(5);
-                        }
+                        Log.Info("Minecraft move/look to south-west selected.");
+                        HandleMinecraftManualLookOrMove(5);
                         break;
 
                     case FunctionKeys.MinecraftWest:
-                        Log.Info("Mouse move to west selected.");
-                        if (keyStateService.KeyDownStates[KeyValues.MinecraftLookModeKey].Value.IsDownOrLockedDown())
-                        {
-                            for (int j = 0; j < Settings.Default.MinecraftMoveAmount; j++)
-                            {
-                                SimulateMouseDelta(-Settings.Default.MinecraftLookDelta, 0);
-                            }
-                        }
-                        else if (keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value.IsDownOrLockedDown())
-                        {
-                            HandleMinecraftManualMove(6);
-                        }
+                        Log.Info("Minecraft move/look to west selected.");
+                        HandleMinecraftManualLookOrMove(6);
                         break;
 
                     case FunctionKeys.MinecraftNorthWest:
-                        Log.Info("Mouse move to north-west selected.");
-                        if (keyStateService.KeyDownStates[KeyValues.MinecraftLookModeKey].Value.IsDownOrLockedDown())
-                        {
-                            for (int j = 0; j < Settings.Default.MinecraftMoveAmount; j++)
-                            {
-                                SimulateMouseDelta(-Settings.Default.MinecraftLookDelta, -Settings.Default.MinecraftLookDelta);
-                            }
-                        }
-                        else if (keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value.IsDownOrLockedDown())
-                        {
-                            HandleMinecraftManualMove(7);
-                        }
+                        Log.Info("Minecraft move/look to north-west selected.");
+                        HandleMinecraftManualLookOrMove(7);
                         break;
 
                     case FunctionKeys.MouseRightClick:
