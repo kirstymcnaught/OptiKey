@@ -1479,6 +1479,279 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Toggle 
+        ///attack.
+        /// </summary>
+        public static string MC_ATTACK {
+            get {
+                return ResourceManager.GetString("MC_ATTACK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Toggle 
+        ///auto-jump.
+        /// </summary>
+        public static string MC_AUTO_JUMP {
+            get {
+                return ResourceManager.GetString("MC_AUTO_JUMP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Chest.
+        /// </summary>
+        public static string MC_CHEST {
+            get {
+                return ResourceManager.GetString("MC_CHEST", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Crafting
+        ///table.
+        /// </summary>
+        public static string MC_CRAFTING_TABLE {
+            get {
+                return ResourceManager.GetString("MC_CRAFTING_TABLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fly up.
+        /// </summary>
+        public static string MC_FLY_UP {
+            get {
+                return ResourceManager.GetString("MC_FLY_UP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Gather 
+        ///blocks.
+        /// </summary>
+        public static string MC_GATHER {
+            get {
+                return ResourceManager.GetString("MC_GATHER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hover
+        ///item.
+        /// </summary>
+        public static string MC_HOVER_ITEM {
+            get {
+                return ResourceManager.GetString("MC_HOVER_ITEM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Place
+        ///input.
+        /// </summary>
+        public static string MC_INPUT {
+            get {
+                return ResourceManager.GetString("MC_INPUT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Inventory.
+        /// </summary>
+        public static string MC_INVENTORY {
+            get {
+                return ResourceManager.GetString("MC_INVENTORY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Inventory
+        ///etc....
+        /// </summary>
+        public static string MC_INVENTORY_KEYBOARD {
+            get {
+                return ResourceManager.GetString("MC_INVENTORY_KEYBOARD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Look with
+        ///gaze.
+        /// </summary>
+        public static string MC_LOOK_GAZE {
+            get {
+                return ResourceManager.GetString("MC_LOOK_GAZE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Look
+        ///mode.
+        /// </summary>
+        public static string MC_LOOK_MODE {
+            get {
+                return ResourceManager.GetString("MC_LOOK_MODE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Toggle 
+        ///mining.
+        /// </summary>
+        public static string MC_MINE {
+            get {
+                return ResourceManager.GetString("MC_MINE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mine x1.
+        /// </summary>
+        public static string MC_MINE_ONCE {
+            get {
+                return ResourceManager.GetString("MC_MINE_ONCE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Move and
+        ///left click.
+        /// </summary>
+        public static string MC_MOVE_CLICK {
+            get {
+                return ResourceManager.GetString("MC_MOVE_CLICK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Move
+        ///mode.
+        /// </summary>
+        public static string MC_MOVE_MODE {
+            get {
+                return ResourceManager.GetString("MC_MOVE_MODE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Next
+        ///item.
+        /// </summary>
+        public static string MC_NEXT_ITEM {
+            get {
+                return ResourceManager.GetString("MC_NEXT_ITEM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Take
+        ///output.
+        /// </summary>
+        public static string MC_OUTPUT {
+            get {
+                return ResourceManager.GetString("MC_OUTPUT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Place
+        ///pillar.
+        /// </summary>
+        public static string MC_PILLAR {
+            get {
+                return ResourceManager.GetString("MC_PILLAR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Prev
+        ///item.
+        /// </summary>
+        public static string MC_PREV_ITEM {
+            get {
+                return ResourceManager.GetString("MC_PREV_ITEM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Scroll down.
+        /// </summary>
+        public static string MC_SCROLL_DOWN {
+            get {
+                return ResourceManager.GetString("MC_SCROLL_DOWN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Scroll up.
+        /// </summary>
+        public static string MC_SCROLL_UP {
+            get {
+                return ResourceManager.GetString("MC_SCROLL_UP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Toggle 
+        ///sneak.
+        /// </summary>
+        public static string MC_SNEAK {
+            get {
+                return ResourceManager.GetString("MC_SNEAK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Stop 
+        ///flying.
+        /// </summary>
+        public static string MC_STOP_FLYING {
+            get {
+                return ResourceManager.GetString("MC_STOP_FLYING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Toggle 
+        ///swim.
+        /// </summary>
+        public static string MC_SWIM {
+            get {
+                return ResourceManager.GetString("MC_SWIM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Use item.
+        /// </summary>
+        public static string MC_USE_ITEM {
+            get {
+                return ResourceManager.GetString("MC_USE_ITEM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Toggle
+        ///use item.
+        /// </summary>
+        public static string MC_USE_ITEM_TOGGLE {
+            get {
+                return ResourceManager.GetString("MC_USE_ITEM_TOGGLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Toggle 
+        ///walking.
+        /// </summary>
+        public static string MC_WALK {
+            get {
+                return ResourceManager.GetString("MC_WALK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Medium.
         /// </summary>
         public static string MEDIUM {

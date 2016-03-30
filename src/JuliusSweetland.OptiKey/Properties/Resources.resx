@@ -1261,4 +1261,109 @@ Deutsch (Deutschland)</value>
   <data name="CONVERSATION_BORDER_THICKNESS_LABEL" xml:space="preserve">
     <value>Conversation keyboard border thickness (left,top,right,bottom in px):</value>
   </data>
+  <data name="MC_ATTACK" xml:space="preserve">
+    <value>Toggle 
+attack</value>
+  </data>
+  <data name="MC_AUTO_JUMP" xml:space="preserve">
+    <value>Toggle 
+auto-jump</value>
+  </data>
+  <data name="MC_CHEST" xml:space="preserve">
+    <value>Chest</value>
+  </data>
+  <data name="MC_CRAFTING_TABLE" xml:space="preserve">
+    <value>Crafting
+table</value>
+  </data>
+  <data name="MC_FLY_UP" xml:space="preserve">
+    <value>Fly up</value>
+  </data>
+  <data name="MC_GATHER" xml:space="preserve">
+    <value>Gather 
+blocks</value>
+  </data>
+  <data name="MC_HOVER_ITEM" xml:space="preserve">
+    <value>Hover
+item</value>
+  </data>
+  <data name="MC_INPUT" xml:space="preserve">
+    <value>Place
+input</value>
+  </data>
+  <data name="MC_INVENTORY" xml:space="preserve">
+    <value>Inventory</value>
+  </data>
+  <data name="MC_INVENTORY_KEYBOARD" xml:space="preserve">
+    <value>Inventory
+etc...</value>
+  </data>
+  <data name="MC_LOOK_GAZE" xml:space="preserve">
+    <value>Look with
+gaze</value>
+  </data>
+  <data name="MC_LOOK_MODE" xml:space="preserve">
+    <value>Look
+mode</value>
+  </data>
+  <data name="MC_MINE" xml:space="preserve">
+    <value>Toggle 
+mining</value>
+  </data>
+  <data name="MC_MINE_ONCE" xml:space="preserve">
+    <value>Mine x1</value>
+  </data>
+  <data name="MC_MOVE_CLICK" xml:space="preserve">
+    <value>Move and
+left click</value>
+  </data>
+  <data name="MC_MOVE_MODE" xml:space="preserve">
+    <value>Move
+mode</value>
+  </data>
+  <data name="MC_NEXT_ITEM" xml:space="preserve">
+    <value>Next
+item</value>
+  </data>
+  <data name="MC_OUTPUT" xml:space="preserve">
+    <value>Take
+output</value>
+  </data>
+  <data name="MC_PILLAR" xml:space="preserve">
+    <value>Place
+pillar</value>
+  </data>
+  <data name="MC_PREV_ITEM" xml:space="preserve">
+    <value>Prev
+item</value>
+  </data>
+  <data name="MC_SCROLL_DOWN" xml:space="preserve">
+    <value>Scroll down</value>
+  </data>
+  <data name="MC_SCROLL_UP" xml:space="preserve">
+    <value>Scroll up</value>
+  </data>
+  <data name="MC_SNEAK" xml:space="preserve">
+    <value>Toggle 
+sneak</value>
+  </data>
+  <data name="MC_STOP_FLYING" xml:space="preserve">
+    <value>Stop 
+flying</value>
+  </data>
+  <data name="MC_SWIM" xml:space="preserve">
+    <value>Toggle 
+swim</value>
+  </data>
+  <data name="MC_USE_ITEM" xml:space="preserve">
+    <value>Use item</value>
+  </data>
+  <data name="MC_USE_ITEM_TOGGLE" xml:space="preserve">
+    <value>Toggle
+use item</value>
+  </data>
+  <data name="MC_WALK" xml:space="preserve">
+    <value>Toggle 
+walking</value>
+  </data>
 </root>
