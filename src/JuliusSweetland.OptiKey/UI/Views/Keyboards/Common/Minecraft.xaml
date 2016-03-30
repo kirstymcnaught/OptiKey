@@ -112,7 +112,7 @@
 
                                                 <controls:Key Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" Grid.RowSpan="2"
                                                               Text="Mine x1"                                                                                                      
-                                                              SymbolGeometry="{StaticResource MinecraftAttackOnce}"                                                              
+                                                              SymbolGeometry="{StaticResource MinecraftMineOnce}"                                                              
                                                               SharedSizeGroup="KeyWithSymbolAndText">
                                                     <controls:Key.Value>
                                                         <models:KeyValue String="t" />
@@ -121,7 +121,7 @@
 
                                                 <controls:Key Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" Grid.RowSpan="2"
                                                               Text="Mine!"
-                                                              SymbolGeometry="{StaticResource MinecraftAttackContinuous}"                                                              
+                                                              SymbolGeometry="{StaticResource MinecraftMineContinuous}"                                                              
                                                               SharedSizeGroup="KeyWithSymbolAndText">
                                                     <controls:Key.Value>
                                                         <models:KeyValue String="m" />
@@ -130,18 +130,20 @@
 
                                                 <controls:Key Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2" Grid.RowSpan="2"
                                                               Text="Gather"
-                                                              SharedSizeGroup="KeyWithText">
+                                                              SymbolGeometry="{StaticResource MinecraftGather}"                                                              
+                                                              SharedSizeGroup="KeyWithSymbolAndText">
                                                     <controls:Key.Value>
                                                         <models:KeyValue String="x" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
 
                                                 <controls:Key Grid.Row="5" Grid.Column="6" Grid.ColumnSpan="2" Grid.RowSpan="2"
-                                                              Text="Sneak"
-                                                               SymbolGeometry="{StaticResource MinecraftSneak}"                                                              
-                                                              SharedSizeGroup="KeyWithSymbolAndText">
+                                                              Text="{Binding Source={x:Static properties:Settings.Default}, 
+                                                                             Path=MinecraftMoveAmount, 
+                                                                             Converter={StaticResource IntToSingularPluralStringFormatter}, 
+                                                                             ConverterParameter=x {0}|x {0}}">
                                                     <controls:Key.Value>
-                                                        <models:KeyValue String="z" />
+                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftMoveAmount}" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
 
@@ -225,14 +227,23 @@
 
                                                 <controls:Key Grid.Row="1" Grid.Column="14"  Grid.ColumnSpan="2" Grid.RowSpan="2"
                                                               SymbolGeometry="{StaticResource MouseRightClickIcon}"
-                                                              Text="{x:Static resx:Resources.RIGHT_CLICK_SPLIT_WITH_NEWLINE}"
+                                                              Text="Use item"
                                                               SharedSizeGroup="KeyWithSymbolAndText">
                                                     <controls:Key.Value>
                                                         <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MouseRightClick}" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
 
-                                                <controls:Key Grid.Row="1" Grid.Column="16" Grid.ColumnSpan="2" Grid.RowSpan="2"
+                                                <controls:Key Grid.Row="1" Grid.Column="16"  Grid.ColumnSpan="2" Grid.RowSpan="2"
+                                                              Text="Use (toggle)"
+                                                              SymbolGeometry="{StaticResource MouseRightDownUpIcon}"                                                                                                                            
+                                                              SharedSizeGroup="KeyWithSymbolAndText">
+                                                    <controls:Key.Value>
+                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MouseRightDownUp}" />
+                                                    </controls:Key.Value>
+                                                </controls:Key>
+                                                
+                                                <controls:Key Grid.Row="5" Grid.Column="14" Grid.ColumnSpan="2" Grid.RowSpan="2"
                                                               SymbolGeometry="{StaticResource MinecraftPlaceBlock}"
                                                               Text="Pillar"
                                                               SharedSizeGroup="KeyWithSymbolAndText">
@@ -253,7 +264,8 @@
 
                                                 <controls:Key Grid.Row="1" Grid.Column="4" Grid.ColumnSpan="2" Grid.RowSpan="2"
                                                               Text="Attack!"
-                                                              SharedSizeGroup="KeyWithText">
+                                                              SymbolGeometry="{StaticResource MinecraftAttackContinuous}"
+                                                              SharedSizeGroup="KeyWithSymbolAndText">
                                                     <controls:Key.Value>
                                                         <models:KeyValue String="r" />
                                                     </controls:Key.Value>
@@ -261,14 +273,20 @@
                                                 
                                                 <controls:Key Grid.Row="3" Grid.Column="4" Grid.ColumnSpan="2" Grid.RowSpan="2"
                                                               Text="Swim!"
-                                                              SharedSizeGroup="KeyWithText">
+                                                              SymbolGeometry="{StaticResource MinecraftSwim}"
+                                                              SharedSizeGroup="KeyWithSymbolAndText">
                                                     <controls:Key.Value>
                                                         <models:KeyValue String="v" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
 
                                                 <controls:Key Grid.Row="5" Grid.Column="4" Grid.ColumnSpan="2" Grid.RowSpan="2"
-                                                              SharedSizeGroup="KeyWithSymbol">
+                                                              Text="Sneak"
+                                                               SymbolGeometry="{StaticResource MinecraftSneak}"                                                              
+                                                              SharedSizeGroup="KeyWithSymbolAndText">
+                                                    <controls:Key.Value>
+                                                        <models:KeyValue String="z" />
+                                                    </controls:Key.Value>
                                                 </controls:Key>
 
                                                 <controls:Key Grid.Row="1" Grid.Column="6" Grid.ColumnSpan="2" Grid.RowSpan="2"
@@ -281,45 +299,43 @@
                                                 </controls:Key>
 
                                                 <controls:Key Grid.Row="3" Grid.Column="6" Grid.ColumnSpan="2" Grid.RowSpan="2"
-                                                              Text="Walk">
+                                                              Text="Walk"
+                                                              SharedSizeGroup="KeyWithText">
                                                     <controls:Key.Value>
                                                         <models:KeyValue String="h" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
 
                                                 <controls:Key Grid.Row="3" Grid.Column="14" Grid.ColumnSpan="2" Grid.RowSpan="2"
-                                                              Text="prev item">
+                                                              Text="prev item"
+                                                              SharedSizeGroup="KeyWithSymbolAndText"
+                                                              SymbolGeometry="{StaticResource MinecraftPrev}"   >
                                                     <controls:Key.Value>
                                                         <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MouseScrollToTop}" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
 
                                                 <controls:Key Grid.Row="3" Grid.Column="16" Grid.ColumnSpan="2" Grid.RowSpan="2"
-                                                              Text="next item">
+                                                              SymbolGeometry="{StaticResource MinecraftNext}"   
+                                                              Text="next item"
+                                                              SharedSizeGroup="KeyWithSymbolAndText">
                                                     <controls:Key.Value>
                                                         <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MouseScrollToBottom}" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
 
                                                 <controls:Key Grid.Row="3" Grid.Column="18" Grid.ColumnSpan="2" Grid.RowSpan="2"
-                                                              Text="Inventory...">
+                                                              Text="Inventory..."
+                                                              SharedSizeGroup="KeyWithText">
                                                     <controls:Key.Value>
                                                         <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftInventoryKeyboard}" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
 
-                                                <controls:Key Grid.Row="5" Grid.Column="14" Grid.ColumnSpan="2" Grid.RowSpan="2"
-                                                              Text="{Binding Source={x:Static properties:Settings.Default}, 
-                                                                             Path=MinecraftMoveAmount, 
-                                                                             Converter={StaticResource IntToSingularPluralStringFormatter}, 
-                                                                             ConverterParameter=x {0}|x {0}}">
-                                                    <controls:Key.Value>
-                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftMoveAmount}" />
-                                                    </controls:Key.Value>
-                                                </controls:Key>
+                                                
 
                                                 <controls:Key Grid.Row="5" Grid.Column="16" Grid.ColumnSpan="2" Grid.RowSpan="2" 
-                                                              SymbolGeometry="{StaticResource MouseLeftClickIcon}"
+                                                              SymbolGeometry="{StaticResource MouseLeftClickWithMouseIcon}"
                                                               Text="Move and click"
                                                               SharedSizeGroup="KeyWithSymbolAndText">
                                                     <controls:Key.Value>

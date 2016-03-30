@@ -169,7 +169,8 @@
                                                 </controls:Key>
 
                                                 <controls:Key Grid.Row="2" Grid.Column="4" Grid.ColumnSpan="1" Grid.RowSpan="1"
-                                                              Text="left click"
+                                                              Text="Move and click"
+                                                              SymbolGeometry="{StaticResource MouseLeftClickWithMouseIcon}"
                                                               SharedSizeGroup="KeyWithSymbolAndText">
                                                     <controls:Key.Value>
                                                         <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MouseMoveAndLeftClick}" />
@@ -266,14 +267,18 @@
                                                 </controls:Key>
 
                                                 <controls:Key Grid.Row="0" Grid.Column="8"
-                                                              Text="scroll up">
+                                                              Text="scroll up"
+                                                              SymbolGeometry="{StaticResource MouseScrollToTopIcon}"
+                                                              SharedSizeGroup="KeyWithSymbolAndText">
                                                     <controls:Key.Value>
                                                         <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MouseScrollToTop}" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
 
                                                 <controls:Key Grid.Row="1" Grid.Column="8"
-                                                              Text="scroll down">
+                                                              Text="scroll down"
+                                                              SymbolGeometry="{StaticResource MouseScrollToBottomIcon}"
+                                                              SharedSizeGroup="KeyWithSymbolAndText">
                                                     <controls:Key.Value>
                                                         <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MouseScrollToBottom}" />
                                                     </controls:Key.Value>
