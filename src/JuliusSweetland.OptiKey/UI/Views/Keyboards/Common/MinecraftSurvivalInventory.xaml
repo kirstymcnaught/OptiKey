@@ -91,7 +91,7 @@
 
                                                 <controls:Key Grid.Row="0" Grid.Column="2" Case="None"  Grid.ColumnSpan="1" Grid.RowSpan="1"
                                                               Text="{x:Static resx:Resources.MC_INPUT}" SharedSizeGroup="InventoryInOut"
-                                                              SymbolGeometry="{StaticResource MinecraftInventoryBlank}" >
+                                                              SymbolGeometry="{StaticResource MinecraftInventoryTopMid}" >
                                                     <controls:Key.Value>
                                                         <models:KeyValue String="t" />
                                                     </controls:Key.Value>
@@ -99,7 +99,7 @@
 
                                                 <controls:Key Grid.Row="0" Grid.Column="3" Case="None"  Grid.ColumnSpan="1" Grid.RowSpan="1"
                                                               Text="{x:Static resx:Resources.MC_INPUT}" SharedSizeGroup="InventoryInOut"
-                                                              SymbolGeometry="{StaticResource MinecraftInventoryBlank}" >
+                                                              SymbolGeometry="{StaticResource MinecraftInventoryTopRight}" >
                                                     <controls:Key.Value>
                                                         <models:KeyValue String="y" />
                                                     </controls:Key.Value>
@@ -123,7 +123,7 @@
 
                                                 <controls:Key Grid.Row="1" Grid.Column="3" Case="None"  Grid.ColumnSpan="1" Grid.RowSpan="1"
                                                               Text="{x:Static resx:Resources.MC_INPUT}" SharedSizeGroup="InventoryInOut"
-                                                              SymbolGeometry="{StaticResource MinecraftInventoryBlank}" >
+                                                              SymbolGeometry="{StaticResource MinecraftInventoryMidRight}" >
                                                     <controls:Key.Value>
                                                         <models:KeyValue String="h" />
                                                     </controls:Key.Value>
