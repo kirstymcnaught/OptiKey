@@ -1214,7 +1214,6 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                         break;
 
                     case FunctionKeys.MinecraftMoveAmount:
-                        Settings.Default.MinecraftLookDelta = 50;
                         Log.Info("Progressing MinecraftMoveAmount.");
                         switch (Settings.Default.MinecraftMoveAmount)
                         {
