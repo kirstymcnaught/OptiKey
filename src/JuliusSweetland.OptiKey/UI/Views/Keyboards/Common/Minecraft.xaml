@@ -302,6 +302,7 @@
 
                                                 <controls:Key Grid.Row="3" Grid.Column="6" Grid.ColumnSpan="2" Grid.RowSpan="2"
                                                               Text="{x:Static resx:Resources.MC_WALK}"
+                                                              SymbolGeometry="{StaticResource MinecraftWalk}"
                                                               >
                                                     <controls:Key.Value>
                                                         <models:KeyValue String="h" />
