@@ -307,6 +307,7 @@
     <Compile Include="UI\Behaviours\ScrollViewerBehaviours.cs" />
     <Compile Include="UI\Controls\KeyboardView.cs" />
     <Compile Include="UI\Controls\Minecraft.cs" />
+    <Compile Include="UI\Controls\Minecraft1.cs" />
     <Compile Include="UI\Controls\MinecraftSurvivalInventory.cs" />
     <Compile Include="UI\Controls\ToastNotification.cs" />
     <Compile Include="UI\Controls\Cursor.cs" />
@@ -365,8 +366,9 @@
     <Compile Include="UI\Views\Keyboards\Common\Language.xaml.cs">
       <DependentUpon>Language.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\Views\Keyboards\Common\Minecraft.xaml.cs" />    
-	<Compile Include="UI\Views\Keyboards\Common\MinecraftSurvivalInventory.xaml.cs" />	
+    <Compile Include="UI\Views\Keyboards\Common\Minecraft.xaml.cs" />
+    <Compile Include="UI\Views\Keyboards\Common\Minecraft1.xaml.cs" />
+    <Compile Include="UI\Views\Keyboards\Common\MinecraftSurvivalInventory.xaml.cs" />
     <Compile Include="UI\Views\Keyboards\Common\Minimised.xaml.cs">
       <DependentUpon>Minimised.xaml</DependentUpon>
     </Compile>
@@ -813,7 +815,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-	<Page Include="UI\Views\Keyboards\Common\MinecraftSurvivalInventory.xaml">
+    <Page Include="UI\Views\Keyboards\Common\Minecraft1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Views\Keyboards\Common\MinecraftSurvivalInventory.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

@@ -14,6 +14,7 @@
         Minimised,
         Minecraft,
         MinecraftSurvivalInventory,
+        Minecraft1,
         Mouse,
         NumericAndSymbols1,
         NumericAndSymbols2,

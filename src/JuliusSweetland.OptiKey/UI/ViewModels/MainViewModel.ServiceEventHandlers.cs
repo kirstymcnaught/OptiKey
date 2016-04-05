@@ -466,7 +466,7 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
 
                         };
                         
-                        Keyboard = new Minecraft(backActionMC);
+                        Keyboard = new Minecraft1(backActionMC);
 
                         // Default to MinecraftLookMode
                         keyStateService.KeyDownStates[KeyValues.MinecraftLookModeKey].Value = KeyDownStates.Up;
