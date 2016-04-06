@@ -9,6 +9,7 @@ namespace JuliusSweetland.OptiKey.Services
 
         void ProcessFunctionKey(FunctionKeys functionKey);
         void ProcessSingleKeyText(string capturedText);
+        void ProcessSingleKeyWithModifier(string capturedText, FunctionKeys functionKey);
         void ProcessMultiKeyTextAndSuggestions(List<string> captureAndSuggestions);
     }
 }

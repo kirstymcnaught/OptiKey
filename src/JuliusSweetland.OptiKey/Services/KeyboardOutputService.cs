@@ -246,11 +246,31 @@ namespace JuliusSweetland.OptiKey.Services
 
         public void ProcessSingleKeyText(string capturedText)
         {
-            Log.DebugFormat("Processing single key captured text '{0}'", capturedText.ConvertEscapedCharsToLiterals());
+            Log.InfoFormat("Processing single key captured text '{0}'", capturedText.ConvertEscapedCharsToLiterals());
             ProcessText(capturedText, true);
             lastTextChangeWasSuggestion = false;
         }
 
+        public void ProcessSingleKeyWithModifier(string capturedText, FunctionKeys functionKey)
+        {
+            Log.Info("ProcessSingleKeyWithModifier");
+
+            var virtualKeyCode = functionKey.ToVirtualKeyCode();
+            if (virtualKeyCode != null)
+            {
+                Log.InfoFormat("modifier {0}", virtualKeyCode);
+                publishService.KeyDown(virtualKeyCode.Value);
+            }
+
+            Log.InfoFormat("Processing single key captured text '{0}'", capturedText.ConvertEscapedCharsToLiterals());
+            ProcessText(capturedText, true);
+            lastTextChangeWasSuggestion = false;
+
+            if (virtualKeyCode != null)
+            {
+                publishService.KeyUp(virtualKeyCode.Value);
+            }
+        }
 
         public void ProcessMultiKeyTextAndSuggestions(List<string> captureAndSuggestions)
         {

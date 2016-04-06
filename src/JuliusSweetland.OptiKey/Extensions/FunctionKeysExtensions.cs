@@ -18,6 +18,9 @@ namespace JuliusSweetland.OptiKey.Extensions
                 case FunctionKeys.LeftShift:
                     return VirtualKeyCode.LSHIFT;
 
+                case FunctionKeys.RightShift:
+                    return VirtualKeyCode.RSHIFT;
+
                 case FunctionKeys.LeftAlt:
                     return VirtualKeyCode.LMENU; //This is not a typo ALT=MENU
 

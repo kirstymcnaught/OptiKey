@@ -75,7 +75,16 @@ namespace JuliusSweetland.OptiKey.Models
         public static readonly KeyValue SleepKey = new KeyValue { FunctionKey = FunctionKeys.Sleep };        
         public static readonly KeyValue MinecraftMoveModeKey = new KeyValue { FunctionKey = FunctionKeys.MinecraftMoveMode };
         public static readonly KeyValue MinecraftLookModeKey = new KeyValue { FunctionKey = FunctionKeys.MinecraftLookMode };
-        
+        public static readonly KeyValue MinecraftMineContinuousKey = new KeyValue { FunctionKey = FunctionKeys.MinecraftMineContinuous };
+        public static readonly KeyValue MinecraftFlyManualKey = new KeyValue { FunctionKey = FunctionKeys.MinecraftFlyManual };
+        public static readonly KeyValue MinecraftFlyAutoKey = new KeyValue { FunctionKey = FunctionKeys.MinecraftFlyAuto };
+        public static readonly KeyValue MinecraftFlyUpKey = new KeyValue { FunctionKey = FunctionKeys.MinecraftFlyUp };
+        public static readonly KeyValue MinecraftAutoJumpKey = new KeyValue { FunctionKey = FunctionKeys.MinecraftAutoJump };
+        public static readonly KeyValue MinecraftWalkKey = new KeyValue { FunctionKey = FunctionKeys.MinecraftWalk };
+        public static readonly KeyValue MinecraftSneakKey = new KeyValue { FunctionKey = FunctionKeys.MinecraftSneak };
+        public static readonly KeyValue MinecraftSwimKey = new KeyValue { FunctionKey = FunctionKeys.MinecraftSwim };
+        public static readonly KeyValue MinecraftAttackContinuousKey = new KeyValue { FunctionKey = FunctionKeys.MinecraftAttackContinuous };
+
         private static readonly Dictionary<Languages, List<KeyValue>> multiKeySelectionKeys;
 
         static KeyValues()
@@ -134,6 +143,14 @@ namespace JuliusSweetland.OptiKey.Models
                     SleepKey,
                     MinecraftLookModeKey,
                     MinecraftMoveModeKey,
+                    MinecraftMineContinuousKey,
+                    MinecraftFlyManualKey, 
+                    MinecraftFlyAutoKey, 
+                    MinecraftAutoJumpKey,
+                    MinecraftWalkKey, 
+                    MinecraftSneakKey,
+                    MinecraftSwimKey, 
+                    MinecraftAttackContinuousKey,
                 };
             }
         }
@@ -201,6 +218,7 @@ namespace JuliusSweetland.OptiKey.Models
                     new KeyValue {FunctionKey = FunctionKeys.Copy},
                     new KeyValue {FunctionKey = FunctionKeys.Paste},
                     new KeyValue {FunctionKey = FunctionKeys.MinecraftLookMode},
+                    new KeyValue {FunctionKey = FunctionKeys.MinecraftMineContinuous},
                     new KeyValue {FunctionKey = FunctionKeys.MinecraftMoveMode}
                 };
             }
