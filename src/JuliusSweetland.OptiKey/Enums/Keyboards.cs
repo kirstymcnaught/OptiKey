@@ -15,6 +15,7 @@
         Minecraft,
         MinecraftSurvivalInventory,
         Minecraft1,
+        Minecraft2,
         Mouse,
         NumericAndSymbols1,
         NumericAndSymbols2,

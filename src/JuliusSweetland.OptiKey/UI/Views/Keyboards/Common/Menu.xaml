@@ -59,7 +59,7 @@
                       Text="{x:Static resx:Resources.MINECRAFT_LAYOUT}"
                       SharedSizeGroup="KeyWithSymbolAndText">
             <controls:Key.Value>
-                <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftKeyboard}" />
+                <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftKeyboard1}" />
             </controls:Key.Value>
         </controls:Key>
         <controls:Key Grid.Row="0" Grid.Column="3"
