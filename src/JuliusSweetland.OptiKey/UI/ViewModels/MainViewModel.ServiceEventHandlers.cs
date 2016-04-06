@@ -166,32 +166,30 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
         }
 
         // orientation = 0 for due north, and +1 for every 45 degrees clockwise
-        private void HandleMinecraftManualLookOrMove(int orientation)
+        private void HandleMinecraftManualLook(int orientation)
         {
-            string firstLetter = "";
-            string secondLetter = "";
-
-            if (keyStateService.KeyDownStates[KeyValues.MinecraftLookModeKey].Value.IsDownOrLockedDown())
+            for (int j = 0; j < Settings.Default.MinecraftLookAmount; j++)
             {
-                Log.Info("Minecraft looking mode.");
-                firstLetter = "u";
-                secondLetter = "i";
+                for (int i = 0; i < orientation; ++i)
+                {
+                    keyboardOutputService.ProcessFunctionKey(FunctionKeys.LeftShift);
+                    keyboardOutputService.ProcessSingleKeyText("u");
+                }
+                keyboardOutputService.ProcessSingleKeyText("i");
             }
-            else if (keyStateService.KeyDownStates[KeyValues.MinecraftMoveModeKey].Value.IsDownOrLockedDown())
-            {
-                Log.Info("Minecraft moving mode.");
-                firstLetter = "o";
-                secondLetter = "p";
-            }
+        }
 
+        // orientation = 0 for due north, and +1 for every 45 degrees clockwise
+        private void HandleMinecraftManualMove(int orientation)
+        {
             for (int j = 0; j < Settings.Default.MinecraftMoveAmount; j++)
             {
                 for (int i = 0; i < orientation; ++i)
                 {
                     keyboardOutputService.ProcessFunctionKey(FunctionKeys.LeftShift);
-                    keyboardOutputService.ProcessSingleKeyText(firstLetter);
+                    keyboardOutputService.ProcessSingleKeyText("o");
                 }
-                keyboardOutputService.ProcessSingleKeyText(secondLetter);
+                keyboardOutputService.ProcessSingleKeyText("p");
             }
         }
 
@@ -1198,6 +1196,10 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                         ToggleMinecraftKey(KeyValues.MinecraftMineContinuousKey, "m");
                         break;
                        
+                    case FunctionKeys.MinecraftDismount:
+                        keyboardOutputService.ProcessSingleKeyWithModifier("", FunctionKeys.LeftShift);
+                        break;
+
                     case FunctionKeys.MinecraftFlyManual:
                         Log.Info("Minecraft mine continuous selected.");
                         ToggleMinecraftKey(KeyValues.MinecraftFlyManualKey, "f");
@@ -1247,44 +1249,84 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                         ToggleMinecraftKey(KeyValues.MinecraftAttackContinuousKey, "r");
                         break;
 
-                    case FunctionKeys.MinecraftNorth:
+                    case FunctionKeys.MinecraftLookNorth:
                         Log.Info("Minecraft move/look to north selected.");
-                        HandleMinecraftManualLookOrMove(0);
+                        HandleMinecraftManualLook(0);
                         break;
 
-                    case FunctionKeys.MinecraftNorthEast:
+                    case FunctionKeys.MinecraftLookNorthEast:
                         Log.Info("Minecraft move/look to north-east selected.");
-                        HandleMinecraftManualLookOrMove(1);
+                        HandleMinecraftManualLook(1);
                         break;
 
-                    case FunctionKeys.MinecraftEast:
+                    case FunctionKeys.MinecraftLookEast:
                         Log.Info("Minecraft move/look to east selected.");
-                        HandleMinecraftManualLookOrMove(2);
+                        HandleMinecraftManualLook(2);
                         break;
 
-                    case FunctionKeys.MinecraftSouthEast:
+                    case FunctionKeys.MinecraftLookSouthEast:
                         Log.Info("Minecraft move/look to south-east selected.");
-                        HandleMinecraftManualLookOrMove(3);
+                        HandleMinecraftManualLook(3);
                         break;
 
-                    case FunctionKeys.MinecraftSouth:
+                    case FunctionKeys.MinecraftLookSouth:
                         Log.Info("Minecraft move/look to south selected.");
-                        HandleMinecraftManualLookOrMove(4);
+                        HandleMinecraftManualLook(4);
                         break;
 
-                    case FunctionKeys.MinecraftSouthWest:
+                    case FunctionKeys.MinecraftLookSouthWest:
                         Log.Info("Minecraft move/look to south-west selected.");
-                        HandleMinecraftManualLookOrMove(5);
+                        HandleMinecraftManualLook(5);
                         break;
 
-                    case FunctionKeys.MinecraftWest:
+                    case FunctionKeys.MinecraftLookWest:
                         Log.Info("Minecraft move/look to west selected.");
-                        HandleMinecraftManualLookOrMove(6);
+                        HandleMinecraftManualLook(6);
                         break;
 
-                    case FunctionKeys.MinecraftNorthWest:
+                    case FunctionKeys.MinecraftLookNorthWest:
                         Log.Info("Minecraft move/look to north-west selected.");
-                        HandleMinecraftManualLookOrMove(7);
+                        HandleMinecraftManualLook(7);
+                        break;
+
+                    case FunctionKeys.MinecraftMoveNorth:
+                        Log.Info("Minecraft move/look to north selected.");
+                        HandleMinecraftManualMove(0);
+                        break;
+
+                    case FunctionKeys.MinecraftMoveNorthEast:
+                        Log.Info("Minecraft move/look to north-east selected.");
+                        HandleMinecraftManualMove(1);
+                        break;
+
+                    case FunctionKeys.MinecraftMoveEast:
+                        Log.Info("Minecraft move/look to east selected.");
+                        HandleMinecraftManualMove(2);
+                        break;
+
+                    case FunctionKeys.MinecraftMoveSouthEast:
+                        Log.Info("Minecraft move/look to south-east selected.");
+                        HandleMinecraftManualMove(3);
+                        break;
+
+                    case FunctionKeys.MinecraftMoveSouth:
+                        Log.Info("Minecraft move/look to south selected.");
+                        HandleMinecraftManualMove(4);
+                        break;
+
+                    case FunctionKeys.MinecraftMoveSouthWest:
+                        Log.Info("Minecraft move/look to south-west selected.");
+                        HandleMinecraftManualMove(5);
+                        break;
+
+                    case FunctionKeys.MinecraftMoveWest:
+                        Log.Info("Minecraft move/look to west selected.");
+                        HandleMinecraftManualMove(6);
+                        break;
+
+                    case FunctionKeys.MinecraftMoveNorthWest:
+                        Log.Info("Minecraft move/look to north-west selected.");
+                        HandleMinecraftManualMove(7);
                         break;
 
                     case FunctionKeys.MouseRightClick:
@@ -1395,6 +1437,28 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
 
                             default:
                                 Settings.Default.MinecraftMoveAmount = 1;
+                                break;
+                        }
+                        break;
+
+                    case FunctionKeys.MinecraftLookAmount:
+                        Log.Info("Progressing MinecraftLookAmount.");
+                        switch (Settings.Default.MinecraftLookAmount)
+                        {
+                            case 1:
+                                Settings.Default.MinecraftLookAmount = 2;
+                                break;
+
+                            case 2:
+                                Settings.Default.MinecraftLookAmount = 4;
+                                break;
+
+                            case 4:
+                                Settings.Default.MinecraftLookAmount = 8;
+                                break;
+
+                            default:
+                                Settings.Default.MinecraftLookAmount = 1;
                                 break;
                         }
                         break;

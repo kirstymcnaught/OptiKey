@@ -146,7 +146,7 @@
                                                         <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftMoveAmount}" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
-
+<!--
                                                 <controls:Key Grid.Row="1" Grid.Column="8" Grid.ColumnSpan="2" Grid.RowSpan="2"
                                                               SymbolGeometry="{StaticResource ArrowPointingToTopLeftIcon}"
                                                               SharedSizeGroup="KeyWithSymbolAndText">
@@ -177,7 +177,6 @@
                                                 </controls:Key>
                                                 
                                                 
-                                                <!-- TODO: Make "LOOK" text a resource -->
                                                 <controls:Key Grid.Row="3" Grid.Column="10" Grid.ColumnSpan="1" Grid.RowSpan="2"
                                                               Text="{x:Static resx:Resources.MC_LOOK_MODE}"
                                                               >
@@ -186,7 +185,6 @@
                                                     </controls:Key.Value>
                                                 </controls:Key>
 
-                                                <!-- TODO: Make "MOVE" text a resource -->
                                                 <controls:Key Grid.Row="3" Grid.Column="11" Grid.ColumnSpan="1" Grid.RowSpan="2"
                                                               Text="{x:Static resx:Resources.MC_MOVE_MODE}"
                                                               >
@@ -225,7 +223,7 @@
                                                         <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftSouthEast}" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
-
+-->
 
                                                 <controls:Key Grid.Row="1" Grid.Column="14"  Grid.ColumnSpan="2" Grid.RowSpan="2"
                                                               SymbolGeometry="{StaticResource MouseRightClickIcon}"

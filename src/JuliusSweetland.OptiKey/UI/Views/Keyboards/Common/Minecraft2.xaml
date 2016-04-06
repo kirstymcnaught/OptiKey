@@ -77,20 +77,21 @@
                                                               Text="Building">
                                                 </controls:Key>
 
-                                                <controls:Key Grid.Row="0" Grid.Column="4" Grid.ColumnSpan="10" 
-                                                              Text="Navigating">
-                                                </controls:Key>
-
-                                                <controls:Key Grid.Row="0" Grid.Column="14" Grid.ColumnSpan="2" >
+                                                <controls:Key Grid.Row="0" Grid.Column="4" Grid.ColumnSpan="6" 
+                                                              Text="LOOK">
                                                 </controls:Key>
                                                 
-                                                <controls:Key Grid.Row="0" Grid.Column="16" Grid.ColumnSpan="2" 
+                                                <controls:Key Grid.Row="0" Grid.Column="10" Grid.ColumnSpan="2" >
+                                                </controls:Key>
+
+                                                <controls:Key Grid.Row="0" Grid.Column="12" Grid.ColumnSpan="6" 
+                                                              Text="MOVE">
+                                                </controls:Key>
+                                                
+                                                <controls:Key Grid.Row="0" Grid.Column="18" Grid.ColumnSpan="2" 
                                                               Text="Mining">
                                                 </controls:Key>
-
-                                                <controls:Key Grid.Row="0" Grid.Column="18" Grid.ColumnSpan="2" >
-                                                </controls:Key>
-
+                                                
                                                 <!-- spacer at bottom too -->
                                                 <controls:Key Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="20" >
                                                 </controls:Key>
@@ -154,51 +155,80 @@
                                                 </controls:Key>
 
                                                 
-                                                <!-- TODO: Auto fly, not fly up -->
                                                 <controls:Key Grid.Row="1" Grid.Column="4" Grid.ColumnSpan="2" Grid.RowSpan="2"
-                                                              Text= "Fly">
+                                                              SymbolGeometry="{StaticResource ArrowPointingToTopLeftIcon}"
+                                                              SharedSizeGroup="KeyWithSymbolAndText">
                                                     <controls:Key.Value>
-                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftFlyManual}" />
+                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftLookNorthWest}" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
-
                                                 <controls:Key Grid.Row="3" Grid.Column="4" Grid.ColumnSpan="2" Grid.RowSpan="2"
-                                                              Text="{x:Static resx:Resources.MC_FLY_UP}"
-                                                              SymbolGeometry="{StaticResource MinecraftFlyUp}">
+                                                              SymbolGeometry="{StaticResource ArrowPointingToLeftIcon}"
+                                                                      SharedSizeGroup="KeyWithSymbolAndText">
                                                     <controls:Key.Value>
-                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftFlyUp}" />
+                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftLookWest}" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
-                                                
                                                 <controls:Key Grid.Row="5" Grid.Column="4" Grid.ColumnSpan="2" Grid.RowSpan="2"
-                                                              Text="Fly auto" >
+                                                              SymbolGeometry="{StaticResource ArrowPointingToBottomLeftIcon}"
+                                                                      SharedSizeGroup="KeyWithSymbolAndText">
                                                     <controls:Key.Value>
-                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftFlyAuto}" />
+                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftLookSouthWest}" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
 
-                                                <controls:Key Grid.Row="1" Grid.Column="6" Grid.ColumnSpan="6" Grid.RowSpan="2"
-                                                              SymbolGeometry="{StaticResource MinecraftLookWithCursor}"
-                                                              Text="{x:Static resx:Resources.MC_LOOK_GAZE}">
+
+                                                <controls:Key Grid.Row="1" Grid.Column="6" Grid.ColumnSpan="2" Grid.RowSpan="2"
+                                                              SymbolGeometry="{StaticResource ArrowPointingToTopIcon}"
+                                                                      SharedSizeGroup="KeyWithSymbolAndText">
                                                     <controls:Key.Value>
-                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MouseMagneticCursor}" />
+                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftLookNorth}" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
 
-                                                <controls:Key Grid.Row="3" Grid.Column="6" Grid.ColumnSpan="6" Grid.RowSpan="2"
-                                                              SymbolGeometry="{StaticResource MinecraftWalk}"
-                                                              Text="{x:Static resx:Resources.MC_WALK}">
+                                                <controls:Key Grid.Row="3" Grid.Column="6" Grid.ColumnSpan="2" Grid.RowSpan="2"
+                                                              Text="{Binding Source={x:Static properties:Settings.Default}, 
+                                                                             Path=MinecraftLookAmount, 
+                                                                             Converter={StaticResource IntToSingularPluralStringFormatter}, 
+                                                                             ConverterParameter=Look x {0}|Look x {0}}">
                                                     <controls:Key.Value>
-                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftWalk}" />
+                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftLookAmount}" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
 
-                                                <controls:Key Grid.Row="5" Grid.Column="6" Grid.ColumnSpan="6" Grid.RowSpan="2"                                                              
-                                                              Text="more adjustments...">                                             
+                                                <controls:Key Grid.Row="5" Grid.Column="6" Grid.ColumnSpan="2" Grid.RowSpan="2"
+                                                              SymbolGeometry="{StaticResource ArrowPointingToBottomIcon}"
+                                                                      SharedSizeGroup="KeyWithSymbolAndText">
+                                                    <controls:Key.Value>
+                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftLookSouth}" />
+                                                    </controls:Key.Value>
                                                 </controls:Key>
 
-                                                
-                                                <controls:Key Grid.Row="1" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="2"
+
+                                                <controls:Key Grid.Row="1" Grid.Column="8" Grid.ColumnSpan="2" Grid.RowSpan="2"
+                                                              SymbolGeometry="{StaticResource ArrowPointingToTopRightIcon}"
+                                                                      SharedSizeGroup="KeyWithSymbolAndText">
+                                                    <controls:Key.Value>
+                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftLookNorthEast}" />
+                                                    </controls:Key.Value>
+                                                </controls:Key>
+                                                <controls:Key Grid.Row="3" Grid.Column="8" Grid.ColumnSpan="2" Grid.RowSpan="2"
+                                                              SymbolGeometry="{StaticResource ArrowPointingToRightIcon}"
+                                                                      SharedSizeGroup="KeyWithSymbolAndText">
+                                                    <controls:Key.Value>
+                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftLookEast}" />
+                                                    </controls:Key.Value>
+                                                </controls:Key>
+                                                <controls:Key Grid.Row="5" Grid.Column="8" Grid.ColumnSpan="2" Grid.RowSpan="2"
+                                                              SymbolGeometry="{StaticResource ArrowPointingToBottomRightIcon}"
+                                                                      SharedSizeGroup="KeyWithSymbolAndText">
+                                                    <controls:Key.Value>
+                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftLookSouthEast}" />
+                                                    </controls:Key.Value>
+                                                </controls:Key>
+
+                                               
+                                                <controls:Key Grid.Row="1" Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="2"
                                                               SymbolGeometry="{StaticResource MinecraftAutoJump}"
                                                               Text="{x:Static resx:Resources.MC_AUTO_JUMP}">
                                                     <controls:Key.Value>
@@ -206,7 +236,7 @@
                                                     </controls:Key.Value>
                                                 </controls:Key>
 
-                                                <controls:Key Grid.Row="3" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="2"
+                                                <controls:Key Grid.Row="3" Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="2"
                                                               SymbolGeometry="{StaticResource MinecraftSneak}"
                                                               Text="{x:Static resx:Resources.MC_SNEAK}">
                                                     <controls:Key.Value>
@@ -214,37 +244,81 @@
                                                     </controls:Key.Value>
                                                 </controls:Key>
 
-                                                <controls:Key Grid.Row="5" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="2"
-                                                              SymbolGeometry="{StaticResource MinecraftSwim}"
-                                                              Text="{x:Static resx:Resources.MC_SWIM}">
+
+                                                <controls:Key Grid.Row="1" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="2"
+                                                              SymbolGeometry="{StaticResource ArrowPointingToTopLeftIcon}"
+                                                              SharedSizeGroup="KeyWithSymbolAndText">
                                                     <controls:Key.Value>
-                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftSwim}" />
+                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftMoveNorthWest}" />
+                                                    </controls:Key.Value>
+                                                </controls:Key>
+                                                <controls:Key Grid.Row="3" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="2"
+                                                              SymbolGeometry="{StaticResource ArrowPointingToLeftIcon}"
+                                                                      SharedSizeGroup="KeyWithSymbolAndText">
+                                                    <controls:Key.Value>
+                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftMoveWest}" />
+                                                    </controls:Key.Value>
+                                                </controls:Key>
+                                                <controls:Key Grid.Row="5" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="2"
+                                                              SymbolGeometry="{StaticResource ArrowPointingToBottomLeftIcon}"
+                                                                      SharedSizeGroup="KeyWithSymbolAndText">
+                                                    <controls:Key.Value>
+                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftMoveSouthWest}" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
 
 
                                                 <controls:Key Grid.Row="1" Grid.Column="14" Grid.ColumnSpan="2" Grid.RowSpan="2"
-                                                              SymbolGeometry="{StaticResource MinecraftAttackContinuous}"
-                                                              Text="{x:Static resx:Resources.MC_ATTACK}">
+                                                              SymbolGeometry="{StaticResource ArrowPointingToTopIcon}"
+                                                                      SharedSizeGroup="KeyWithSymbolAndText">
                                                     <controls:Key.Value>
-                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftAttackContinuous}" />
+                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftMoveNorth}" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
 
                                                 <controls:Key Grid.Row="3" Grid.Column="14" Grid.ColumnSpan="2" Grid.RowSpan="2"
-                                                              Text="Dismount">                                                    
-                                                </controls:Key>
-
-                                                <controls:Key Grid.Row="5" Grid.Column="14" Grid.ColumnSpan="2" Grid.RowSpan="2"
-                                                              SymbolGeometry="{StaticResource MouseLeftClickWithMouseIcon}"
-                                                              Text="{x:Static resx:Resources.MC_MOVE_CLICK}" >
+                                                              Text="{Binding Source={x:Static properties:Settings.Default}, 
+                                                                             Path=MinecraftMoveAmount, 
+                                                                             Converter={StaticResource IntToSingularPluralStringFormatter}, 
+                                                                             ConverterParameter=Move x {0}|Move x {0}}">
                                                     <controls:Key.Value>
-                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MouseMoveAndLeftClick}" />
+                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftMoveAmount}" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
 
-                                                
+                                                <controls:Key Grid.Row="5" Grid.Column="14" Grid.ColumnSpan="2" Grid.RowSpan="2"
+                                                              SymbolGeometry="{StaticResource ArrowPointingToBottomIcon}"
+                                                                      SharedSizeGroup="KeyWithSymbolAndText">
+                                                    <controls:Key.Value>
+                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftMoveSouth}" />
+                                                    </controls:Key.Value>
+                                                </controls:Key>
+
+
                                                 <controls:Key Grid.Row="1" Grid.Column="16" Grid.ColumnSpan="2" Grid.RowSpan="2"
+                                                              SymbolGeometry="{StaticResource ArrowPointingToTopRightIcon}"
+                                                                      SharedSizeGroup="KeyWithSymbolAndText">
+                                                    <controls:Key.Value>
+                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftMoveNorthEast}" />
+                                                    </controls:Key.Value>
+                                                </controls:Key>
+                                                <controls:Key Grid.Row="3" Grid.Column="16" Grid.ColumnSpan="2" Grid.RowSpan="2"
+                                                              SymbolGeometry="{StaticResource ArrowPointingToRightIcon}"
+                                                                      SharedSizeGroup="KeyWithSymbolAndText">
+                                                    <controls:Key.Value>
+                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftMoveEast}" />
+                                                    </controls:Key.Value>
+                                                </controls:Key>
+                                                <controls:Key Grid.Row="5" Grid.Column="16" Grid.ColumnSpan="2" Grid.RowSpan="2"
+                                                              SymbolGeometry="{StaticResource ArrowPointingToBottomRightIcon}"
+                                                                      SharedSizeGroup="KeyWithSymbolAndText">
+                                                    <controls:Key.Value>
+                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftMoveSouthEast}" />
+                                                    </controls:Key.Value>
+                                                </controls:Key>
+
+
+                                                <controls:Key Grid.Row="1" Grid.Column="18" Grid.ColumnSpan="2" Grid.RowSpan="2"
                                                               SymbolGeometry="{StaticResource MinecraftMineOnce}"
                                                               Text="{x:Static resx:Resources.MC_MINE_ONCE}">
                                                     <controls:Key.Value>
@@ -252,32 +326,12 @@
                                                     </controls:Key.Value>
                                                 </controls:Key>
 
-                                                <controls:Key Grid.Row="3" Grid.Column="16" Grid.ColumnSpan="2" Grid.RowSpan="2"
+                                                <controls:Key Grid.Row="3" Grid.Column="18" Grid.ColumnSpan="2" Grid.RowSpan="2"
                                                               SymbolGeometry="{StaticResource MinecraftMineContinuous}"
                                                               Text="{x:Static resx:Resources.MC_MINE}">
                                                     <controls:Key.Value>
                                                         <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftMineContinuous}" />
                                                     </controls:Key.Value>                                                    
-                                                </controls:Key>
-
-                                                <controls:Key Grid.Row="5" Grid.Column="16" Grid.ColumnSpan="2" Grid.RowSpan="2">                                                   
-                                                </controls:Key>
-
-
-                                                <controls:Key Grid.Row="1" Grid.Column="18" Grid.ColumnSpan="2" Grid.RowSpan="2"
-                                                                      Text="{x:Static resx:Resources.ESC}"
-                                                                      SharedSizeGroup="EscapeKey">
-                                                    <controls:Key.Value>
-                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.Escape}" />
-                                                    </controls:Key.Value>
-                                                </controls:Key>
-
-                                                <controls:Key Grid.Row="3" Grid.Column="18" Grid.ColumnSpan="2" Grid.RowSpan="2"
-                                                              Text="{x:Static resx:Resources.MC_INVENTORY_KEYBOARD}"
-                                                              >
-                                                    <controls:Key.Value>
-                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftInventoryKeyboard}" />
-                                                    </controls:Key.Value>
                                                 </controls:Key>
 
                                                 <controls:Key Grid.Row="5" Grid.Column="18" Grid.ColumnSpan="2" Grid.RowSpan="2"

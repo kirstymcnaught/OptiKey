@@ -154,8 +154,8 @@
                                                 </controls:Key>
 
                                                 
-                                                <!-- TODO: Auto fly, not fly up -->
                                                 <controls:Key Grid.Row="1" Grid.Column="4" Grid.ColumnSpan="2" Grid.RowSpan="2"
+                                                              SymbolGeometry="{StaticResource MinecraftFly}"
                                                               Text= "Fly">
                                                     <controls:Key.Value>
                                                         <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftFlyManual}" />
@@ -171,7 +171,8 @@
                                                 </controls:Key>
                                                 
                                                 <controls:Key Grid.Row="5" Grid.Column="4" Grid.ColumnSpan="2" Grid.RowSpan="2"
-                                                              Text="Fly auto" >
+                                                              Text="Auto fly" 
+                                                              SymbolGeometry="{StaticResource MinecraftAutoFly}">
                                                     <controls:Key.Value>
                                                         <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftFlyAuto}" />
                                                     </controls:Key.Value>
@@ -193,7 +194,8 @@
                                                     </controls:Key.Value>
                                                 </controls:Key>
 
-                                                <controls:Key Grid.Row="5" Grid.Column="6" Grid.ColumnSpan="6" Grid.RowSpan="2"                                                              
+                                                <controls:Key Grid.Row="5" Grid.Column="6" Grid.ColumnSpan="6" Grid.RowSpan="2"  
+                                                              SymbolGeometry="{StaticResource MinecraftAdjust}"
                                                               Text="more adjustments...">
                                                     <controls:Key.Value>
                                                         <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftKeyboard2}" />
@@ -235,7 +237,10 @@
                                                 </controls:Key>
 
                                                 <controls:Key Grid.Row="3" Grid.Column="14" Grid.ColumnSpan="2" Grid.RowSpan="2"
-                                                              Text="Dismount">                                                    
+                                                              Text="Dismount">
+                                                    <controls:Key.Value>
+                                                        <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftDismount}" />
+                                                    </controls:Key.Value>
                                                 </controls:Key>
 
                                                 <controls:Key Grid.Row="5" Grid.Column="14" Grid.ColumnSpan="2" Grid.RowSpan="2"
@@ -269,6 +274,7 @@
 
                                                 <controls:Key Grid.Row="1" Grid.Column="18" Grid.ColumnSpan="2" Grid.RowSpan="2"
                                                                       Text="{x:Static resx:Resources.ESC}"
+                                                                      SymbolGeometry="{StaticResource MinecraftEscButton}"
                                                                       SharedSizeGroup="EscapeKey">
                                                     <controls:Key.Value>
                                                         <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.Escape}" />

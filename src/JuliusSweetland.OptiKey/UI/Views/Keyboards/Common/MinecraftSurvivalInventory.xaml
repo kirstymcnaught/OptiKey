@@ -244,7 +244,8 @@
                                                 </controls:Key>
 
                                                 <controls:Key Grid.Row="0" Grid.Column="9" Grid.ColumnSpan="1"  Grid.RowSpan="1"
-                                                              Text="{x:Static resx:Resources.ESC}">
+                                                              Text="{x:Static resx:Resources.ESC}"
+                                                              SymbolGeometry="{StaticResource MinecraftEscButton}">
                                                     <controls:Key.Value>
                                                         <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.Escape}" />
                                                     </controls:Key.Value>
