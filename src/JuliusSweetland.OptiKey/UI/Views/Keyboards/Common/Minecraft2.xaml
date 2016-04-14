@@ -243,6 +243,9 @@
                                                         <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftSneak}" />
                                                     </controls:Key.Value>
                                                 </controls:Key>
+                                                
+                                                <controls:Key Grid.Row="5" Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="2">
+                                                </controls:Key>
 
 
                                                 <controls:Key Grid.Row="1" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="2"
