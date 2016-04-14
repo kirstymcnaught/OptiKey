@@ -236,12 +236,14 @@
                                                     </controls:Key.Value>
                                                 </controls:Key>
 
-                                                <controls:Key Grid.Row="3" Grid.Column="14" Grid.ColumnSpan="2" Grid.RowSpan="2"
+                                                <!--<controls:Key Grid.Row="3" Grid.Column="14" Grid.ColumnSpan="2" Grid.RowSpan="2"
                                                               Text="Dismount">
                                                     <controls:Key.Value>
                                                         <models:KeyValue FunctionKey="{x:Static enums:FunctionKeys.MinecraftDismount}" />
                                                     </controls:Key.Value>
-                                                </controls:Key>
+                                                </controls:Key>-->
+                                                <controls:Key Grid.Row="3" Grid.Column="14" Grid.ColumnSpan="2" Grid.RowSpan="2"
+                                                              >                                                </controls:Key>
 
                                                 <controls:Key Grid.Row="5" Grid.Column="14" Grid.ColumnSpan="2" Grid.RowSpan="2"
                                                               SymbolGeometry="{StaticResource MouseLeftClickWithMouseIcon}"
