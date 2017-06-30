@@ -1,3 +1,9 @@
+# OptiKeyMinecraft
+
+This is a fork of [OptiKey](https://github.com/OptiKey/OptiKey/wiki) which adds Minecraft-specific functionality. Requires Minecraft Forge with extra mods installed ([SpecialEffectMinecraftMods](https://github.com/kirstymcnaught/SpecialEffectMinecraftMods)), which add special functionality and extra key bindings.
+
+If you want to try out the latest releases, contact [SpecialEffect](http://www.specialeffect.org.uk/contact) for more information.
+
 # OptiKey
 
 OptiKey is an assistive on-screen keyboard which runs on Windows. It is designed to be used with an eye-tracking device to assist with keyboard and mouse control for those living with motor and speech limitations, such as Amyotrophic Lateral Sclerosis (ALS) / Motor Neuron Disease (MND).
