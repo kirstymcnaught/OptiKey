@@ -69,10 +69,10 @@
                       SharedSizeGroup="KeyWithSymbolAndText"
                       Value="{x:Static models:KeyValues.ConversationAlphaKeyboardKey}"/>
         <controls:Key Grid.Row="1" Grid.Column="1"
-                      SymbolGeometry="{StaticResource MouseIcon}"
-                      Text="{x:Static resx:Resources.MOUSE}"
+                      Text="Minecraft!"
+                      SymbolGeometry="{StaticResource MinecraftIcon}"
                       SharedSizeGroup="KeyWithSymbolAndText"
-                      Value="{x:Static models:KeyValues.MouseKeyboardKey}"/>
+                      Value="{x:Static models:KeyValues.MinecraftKeyboard1Key}"/>
         <controls:Key Grid.Row="1" Grid.Column="2"
                       SymbolGeometry="{StaticResource PhysicalKeysIcon}"
                       Text="{x:Static resx:Resources.PHYSICAL_KEYS_SPLIT_WITH_NEWLINE}"
