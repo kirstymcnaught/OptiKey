@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This file is NOT compatible with Silverlight-->
+<Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Stretch="Uniform">
+  <Canvas Name="svg6906" Width="62.595573" Height="32.775616">
+    <Canvas.Resources>
+      <Rectangle xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="4.5" Canvas.Top="6.4619999" Width="90" Height="88.038002" Name="SVGID_1_" Fill="#000000" x:Key="SVGID_1_"/>
+    </Canvas.Resources>
+    <!--Unknown tag: sodipodi:namedview-->
+    <!--Unknown tag: metadata-->
+    <Canvas Name="g3337">
+      <Canvas.RenderTransform>
+        <MatrixTransform Matrix="0.47811328 0 0 0.47811328 -7.84929 -5.070854"/>
+      </Canvas.RenderTransform>
+      <Rectangle xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="4.5" Canvas.Top="6.4619999" Width="90" Height="88.038002" Name="SVGID_1_4" Fill="#000000" x:Key="SVGID_1_-4"/>
+      <Canvas.Resources>
+        <Rectangle xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="4.5" Canvas.Top="6.4619999" Width="90" Height="88.038002" Name="SVGID_1_4" Fill="#000000" x:Key="SVGID_1_-4"/>
+      </Canvas.Resources>
+    </Canvas>
+    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path8966" Fill="#FF000000" StrokeThickness="8" StrokeMiterLimit="4" StrokeLineJoin="Miter" StrokeStartLineCap="Round" StrokeEndLineCap="Round" Opacity="1">
+      <Path.Data>
+        <PathGeometry Figures="M 44.121094 0.09960937 A 4.0004 4.0004 0 0 0 41.439453 7.0117188 l 9.667969 9.3769532 -9.667969 9.376953 a 4.0004 4.0004 0 1 0 5.568359 5.742187 L 62.595703 16.388672 47.007812 1.2675781 A 4.0004 4.0004 0 0 0 44.121094 0.09960937 Z M 17.042585 14.988075 l -1.316069 0 0 0.01891 -0.0022 0 0 0.817723 -0.838821 0 0 0.01891 -0.0029 0 0 1.316796 0.84173 0 0 0.83664 1.315343 0 0 -0.01965 0.0029 0 0 -0.816996 0.830092 0 0 -0.01891 0.0029 0 0 -1.316799 -0.833001 0 z m 4.361218 -11.409355 0 0.01965 -0.0015 0 0 1.316069 6.459581 0 0 6.482133 1.31607 0 0 -0.01819 0.0029 0 0 -7.799657 z m 6.461035 17.940741 -0.0029 0 0 6.341723 -6.458125 0 0 0.01819 -0.0015 0 0 1.317525 7.77565 0 0 -0.01891 0.0029 0 0 -7.676707 -1.31607 0 z m -12.138322 3.625279 -0.0022 0 0 7.630876 1.315343 0 0 -0.01819 0.0029 0 0 -7.63233 -1.316069 0 z M 0.0022 15.697398 l -0.0022 0 0 1.315342 7.838943 0 0 -0.01891 0.0029 0 0 -1.316068 -7.839671 0 z m 4.899181 5.802419 -1.318252 0 0 0.01819 -0.0029 0 0 7.678891 7.699989 0 0 -0.01891 0.0029 0 0 -1.316796 -6.381737 0 z m -0.0044 -10.120712 0.0044 0 0 -6.464673 6.377372 0 0 -0.01819 0.0029 0 0 -1.317525 -7.698533 0 0 0.01965 -0.0029 0 0 7.799658 1.316797 0 z m 12.142687 -3.540161 0.0029 0 0 -7.838944 -1.316069 0 0 0.01819 -0.0022 0 0 7.841127 1.315342 0 z m 15.795614 9.173796 0 -1.315342 -0.07566 0 0 -0.01965 -7.631601 0 0 1.31607 0.07639 0 0 0.01891 z" FillRule="evenodd"/>
+      </Path.Data>
+    </Path>
+  </Canvas>
+</Viewbox>
