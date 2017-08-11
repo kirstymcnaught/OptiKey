@@ -1208,7 +1208,7 @@ namespace JuliusSweetland.OptiKey.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("DynamicKeyboardMenu")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Menu")]
         [global::System.Configuration.SettingsManageabilityAttribute(global::System.Configuration.SettingsManageability.Roaming)]
         public global::JuliusSweetland.OptiKey.Enums.Keyboards StartupKeyboard {
             get {

@@ -138,7 +138,7 @@
       <Value Profile="(Default)">NextHigh</Value>
     </Setting>
     <Setting Name="CheckForUpdates" Roaming="true" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">True</Value>
+      <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="ShowSplashScreen" Roaming="true" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
@@ -234,10 +234,10 @@
       <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="MainWindowFullDockThicknessAsPercentageOfScreen" Roaming="true" Type="System.Double" Scope="User">
-      <Value Profile="(Default)">50</Value>
+      <Value Profile="(Default)">40</Value>
     </Setting>
     <Setting Name="MainWindowDockPosition" Roaming="true" Type="JuliusSweetland.OptiKey.Enums.DockEdges" Scope="User">
-      <Value Profile="(Default)">Top</Value>
+      <Value Profile="(Default)">Bottom</Value>
     </Setting>
     <Setting Name="MainWindowDockSize" Roaming="true" Type="JuliusSweetland.OptiKey.Enums.DockSizes" Scope="User">
       <Value Profile="(Default)">Full</Value>
@@ -276,7 +276,7 @@
       <Value Profile="(Default)">100</Value>
     </Setting>
     <Setting Name="StartupKeyboard" Roaming="true" Type="JuliusSweetland.OptiKey.Enums.Keyboards" Scope="User">
-      <Value Profile="(Default)">Alpha</Value>
+      <Value Profile="(Default)">Menu</Value>
     </Setting>
     <Setting Name="SuppressAutoCapitaliseIntelligently" Roaming="true" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
