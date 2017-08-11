@@ -384,6 +384,18 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                     Keyboard = new Menu(backAction);
                     break;
 
+                case Enums.Keyboards.Minecraft:
+                    Keyboard = new Minecraft(backAction);
+                    break;
+
+                case Enums.Keyboards.Minecraft1:
+                    Keyboard = new Minecraft1(backAction);
+                    break;
+
+                case Enums.Keyboards.MinecraftSurvivalInventory:
+                    Keyboard = new MinecraftSurvivalInventory(backAction);
+                    break;
+
                 case Enums.Keyboards.Minimised:
                     Keyboard = new Minimised(backAction);
                     break;

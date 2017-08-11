@@ -998,6 +998,12 @@
   &lt;/item&gt;
 &lt;/dictionary&gt;</Value>
     </Setting>
+    <Setting Name="MinecraftLookAmount" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="MinecraftMoveAmount" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
     <Setting Name="SpeechDelay" Roaming="true" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>

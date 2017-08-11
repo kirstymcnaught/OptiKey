@@ -123,6 +123,27 @@ namespace JuliusSweetland.OptiKey.Models
         public static readonly KeyValue MenuKey = new KeyValue(FunctionKeys.Menu);
         public static readonly KeyValue MenuKeyboardKey = new KeyValue(FunctionKeys.MenuKeyboard);
         public static readonly KeyValue MinimiseKey = new KeyValue(FunctionKeys.Minimise);
+        public static readonly KeyValue MinecraftKeyboard1Key = new KeyValue(FunctionKeys.MinecraftKeyboard1);
+        public static readonly KeyValue MinecraftKeyboard2Key = new KeyValue(FunctionKeys.MinecraftKeyboard2);
+        public static readonly KeyValue MinecraftInventoryKeyboardKey = new KeyValue(FunctionKeys.MinecraftInventoryKeyboard);
+        public static readonly KeyValue MinecraftLookNorthKey = new KeyValue(FunctionKeys.MinecraftLookNorth);
+        public static readonly KeyValue MinecraftLookNorthEastKey = new KeyValue(FunctionKeys.MinecraftLookNorthEast);
+        public static readonly KeyValue MinecraftLookEastKey = new KeyValue(FunctionKeys.MinecraftLookEast);
+        public static readonly KeyValue MinecraftLookSouthEastKey = new KeyValue(FunctionKeys.MinecraftLookSouthEast);
+        public static readonly KeyValue MinecraftLookSouthKey = new KeyValue(FunctionKeys.MinecraftLookSouth);
+        public static readonly KeyValue MinecraftLookSouthWestKey = new KeyValue(FunctionKeys.MinecraftLookSouthWest);
+        public static readonly KeyValue MinecraftLookWestKey = new KeyValue(FunctionKeys.MinecraftLookWest);
+        public static readonly KeyValue MinecraftLookNorthWestKey = new KeyValue(FunctionKeys.MinecraftLookNorthWest);
+        public static readonly KeyValue MinecraftMoveNorthKey = new KeyValue(FunctionKeys.MinecraftMoveNorth);
+        public static readonly KeyValue MinecraftLookAmountKey = new KeyValue(FunctionKeys.MinecraftLookAmount);
+        public static readonly KeyValue MinecraftMoveNorthEastKey = new KeyValue(FunctionKeys.MinecraftMoveNorthEast);
+        public static readonly KeyValue MinecraftMoveEastKey = new KeyValue(FunctionKeys.MinecraftMoveEast);
+        public static readonly KeyValue MinecraftMoveSouthEastKey = new KeyValue(FunctionKeys.MinecraftMoveSouthEast);
+        public static readonly KeyValue MinecraftMoveSouthKey = new KeyValue(FunctionKeys.MinecraftMoveSouth);
+        public static readonly KeyValue MinecraftMoveSouthWestKey = new KeyValue(FunctionKeys.MinecraftMoveSouthWest);
+        public static readonly KeyValue MinecraftMoveWestKey = new KeyValue(FunctionKeys.MinecraftMoveWest);
+        public static readonly KeyValue MinecraftMoveNorthWestKey = new KeyValue(FunctionKeys.MinecraftMoveNorthWest);
+        public static readonly KeyValue MinecraftMoveAmountKey = new KeyValue(FunctionKeys.MinecraftMoveAmount);
         public static readonly KeyValue MouseDragKey = new KeyValue(FunctionKeys.MouseDrag);
         public static readonly KeyValue MouseKeyboardKey = new KeyValue(FunctionKeys.MouseKeyboard);
         public static readonly KeyValue MouseLeftClickKey = new KeyValue(FunctionKeys.MouseLeftClick);
@@ -314,6 +335,9 @@ namespace JuliusSweetland.OptiKey.Models
                         LeftCtrlKey,
                         LeftShiftKey,
                         LeftWinKey,
+			            MouseLeftDownUpKey,
+ 			            MouseMiddleDownUpKey,
+			            MouseRightDownUpKey,
                         MouseMagnifierKey,
                         MultiKeySelectionIsOnKey
                     })

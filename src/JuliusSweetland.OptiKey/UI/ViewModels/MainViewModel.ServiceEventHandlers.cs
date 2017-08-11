@@ -41,7 +41,7 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                 if (keyStateService.KeyDownStates[KeyValues.MouseMagneticCursorKey].Value.IsDownOrLockedDown()
                     && !keyStateService.KeyDownStates[KeyValues.SleepKey].Value.IsDownOrLockedDown())
                 {
-                    mouseOutputService.MoveTo(CurrentPositionPoint);
+                    mouseOutputService.MoveTo(CurrentPositionPoint);                    
                 }
             };
 
@@ -261,6 +261,33 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
             {
                 Log.InfoFormat("KeySelectionResult received with '{0}' multiKeySelection results", multiKeySelection.Count);
                 keyboardOutputService.ProcessMultiKeyTextAndSuggestions(multiKeySelection);
+            }
+        }
+
+        // orientation = 0 for due north, and +1 for every 45 degrees clockwise
+        private void HandleMinecraftManualLook(int orientation)
+        {
+            for (int j = 0; j < Settings.Default.MinecraftLookAmount; j++)
+            {
+                for (int i = 0; i < orientation; ++i)
+                {
+                    keyboardOutputService.ProcessFunctionKey(FunctionKeys.LeftShift);
+                    keyboardOutputService.ProcessSingleKeyText("u");
+                }
+                keyboardOutputService.ProcessSingleKeyText("i");
+            }
+        }
+
+        // orientation = 0 for due north, and +1 for every 45 degrees clockwise
+        private void HandleMinecraftManualMove(int orientation)
+        {
+            for (int j = 0; j < Settings.Default.MinecraftMoveAmount; j++)
+            {
+                for (int i = 0; i < orientation; ++i)
+                {
+                    keyboardOutputService.ProcessSingleKeyText("o");
+                }
+                keyboardOutputService.ProcessSingleKeyText("p");
             }
         }
 
@@ -838,6 +865,170 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                     Keyboard = new Menu(() => Keyboard = currentKeyboard);
                     break;
 
+                case FunctionKeys.MinecraftKeyboard0:
+                    Log.Info("Changing keyboard to MinecraftKeyboard.");
+                        
+                    // Also turn off any modifier keys.
+                    Action backActionMC;
+
+                    var lastMagnifierValueMC = keyStateService.KeyDownStates[KeyValues.MouseMagnifierKey].Value;
+                    var lastLeftShiftValueMC = keyStateService.KeyDownStates[KeyValues.LeftShiftKey].Value;
+                    var lastLeftCtrlValueMC = keyStateService.KeyDownStates[KeyValues.LeftCtrlKey].Value;
+                    var lastLeftWinValueMC = keyStateService.KeyDownStates[KeyValues.LeftWinKey].Value;
+                    var lastLeftAltValueMC = keyStateService.KeyDownStates[KeyValues.LeftAltKey].Value;
+                    var lastScrollSetting = Settings.Default.MouseScrollAmountInClicks;
+                        
+                    backActionMC = () =>
+                    {
+                        keyStateService.KeyDownStates[KeyValues.LeftShiftKey].Value = lastLeftShiftValueMC;
+                        keyStateService.KeyDownStates[KeyValues.LeftCtrlKey].Value = lastLeftCtrlValueMC;
+                        keyStateService.KeyDownStates[KeyValues.LeftWinKey].Value = lastLeftWinValueMC;
+                        keyStateService.KeyDownStates[KeyValues.LeftAltKey].Value = lastLeftAltValueMC;
+                        keyStateService.KeyDownStates[KeyValues.MouseMagnifierKey].Value = lastMagnifierValueMC;
+
+                        Settings.Default.MouseScrollAmountInClicks = lastScrollSetting;    
+                        Keyboard = currentKeyboard;
+
+                        // Clear the keyboard when leaving minecraft keyboard.
+                        keyboardOutputService.ProcessFunctionKey(FunctionKeys.ClearScratchpad);
+
+                    };
+                        
+                    Keyboard = new Minecraft(backActionMC);
+
+                    // Set everything else appropriately
+                    keyStateService.KeyDownStates[KeyValues.LeftShiftKey].Value = KeyDownStates.Up;
+                    keyStateService.KeyDownStates[KeyValues.LeftWinKey].Value = KeyDownStates.Up;
+                    keyStateService.KeyDownStates[KeyValues.LeftCtrlKey].Value = KeyDownStates.Up;
+                    keyStateService.KeyDownStates[KeyValues.MouseMagnifierKey].Value = KeyDownStates.LockedDown;
+                    Settings.Default.MouseScrollAmountInClicks = 1;
+
+                    break;
+
+                case FunctionKeys.MinecraftKeyboard1:
+                    Log.Info("Changing keyboard to MinecraftKeyboard.");
+
+                    // Also turn off any modifier keys.
+                    Action backActionMC1;
+
+                    var lastMagnifierValueMC1 = keyStateService.KeyDownStates[KeyValues.MouseMagnifierKey].Value;
+                    var lastLeftShiftValueMC1 = keyStateService.KeyDownStates[KeyValues.LeftShiftKey].Value;
+                    var lastLeftCtrlValueMC1 = keyStateService.KeyDownStates[KeyValues.LeftCtrlKey].Value;
+                    var lastLeftWinValueMC1 = keyStateService.KeyDownStates[KeyValues.LeftWinKey].Value;
+                    var lastLeftAltValueMC1 = keyStateService.KeyDownStates[KeyValues.LeftAltKey].Value;
+                    var lastScrollSetting1 = Settings.Default.MouseScrollAmountInClicks;
+                    var lastMagneticCursorKeyValue1 = keyStateService.KeyDownStates[KeyValues.MouseMagneticCursorKey].Value;
+
+                    backActionMC1 = () =>
+                    {
+                        keyStateService.KeyDownStates[KeyValues.LeftShiftKey].Value = lastLeftShiftValueMC1;
+                        keyStateService.KeyDownStates[KeyValues.LeftCtrlKey].Value = lastLeftCtrlValueMC1;
+                        keyStateService.KeyDownStates[KeyValues.LeftWinKey].Value = lastLeftWinValueMC1;
+                        keyStateService.KeyDownStates[KeyValues.LeftAltKey].Value = lastLeftAltValueMC1;                            
+                        keyStateService.KeyDownStates[KeyValues.MouseMagnifierKey].Value = lastMagnifierValueMC1;
+
+                        Settings.Default.MouseScrollAmountInClicks = lastScrollSetting1;
+                        Keyboard = currentKeyboard;
+
+                        // Clear the keyboard when leaving minecraft keyboard.
+                        keyboardOutputService.ProcessFunctionKey(FunctionKeys.ClearScratchpad);
+
+                    };
+
+                    Keyboard = new Minecraft1(backActionMC1);
+
+                    // Set everything else appropriately
+                    keyStateService.KeyDownStates[KeyValues.LeftShiftKey].Value = KeyDownStates.Up;
+                    keyStateService.KeyDownStates[KeyValues.LeftWinKey].Value = KeyDownStates.Up;
+                    keyStateService.KeyDownStates[KeyValues.LeftCtrlKey].Value = KeyDownStates.Up;
+                    keyStateService.KeyDownStates[KeyValues.MouseMagnifierKey].Value = KeyDownStates.LockedDown;
+                    Settings.Default.MouseScrollAmountInClicks = 1;
+
+                    break;
+
+                case FunctionKeys.MinecraftKeyboard2:
+                    Log.Info("Changing keyboard to MinecraftKeyboard.");
+
+                    // Also turn off any modifier keys.
+                    Action backActionMC2;
+
+                    var lastMagnifierValueMC2 = keyStateService.KeyDownStates[KeyValues.MouseMagnifierKey].Value;
+                    var lastLeftShiftValueMC2 = keyStateService.KeyDownStates[KeyValues.LeftShiftKey].Value;
+                    var lastLeftCtrlValueMC2 = keyStateService.KeyDownStates[KeyValues.LeftCtrlKey].Value;
+                    var lastLeftWinValueMC2 = keyStateService.KeyDownStates[KeyValues.LeftWinKey].Value;
+                    var lastLeftAltValueMC2 = keyStateService.KeyDownStates[KeyValues.LeftAltKey].Value;
+                    var lastScrollSetting2 = Settings.Default.MouseScrollAmountInClicks;
+                    var lastMagneticCursorKeyValue2 = keyStateService.KeyDownStates[KeyValues.MouseMagneticCursorKey].Value;
+
+                    backActionMC2 = () =>
+                    {
+                        keyStateService.KeyDownStates[KeyValues.LeftShiftKey].Value = lastLeftShiftValueMC2;
+                        keyStateService.KeyDownStates[KeyValues.LeftCtrlKey].Value = lastLeftCtrlValueMC2;
+                        keyStateService.KeyDownStates[KeyValues.LeftWinKey].Value = lastLeftWinValueMC2;
+                        keyStateService.KeyDownStates[KeyValues.LeftAltKey].Value = lastLeftAltValueMC2;
+                        keyStateService.KeyDownStates[KeyValues.MouseMagnifierKey].Value = lastMagnifierValueMC2;
+
+                        Settings.Default.MouseScrollAmountInClicks = lastScrollSetting2;
+                        Keyboard = currentKeyboard;
+
+                        // Clear the keyboard when leaving minecraft keyboard.
+                        keyboardOutputService.ProcessFunctionKey(FunctionKeys.ClearScratchpad);
+
+                    };
+
+                    Keyboard = new Minecraft2(backActionMC2);
+
+                    // Set everything else appropriately
+                    keyStateService.KeyDownStates[KeyValues.LeftShiftKey].Value = KeyDownStates.Up;
+                    keyStateService.KeyDownStates[KeyValues.LeftWinKey].Value = KeyDownStates.Up;
+                    keyStateService.KeyDownStates[KeyValues.LeftCtrlKey].Value = KeyDownStates.Up;
+                    keyStateService.KeyDownStates[KeyValues.MouseMagnifierKey].Value = KeyDownStates.LockedDown;
+                    Settings.Default.MouseScrollAmountInClicks = 1;
+
+                    break;
+
+                case FunctionKeys.MinecraftInventoryKeyboard:
+                    Log.Info("Changing keyboard to MinecraftInventoryKeyboard.");
+                        
+                    // Turn off any modifier keys.
+                    Action backActionMCInventory;
+
+                    var lastMagnifierValue = keyStateService.KeyDownStates[KeyValues.MouseMagnifierKey].Value;
+                    var lastLeftShiftValueMCI = keyStateService.KeyDownStates[KeyValues.LeftShiftKey].Value;
+                    var lastLeftCtrlValueMCI = keyStateService.KeyDownStates[KeyValues.LeftCtrlKey].Value;
+                    var lastLeftWinValueMCI = keyStateService.KeyDownStates[KeyValues.LeftWinKey].Value;
+                    var lastLeftAltValueMCI = keyStateService.KeyDownStates[KeyValues.LeftAltKey].Value;
+                    var lastMagneticCursorKeyValue = keyStateService.KeyDownStates[KeyValues.MouseMagneticCursorKey].Value;
+
+                    backActionMCInventory = () =>
+                    {
+                        Keyboard = currentKeyboard;
+                        keyStateService.KeyDownStates[KeyValues.MouseMagnifierKey].Value = lastMagnifierValue;
+
+                        keyStateService.KeyDownStates[KeyValues.LeftShiftKey].Value = lastLeftShiftValueMCI;
+                        keyStateService.KeyDownStates[KeyValues.LeftCtrlKey].Value = lastLeftCtrlValueMCI;
+                        keyStateService.KeyDownStates[KeyValues.LeftWinKey].Value = lastLeftWinValueMCI;
+                        keyStateService.KeyDownStates[KeyValues.LeftAltKey].Value = lastLeftAltValueMCI;
+                        keyStateService.KeyDownStates[KeyValues.MouseMagneticCursorKey].Value = lastMagneticCursorKeyValue;
+
+                        // Clear the keyboard when leaving minecraft keyboard.
+                        keyboardOutputService.ProcessFunctionKey(FunctionKeys.ClearScratchpad);
+
+                    };
+
+                    keyStateService.KeyDownStates[KeyValues.MouseMagnifierKey].Value = KeyDownStates.LockedDown;
+                    Keyboard = new MinecraftSurvivalInventory(backActionMCInventory);
+
+                    // Set everything else appropriately
+                    keyStateService.KeyDownStates[KeyValues.LeftShiftKey].Value = KeyDownStates.Up;
+                    keyStateService.KeyDownStates[KeyValues.LeftWinKey].Value = KeyDownStates.Up;
+                    keyStateService.KeyDownStates[KeyValues.LeftCtrlKey].Value = KeyDownStates.Up;
+                    keyStateService.KeyDownStates[KeyValues.MouseMagneticCursorKey].Value = KeyDownStates.Up;
+
+                    Settings.Default.MouseScrollAmountInClicks = 1;
+
+                    break;
+                    
                 case FunctionKeys.Minimise:
                     Log.Info("Minimising window.");
                     mainWindowManipulationService.Minimise();
@@ -1505,7 +1696,87 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                     simulateMoveToTop();
                     break;
 
-                case FunctionKeys.MouseRightClick:
+                    case FunctionKeys.MinecraftLookNorth:
+                        Log.Info("Minecraft move/look to north selected.");
+                        HandleMinecraftManualLook(0);
+                        break;
+
+                    case FunctionKeys.MinecraftLookNorthEast:
+                        Log.Info("Minecraft move/look to north-east selected.");
+                        HandleMinecraftManualLook(1);
+                        break;
+
+                    case FunctionKeys.MinecraftLookEast:
+                        Log.Info("Minecraft move/look to east selected.");
+                        HandleMinecraftManualLook(2);
+                        break;
+
+                    case FunctionKeys.MinecraftLookSouthEast:
+                        Log.Info("Minecraft move/look to south-east selected.");
+                        HandleMinecraftManualLook(3);
+                        break;
+
+                    case FunctionKeys.MinecraftLookSouth:
+                        Log.Info("Minecraft move/look to south selected.");
+                        HandleMinecraftManualLook(4);
+                        break;
+
+                    case FunctionKeys.MinecraftLookSouthWest:
+                        Log.Info("Minecraft move/look to south-west selected.");
+                        HandleMinecraftManualLook(5);
+                        break;
+
+                    case FunctionKeys.MinecraftLookWest:
+                        Log.Info("Minecraft move/look to west selected.");
+                        HandleMinecraftManualLook(6);
+                        break;
+
+                    case FunctionKeys.MinecraftLookNorthWest:
+                        Log.Info("Minecraft move/look to north-west selected.");
+                        HandleMinecraftManualLook(7);
+                        break;
+
+                    case FunctionKeys.MinecraftMoveNorth:
+                        Log.Info("Minecraft move/look to north selected.");
+                        HandleMinecraftManualMove(0);
+                        break;
+
+                    case FunctionKeys.MinecraftMoveNorthEast:
+                        Log.Info("Minecraft move/look to north-east selected.");
+                        HandleMinecraftManualMove(1);
+                        break;
+
+                    case FunctionKeys.MinecraftMoveEast:
+                        Log.Info("Minecraft move/look to east selected.");
+                        HandleMinecraftManualMove(2);
+                        break;
+
+                    case FunctionKeys.MinecraftMoveSouthEast:
+                        Log.Info("Minecraft move/look to south-east selected.");
+                        HandleMinecraftManualMove(3);
+                        break;
+
+                    case FunctionKeys.MinecraftMoveSouth:
+                        Log.Info("Minecraft move/look to south selected.");
+                        HandleMinecraftManualMove(4);
+                        break;
+
+                    case FunctionKeys.MinecraftMoveSouthWest:
+                        Log.Info("Minecraft move/look to south-west selected.");
+                        HandleMinecraftManualMove(5);
+                        break;
+
+                    case FunctionKeys.MinecraftMoveWest:
+                        Log.Info("Minecraft move/look to west selected.");
+                        HandleMinecraftManualMove(6);
+                        break;
+
+                    case FunctionKeys.MinecraftMoveNorthWest:
+                        Log.Info("Minecraft move/look to north-west selected.");
+                        HandleMinecraftManualMove(7);
+                        break;
+
+                    case FunctionKeys.MouseRightClick:
                     var rightClickPoint = mouseOutputService.GetCursorPosition();
                     Log.InfoFormat("Mouse right click selected at point ({0},{1}).", rightClickPoint.X, rightClickPoint.Y);
                     Action performRightClick = () =>
@@ -1614,10 +1885,54 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                     }
                     break;
 
-                case FunctionKeys.MoveToBottom:
-                    Log.InfoFormat("Moving to bottom by {0}px.", Settings.Default.MoveAndResizeAdjustmentAmountInPixels);
-                    mainWindowManipulationService.Move(MoveToDirections.Bottom, Settings.Default.MoveAndResizeAdjustmentAmountInPixels);
-                    break;
+                    case FunctionKeys.MinecraftMoveAmount:
+                        Log.Info("Progressing MinecraftMoveAmount.");
+                        switch (Settings.Default.MinecraftMoveAmount)
+                        {
+                            case 1:
+                                Settings.Default.MinecraftMoveAmount = 2;
+                                break;
+
+                            case 2:
+                                Settings.Default.MinecraftMoveAmount = 4;
+                                break;
+
+                            case 4:
+                                Settings.Default.MinecraftMoveAmount = 8;
+                                break;
+
+                            default:
+                                Settings.Default.MinecraftMoveAmount = 1;
+                                break;
+                        }
+                        break;
+
+                    case FunctionKeys.MinecraftLookAmount:
+                        Log.Info("Progressing MinecraftLookAmount.");
+                        switch (Settings.Default.MinecraftLookAmount)
+                        {
+                            case 1:
+                                Settings.Default.MinecraftLookAmount = 2;
+                                break;
+
+                            case 2:
+                                Settings.Default.MinecraftLookAmount = 4;
+                                break;
+
+                            case 4:
+                                Settings.Default.MinecraftLookAmount = 8;
+                                break;
+
+                            default:
+                                Settings.Default.MinecraftLookAmount = 1;
+                                break;
+                        }
+                        break;
+
+                    case FunctionKeys.MoveToBottom:
+                        Log.InfoFormat("Moving to bottom by {0}px.", Settings.Default.MoveAndResizeAdjustmentAmountInPixels);
+                        mainWindowManipulationService.Move(MoveToDirections.Bottom, Settings.Default.MoveAndResizeAdjustmentAmountInPixels);
+                        break;
 
                 case FunctionKeys.MoveToBottomAndLeft:
                     Log.InfoFormat("Moving to bottom and left by {0}px.", Settings.Default.MoveAndResizeAdjustmentAmountInPixels);
@@ -1924,6 +2239,18 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
 
             SelectionMode = SelectionModes.Point;
             ShowCursor = true;
+        }
+
+        private void SimulateMouseDelta(int x, int y)
+        {
+            Action simulateMoveDelta = () =>
+            {
+                var delta = new Point(x, y);
+                Log.InfoFormat("Performing mouse move by delta ({0},{1}).", delta.X, delta.Y);
+                mouseOutputService.MoveBy(delta);
+            };
+            lastMouseActionStateManager.LastMouseAction = simulateMoveDelta;
+            simulateMoveDelta();
         }
 
         private void ResetAndCleanupAfterMouseAction()

@@ -95,6 +95,24 @@ namespace JuliusSweetland.OptiKey.Services
             }
         }
 
+        public void MouseMouseBy(Point delta)
+        {
+            try
+            {
+                Log.DebugFormat("Simulating moving mouse by delta '{0}'", delta);
+
+                // This is presumably not as robust as MoveMouseToPositionOnVirtualDesktop, which
+                // includes all active displays. However it is sometimes necessary to apply a mouse
+                // *delta* to the active window.
+                inputSimulator.Mouse.MoveMouseBy((int)delta.X, (int)delta.Y);
+                
+            }
+            catch (Exception exception)
+            {
+                PublishError(this, exception);
+            }
+        }
+
         public void MouseMouseToPoint(Point point)
         {
             try

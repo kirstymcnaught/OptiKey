@@ -147,6 +147,12 @@ namespace JuliusSweetland.OptiKey.Services
             publishService.MouseMouseToPoint(point);
         }
 
+        public void MoveBy(Point delta)
+        {
+            Log.DebugFormat("Moving cursor by delta '{0}'", delta);
+            publishService.MouseMouseBy(delta);
+        }
+
         public void RightButtonClick()
         {
             Log.DebugFormat("Generating a right click.");
