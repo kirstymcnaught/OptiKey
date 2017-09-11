@@ -1830,37 +1830,31 @@ namespace JuliusSweetland.OptiKey.Properties {
                 this["KeySelectionTriggerFixationCompleteTimesByKeyValues"] = value;
             }
         }
-
+        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("2")]
-        public int MinecraftLookAmount
-        {
-            get
-            {
+        public int MinecraftLookAmount {
+            get {
                 return ((int)(this["MinecraftLookAmount"]));
             }
-            set
-            {
+            set {
                 this["MinecraftLookAmount"] = value;
             }
         }
-
+        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("2")]
-        public int MinecraftMoveAmount
-        {
-            get
-            {
+        public int MinecraftMoveAmount {
+            get {
                 return ((int)(this["MinecraftMoveAmount"]));
             }
-            set
-            {
+            set {
                 this["MinecraftMoveAmount"] = value;
             }
         }
-
+        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
