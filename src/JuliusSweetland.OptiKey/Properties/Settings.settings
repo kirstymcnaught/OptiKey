@@ -288,7 +288,7 @@
       <Value Profile="(Default)">SameAsDockedPosition</Value>
     </Setting>
     <Setting Name="KeyCase" Roaming="true" Type="JuliusSweetland.OptiKey.Enums.Case" Scope="User">
-      <Value Profile="(Default)">Upper</Value>
+      <Value Profile="(Default)">Title</Value>
     </Setting>
     <Setting Name="TobiiEyeXProcessingLevel" Roaming="true" Type="JuliusSweetland.OptiKey.Enums.DataStreamProcessingLevels" Scope="User">
       <Value Profile="(Default)">Medium</Value>
