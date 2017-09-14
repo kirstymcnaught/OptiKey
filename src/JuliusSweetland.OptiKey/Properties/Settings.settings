@@ -21,7 +21,7 @@
       <Value Profile="(Default)">00:00:00.0130000</Value>
     </Setting>
     <Setting Name="PointsMousePositionHideCursor" Roaming="true" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
+      <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="PointsSource" Roaming="true" Type="JuliusSweetland.OptiKey.Enums.PointsSources" Scope="User">
       <Value Profile="(Default)">MousePosition</Value>
