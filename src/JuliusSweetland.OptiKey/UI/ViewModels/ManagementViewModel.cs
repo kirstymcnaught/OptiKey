@@ -27,9 +27,7 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
             DictionaryViewModel = new DictionaryViewModel(dictionaryService);
             OtherViewModel = new OtherViewModel();
             PointingAndSelectingViewModel = new PointingAndSelectingViewModel();
-            SoundsViewModel = new SoundsViewModel(audioService);
             VisualsViewModel = new VisualsViewModel();
-            WordsViewModel = new WordsViewModel(dictionaryService);
             
             //Instantiate interaction requests and commands
             ConfirmationRequest = new InteractionRequest<Confirmation>();
@@ -48,18 +46,14 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                 return DictionaryViewModel.ChangesRequireRestart
                     || OtherViewModel.ChangesRequireRestart
                     || PointingAndSelectingViewModel.ChangesRequireRestart
-                    || SoundsViewModel.ChangesRequireRestart
-                    || VisualsViewModel.ChangesRequireRestart
-                    || WordsViewModel.ChangesRequireRestart;
+                    || VisualsViewModel.ChangesRequireRestart;
             }
         }
 
         public DictionaryViewModel DictionaryViewModel { get; private set; }
         public OtherViewModel OtherViewModel { get; private set; }
         public PointingAndSelectingViewModel PointingAndSelectingViewModel { get; private set; }
-        public SoundsViewModel SoundsViewModel { get; private set; }
         public VisualsViewModel VisualsViewModel { get; private set; }
-        public WordsViewModel WordsViewModel { get; private set; }
         
         public InteractionRequest<Confirmation> ConfirmationRequest { get; private set; }
         public DelegateCommand<Window> OkCommand { get; private set; }
@@ -74,9 +68,7 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
             DictionaryViewModel.ApplyChanges();
             OtherViewModel.ApplyChanges();
             PointingAndSelectingViewModel.ApplyChanges();
-            SoundsViewModel.ApplyChanges();
             VisualsViewModel.ApplyChanges();
-            WordsViewModel.ApplyChanges();
         }
 
         private void Ok(Window window)
