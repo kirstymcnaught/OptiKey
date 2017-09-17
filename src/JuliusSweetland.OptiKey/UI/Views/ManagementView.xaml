@@ -35,6 +35,9 @@
             <TabItem Header="{x:Static resx:Resources.OTHER}">
                 <management:OtherView DataContext="{Binding OtherViewModel, Mode=OneWay}" />
             </TabItem>
+            <TabItem Header="{x:Static resx:Resources.ABOUT}">
+                <management:AboutView DataContext="{Binding AboutViewModel, Mode=OneWay}" />
+            </TabItem>
         </TabControl>
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right">
             <Button Command="{Binding OkCommand}" 

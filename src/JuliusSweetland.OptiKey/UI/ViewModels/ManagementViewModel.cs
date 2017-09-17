@@ -28,6 +28,7 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
             OtherViewModel = new OtherViewModel();
             PointingAndSelectingViewModel = new PointingAndSelectingViewModel();
             VisualsViewModel = new VisualsViewModel();
+            AboutViewModel = new AboutViewModel();
             
             //Instantiate interaction requests and commands
             ConfirmationRequest = new InteractionRequest<Confirmation>();
@@ -54,7 +55,8 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
         public OtherViewModel OtherViewModel { get; private set; }
         public PointingAndSelectingViewModel PointingAndSelectingViewModel { get; private set; }
         public VisualsViewModel VisualsViewModel { get; private set; }
-        
+        public AboutViewModel AboutViewModel { get; private set; }
+
         public InteractionRequest<Confirmation> ConfirmationRequest { get; private set; }
         public DelegateCommand<Window> OkCommand { get; private set; }
         public DelegateCommand<Window> CancelCommand { get; private set; }
@@ -69,6 +71,7 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
             OtherViewModel.ApplyChanges();
             PointingAndSelectingViewModel.ApplyChanges();
             VisualsViewModel.ApplyChanges();
+            AboutViewModel.ApplyChanges();
         }
 
         private void Ok(Window window)

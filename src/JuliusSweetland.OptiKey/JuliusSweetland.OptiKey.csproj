@@ -436,6 +436,7 @@
     <Compile Include="UI\ViewModels\MainViewModel.cs" />
     <Compile Include="UI\ViewModels\ManagementViewModel.cs" />
     <Compile Include="UI\ViewModels\Management\DictionaryViewModel.cs" />
+    <Compile Include="UI\ViewModels\Management\AboutViewModel.cs" />
     <Compile Include="UI\ViewModels\Management\PointingAndSelectingViewModel.cs" />
     <Compile Include="UI\ViewModels\Management\SoundsViewModel.cs" />
     <Compile Include="UI\ViewModels\Management\VisualsViewModel.cs" />
@@ -636,6 +637,9 @@
     </Compile>
     <Compile Include="UI\Views\ManagementView.xaml.cs">
       <DependentUpon>ManagementView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Views\Management\AboutView.xaml.cs">
+      <DependentUpon>AboutView.xaml</DependentUpon>
     </Compile>
     <Compile Include="UI\Views\Management\OtherView.xaml.cs">
       <DependentUpon>OtherView.xaml</DependentUpon>
@@ -1335,6 +1339,10 @@
     <Page Include="UI\Views\ManagementView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Views\Management\AboutView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="UI\Views\Management\OtherView.xaml">
       <Generator>MSBuild:Compile</Generator>
