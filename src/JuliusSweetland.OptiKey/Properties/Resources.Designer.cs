@@ -632,6 +632,15 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Content.
+        /// </summary>
+        public static string CONTENT {
+            get {
+                return ResourceManager.GetString("CONTENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MENU.
         /// </summary>
         public static string CONTEXTUAL_MENU_KEY {

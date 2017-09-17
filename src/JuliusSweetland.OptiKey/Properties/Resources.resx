@@ -2071,4 +2071,7 @@ walking</value>
     <value>Toggle 
 walk (legacy)</value>
   </data>
+  <data name="CONTENT" xml:space="preserve">
+    <value>Content</value>
+  </data>
 </root>
