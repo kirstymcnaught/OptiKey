@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JuliusSweetland.OptiKey", "src\JuliusSweetland.OptiKey\JuliusSweetland.OptiKey.csproj", "{6865C5AF-C6F0-4BDA-BA1C-7AE8BC225234}"
 EndProject
@@ -31,24 +31,46 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OptiKeyLocaleGuideImages", 
 		docs\OptiKeyLocaleGuideImages\transifex_project_trans_page.JPG = docs\OptiKeyLocaleGuideImages\transifex_project_trans_page.JPG
 	EndProjectSection
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupOptiKeyMinecraft", "install\SetupOptiKeyMinecraft\SetupOptiKeyMinecraft\SetupOptiKeyMinecraft.vdproj", "{CCA006AB-9254-4F68-9C4B-F5440A5E8C5E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{6865C5AF-C6F0-4BDA-BA1C-7AE8BC225234}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6865C5AF-C6F0-4BDA-BA1C-7AE8BC225234}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6865C5AF-C6F0-4BDA-BA1C-7AE8BC225234}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6865C5AF-C6F0-4BDA-BA1C-7AE8BC225234}.Debug|x86.Build.0 = Debug|Any CPU
 		{6865C5AF-C6F0-4BDA-BA1C-7AE8BC225234}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6865C5AF-C6F0-4BDA-BA1C-7AE8BC225234}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6865C5AF-C6F0-4BDA-BA1C-7AE8BC225234}.Release|x86.ActiveCfg = Release|Any CPU
+		{6865C5AF-C6F0-4BDA-BA1C-7AE8BC225234}.Release|x86.Build.0 = Release|Any CPU
 		{345EB82F-7EF0-4118-A1F1-92DA1AEE5197}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{345EB82F-7EF0-4118-A1F1-92DA1AEE5197}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{345EB82F-7EF0-4118-A1F1-92DA1AEE5197}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{345EB82F-7EF0-4118-A1F1-92DA1AEE5197}.Debug|x86.Build.0 = Debug|Any CPU
 		{345EB82F-7EF0-4118-A1F1-92DA1AEE5197}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{345EB82F-7EF0-4118-A1F1-92DA1AEE5197}.Release|Any CPU.Build.0 = Release|Any CPU
+		{345EB82F-7EF0-4118-A1F1-92DA1AEE5197}.Release|x86.ActiveCfg = Release|Any CPU
+		{345EB82F-7EF0-4118-A1F1-92DA1AEE5197}.Release|x86.Build.0 = Release|Any CPU
 		{5831AF7F-EB4B-42A4-8184-0C8B3A77466B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5831AF7F-EB4B-42A4-8184-0C8B3A77466B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5831AF7F-EB4B-42A4-8184-0C8B3A77466B}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{5831AF7F-EB4B-42A4-8184-0C8B3A77466B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5831AF7F-EB4B-42A4-8184-0C8B3A77466B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5831AF7F-EB4B-42A4-8184-0C8B3A77466B}.Release|x86.ActiveCfg = Release|Any CPU
+		{CCA006AB-9254-4F68-9C4B-F5440A5E8C5E}.Debug|Any CPU.ActiveCfg = Debug
+		{CCA006AB-9254-4F68-9C4B-F5440A5E8C5E}.Debug|Any CPU.Build.0 = Debug
+		{CCA006AB-9254-4F68-9C4B-F5440A5E8C5E}.Debug|x86.ActiveCfg = Debug
+		{CCA006AB-9254-4F68-9C4B-F5440A5E8C5E}.Debug|x86.Build.0 = Debug
+		{CCA006AB-9254-4F68-9C4B-F5440A5E8C5E}.Release|Any CPU.ActiveCfg = Release
+		{CCA006AB-9254-4F68-9C4B-F5440A5E8C5E}.Release|Any CPU.Build.0 = Release
+		{CCA006AB-9254-4F68-9C4B-F5440A5E8C5E}.Release|x86.ActiveCfg = Release
+		{CCA006AB-9254-4F68-9C4B-F5440A5E8C5E}.Release|x86.Build.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
