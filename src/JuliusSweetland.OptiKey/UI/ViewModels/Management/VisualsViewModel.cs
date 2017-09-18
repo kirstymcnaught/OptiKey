@@ -124,26 +124,22 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels.Management
             {
                 return new List<KeyValuePair<string, Enums.Keyboards>>
                 {
-                    new KeyValuePair<string, Enums.Keyboards>(Resources.ALPHA_LAYOUT, Enums.Keyboards.Alpha),
-                    new KeyValuePair<string, Enums.Keyboards>(Resources.CONVERSATION_LAYOUT, Enums.Keyboards.ConversationAlpha),
-                    new KeyValuePair<string, Enums.Keyboards>(Resources.CONVERSATION_NUM_SYM_LAYOUT, Enums.Keyboards.ConversationNumericAndSymbols),
-                    new KeyValuePair<string, Enums.Keyboards>(Resources.CURRENCIES_LAYOUT_1, Enums.Keyboards.Currencies1),
-                    new KeyValuePair<string, Enums.Keyboards>(Resources.CURRENCIES_LAYOUT_2, Enums.Keyboards.Currencies2),
-                    new KeyValuePair<string, Enums.Keyboards>(Resources.CUSTOM_LAYOUT, Enums.Keyboards.CustomKeyboardFile),
                     new KeyValuePair<string, Enums.Keyboards>(Resources.DYNAMIC_KEYBOARD_LAYOUT, Enums.Keyboards.DynamicKeyboard),
-                    new KeyValuePair<string, Enums.Keyboards>(Resources.DIACRITICS_LAYOUT_1, Enums.Keyboards.Diacritics1),
-                    new KeyValuePair<string, Enums.Keyboards>(Resources.DIACRITICS_LAYOUT_2, Enums.Keyboards.Diacritics2),
-                    new KeyValuePair<string, Enums.Keyboards>(Resources.DIACRITICS_LAYOUT_3, Enums.Keyboards.Diacritics3),
-                    new KeyValuePair<string, Enums.Keyboards>(Resources.MENU_LAYOUT, Enums.Keyboards.Menu),
-                    new KeyValuePair<string, Enums.Keyboards>(Resources.MINIMISED_LAYOUT, Enums.Keyboards.Minimised),
-                    new KeyValuePair<string, Enums.Keyboards>(Resources.MOUSE_LAYOUT, Enums.Keyboards.Mouse),
-                    new KeyValuePair<string, Enums.Keyboards>(Resources.NUMBERS_SYMBOLS_LAYOUT_1, Enums.Keyboards.NumericAndSymbols1),
-                    new KeyValuePair<string, Enums.Keyboards>(Resources.NUMBERS_SYMBOLS_LAYOUT_2, Enums.Keyboards.NumericAndSymbols2),
-                    new KeyValuePair<string, Enums.Keyboards>(Resources.NUMBERS_SYMBOLS_LAYOUT_3, Enums.Keyboards.NumericAndSymbols3),
-                    new KeyValuePair<string, Enums.Keyboards>(Resources.PHYSICAL_KEYS_LAYOUT, Enums.Keyboards.PhysicalKeys),
-                    new KeyValuePair<string, Enums.Keyboards>(Resources.SIZE_POSITION_LAYOUT, Enums.Keyboards.SizeAndPosition),
-                    new KeyValuePair<string, Enums.Keyboards>(Resources.MINECRAFT_LAYOUT, Enums.Keyboards.Minecraft),
-                    new KeyValuePair<string, Enums.Keyboards>(Resources.WEB_BROWSING_LAYOUT, Enums.Keyboards.WebBrowsing)
+                    new KeyValuePair<string, Enums.Keyboards>(Resources.CUSTOM_LAYOUT, Enums.Keyboards.CustomKeyboardFile),
+                };
+            }
+        }
+
+        public List<KeyValuePair<string, Enums.DockEdges>> DockPositions
+        {
+            get
+            {
+                return new List<KeyValuePair<string, Enums.DockEdges>>
+                {
+                    new KeyValuePair<string, Enums.DockEdges>(Resources.TOP, Enums.DockEdges.Top),
+                    new KeyValuePair<string, Enums.DockEdges>(Resources.BOTTOM, Enums.DockEdges.Bottom),
+                    new KeyValuePair<string, Enums.DockEdges>(Resources.LEFT, Enums.DockEdges.Left),
+                    new KeyValuePair<string, Enums.DockEdges>(Resources.RIGHT, Enums.DockEdges.Right),
                 };
             }
         }
@@ -218,6 +214,13 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels.Management
         {
             get { return keyCase; }
             set { SetProperty(ref keyCase, value); }
+        }
+
+        private Enums.DockEdges dockPosition;
+        public Enums.DockEdges DockPosition
+        {
+            get { return dockPosition; }
+            set { SetProperty(ref dockPosition, value); }
         }
 
         private int scratchpadNumberOfLines;
@@ -338,7 +341,8 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels.Management
             {
                 return Settings.Default.ConversationOnlyMode != ConversationOnlyMode
                     || Settings.Default.ConversationConfirmEnable != ConversationConfirmEnable
-                    || Settings.Default.ConversationConfirmOnlyMode != ConversationConfirmOnlyMode;
+                    || Settings.Default.ConversationConfirmOnlyMode != ConversationConfirmOnlyMode
+                    || Settings.Default.MainWindowDockPosition != DockPosition;
             }
         }
 
@@ -401,6 +405,7 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels.Management
             EnableQuitKeys = Settings.Default.EnableQuitKeys;
             DynamicKeyboardsLocation = Settings.Default.DynamicKeyboardsLocation;
             StartupKeyboardFile = Settings.Default.StartupKeyboardFile;
+            DockPosition = Settings.Default.MainWindowDockPosition;
         }
 
         public void ApplyChanges()
@@ -430,6 +435,7 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels.Management
             Settings.Default.EnableQuitKeys = EnableQuitKeys;
             Settings.Default.DynamicKeyboardsLocation = DynamicKeyboardsLocation;
             Settings.Default.StartupKeyboardFile = StartupKeyboardFile;
+            Settings.Default.MainWindowDockPosition = DockPosition;
         }
 
         #endregion
