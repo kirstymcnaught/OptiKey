@@ -2,7 +2,7 @@
 <Keyboard>
    <Height>32</Height>
    <Name>Minecraft\nAdvanced</Name>
-   <SymbolMargin>20</SymbolMargin>
+   <SymbolMargin>15</SymbolMargin>
    <Grid>
       <Rows>7</Rows>
       <Cols>9</Cols>
