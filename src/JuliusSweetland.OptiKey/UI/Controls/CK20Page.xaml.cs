@@ -18,7 +18,7 @@ namespace JuliusSweetland.OptiKey.UI.Controls
     public partial class CK20Page : UserControl
     {
         private static readonly ILog Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-        private const string ApplicationDataSubPath = @"JuliusSweetland\OptiKey\CommuniKate\";
+        private const string ApplicationDataSubPath = @"SpecialEffect\OptiKeyMinecraft\CommuniKate\";
 
         public class CKOBF
         {

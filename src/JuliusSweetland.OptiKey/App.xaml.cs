@@ -928,7 +928,7 @@ namespace JuliusSweetland.OptiKey
 
         private static string GetDefaultUserKeyboardFolder()
         {
-            const string ApplicationDataSubPath = @"JuliusSweetland\OptiKey\Keyboards\";
+            const string ApplicationDataSubPath = @"SpecialEffect\OptiKeyMinecraft\Keyboards\";
 
             var applicationDataPath = Path.Combine(
                 Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
@@ -956,7 +956,7 @@ namespace JuliusSweetland.OptiKey
                 if (Settings.Default.CommuniKateStagedForDeletion)
                 {
                     Log.Info("Deleting previously unpacked CommuniKate pageset.");
-                    string ApplicationDataSubPath = @"JuliusSweetland\OptiKey\CommuniKate\";
+                    string ApplicationDataSubPath = @"SpecialEffect\OptiKeyMinecraft\CommuniKate\";
                     var path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), ApplicationDataSubPath);
                     if (Directory.Exists(path))
                     {

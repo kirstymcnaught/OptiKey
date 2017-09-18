@@ -19,7 +19,7 @@ namespace JuliusSweetland.OptiKey.Services
     {
         #region Constants
 
-        private const string ApplicationDataSubPath = @"JuliusSweetland\OptiKey\Dictionaries\";
+        private const string ApplicationDataSubPath = @"SpecialEffect\OptiKeyMinecraft\Dictionaries\";
         private const string OriginalDictionariesSubPath = @"Dictionaries\";
         private const string DictionaryFileType = ".dic";
 
