@@ -806,7 +806,7 @@ namespace JuliusSweetland.OptiKey
                 message.AppendLine(string.Format(OptiKey.Properties.Resources.POINT_SELECTION_DESCRIPTION, pointSelectionSb));
 
                 message.AppendLine(OptiKey.Properties.Resources.MANAGEMENT_CONSOLE_DESCRIPTION);
-                message.AppendLine(OptiKey.Properties.Resources.WEBSITE_DESCRIPTION);
+                //message.AppendLine(OptiKey.Properties.Resources.WEBSITE_DESCRIPTION);
 
                 inputService.RequestSuspend();
                 audioService.PlaySound(Settings.Default.InfoSoundFile, Settings.Default.InfoSoundVolume);

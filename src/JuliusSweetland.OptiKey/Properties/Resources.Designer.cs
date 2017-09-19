@@ -3796,7 +3796,7 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to OptiKey : Type · Click · Speak.
+        ///   Looks up a localized string similar to OptiKey Minecraft.
         /// </summary>
         public static string OPTIKEY_DESCRIPTION {
             get {
