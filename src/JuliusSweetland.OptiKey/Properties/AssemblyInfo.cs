@@ -6,11 +6,11 @@ using System.Windows;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("OptiKeyMinecraft")]
+[assembly: AssemblyTitle("OptiKeyMinecraftV1")]
 [assembly: AssemblyDescription("Free, Open Source, Assistive On-Screen Keyboard")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("SpecialEffect")]
-[assembly: AssemblyProduct("OptiKeyMinecraft")]
+[assembly: AssemblyProduct("OptiKeyMinecraftV1")]
 [assembly: AssemblyCopyright("Licensed under the terms of the GNU GPL v3")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -60,7 +60,7 @@ using System.Windows;
 //MAJOR version when you make incompatible API changes,
 //MINOR version when you add functionality in a backwards-compatible manner, and
 //PATCH version when you make backwards-compatible bug fixes (in the Version class this is the Build number).
-[assembly: AssemblyVersion("2.11.0.001")]
+[assembly: AssemblyVersion("1.0.0")]
 
 [assembly: InternalsVisibleTo("JuliusSweetland.OptiKey.UnitTests")]
 [assembly: InternalsVisibleTo("JuliusSweetland.OptiKey.AutoCompletePerformance")]
