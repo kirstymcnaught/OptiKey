@@ -1152,7 +1152,7 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Dynamic keyboard menu.
+        ///   Looks up a localized string similar to Selection of Minecraft keyboards.
         /// </summary>
         public static string DYNAMIC_KEYBOARD_LAYOUT {
             get {
