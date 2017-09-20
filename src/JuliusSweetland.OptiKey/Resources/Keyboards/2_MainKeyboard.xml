@@ -7,9 +7,6 @@
       <Rows>7</Rows>
       <Cols>9</Cols>
    </Grid>
-   <InitialKeyStates>
-     <KeyLockedDown>MouseMagnifier</KeyLockedDown>   
-   </InitialKeyStates>
 	<Keys>
 		<TextKey>
 			<Label>Building</Label>
