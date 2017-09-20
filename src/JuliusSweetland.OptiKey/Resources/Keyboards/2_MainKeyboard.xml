@@ -200,7 +200,7 @@
 			<Label>Swap mine/place</Label>
 			<Index>19</Index>
 			<Symbol>MinecraftSwapMinePlace</Symbol>
-			<Action>F8</Action>
+			<Action>F10</Action>
 			<Row>3</Row>
 			<Col>6</Col>
 			<Height>2</Height>
@@ -298,7 +298,7 @@
 			<Width>1</Width>
 		</ActionKey>
 		<TextKey>
-			<Label>Dismount</Label>
+			<Label>Ride/\nDismount</Label>
 			<Index>29</Index>
 			<Text>c</Text>
 			<Row>5</Row>
