@@ -187,12 +187,6 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                 };
             }
 
-            // If keyboard we're exiting is a dynamic one, process any key resets.
-            // (this may have already been handled via a BackAction, but we can't
-            // be sure and it doesn't hurt to re-apply).
-            var oldDynKeyboard = Keyboard as DynamicKeyboard;
-            oldDynKeyboard?.ResetOveriddenKeyStates();
-
             if (keyValue.BuiltInKeyboard.HasValue)
             {
                 SetKeyboardFromEnum(keyValue.BuiltInKeyboard.Value, mainWindowManipulationService, backAction);
@@ -203,7 +197,6 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
 
                 // Extract any key states if present
                 var initialKeyStates = new Dictionary<KeyValue, KeyDownStates>();
-                var resetKeyStates = new Dictionary<KeyValue, KeyDownStates>();
                 try
                 {
                     XmlKeyboard keyboard = XmlKeyboard.ReadFromFile(keyValue.KeyboardFilename);
@@ -213,16 +206,15 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                     {
                         foreach (var item in states.GetKeyOverrides())
                         {
+                            // TODO: move this into XmlKeyStates.GetKeyOverrides ?
                             FunctionKeys? fKey = FunctionKeysExtensions.FromString(item.Item1);
                             if (fKey.HasValue)
                             {
                                 KeyValue val = new KeyValue(fKey.Value);
                                 initialKeyStates.Add(val, item.Item2);
-                                resetKeyStates.Add(val, keyStateService.KeyDownStates[val].Value);
                             }
                         }
                     }
-
                 }
                 catch (Exception)
                 {
@@ -230,7 +222,7 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                 }
 
                 DynamicKeyboard newDynKeyboard = new DynamicKeyboard(backAction, resizeAction, keyStateService, keyValue.KeyboardFilename);
-                newDynKeyboard.ApplyKeyOverrides(initialKeyStates, resetKeyStates);
+                newDynKeyboard.SetKeyOverrides(initialKeyStates);
                 Keyboard = newDynKeyboard;
 
                 // Clear the scratchpad when launching a dynamic keyboard.
