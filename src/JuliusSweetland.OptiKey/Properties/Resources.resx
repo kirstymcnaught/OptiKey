@@ -2077,4 +2077,7 @@ walk (legacy)</value>
   <data name="TOP" xml:space="preserve">
     <value>Top</value>
   </data>
+  <data name="DOCK_POSITON_LABEL" xml:space="preserve">
+    <value>Dock position:</value>
+  </data>
 </root>
