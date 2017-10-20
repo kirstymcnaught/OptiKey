@@ -315,7 +315,7 @@
       <Value Profile="(Default)">1</Value>
     </Setting>
     <Setting Name="KeySelectionTriggerFixationCompleteTimesByIndividualKey" Roaming="true" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">True</Value>
+      <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="SuggestionMethod" Roaming="true" Type="JuliusSweetland.OptiKey.Enums.SuggestionMethods" Scope="User">
       <Value Profile="(Default)">NGram</Value>
