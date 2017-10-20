@@ -161,6 +161,24 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to LETTERS 1.
+        /// </summary>
+        public static string ALPHA_1 {
+            get {
+                return ResourceManager.GetString("ALPHA_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LETTERS 2.
+        /// </summary>
+        public static string ALPHA_2 {
+            get {
+                return ResourceManager.GetString("ALPHA_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Letters.
         /// </summary>
         public static string ALPHA_LAYOUT {
@@ -193,6 +211,33 @@ namespace JuliusSweetland.OptiKey.Properties {
         public static string ANDROID_LIGHT {
             get {
                 return ResourceManager.GetString("ANDROID_LIGHT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ATTENTION.
+        /// </summary>
+        public static string ATTENTION {
+            get {
+                return ResourceManager.GetString("ATTENTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Attention.
+        /// </summary>
+        public static string ATTENTION_SOUND {
+            get {
+                return ResourceManager.GetString("ATTENTION_SOUND", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Attention:.
+        /// </summary>
+        public static string ATTENTION_SOUND_LABEL {
+            get {
+                return ResourceManager.GetString("ATTENTION_SOUND_LABEL", resourceCulture);
             }
         }
         
@@ -605,6 +650,15 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to CommuniKate is currently disabled (use QWERTY).
+        /// </summary>
+        public static string COMMUNIKATE_DISABLED {
+            get {
+                return ResourceManager.GetString("COMMUNIKATE_DISABLED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to CommuniKate top page obf file:.
         /// </summary>
         public static string COMMUNIKATE_TOPPAGE_LABEL {
@@ -623,7 +677,7 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Location of CommuniKate top page .obf file:.
+        ///   Looks up a localized string similar to Location of CommuniKate top page .obz file:.
         /// </summary>
         public static string COMMUNIKATE_TOPPAGE_LOCATION_LABEL {
             get {
@@ -659,11 +713,20 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CONVERSATION ALPHA.
+        ///   Looks up a localized string similar to CONVERSATION ALPHA 1.
         /// </summary>
-        public static string CONVERSATION_ALPHA {
+        public static string CONVERSATION_ALPHA_1 {
             get {
-                return ResourceManager.GetString("CONVERSATION_ALPHA", resourceCulture);
+                return ResourceManager.GetString("CONVERSATION_ALPHA_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CONVERSATION ALPHA 2.
+        /// </summary>
+        public static string CONVERSATION_ALPHA_2 {
+            get {
+                return ResourceManager.GetString("CONVERSATION_ALPHA_2", resourceCulture);
             }
         }
         
@@ -1046,6 +1109,27 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The Presage dictionary cannot be edited from here.
+        ///It&apos;s default location is &quot;C:\Program Files (x86)\presage\share\presage\database_en.db&quot;.
+        ///It can be edited with a program which can read SQLite format 3 files 
+        ///such as &quot;DB Browser for SQLite&quot; (which is a free program)..
+        /// </summary>
+        public static string DICTIONARY_IS_PRESAGE {
+            get {
+                return ResourceManager.GetString("DICTIONARY_IS_PRESAGE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to All changes made to the settings will be discarded, do you want to continue?.
+        /// </summary>
+        public static string DISCARD_CHANGED_SETTINGS {
+            get {
+                return ResourceManager.GetString("DISCARD_CHANGED_SETTINGS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Display for X seconds per message character:.
         /// </summary>
         public static string DISPLAY_FOR_X_SECONDS_PER_CHARACTER_LABEL {
@@ -1179,6 +1263,15 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Enable attention key?.
+        /// </summary>
+        public static string ENABLE_ATTENTION_KEY_LABEL {
+            get {
+                return ResourceManager.GetString("ENABLE_ATTENTION_KEY_LABEL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Enable CommuniKate keyboard layout:.
         /// </summary>
         public static string ENABLE_COMMUNIKATE_KEYBOARD_LAYOUT {
@@ -1287,11 +1380,29 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to An error has occurred during the magnification process. Please disable magnification and contact OptiKey for further support..
+        /// </summary>
+        public static string ERROR_MAGNIFYING {
+            get {
+                return ResourceManager.GetString("ERROR_MAGNIFYING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Error:.
         /// </summary>
         public static string ERROR_SOUND_LABEL {
             get {
                 return ResourceManager.GetString("ERROR_SOUND_LABEL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error:.
+        /// </summary>
+        public static string ERROR_TITLE {
+            get {
+                return ResourceManager.GetString("ERROR_TITLE", resourceCulture);
             }
         }
         
@@ -1728,7 +1839,7 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Force caps lock:.
+        ///   Looks up a localized string similar to Force caps lock (shift locked down):.
         /// </summary>
         public static string FORCE_CAPS_LOCK {
             get {
@@ -2240,6 +2351,36 @@ namespace JuliusSweetland.OptiKey.Properties {
         public static string KEYBOARD_KEY {
             get {
                 return ResourceManager.GetString("KEYBOARD_KEY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Keyboard style for typing.
+        /// </summary>
+        public static string KEYBOARD_LAYOUT {
+            get {
+                return ResourceManager.GetString("KEYBOARD_LAYOUT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Korean (Korea) / 한국어 (한국).
+        /// </summary>
+        public static string KOREAN_KOREA {
+            get {
+                return ResourceManager.GetString("KOREAN_KOREA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Korean
+        ///(Korea) /
+        ///한국어
+        ///(한국).
+        /// </summary>
+        public static string KOREAN_KOREA_SPLIT_WITH_NEWLINE {
+            get {
+                return ResourceManager.GetString("KOREAN_KOREA_SPLIT_WITH_NEWLINE", resourceCulture);
             }
         }
         
@@ -4503,6 +4644,15 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Cancel Settings.
+        /// </summary>
+        public static string SETTINGS_CHANGED {
+            get {
+                return ResourceManager.GetString("SETTINGS_CHANGED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to SHIFT.
         /// </summary>
         public static string SHIFT {
@@ -5399,7 +5549,7 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Replace QWERTY keyboard layout with alphabetical keyboard layout:.
+        ///   Looks up a localized string similar to Use alphabetical keyboard layout.
         /// </summary>
         public static string USE_ALPHABETICAL_KEYBOARD_LAYOUT {
             get {
@@ -5408,7 +5558,7 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Replace Alpha keyboard with CommuniKate:.
+        ///   Looks up a localized string similar to Use CommuniKate keyboard layout.
         /// </summary>
         public static string USE_COMMUNIKATE_KEYBOARD_LAYOUT {
             get {
@@ -5417,7 +5567,16 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Replace Alpha keyboard with simplified keyboard layout:.
+        ///   Looks up a localized string similar to Use QWERTY keyboard layout (default).
+        /// </summary>
+        public static string USE_QWERTY_KEYBOARD_LAYOUT {
+            get {
+                return ResourceManager.GetString("USE_QWERTY_KEYBOARD_LAYOUT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Use simplified keyboard layout.
         /// </summary>
         public static string USE_SIMPLIFIED_KEYBOARD_LAYOUT {
             get {

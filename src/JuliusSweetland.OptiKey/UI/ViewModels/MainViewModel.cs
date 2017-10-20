@@ -264,7 +264,7 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
             get { return scratchpadIsDisabled; }
             set { SetProperty(ref scratchpadIsDisabled, value); }
         }
-
+        
         public InteractionRequest<NotificationWithCalibrationResult> CalibrateRequest { get { return calibrateRequest; } }
         
         #endregion
@@ -283,7 +283,7 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
         {
             if (Settings.Default.ConversationOnlyMode)
             {
-                Keyboard = new ConversationAlpha(null);
+                Keyboard = new ConversationAlpha1(null);
                 windowManipulationService.Maximise();
             }
             else if (Settings.Default.ConversationConfirmOnlyMode)
@@ -301,7 +301,7 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                         SetKeyboardFromEnum(Settings.Default.StartupKeyboard, 
                             windowManipulationService, () =>
                         {
-                            Keyboard = new Menu(() => Keyboard = new Alpha());
+                            Keyboard = new Menu(() => Keyboard = new Alpha1());
                             windowManipulationService.Restore();
                             windowManipulationService.ResizeDockToFull();
                         });
@@ -311,7 +311,7 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                         SetKeyboardFromEnum(Settings.Default.StartupKeyboard,
                             windowManipulationService, () =>
                         {
-                            Keyboard = new Menu(() => Keyboard = new Alpha());
+                            Keyboard = new Menu(() => Keyboard = new Alpha1());
                             windowManipulationService.Restore();
                             windowManipulationService.ResizeDockToFull();
                         });
@@ -328,7 +328,7 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                         SetKeyboardFromEnum(Settings.Default.StartupKeyboard,
                             windowManipulationService, () =>
                         {
-                            Keyboard = new Alpha(); 
+                            Keyboard = new Alpha1(); 
                         });
                         break;
                 }
@@ -343,11 +343,11 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
             switch (keyboardEnum)
             {
                 case Enums.Keyboards.Alpha:
-                    Keyboard = new Alpha();
+                    Keyboard = new Alpha1();
                     break;
 
                 case Enums.Keyboards.ConversationAlpha:
-                    Keyboard = new ConversationAlpha(backAction);
+                    Keyboard = new ConversationAlpha1(backAction);
                     break;
 
                 case Enums.Keyboards.ConversationNumericAndSymbols:
@@ -619,7 +619,7 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
             this.OnPropertyChanges(mvm => mvm.KeyboardSupportsCollapsedDock).Subscribe(resizeDockIfCollapsedDockingNotSupported);
             resizeDockIfCollapsedDockingNotSupported(KeyboardSupportsCollapsedDock);
         }
-
+        
         private void ResetSelectionProgress()
         {
             PointSelectionProgress = null;

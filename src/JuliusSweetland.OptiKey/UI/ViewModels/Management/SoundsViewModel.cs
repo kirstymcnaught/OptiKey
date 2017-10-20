@@ -6,6 +6,7 @@ using JuliusSweetland.OptiKey.Services;
 using log4net;
 using Prism.Commands;
 using Prism.Mvvm;
+using System.IO;
 
 namespace JuliusSweetland.OptiKey.UI.ViewModels.Management
 {
@@ -14,6 +15,7 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels.Management
         #region Private Member Vars
 
         private static readonly ILog Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        private const string ExpectedMaryTTSLocationSuffix = @"\bin\marytts-server.bat";
 
         private IAudioService audioService;
 
@@ -28,6 +30,7 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels.Management
             InfoSoundPlayCommand = new DelegateCommand(() => audioService.PlaySound(InfoSoundFile, InfoSoundVolume));
             KeySelectionSoundPlayCommand = new DelegateCommand(() => audioService.PlaySound(KeySelectionSoundFile, KeySelectionSoundVolume));
             ErrorSoundPlayCommand = new DelegateCommand(() => audioService.PlaySound(ErrorSoundFile, ErrorSoundVolume));
+            AttentionSoundPlayCommand = new DelegateCommand(() => audioService.PlaySound(AttentionSoundFile, AttentionSoundVolume));
             MultiKeySelectionCaptureStartSoundPlayCommand = new DelegateCommand(() => audioService.PlaySound(MultiKeySelectionCaptureStartSoundFile, MultiKeySelectionCaptureStartSoundVolume));
             MultiKeySelectionCaptureEndSoundPlayCommand = new DelegateCommand(() => audioService.PlaySound(MultiKeySelectionCaptureEndSoundFile, MultiKeySelectionCaptureEndSoundVolume));
             MouseClickSoundPlayCommand = new DelegateCommand(() => audioService.PlaySound(MouseClickSoundFile, MouseClickSoundVolume));
@@ -81,7 +84,8 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels.Management
                     new KeyValuePair<string, string>(Resources.RISING_SOUND_1, @"Resources\Sounds\Rising1.wav"),
                     new KeyValuePair<string, string>(Resources.RISING_SOUND_2, @"Resources\Sounds\Rising2.wav"),
                     new KeyValuePair<string, string>(Resources.FALLING_SOUND_1, @"Resources\Sounds\Falling1.wav"),
-                    new KeyValuePair<string, string>(Resources.FALLING_SOUND_2, @"Resources\Sounds\Falling2.wav")
+                    new KeyValuePair<string, string>(Resources.FALLING_SOUND_2, @"Resources\Sounds\Falling2.wav"),
+                    new KeyValuePair<string, string>(Resources.ATTENTION_SOUND, @"Resources\Sounds\Attention.wav")
                 };
             }
         }
@@ -260,6 +264,27 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels.Management
             set { SetProperty(ref errorSoundVolume, value); }
         }
 
+        private bool enableAttentionKey;
+        public bool EnableAttentionKey
+        {
+            get { return enableAttentionKey; }
+            set { SetProperty(ref enableAttentionKey, value); }
+        }
+
+        private int attentionSoundVolume;
+        public int AttentionSoundVolume
+        {
+            get { return attentionSoundVolume; }
+            set { SetProperty(ref attentionSoundVolume, value); }
+        }
+
+        private string attentionSoundFile;
+        public string AttentionSoundFile
+        {
+            get { return attentionSoundFile; }
+            set { SetProperty(ref attentionSoundFile, value); }
+        }
+
         private string multiKeySelectionCaptureStartSoundFile;
         public string MultiKeySelectionCaptureStartSoundFile
         {
@@ -363,13 +388,14 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels.Management
             get
             {
                 return Settings.Default.MaryTTSEnabled != MaryTTSEnabled
-                    || Settings.Default.MaryTTSLocation != MaryTTSLocation; ;
+                    || Settings.Default.MaryTTSLocation != MaryTTSLocation;
             }
         }
 
         public DelegateCommand InfoSoundPlayCommand { get; private set; }
         public DelegateCommand KeySelectionSoundPlayCommand { get; private set; }
         public DelegateCommand ErrorSoundPlayCommand { get; private set; }
+        public DelegateCommand AttentionSoundPlayCommand { get; private set; }
         public DelegateCommand MultiKeySelectionCaptureStartSoundPlayCommand { get; private set; }
         public DelegateCommand MultiKeySelectionCaptureEndSoundPlayCommand { get; private set; }
         public DelegateCommand MouseClickSoundPlayCommand { get; private set; }
@@ -397,6 +423,8 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels.Management
             KeySelectionSoundVolume = Settings.Default.KeySelectionSoundVolume;
             ErrorSoundFile = Settings.Default.ErrorSoundFile;
             ErrorSoundVolume = Settings.Default.ErrorSoundVolume;
+            AttentionSoundFile = Settings.Default.AttentionSoundFile;
+            AttentionSoundVolume = Settings.Default.AttentionSoundVolume;
             MultiKeySelectionCaptureStartSoundFile = Settings.Default.MultiKeySelectionCaptureStartSoundFile;
             MultiKeySelectionCaptureStartSoundVolume = Settings.Default.MultiKeySelectionCaptureStartSoundVolume;
             MultiKeySelectionCaptureEndSoundFile = Settings.Default.MultiKeySelectionCaptureEndSoundFile;
@@ -415,6 +443,8 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels.Management
 
         public void ApplyChanges()
         {
+            ValidateMaryTTSVoiceSettings();
+
             Settings.Default.SpeechVoice = SpeechVoice;
             Settings.Default.SpeechVolume = SpeechVolume;
             Settings.Default.SpeechRate = SpeechRate;
@@ -428,6 +458,8 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels.Management
             Settings.Default.KeySelectionSoundVolume = KeySelectionSoundVolume;
             Settings.Default.ErrorSoundFile = ErrorSoundFile;
             Settings.Default.ErrorSoundVolume = ErrorSoundVolume;
+            Settings.Default.AttentionSoundFile = AttentionSoundFile;
+            Settings.Default.AttentionSoundVolume = AttentionSoundVolume;
             Settings.Default.MultiKeySelectionCaptureStartSoundFile = MultiKeySelectionCaptureStartSoundFile;
             Settings.Default.MultiKeySelectionCaptureStartSoundVolume = MultiKeySelectionCaptureStartSoundVolume;
             Settings.Default.MultiKeySelectionCaptureEndSoundFile = MultiKeySelectionCaptureEndSoundFile;
@@ -442,6 +474,29 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels.Management
             Settings.Default.MouseDoubleClickSoundVolume = MouseDoubleClickSoundVolume;
             Settings.Default.MouseScrollSoundFile = MouseScrollSoundFile;
             Settings.Default.MouseScrollSoundVolume = MouseScrollSoundVolume;
+        }
+
+        private void ValidateMaryTTSVoiceSettings()
+        {
+            if (MaryTTSEnabled && 
+                (!File.Exists(MaryTTSLocation) || !MaryTTSLocation.EndsWith(ExpectedMaryTTSLocationSuffix)))
+            {
+                // The current MaryTTS setting won't be able to start, try to fix the problem now.
+                if (Settings.Default.MaryTTSEnabled 
+                    && File.Exists(Settings.Default.MaryTTSLocation) 
+                    && Settings.Default.MaryTTSLocation.EndsWith(ExpectedMaryTTSLocationSuffix))
+                {
+                    // if it's previously enabled and the service location is correct, fallback to
+                    // the correct setting.
+                    MaryTTSLocation = Settings.Default.MaryTTSLocation;
+                }
+                else
+                {
+                    // if fallback settings isn't valid either, turn off this setting
+                    MaryTTSEnabled = false;
+                    MaryTTSLocation = "";
+                }
+            }
         }
 
         #endregion

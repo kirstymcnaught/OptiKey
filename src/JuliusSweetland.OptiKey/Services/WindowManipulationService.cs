@@ -7,7 +7,6 @@ using System.Windows.Threading;
 using JuliusSweetland.OptiKey.Enums;
 using JuliusSweetland.OptiKey.Extensions;
 using JuliusSweetland.OptiKey.Native;
-using JuliusSweetland.OptiKey.Native.Common;
 using JuliusSweetland.OptiKey.Native.Common.Enums;
 using JuliusSweetland.OptiKey.Native.Common.Structs;
 using JuliusSweetland.OptiKey.Static;
@@ -310,21 +309,23 @@ namespace JuliusSweetland.OptiKey.Services
             return window.Opacity;
         }
 
+        /// <summary>
+        /// Hide the window, but don't save window state as this can break calls to the Restore, RestoreSavedState, or ApplySavedSate methods
+        /// </summary>
         public void Hide()
         {
             Log.Info("Hide called");
 
             var windowState = getWindowState();
-            if (windowState != WindowStates.Hidden)
-            {
-                savePreviousWindowState(windowState);
-            }
-            if (getWindowState() == WindowStates.Docked)
+            if (windowState == WindowStates.Hidden) return;
+            
+            if (windowState == WindowStates.Docked)
             {
                 UnRegisterAppBar();
             }
             saveWindowState(WindowStates.Hidden);
             ApplySavedState();
+            saveWindowState(windowState);
         }
 
         public void IncrementOrDecrementOpacity(bool increment)
@@ -454,6 +455,12 @@ namespace JuliusSweetland.OptiKey.Services
             saveWindowState(getPreviousWindowState()); 
             ApplySavedState();
             savePreviousWindowState(windowState);
+        }
+
+        public void RestoreSavedState()
+        {
+            Log.Info("RestoreSavedState called (applying saved state only)");
+            ApplySavedState();
         }
 
         public void SetOpacity(double opacity)
@@ -1400,30 +1407,16 @@ namespace JuliusSweetland.OptiKey.Services
             Log.InfoFormat("finalDockLeftInDp:{0}, finalDockTopInDp:{1}, finalDockWidthInDp:{2}, finalDockHeightInDp:{3}", finalDockLeftInDp, finalDockTopInDp, finalDockWidthInDp, finalDockHeightInDp);
             Log.InfoFormat("Screen bounds in dp - Top:{0}, Left:{1}, Width:{2}, Height:{3}", screenBoundsInDp.Top, screenBoundsInDp.Left, screenBoundsInDp.Width, screenBoundsInDp.Height);
 
-            if (finalDockLeftInDp < 0 ||
-                finalDockTopInDp < 0 ||
-                finalDockWidthInDp <= 0 ||
-                finalDockHeightInDp <= 0 ||
-                (finalDockLeftInDp + finalDockWidthInDp) > screenBoundsInDp.Right ||
-                (finalDockTopInDp + finalDockHeightInDp) > screenBoundsInDp.Bottom)
-            {
-                Log.Error("Final dock size and/or position is invalid - reverting to floating size and position");
-                UnRegisterAppBar();
-                saveWindowState(WindowStates.Floating);
-                savePreviousWindowState(WindowStates.Floating);
-                PublishError(this, new ApplicationException("There was a problem positioning OptiKey - reverting to floating position"));
-            }
-            else if (!isInitialising)
-            {
-                //Apply final size and position to the window. This is dispatched with ApplicationIdle priority 
-                //as WPF will send a resize after a new appbar is added. We need to apply the received size & position after this happens.
-                //RECT values are in pixels so I need to scale back to DIPs for WPF.
-                appBarBoundsInPx = new Rect(finalDockLeftInDp, finalDockTopInDp, finalDockWidthInDp, finalDockHeightInDp);
-                if (persist)
-                    window.Dispatcher.BeginInvoke(DispatcherPriority.ApplicationIdle, new ApplySizeAndPositionDelegate(ApplyAndPersistSizeAndPosition), appBarBoundsInPx);
-                else
-                    window.Dispatcher.BeginInvoke(DispatcherPriority.ApplicationIdle, new ApplySizeAndPositionDelegate(ApplySizeAndPosition), appBarBoundsInPx);
-            }
+      	    if (isInitialising) return;
+
+      	    //Apply final size and position to the window. This is dispatched with ApplicationIdle priority 
+      	    //as WPF will send a resize after a new appbar is added. We need to apply the received size & position after this happens.
+      	    //RECT values are in pixels so I need to scale back to DIPs for WPF.
+      	    appBarBoundsInPx = new Rect(finalDockLeftInDp, finalDockTopInDp, finalDockWidthInDp, finalDockHeightInDp);
+      	    window.Dispatcher.BeginInvoke(DispatcherPriority.ApplicationIdle,
+      	        persist
+      	            ? new ApplySizeAndPositionDelegate(ApplyAndPersistSizeAndPosition)
+      	            : new ApplySizeAndPositionDelegate(ApplySizeAndPosition), appBarBoundsInPx);
         }
 
         private void UnRegisterAppBar()

@@ -323,6 +323,9 @@
     <Setting Name="SuppressModifierKeysForAllMouseActions" Roaming="true" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
+    <Setting Name="KeyboardLayout" Roaming="true" Type="JuliusSweetland.OptiKey.Enums.KeyboardLayouts" Scope="User">
+      <Value Profile="(Default)">Qwerty</Value>
+    </Setting>
     <Setting Name="UseAlphabeticalKeyboardLayout" Roaming="true" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
@@ -389,7 +392,17 @@
   &lt;item&gt;
     &lt;key&gt;
       &lt;keyValue&gt;
-        &lt;functionKey&gt;AlphaKeyboard&lt;/functionKey&gt;
+        &lt;functionKey&gt;Alpha1Keyboard&lt;/functionKey&gt;
+      &lt;/keyValue&gt;
+    &lt;/key&gt;
+    &lt;value&gt;
+      &lt;ticks&gt;PT1.75S&lt;/ticks&gt;
+    &lt;/value&gt;
+  &lt;/item&gt;
+  &lt;item&gt;
+    &lt;key&gt;
+      &lt;keyValue&gt;
+        &lt;functionKey&gt;Alpha2Keyboard&lt;/functionKey&gt;
       &lt;/keyValue&gt;
     &lt;/key&gt;
     &lt;value&gt;
@@ -409,7 +422,17 @@
   &lt;item&gt;
     &lt;key&gt;
       &lt;keyValue&gt;
-        &lt;functionKey&gt;ConversationAlphaKeyboard&lt;/functionKey&gt;
+        &lt;functionKey&gt;ConversationAlpha1Keyboard&lt;/functionKey&gt;
+      &lt;/keyValue&gt;
+    &lt;/key&gt;
+    &lt;value&gt;
+      &lt;ticks&gt;PT1.75S&lt;/ticks&gt;
+    &lt;/value&gt;
+  &lt;/item&gt;
+  &lt;item&gt;
+    &lt;key&gt;
+      &lt;keyValue&gt;
+        &lt;functionKey&gt;ConversationAlpha2Keyboard&lt;/functionKey&gt;
       &lt;/keyValue&gt;
     &lt;/key&gt;
     &lt;value&gt;
@@ -679,6 +702,16 @@
   &lt;item&gt;
     &lt;key&gt;
       &lt;keyValue&gt;
+        &lt;functionKey&gt;KoreanKorea&lt;/functionKey&gt;
+      &lt;/keyValue&gt;
+    &lt;/key&gt;
+    &lt;value&gt;
+      &lt;ticks&gt;PT1.75S&lt;/ticks&gt;
+    &lt;/value&gt;
+  &lt;/item&gt;  
+  &lt;item&gt;
+    &lt;key&gt;
+      &lt;keyValue&gt;
         &lt;functionKey&gt;PortuguesePortugal&lt;/functionKey&gt;
       &lt;/keyValue&gt;
     &lt;/key&gt;
@@ -740,6 +773,16 @@
     &lt;key&gt;
       &lt;keyValue&gt;
         &lt;functionKey&gt;AddToDictionary&lt;/functionKey&gt;
+      &lt;/keyValue&gt;
+    &lt;/key&gt;
+    &lt;value&gt;
+      &lt;ticks&gt;PT2S&lt;/ticks&gt;
+    &lt;/value&gt;
+  &lt;/item&gt;
+  &lt;item&gt;
+    &lt;key&gt;
+      &lt;keyValue&gt;
+        &lt;functionKey&gt;Attention&lt;/functionKey&gt;
       &lt;/keyValue&gt;
     &lt;/key&gt;
     &lt;value&gt;
@@ -1030,6 +1073,15 @@
     </Setting>
     <Setting Name="StartupKeyboardFile" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="EnableAttentionKey" Roaming="true" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="AttentionSoundFile" Roaming="true" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Resources\Sounds\Attention.wav</Value>
+    </Setting>
+    <Setting Name="AttentionSoundVolume" Roaming="true" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">100</Value>
     </Setting>
   </Settings>
 </SettingsFile>
