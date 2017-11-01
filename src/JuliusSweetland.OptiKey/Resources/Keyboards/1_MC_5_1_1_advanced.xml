@@ -1,5 +1,5 @@
 <Keyboard>
-   <Name>Minecraft\nIntro</Name>
+   <Name>Minecraft\nIntro++</Name>
    <Height>32</Height>
    <BorderThickness>1,30,1,1</BorderThickness>
    <Grid>
@@ -37,7 +37,7 @@
       </TextKey>	
 	  <ChangeKeyboardKey>
 		<Symbol>ArrowPointingToRightIcon</Symbol>
-		<DestinationKeyboard>0_MC_5_1_2_intro</DestinationKeyboard>
+		<DestinationKeyboard>1_MC_5_1_2_advanced.xml</DestinationKeyboard>
 		 <ReturnToThisKeyboard>False</ReturnToThisKeyboard>
 		<Row>0</Row>
 		<Col>4</Col>

@@ -847,6 +847,17 @@
     <Resource Include="Resources\Icons\Back.ico" />
     <Resource Include="Resources\Icons\Quit.ico" />
     <Resource Include="Resources\Icons\ManualMode.ico" />
+    <Resource Include="Resources\Keyboards\1_MC_5_1_1_advanced.xml" />
+    <Resource Include="Resources\Keyboards\1_MC_5_1_2_advanced.xml" />
+    <Resource Include="Resources\Keyboards\1_MC_5_1_build1.xml" />
+    <Resource Include="Resources\Keyboards\1_MC_5_1_build2.xml" />
+    <Resource Include="Resources\Keyboards\1_MC_5_1_misc.xml" />
+    <Resource Include="Resources\Keyboards\2_MC_8_2_1.xml" />
+    <Resource Include="Resources\Keyboards\2_MC_8_2_2.xml" />
+    <Resource Include="Resources\Keyboards\2_MC_8_2_inv.xml" />
+    <Resource Include="Resources\Keyboards\3_ChatKeyboard.xml" />
+    <Resource Include="Resources\Keyboards\3_InventoryKeyboard.xml" />
+    <Resource Include="Resources\Keyboards\3_MainKeyboard.xml" />
     <Content Include="Resources\Sounds\Attention.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -854,15 +865,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Keyboards\0_MC_5_1_2_intro.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Resources\Keyboards\2_ChatKeyboard.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Resources\Keyboards\2_InventoryKeyboard.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Resources\Keyboards\2_MainKeyboard.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Content Include="Resources\Sounds\Click2.wav">

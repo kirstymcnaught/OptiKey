@@ -2,11 +2,14 @@
 <Keyboard>
    <Height>32</Height>
    <Name>Minecraft\nAdvanced</Name>
-   <SymbolMargin>15</SymbolMargin>
+   <SymbolMargin>20</SymbolMargin>
    <Grid>
       <Rows>7</Rows>
       <Cols>9</Cols>
    </Grid>
+   <InitialKeyStates>
+     <KeyLockedDown>MouseMagnifier</KeyLockedDown>   
+   </InitialKeyStates>
 	<Keys>
 		<TextKey>
 			<Label>Building</Label>
@@ -194,7 +197,7 @@
 			<Width>1</Width>
 		</TextKey>
 		<ActionKey>
-			<Label>Swap mine/place</Label>
+			<Label>Swap mine\nand place</Label>
 			<Index>19</Index>
 			<Symbol>MinecraftSwapMinePlace</Symbol>
 			<Action>F10</Action>
@@ -216,7 +219,7 @@
 		<ChangeKeyboardKey>
 			<Label>Inventory\netc...</Label>
 			<Index>21</Index>
-			<DestinationKeyboard>2_InventoryKeyboard</DestinationKeyboard>
+			<DestinationKeyboard>3_InventoryKeyboard</DestinationKeyboard>
 			<Row>3</Row>
 			<Col>8</Col>
 			<Height>2</Height>
@@ -267,7 +270,7 @@
 			<Label>Chat...</Label>
 			<Index>26</Index>
 			<Symbol>ChatIcon</Symbol>
-			<DestinationKeyboard>2_ChatKeyboard</DestinationKeyboard>
+			<DestinationKeyboard>3_ChatKeyboard</DestinationKeyboard>
 			<ReturnToThisKeyboard>True</ReturnToThisKeyboard>
 			<Row>5</Row>
 			<Col>4</Col>

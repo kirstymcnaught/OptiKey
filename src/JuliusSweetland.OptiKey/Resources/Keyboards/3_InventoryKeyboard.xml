@@ -197,7 +197,7 @@
 			<Label>ABC</Label>
 			<Index>19</Index>
 			<Symbol>AlphaIcon</Symbol>
-            <DestinationKeyboard>2_ChatKeyboard</DestinationKeyboard>
+            <DestinationKeyboard>3_ChatKeyboard</DestinationKeyboard>
             <ReturnToThisKeyboard>True</ReturnToThisKeyboard>
 			<Row>1</Row>
 			<Col>9</Col>
