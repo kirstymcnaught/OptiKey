@@ -344,7 +344,7 @@ namespace JuliusSweetland.OptiKey.Models
         {
             get
             {
-                return CombiningKeys.Concat(
+                var keys = CombiningKeys.Concat(
                     new List <KeyValue>
                     {
                         LeftAltKey,
@@ -358,6 +358,18 @@ namespace JuliusSweetland.OptiKey.Models
                         MultiKeySelectionIsOnKey
                     })
                     .ToList();
+
+                if (Settings.Default.KeySelectionTriggerSource == TriggerSources.KeyboardKeyDownsUps)
+                {
+                    //LWIN cannot be pressed or locked down when using a KeyboardKeyDownUpSource as the trigger - the windows key
+                    //does not combine as a modifier with other keys, which means we cannot detect any future trigger key presses
+                    //once the LWIN key is down. The only work around is to prevent the key from being pressed down and used as a modifier.
+                    //Issue for this bug https://globalmousekeyhook.codeplex.com/workitem/1188
+                    //Source for this bug https://globalmousekeyhook.codeplex.com/SourceControl/latest#Main/MouseKeyboardActivityMonitor/KeyEventArgsExt.cs
+                    keys.Remove(LeftWinKey);
+                }
+
+                return keys;
             }
         }
 
@@ -365,7 +377,7 @@ namespace JuliusSweetland.OptiKey.Models
         {
             get
             {
-                return new List<KeyValue>
+                var keys = new List<KeyValue>
                 {
                     LeftAltKey,
                     LeftCtrlKey,
@@ -379,6 +391,18 @@ namespace JuliusSweetland.OptiKey.Models
                     MultiKeySelectionIsOnKey,
                     SleepKey
                 };
+
+                if (Settings.Default.KeySelectionTriggerSource == TriggerSources.KeyboardKeyDownsUps)
+                {
+                    //LWIN cannot be pressed or locked down when using a KeyboardKeyDownUpSource as the trigger - the windows key
+                    //does not combine as a modifier with other keys, which means we cannot detect any future trigger key presses
+                    //once the LWIN key is down. The only work around is to prevent the key from being pressed down and used as a modifier.
+                    //Issue for this bug https://globalmousekeyhook.codeplex.com/workitem/1188
+                    //Source for this bug https://globalmousekeyhook.codeplex.com/SourceControl/latest#Main/MouseKeyboardActivityMonitor/KeyEventArgsExt.cs
+                    keys.Remove(LeftWinKey);
+                }
+
+                return keys;
             }
         }
 

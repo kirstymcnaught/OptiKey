@@ -3707,7 +3707,7 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Muli-key selection ending:.
+        ///   Looks up a localized string similar to Multi-key selection ending:.
         /// </summary>
         public static string MULTI_KEY_SELECTION_ENDING_SOUND_LABEL {
             get {
@@ -3726,7 +3726,7 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Muli-key selection starting:.
+        ///   Looks up a localized string similar to Multi-key selection starting:.
         /// </summary>
         public static string MULTI_KEY_SELECTION_STARTING_SOUND_LABEL {
             get {
@@ -5013,6 +5013,15 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Uh-oh! We&apos;ve encountered the following errors during startup:.
+        /// </summary>
+        public static string STARTUP_CRASH_TITLE {
+            get {
+                return ResourceManager.GetString("STARTUP_CRASH_TITLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Custom keyboard file:.
         /// </summary>
         public static string STARTUP_KEYBOARD_FILE_LOCATION_LABEL {
@@ -5220,7 +5229,7 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Time until point becomes irrelevent (ms):.
+        ///   Looks up a localized string similar to Time until point becomes irrelevant (ms):.
         /// </summary>
         public static string TIME_UNTIL_POINT_BECOMES_IRRELEVENT_LABEL {
             get {
