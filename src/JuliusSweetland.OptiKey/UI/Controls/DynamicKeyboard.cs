@@ -13,7 +13,6 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels.Keyboards
         private static readonly ILog Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
         private string link;
-        private Action<double> resizeAction;
 
         private double? overrideHeight;
         private double? origHeight;
@@ -96,12 +95,7 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels.Keyboards
         public string Link
         {
             get { return link; }
-        }
-
-        public Action<double> ResizeAction
-        {
-            get { return resizeAction; }
-        }
+        }        
 
         public void ResetOveriddenKeyStates()
         {
