@@ -23,6 +23,14 @@ namespace JuliusSweetland.OptiKey.Static
         private const uint TOKEN_QUERY = 0x0008;
         private const uint TOKEN_READ = (STANDARD_RIGHTS_READ | TOKEN_QUERY);
 
+        public static string MinecraftModVersion
+        {
+            get
+            {
+                return "1.0.2";
+            }
+        }
+
         public static string AssemblyVersion
         {
             get

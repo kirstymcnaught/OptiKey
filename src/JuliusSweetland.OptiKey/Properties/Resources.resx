@@ -2133,6 +2133,7 @@ walk (legacy)</value>
   </data>
   <data name="ABOUT" xml:space="preserve">
     <value>About</value>
+  </data>
   <data name="CONTENT" xml:space="preserve">
     <value>Content</value>
   </data>

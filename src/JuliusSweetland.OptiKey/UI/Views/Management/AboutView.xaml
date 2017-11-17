@@ -28,21 +28,21 @@
                            VerticalAlignment="Center" Margin="5" />
                 <TextBlock Grid.Row="0" Grid.Column="1" 
                           VerticalAlignment="Center"
-                          Text="{Binding OptiKeyVersion, Mode=TwoWay}" />
+                          Text="{Binding OptiKeyVersion, Mode=OneWay}" />
                 
                 <TextBlock Grid.Row="1" Grid.Column="0" Text="Requires Minecraft mod version:" 
                            VerticalAlignment="Center" Margin="5" />
                 <TextBlock Grid.Row="1" Grid.Column="1" 
                           VerticalAlignment="Center"
-                          Text="{Binding MinecraftModVersion, Mode=TwoWay}" />
+                          Text="{Binding MinecraftModVersion, Mode=OneWay}" />
                 
-                <TextBlock Grid.Row="2" Grid.Column="0" 
+                <!--<TextBlock Grid.Row="2" Grid.Column="0" 
                            VerticalAlignment="Center" Margin="5" />
                 <CheckBox Grid.Row="2" Grid.Column="1" 
                           VerticalAlignment="Center"
-                          IsChecked="{Binding PublishVirtualKeyCodesForCharacters, Mode=TwoWay}" />
+                          IsChecked="{Binding PublishVirtualKeyCodesForCharacters, Mode=TwoWay}" />-->
                 
-                <TextBlock Grid.Row="3" Grid.Column="0" Text="Built by SpecialEffect" 
+                <!--<TextBlock Grid.Row="3" Grid.Column="0" Text="Built by SpecialEffect" 
                            VerticalAlignment="Center" Margin="5" />
                 <CheckBox Grid.Row="3" Grid.Column="1" 
                           VerticalAlignment="Center"
@@ -84,7 +84,7 @@
                            VerticalAlignment="Center" Margin="5" />
                 <CheckBox Grid.Row="6" Grid.Column="1" 
                           VerticalAlignment="Center"
-                          IsChecked="{Binding Debug, Mode=TwoWay}" />
+                          IsChecked="{Binding Debug, Mode=TwoWay}" />-->
             </Grid>
         </GroupBox>
     </ScrollViewer>

@@ -1,4 +1,5 @@
 using JuliusSweetland.OptiKey.Properties;
+using JuliusSweetland.OptiKey.Static;
 using log4net;
 using Prism.Mvvm;
 
@@ -26,25 +27,21 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels.Management
         private string optiKeyVersion;
         public string OptiKeyVersion
         {
-            get { return optiKeyVersion; }
-            set { SetProperty(ref optiKeyVersion, value); }
+            get { return DiagnosticInfo.AssemblyVersion; }
         }
 
         private string minecraftModVersion;
         public string MinecraftModVersion
         {
-            get { return minecraftModVersion; }
-            set { SetProperty(ref minecraftModVersion, value); }
+            get { return DiagnosticInfo.MinecraftModVersion; }
         }
-       
+
         #endregion
-        
+
         #region Methods
 
         private void Load()
         {
-            OptiKeyVersion = "1.2.3";
-            MinecraftModVersion = "3.4.5";
             
         }
 
