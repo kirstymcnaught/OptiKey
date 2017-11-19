@@ -573,7 +573,7 @@ CURSOR</value>
     <value>Management console: ALT + M</value>
   </data>
   <data name="MANAGEMENT_CONSOLE_TITLE" xml:space="preserve">
-    <value>OptiKey Management Console</value>
+    <value>OptiKey Settings</value>
   </data>
   <data name="MAX_DICTIONARY_MATCHES_LABEL" xml:space="preserve">
     <value>Maximale aantal woordenboek overeenkomsten:</value>
@@ -1565,7 +1565,7 @@ U kunt de update-check uitschakelen via de Management Console (ALT + M).</value>
     <value>Afsluiten</value>
   </data>
   <data name="MANAGEMENT_CONSOLE" xml:space="preserve">
-    <value>Management Console</value>
+    <value>Settings</value>
   </data>
   <data name="SUPPRESS_MODIFIERS_FOR_ALL_MOUSE_ACTIONS" xml:space="preserve">
     <value>Onderdruk modifier sleutels voor alle muisacties:</value>

@@ -2346,7 +2346,7 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Keyboards folder can be set in \n Management Console (Visuals tab).
+        ///   Looks up a localized string similar to Keyboards folder can be set in \n Settings (Visuals tab).
         /// </summary>
         public static string KEYBOARD_FOLDER_CAN_BE_CHANGED_SPLIT_LINE {
             get {
@@ -2588,7 +2588,7 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Management Console (Settings).
+        ///   Looks up a localized string similar to Settings.
         /// </summary>
         public static string MANAGEMENT_CONSOLE {
             get {
@@ -2597,7 +2597,7 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Management console: ALT + M.
+        ///   Looks up a localized string similar to Management console (Settings): ALT + M.
         /// </summary>
         public static string MANAGEMENT_CONSOLE_DESCRIPTION {
             get {
@@ -2606,7 +2606,7 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to OptiKey Management Console.
+        ///   Looks up a localized string similar to OptiKey Settings.
         /// </summary>
         public static string MANAGEMENT_CONSOLE_TITLE {
             get {
@@ -5558,7 +5558,7 @@ namespace JuliusSweetland.OptiKey.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to Please visit www.optikey.org to download latest version ({0})
-        ///You can turn off update checks from the Management Console (ALT + M)..
+        ///You can turn off update checks from the Settings (ALT + M)..
         /// </summary>
         public static string URL_DOWNLOAD_PROMPT {
             get {
@@ -5605,7 +5605,7 @@ namespace JuliusSweetland.OptiKey.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Setting the suggestion method to: {0}.
         ///You can change this back
-        ///from the Management Console (ALT + M)..
+        ///from the Settings (ALT + M)..
         /// </summary>
         public static string USING_DEFAULT_SUGGESTION_METHOD {
             get {
@@ -5617,7 +5617,7 @@ namespace JuliusSweetland.OptiKey.Properties {
         ///   Looks up a localized string similar to Setting the speech voice to the system voice: {0}.
         ///You can check the path for MaryTTS
         ///and change the voice back to it
-        ///from the Management Console (ALT + M)..
+        ///from the Settings (ALT + M)..
         /// </summary>
         public static string USING_DEFAULT_VOICE {
             get {

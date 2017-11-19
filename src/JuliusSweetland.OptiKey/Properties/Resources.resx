@@ -557,7 +557,7 @@ UP</value>
     <value>Keyboard language:</value>
   </data>
   <data name="KEYBOARD_FOLDER_CAN_BE_CHANGED_SPLIT_LINE" xml:space="preserve">
-    <value>Keyboards folder can be set in \n Management Console (Visuals tab)</value>
+    <value>Keyboards folder can be set in \n Settings (Visuals tab)</value>
   </data>
   <data name="LEFT" xml:space="preserve">
     <value>Left</value>
@@ -598,10 +598,10 @@ CURSOR</value>
     <value>Magnify source (as % of screen):</value>
   </data>
   <data name="MANAGEMENT_CONSOLE_DESCRIPTION" xml:space="preserve">
-    <value>Management console: ALT + M</value>
+    <value>Management console (Settings): ALT + M</value>
   </data>
   <data name="MANAGEMENT_CONSOLE_TITLE" xml:space="preserve">
-    <value>OptiKey Management Console</value>
+    <value>OptiKey Settings</value>
   </data>
   <data name="MAX_DICTIONARY_MATCHES_LABEL" xml:space="preserve">
     <value>Maximum number of dictionary matches:</value>
@@ -1188,7 +1188,7 @@ ARROW</value>
   </data>
   <data name="URL_DOWNLOAD_PROMPT" xml:space="preserve">
     <value>Please visit www.optikey.org to download latest version ({0})
-You can turn off update checks from the Management Console (ALT + M).</value>
+You can turn off update checks from the Settings (ALT + M).</value>
   </data>
   <data name="VERIFY_RESTART" xml:space="preserve">
     <value>May I restart OptiKey?</value>
@@ -1673,7 +1673,7 @@ Español
     <value>Greek (Greece) / Ελληνικά (Ελλάδα)</value>
   </data>
   <data name="MANAGEMENT_CONSOLE" xml:space="preserve">
-    <value>Management Console (Settings)</value>
+    <value>Settings</value>
   </data>
   <data name="QUIT_TITLE_CASE" xml:space="preserve">
     <value>Quit</value>
@@ -1920,13 +1920,13 @@ Browsing</value>
   <data name="USING_DEFAULT_SUGGESTION_METHOD" xml:space="preserve">
     <value>Setting the suggestion method to: {0}.
 You can change this back
-from the Management Console (ALT + M).</value>
+from the Settings (ALT + M).</value>
   </data>
   <data name="USING_DEFAULT_VOICE" xml:space="preserve">
     <value>Setting the speech voice to the system voice: {0}.
 You can check the path for MaryTTS
 and change the voice back to it
-from the Management Console (ALT + M).</value>
+from the Settings (ALT + M).</value>
   </data>
   <data name="SPEECH_DELAY_LABEL" xml:space="preserve">
     <value>Delay before speech (ms):</value>
