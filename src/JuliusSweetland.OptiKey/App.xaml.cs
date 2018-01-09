@@ -488,27 +488,7 @@ namespace JuliusSweetland.OptiKey
             Application.Current.DispatcherUnhandledException += NBug.Handler.DispatcherUnhandledException;
             AppDomain.CurrentDomain.UnhandledException += NBug.Handler.UnhandledException;
             TaskScheduler.UnobservedTaskException += NBug.Handler.UnobservedTaskException;
-
-            NBug.Settings.ProcessingException += (exception, report) =>
-            {
-                //Add latest log file contents as custom info in the error report
-                var rootAppender = ((Hierarchy)LogManager.GetRepository())
-                    .Root.Appenders.OfType<FileAppender>()
-                    .FirstOrDefault();
-
-                if (rootAppender != null)
-                {
-                    using (var fs = new FileStream(rootAppender.File, System.IO.FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
-                    {
-                        using (var sr = new StreamReader(fs, Encoding.Default))
-                        {
-                            var logFileText = sr.ReadToEnd();
-                            report.CustomInfo = logFileText;
-                        }
-                    }
-                }
-            };
-
+            
             NBug.Settings.CustomUIEvent += (sender, args) =>
             {
                 var crashWindow = new CrashWindow
@@ -518,11 +498,11 @@ namespace JuliusSweetland.OptiKey
                 };
                 crashWindow.ShowDialog();
 
-                //The crash report has not been created yet - the UIDialogResult SendReport param determines what happens next
-                args.Result = new UIDialogResult(ExecutionFlow.BreakExecution, SendReport.Send);
+                // TODO: OptiKeyMinecraft isn't currently sending nbug reports
+                // If they need to be re-enabled, then check out the main OptiKey code. 
+
             };
 
-            NBug.Settings.InternalLogWritten += (logMessage, category) => Log.DebugFormat("NBUG:{0} - {1}", category, logMessage);
 #endif
         }
 
