@@ -104,25 +104,31 @@ namespace JuliusSweetland.OptiKey.UI.Views.Keyboards.Common
                 newKey.SymbolMargin = keyboard.SymbolMargin.Value;
             }
 
-            // Set shared size group
-            bool hasSymbol = null  != newKey.SymbolGeometry;
-            bool hasString = xmlKey.Label.Length > 0;
-            if (hasSymbol && hasString)
+            // Set shared size group if not specified
+            if (String.IsNullOrEmpty(xmlKey.SharedSizeGroup))
             {
-                newKey.SharedSizeGroup = "KeyWithSymbolAndText";
+                bool hasSymbol = null != newKey.SymbolGeometry;
+                bool hasString = xmlKey.Label.Length > 0;
+                if (hasSymbol && hasString)
+                {
+                    newKey.SharedSizeGroup = "KeyWithSymbolAndText";
+                }
+                else if (hasSymbol)
+                {
+                    newKey.SharedSizeGroup = "KeyWithSymbol";
+                }
+                else if (hasString)
+                {
+                    newKey.SharedSizeGroup = "KeyWithText";
+                }
+                // Also group separately by row/col width/height
+                newKey.SharedSizeGroup += xmlKey.Width;
+                newKey.SharedSizeGroup += xmlKey.Height;
             }
-            else if (hasSymbol)
+            else
             {
-                newKey.SharedSizeGroup = "KeyWithSymbol";            
+                newKey.SharedSizeGroup = xmlKey.SharedSizeGroup;
             }
-            else if (hasString)
-            {
-                newKey.SharedSizeGroup = "KeyWithText";
-            }
-            // Also group separately by row/col width/height
-            newKey.SharedSizeGroup += xmlKey.Width;
-            newKey.SharedSizeGroup += xmlKey.Height;
-
             return newKey;
         }
 

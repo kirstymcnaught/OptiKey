@@ -32,5 +32,8 @@ namespace JuliusSweetland.OptiKey.Models
         public int Height
         { get; set; }
 
+        public string SharedSizeGroup
+        { get; set; }        
+
     }
 }
