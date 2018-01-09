@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This file is NOT compatible with Silverlight-->
+<Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Stretch="Uniform">
+  <Canvas Name="svg4246" Width="160.43067" Height="179.4529">
+    <Canvas.RenderTransform>
+      <TranslateTransform X="0" Y="0"/>
+    </Canvas.RenderTransform>
+    <Canvas.Resources>
+      <LinearGradientBrush xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Key="linearGradient4221" MappingMode="Absolute" StartPoint="1039,876" EndPoint="1199,876">
+        <LinearGradientBrush.GradientStops>
+          <GradientStopCollection>
+            <GradientStop Color="#FF000000" Offset="0"/>
+            <GradientStop Color="#00000000" Offset="1"/>
+          </GradientStopCollection>
+        </LinearGradientBrush.GradientStops>
+        <LinearGradientBrush.Transform>
+          <TranslateTransform X="-1693.9116" Y="-597.93314"/>
+        </LinearGradientBrush.Transform>
+      </LinearGradientBrush>
+      <LinearGradientBrush xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Key="linearGradient5680" MappingMode="RelativeToBoundingBox" StartPoint="0,0" EndPoint="1,1">
+        <LinearGradientBrush.GradientStops>
+          <GradientStopCollection>
+            <GradientStop Color="#FF000000" Offset="0"/>
+            <GradientStop Color="#00000000" Offset="1"/>
+          </GradientStopCollection>
+        </LinearGradientBrush.GradientStops>
+      </LinearGradientBrush>
+    </Canvas.Resources>
+    <!--Unknown tag: sodipodi:namedview-->
+    <!--Unknown tag: metadata-->
+    <Canvas Name="layer1">
+      <Canvas.RenderTransform>
+        <TranslateTransform X="654.50105" Y="-188.35004"/>
+      </Canvas.RenderTransform>
+      <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path4215" Fill="#FF000000" StrokeThickness="1.33985472" Stroke="{StaticResource linearGradient4221}" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+        <Path.Data>
+          <PathGeometry Figures="m -595.37262 189.03377 -56.5644 43.51171 45.4648 15.9668 0 -2.54297 0.012 0 0 -0.0469 22.1016 0 0 7.09961 -0.01 0 0 0.041 -14.9961 0 0 15.20117 -0.023 0 0 0.0469 -7.084 0 0 -19.73438 -47.3594 -13.99414 0 98.34961 99.1446 33.94141 1.207 -47.03906 1.1426 45.99414 56.7949 -43.6875 0 -98.93164 -0.2344 3.625 -46.498 28.8457 0 12.58398 -0.01 0 0 0.043 -7.0938 0 0 -15.24219 -15.1894 0 0 -7.0957 0.01 0 0 -0.0469 22.2832 0.002 0 9.65039 46.7324 -32.36523 -99.8301 -34.17578 z m 53.0977 66.54101 -1.4649 1.01367 1.4649 -0.9082 0 -0.10547 z m -64.1973 -6.99805 1.1465 0.33789 -1.1465 -0.40234 0 0.0644 z m 28.5664 -11.07031 7.0938 0 0 22.43359 -0.082 0 0 0.0469 -7.0215 0 0 -22.4375 0.01 0 0 -0.043 z m 0 35.24609 5.0937 0 2.002 0 0 1.9668 1.957 0 0 7.0957 -0.01 0 0 0.0449 -1.9532 0 0 1.92187 -0.01 0 0 0.0469 -7.0918 0 0 -1.9668 -1.9805 0 0 -7.09766 0.01 0 0 -0.0449 1.9726 0 0 -1.92187 0.01 0 0 -0.0449 z m -37.0508 1.6211 22.5098 0 0 7.09375 -0.012 0 0 0.0449 -22.4317 0 0 -5.29101 -0.066 -1.84766 z m 59.1602 0 21.9453 0 0 0.0469 0.1777 0 0 5.0918 0 2 -21.9433 0 0 -0.0449 -0.1797 0 0 -7.09375 z m -50.6641 13.6914 5.0996 0 2 0 0 14.95704 15.0078 0 0 7.0957 -0.012 0 0 0.0449 -22.1055 0 0 -22.05664 0.01 0 0 -0.041 z m 57.25 0.002 0 0 6.9473 0 0 22.05078 -0.01 0 0 0.0449 -22.2851 0 0 -3.09766 0 -2 0 -2.04296 15.1855 0 0 -14.91211 0.1582 0 0 -0.043 z m -28.7676 8.52344 7.166 0 0 21.94726 -0.01 0 0 0.041 -7.0938 0 0 -20.20703 -0.062 -1.78125 z" FillRule="evenodd"/>
+        </Path.Data>
+      </Path>
+    </Canvas>
+  </Canvas>
+</Viewbox>
