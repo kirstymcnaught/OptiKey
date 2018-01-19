@@ -485,10 +485,7 @@ namespace JuliusSweetland.OptiKey
             TaskScheduler.UnobservedTaskException += (sender, args) => Log.Error("An UnobservedTaskException has been encountered...", args.Exception);
 
 #if !DEBUG
-            Application.Current.DispatcherUnhandledException += NBug.Handler.DispatcherUnhandledException;
-            AppDomain.CurrentDomain.UnhandledException += NBug.Handler.UnhandledException;
-            TaskScheduler.UnobservedTaskException += NBug.Handler.UnobservedTaskException;
-            
+          
             NBug.Settings.CustomUIEvent += (sender, args) =>
             {
                 var crashWindow = new CrashWindow
