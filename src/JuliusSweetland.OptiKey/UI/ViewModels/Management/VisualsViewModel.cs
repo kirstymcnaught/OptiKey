@@ -339,7 +339,8 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels.Management
         {
             get
             {
-                return Settings.Default.ConversationOnlyMode != ConversationOnlyMode
+                return Settings.Default.DynamicKeyboardsLocation != DynamicKeyboardsLocation
+                    || Settings.Default.ConversationOnlyMode != ConversationOnlyMode
                     || Settings.Default.ConversationConfirmEnable != ConversationConfirmEnable
                     || Settings.Default.ConversationConfirmOnlyMode != ConversationConfirmOnlyMode
                     || Settings.Default.MainWindowDockPosition != DockPosition;
