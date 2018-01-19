@@ -216,7 +216,9 @@ namespace JuliusSweetland.OptiKey
 
                     inputService.RequestResume(); //Start the input service
 
-                    await CheckForUpdates(inputService, audioService, mainViewModel);
+                    // TODO: Currently not checknig for updates with minecraft fork.
+                    // If re-enabled, don't forget to change repo details!
+                    //await CheckForUpdates(inputService, audioService, mainViewModel);
                 };
 
                 if (mainWindowManipulationService.SizeAndPositionIsInitialised)
