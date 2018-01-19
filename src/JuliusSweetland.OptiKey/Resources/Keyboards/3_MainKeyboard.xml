@@ -156,16 +156,16 @@
 			<Height>2</Height>
 			<Width>1</Width>
 		</ActionKey>
-		<ActionKey>
+		<TextKey>
 			<Label>Fly\nUp</Label>
 			<Index>15</Index>
 			<Symbol>MinecraftFlyUp</Symbol>
-			<Action>ArrowUp</Action>
+			<Text>.</Text>
 			<Row>3</Row>
 			<Col>2</Col>
 			<Height>2</Height>
 			<Width>1</Width>
-		</ActionKey>
+		</TextKey>
 		<TextKey>
 			<Label>Walk</Label>
 			<Index>16</Index>

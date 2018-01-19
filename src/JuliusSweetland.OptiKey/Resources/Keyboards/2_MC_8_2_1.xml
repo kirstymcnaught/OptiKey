@@ -31,13 +31,13 @@
          <Row>0</Row>
          <Col>1</Col>
       </TextKey>
-      <ActionKey>
-        <Action>ArrowUp</Action>
+      <TextKey>
+        <Text>.</Text>
         <Label>Fly\nhigher</Label>
         <Symbol>MinecraftFlyUp</Symbol>
         <Row>1</Row>
         <Col>1</Col>
-     </ActionKey>
+     </TextKey>
      
      <TextKey>
       <Label>Auto-fly</Label>

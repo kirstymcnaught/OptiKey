@@ -104,16 +104,16 @@
 			<Height>1</Height>
 			<Width>2</Width>
 		</TextKey>
-		<ActionKey>
+		<TextKey>
 			<Label>Open\nChat</Label>
 			<Index>10</Index>
 			<Symbol>ChatIcon</Symbol>
-			<Action>ArrowDown</Action>
+			<Text>\</Text>
 			<Row>0</Row>
 			<Col>20</Col>
 			<Height>1</Height>
 			<Width>2</Width>
-		</ActionKey>
+		</TextKey>
 		<TextKey>
 			<Label>a</Label>
 			<Index>11</Index>
