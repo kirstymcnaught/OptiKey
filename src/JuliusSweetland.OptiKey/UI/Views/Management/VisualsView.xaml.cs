@@ -5,6 +5,7 @@ using System;
 using System.Windows.Forms;
 using JuliusSweetland.OptiKey.Properties;
 using System.IO;
+using Microsoft.WindowsAPICodePack.Dialogs;
 
 namespace JuliusSweetland.OptiKey.UI.Views.Management
 {
@@ -21,15 +22,16 @@ namespace JuliusSweetland.OptiKey.UI.Views.Management
 
         private void FindKeyboardsFolder(object sender, System.Windows.RoutedEventArgs e)
         {
-            FolderBrowserDialog folderBrowser = new FolderBrowserDialog();
-            folderBrowser.Description = "Select folder containing dynamic keyboards";
-            folderBrowser.SelectedPath = txtKeyboardsLocation.Text;
+            var folderBrowser = new CommonOpenFileDialog();
+            folderBrowser.IsFolderPicker = true;
+            folderBrowser.Title = "Select folder containing dynamic keyboards";
+            folderBrowser.InitialDirectory = txtKeyboardsLocation.Text;
 
-            if (folderBrowser.ShowDialog() == DialogResult.OK)
+            if (folderBrowser.ShowDialog() == CommonFileDialogResult.Ok)
             {
                 // This is hooked up to the DynamicKeyboardsLocation property
-                txtKeyboardsLocation.Text = folderBrowser.SelectedPath; 
-            }
+                txtKeyboardsLocation.Text = folderBrowser.FileName;
+            }            
         }
 
         private void FindStartupKeyboardFile(object sender, System.Windows.RoutedEventArgs e)
