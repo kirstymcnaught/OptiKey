@@ -60,7 +60,7 @@
 			<Label>Prev\nitem</Label>
 			<Index>5</Index>
 			<Symbol>MinecraftPrev</Symbol>
-			<Action>MouseScrollToTop</Action>
+			<Action>Numpad4</Action>
 			<Row>1</Row>
 			<Col>0</Col>
 			<Height>2</Height>
@@ -70,7 +70,7 @@
 			<Label>Next\nitem</Label>
 			<Index>6</Index>
 			<Symbol>MinecraftNext</Symbol>
-			<Action>MouseScrollToBottom</Action>
+			<Action>Numpad5</Action>
 			<Row>1</Row>
 			<Col>1</Col>
 			<Height>2</Height>

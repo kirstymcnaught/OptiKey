@@ -11,7 +11,7 @@
    <Keys>
 	  <ActionKey>
         <Symbol>MinecraftPickBlock</Symbol>
-	  	<Action>MouseMiddleClick</Action>
+	  	<Action>NumPad2</Action>
          <Label>Pick\nBlock</Label>
          <Row>0</Row>	
          <Col>0</Col>
@@ -26,7 +26,7 @@
 	  
 	  
 	  <ActionKey>	  
-		<Action>MouseScrollToTop</Action>
+		<Action>Numpad4</Action>
          <Label>Prev\nitem</Label>
 		 <Symbol>MinecraftPrev</Symbol>
          <Row>0</Row>
@@ -43,7 +43,7 @@
 	
 	
 	  <ActionKey>
-		<Action>MouseScrollToBottom</Action>
+		<Action>Numpad5</Action>
          <Label>Next\nitem</Label>
 		 <Symbol>MinecraftNext</Symbol>
          <Row>0</Row>
@@ -51,7 +51,7 @@
       </ActionKey>
 	  <ActionKey>
 		 <Symbol>MouseRightClickIcon</Symbol>	 
-		 <Action>MouseRightClick</Action>
+		 <Action>Numpad0</Action>
          <Label>Use\nitem</Label>
          <Row>1</Row>
          <Col>2</Col>

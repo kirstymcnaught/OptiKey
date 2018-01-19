@@ -23,7 +23,7 @@
 			<Label>Prev\nitem</Label>
 			<Index>1</Index>
 			<Symbol>MinecraftPrev</Symbol>
-			<Action>MouseScrollToTop</Action>
+			<Action>NumPad4</Action>
 			<Row>0</Row>
 			<Col>1</Col>
 			<Height>1</Height>
@@ -43,7 +43,7 @@
 			<Label>Next\nItem</Label>
 			<Index>3</Index>
 			<Symbol>MinecraftNext</Symbol>
-			<Action>MouseScrollToBottom</Action>
+			<Action>NumPad5</Action>
 			<Row>0</Row>
 			<Col>3</Col>
 			<Height>1</Height>
