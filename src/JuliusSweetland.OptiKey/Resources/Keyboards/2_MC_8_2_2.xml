@@ -65,6 +65,7 @@
          <Row>0</Row>		 
          <Col>3</Col>
 		 <Width>2</Width>
+         <SharedSizeGroup>Look</SharedSizeGroup>
       </ActionKey>
 	  <TextKey>
          <Label>Toggle\nwalking</Label>
@@ -73,6 +74,7 @@
          <Row>1</Row>
          <Col>3</Col>
 		 <Width>2</Width>
+         <SharedSizeGroup>Walk</SharedSizeGroup>
       </TextKey>
 	  
 	  <TextKey>
