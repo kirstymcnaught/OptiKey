@@ -920,10 +920,14 @@ namespace JuliusSweetland.OptiKey
 
         private static void ValidateDynamicKeyboardLocation()
         {
+            // Cache default location in settings for access elsewhere in app
+            string defaultLocation = GetDefaultUserKeyboardFolder();
+            Settings.Default.DefaultDynamicKeyboardsLocation = GetDefaultUserKeyboardFolder();
+            
             if (string.IsNullOrEmpty(Settings.Default.DynamicKeyboardsLocation))
             {
                 // First time we set to APPDATA location, user may move through settings later
-                Settings.Default.DynamicKeyboardsLocation = GetDefaultUserKeyboardFolder(); ;
+                Settings.Default.DynamicKeyboardsLocation = defaultLocation;
             }
         }
 

@@ -4353,6 +4353,15 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Reset to default location.
+        /// </summary>
+        public static string RESET_DYNAMIC_KEYBOARD {
+            get {
+                return ResourceManager.GetString("RESET_DYNAMIC_KEYBOARD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to OptiKey needs to restart to apply your changes.
         ///Please click OK to continue with the restart, or CANCEL to discard your changes.
         /// </summary>
@@ -4613,6 +4622,15 @@ namespace JuliusSweetland.OptiKey.Properties {
         public static string SCROLL_UP_SPLIT_WITH_NEWLINE {
             get {
                 return ResourceManager.GetString("SCROLL_UP_SPLIT_WITH_NEWLINE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select folder.
+        /// </summary>
+        public static string SELECT_FOLDER {
+            get {
+                return ResourceManager.GetString("SELECT_FOLDER", resourceCulture);
             }
         }
         

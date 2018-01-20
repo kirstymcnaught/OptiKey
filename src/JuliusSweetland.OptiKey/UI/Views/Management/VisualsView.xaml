@@ -130,7 +130,12 @@
                         <Button Click="FindKeyboardsFolder" MinWidth="100" Margin="5,5,5,5" 
                                 VerticalAlignment="Center"  
                                 HorizontalAlignment="Right">
-                            <x:Static Member="resx:Resources.MARYTTS_LOCATION_FIND_LABEL"/>
+                            <x:Static Member="resx:Resources.SELECT_FOLDER"/>
+                        </Button>
+                        <Button Click="ResetKeyboardsFolder" MinWidth="100" Margin="5,5,5,5" 
+                                VerticalAlignment="Center"  
+                                HorizontalAlignment="Right">
+                            <x:Static Member="resx:Resources.RESET_DYNAMIC_KEYBOARD"/>
                         </Button>
                     </StackPanel>
                 </Grid>

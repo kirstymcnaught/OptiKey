@@ -2143,4 +2143,10 @@ walk (legacy)</value>
   <data name="DOCK_POSITON_LABEL" xml:space="preserve">
     <value>Dock position:</value>
   </data>
+  <data name="RESET_DYNAMIC_KEYBOARD" xml:space="preserve">
+    <value>Reset to default location</value>
+  </data>
+  <data name="SELECT_FOLDER" xml:space="preserve">
+    <value>Select folder</value>
+  </data>
 </root>

@@ -2032,5 +2032,18 @@ namespace JuliusSweetland.OptiKey.Properties {
                 this["AttentionSoundVolume"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.SettingsManageabilityAttribute(global::System.Configuration.SettingsManageability.Roaming)]
+        public string DefaultDynamicKeyboardsLocation {
+            get {
+                return ((string)(this["DefaultDynamicKeyboardsLocation"]));
+            }
+            set {
+                this["DefaultDynamicKeyboardsLocation"] = value;
+            }
+        }
     }
 }

@@ -33,7 +33,12 @@ namespace JuliusSweetland.OptiKey.UI.Views.Management
                 txtKeyboardsLocation.Text = folderBrowser.FileName;
             }            
         }
-
+        
+        private void ResetKeyboardsFolder(object sender, System.Windows.RoutedEventArgs e)
+        {
+            txtKeyboardsLocation.Text = Settings.Default.DefaultDynamicKeyboardsLocation;
+        }
+ 
         private void FindStartupKeyboardFile(object sender, System.Windows.RoutedEventArgs e)
         {
             Microsoft.Win32.OpenFileDialog openFileDialog = new Microsoft.Win32.OpenFileDialog
