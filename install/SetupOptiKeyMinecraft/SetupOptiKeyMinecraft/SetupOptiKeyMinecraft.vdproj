@@ -21,7 +21,13 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_0194B5C4444E4194903B8FB7A5A39507"
+        "MsmKey" = "8:_0267A6052C4E43BB9D3EC52A1D6F046B"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_05CD1C03059E4A13A3B8DDEC216292B3"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -41,6 +47,12 @@
         {
         "MsmKey" = "8:_08251C75F2D9DE9B6DC1D2FB32B4A654"
         "OwnerKey" = "8:_281CFD9FF1C244BD8F8405C65C8F67EA"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_0919177655CE4E96BFA924D88C12EB80"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -147,6 +159,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_1BF9B0E959C447B18512D4DC673D7D85"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_1E2DCADC5BA6658CEFA1AB46982BC946"
         "OwnerKey" = "8:_281CFD9FF1C244BD8F8405C65C8F67EA"
         "MsmSig" = "8:_UNDEFINED"
@@ -213,6 +231,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_264861FEF1894FC48EDB6DD3F210A763"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_281CFD9FF1C244BD8F8405C65C8F67EA"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -249,14 +273,14 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_2DF89119260042E2B20BF8AE2E06AC19"
-        "OwnerKey" = "8:_UNDEFINED"
+        "MsmKey" = "8:_2F280B770EF5C653C590063FACD6C7E3"
+        "OwnerKey" = "8:_281CFD9FF1C244BD8F8405C65C8F67EA"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_2F280B770EF5C653C590063FACD6C7E3"
-        "OwnerKey" = "8:_281CFD9FF1C244BD8F8405C65C8F67EA"
+        "MsmKey" = "8:_316D2597F03E4073B6D96A8B870D1D3F"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -291,6 +315,18 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_39B065878C27FB30F4E0B4FDCEF96CFE"
+        "OwnerKey" = "8:_281CFD9FF1C244BD8F8405C65C8F67EA"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_3A1A8D62C1A8005B89CFB13FAC4BCBB0"
+        "OwnerKey" = "8:_281CFD9FF1C244BD8F8405C65C8F67EA"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_3C0988484063FAF679D47C24C7AA277C"
         "OwnerKey" = "8:_19AEC9755DA1F9B7AD1EB5506A7CD00D"
         "MsmSig" = "8:_UNDEFINED"
@@ -299,6 +335,18 @@
         {
         "MsmKey" = "8:_3DCC26341A4EE445389212AEE5059983"
         "OwnerKey" = "8:_281CFD9FF1C244BD8F8405C65C8F67EA"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_3E05C082A51C8F1BF71BF60BAC8D974A"
+        "OwnerKey" = "8:_281CFD9FF1C244BD8F8405C65C8F67EA"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_3F0CAB75699F41B98A89914E032E7DF4"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -327,13 +375,7 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_45751654FEA24FB6BEA438A0071B92A6"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_459CD2415D88497C9564412CDE61FB0C"
+        "MsmKey" = "8:_49B9EB0B850F46D9953A3C8B8397A36F"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -347,12 +389,6 @@
         {
         "MsmKey" = "8:_4B174B1F54FF4F300CC8130A694AB4EA"
         "OwnerKey" = "8:_281CFD9FF1C244BD8F8405C65C8F67EA"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_4BCCBF65C38D4BFFB4A15CD12CAC1A27"
-        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -399,6 +435,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_5623A28EEF454B3B9A437C26F94CE506"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_572611EDA18D340C141B3A8C033FDA87"
         "OwnerKey" = "8:_281CFD9FF1C244BD8F8405C65C8F67EA"
         "MsmSig" = "8:_UNDEFINED"
@@ -411,13 +453,31 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_5CBA8649EEE54DA4822EFBC3AAFE8530"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_5D826F75227D4F9EA7311BF2F0D5B27E"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_613EF8E2F037402D84522390BCCAFAF1"
+        "MsmKey" = "8:_5EC83DE4EC6743BBA0EBC2ACD509F4C2"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_5F6DD1EE603F4366A7DD60C808A7EE5E"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_62A94F0441F940669966E619313C4DD9"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -425,6 +485,12 @@
         {
         "MsmKey" = "8:_62C15C2E5E2F74DCA421F7A6187B6D2E"
         "OwnerKey" = "8:_281CFD9FF1C244BD8F8405C65C8F67EA"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_641F8F48F5FF4382B7DBF83D190B69FD"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -447,7 +513,7 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_6C7EAE63B69F4F9E88E588DA23076211"
+        "MsmKey" = "8:_6AE474D157F5402799BFCBB4A79B73A3"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -465,6 +531,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_74877B54919E4F4B89431ACEC6B7F67A"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_76BBC9E28EFE4C359C9388CF01914E52"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -473,6 +545,12 @@
         {
         "MsmKey" = "8:_78C8960BEBC058557E894F5A3FF32137"
         "OwnerKey" = "8:_281CFD9FF1C244BD8F8405C65C8F67EA"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_7C1287F1FBED4D66B0D7B041BDAB67C0"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -495,6 +573,30 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_84EA7EDFF28238C1FD609FF50E78BB59"
+        "OwnerKey" = "8:_281CFD9FF1C244BD8F8405C65C8F67EA"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_84EA7EDFF28238C1FD609FF50E78BB59"
+        "OwnerKey" = "8:_39B065878C27FB30F4E0B4FDCEF96CFE"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_84EA7EDFF28238C1FD609FF50E78BB59"
+        "OwnerKey" = "8:_FA53E435CF6C4A3EE045334461AD6204"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_84EA7EDFF28238C1FD609FF50E78BB59"
+        "OwnerKey" = "8:_3E05C082A51C8F1BF71BF60BAC8D974A"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_88DC664441634B2CA466DBBF003E5204"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -503,12 +605,6 @@
         {
         "MsmKey" = "8:_88F22305110A481FE0B6F75CE51DC6F8"
         "OwnerKey" = "8:_281CFD9FF1C244BD8F8405C65C8F67EA"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_8F5573A277F84665A68BF3D81465DCF0"
-        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -549,6 +645,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_96577B403D4B430C82026DD09FAA3C30"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_968AE25F2C413A758CB8B8D35323DD55"
         "OwnerKey" = "8:_281CFD9FF1C244BD8F8405C65C8F67EA"
         "MsmSig" = "8:_UNDEFINED"
@@ -557,6 +659,12 @@
         {
         "MsmKey" = "8:_97F3305989C71B23E95540FB444D9682"
         "OwnerKey" = "8:_19AEC9755DA1F9B7AD1EB5506A7CD00D"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_99A16E5B7B6F4F11957317FD2AEF38D1"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -575,12 +683,6 @@
         {
         "MsmKey" = "8:_9C8C6D33142CF237D3883DB718C9553E"
         "OwnerKey" = "8:_281CFD9FF1C244BD8F8405C65C8F67EA"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_9D63AA3C492F4A8AAA2516E8E21319F0"
-        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -633,7 +735,7 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_AA5659CEE56245AE92EED9D8123566D4"
+        "MsmKey" = "8:_A87E43D6C2AC435983DC767867F1B6C6"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -653,6 +755,12 @@
         {
         "MsmKey" = "8:_AB206B1E0EE31272943A7C859CFD6A82"
         "OwnerKey" = "8:_19AEC9755DA1F9B7AD1EB5506A7CD00D"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_AE62508314B04072BDB9FF858292787B"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -717,7 +825,7 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_C519FB91E58D4AA1BD376BE1716B8BD3"
+        "MsmKey" = "8:_C30270AEBA9A4E8D8EE461B71EBC4A2C"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -725,12 +833,6 @@
         {
         "MsmKey" = "8:_C554E1C392355CAEEFEFF9056CBF8EA3"
         "OwnerKey" = "8:_281CFD9FF1C244BD8F8405C65C8F67EA"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_C5AAB3FE2E7047C985D6621062704D14"
-        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -761,6 +863,12 @@
         {
         "MsmKey" = "8:_CED0827FAEDF38072F43CA5F84B5A278"
         "OwnerKey" = "8:_281CFD9FF1C244BD8F8405C65C8F67EA"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_CF52BFF1AFB44F6A82642E14E962F81A"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -843,12 +951,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_EF1CAC0E932D4BD5B3E1DC2AA3E178E7"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_F144EF5C7EBB677F8F02B67D3EFD1085"
         "OwnerKey" = "8:_281CFD9FF1C244BD8F8405C65C8F67EA"
         "MsmSig" = "8:_UNDEFINED"
@@ -867,8 +969,26 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_F7926B69433A460C846321F96204BE42"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_F8B22C1D45D429953781D790E755893C"
         "OwnerKey" = "8:_281CFD9FF1C244BD8F8405C65C8F67EA"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_FA53E435CF6C4A3EE045334461AD6204"
+        "OwnerKey" = "8:_281CFD9FF1C244BD8F8405C65C8F67EA"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_FA53E435CF6C4A3EE045334461AD6204"
+        "OwnerKey" = "8:_39B065878C27FB30F4E0B4FDCEF96CFE"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -881,6 +1001,12 @@
         {
         "MsmKey" = "8:_FC12D599ACCFABEE3E4D21D33CD08E68"
         "OwnerKey" = "8:_281CFD9FF1C244BD8F8405C65C8F67EA"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_FC1E65C12E9D4664942B210EC0DC9539"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1205,6 +1331,36 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_38B8A0E7113061302172B9F649FEBEBE"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_39B065878C27FB30F4E0B4FDCEF96CFE"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_FA53E435CF6C4A3EE045334461AD6204"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_3E05C082A51C8F1BF71BF60BAC8D974A"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_3A1A8D62C1A8005B89CFB13FAC4BCBB0"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_84EA7EDFF28238C1FD609FF50E78BB59"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1544,12 +1700,32 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0194B5C4444E4194903B8FB7A5A39507"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0267A6052C4E43BB9D3EC52A1D6F046B"
             {
-            "SourcePath" = "8:..\\..\\..\\src\\JuliusSweetland.OptiKey\\Resources\\Keyboards\\3_MainKeyboard.xml"
-            "TargetName" = "8:3_MainKeyboard.xml"
+            "SourcePath" = "8:..\\..\\..\\src\\JuliusSweetland.OptiKey\\Resources\\Keyboards\\EyeTracker\\2_MC_8_2_1.xml"
+            "TargetName" = "8:2_MC_8_2_1.xml"
             "Tag" = "8:"
-            "Folder" = "8:_CD0F4D91D22744B9B361B576D714C154"
+            "Folder" = "8:_CE09BC372E9341E48749DB95FE788865"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_05CD1C03059E4A13A3B8DDEC216292B3"
+            {
+            "SourcePath" = "8:..\\..\\..\\src\\JuliusSweetland.OptiKey\\Resources\\Keyboards\\Mouse\\1_MC_5_1_build2.xml"
+            "TargetName" = "8:1_MC_5_1_build2.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_BC05544926F14F04BC3B5EA3DA52C9FF"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -1644,6 +1820,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0919177655CE4E96BFA924D88C12EB80"
+            {
+            "SourcePath" = "8:..\\..\\..\\src\\JuliusSweetland.OptiKey\\Resources\\Keyboards\\EyeTracker\\1_MC_5_1_build1.xml"
+            "TargetName" = "8:1_MC_5_1_build1.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_CE09BC372E9341E48749DB95FE788865"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_0B7EB14D215E21DA5B77437B92276D5E"
@@ -1987,6 +2183,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1BF9B0E959C447B18512D4DC673D7D85"
+            {
+            "SourcePath" = "8:..\\..\\..\\src\\JuliusSweetland.OptiKey\\Resources\\Keyboards\\EyeTracker\\1_MC_5_1_2_advanced.xml"
+            "TargetName" = "8:1_MC_5_1_2_advanced.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_CE09BC372E9341E48749DB95FE788865"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_1E2DCADC5BA6658CEFA1AB46982BC946"
             {
             "AssemblyRegister" = "3:1"
@@ -2162,6 +2378,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_264861FEF1894FC48EDB6DD3F210A763"
+            {
+            "SourcePath" = "8:..\\..\\..\\src\\JuliusSweetland.OptiKey\\Resources\\Keyboards\\Mouse\\3_MainKeyboard.xml"
+            "TargetName" = "8:3_MainKeyboard.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_BC05544926F14F04BC3B5EA3DA52C9FF"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_29072C6794E5513C86978147B7BD1B9F"
             {
             "AssemblyRegister" = "3:1"
@@ -2286,26 +2522,6 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_2DF89119260042E2B20BF8AE2E06AC19"
-            {
-            "SourcePath" = "8:..\\..\\..\\src\\JuliusSweetland.OptiKey\\Resources\\Keyboards\\0_MC_5_1_1_intro.xml"
-            "TargetName" = "8:0_MC_5_1_1_intro.xml"
-            "Tag" = "8:"
-            "Folder" = "8:_CD0F4D91D22744B9B361B576D714C154"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_2F280B770EF5C653C590063FACD6C7E3"
             {
             "AssemblyRegister" = "3:1"
@@ -2335,6 +2551,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_316D2597F03E4073B6D96A8B870D1D3F"
+            {
+            "SourcePath" = "8:..\\..\\..\\src\\JuliusSweetland.OptiKey\\Resources\\Keyboards\\Mouse\\1_MC_5_1_build1.xml"
+            "TargetName" = "8:1_MC_5_1_build1.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_BC05544926F14F04BC3B5EA3DA52C9FF"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_33171E1246DA012BE95C72113198E9D3"
@@ -2450,6 +2686,68 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_39B065878C27FB30F4E0B4FDCEF96CFE"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Microsoft.WindowsAPICodePack.ShellExtensions, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_39B065878C27FB30F4E0B4FDCEF96CFE"
+                    {
+                    "Name" = "8:Microsoft.WindowsAPICodePack.ShellExtensions.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Microsoft.WindowsAPICodePack.ShellExtensions.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_BADCC784D0D64068ADC096E5E2844513"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_3A1A8D62C1A8005B89CFB13FAC4BCBB0"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Microsoft.WindowsAPICodePack.ExtendedLinguisticServices, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_3A1A8D62C1A8005B89CFB13FAC4BCBB0"
+                    {
+                    "Name" = "8:Microsoft.WindowsAPICodePack.ExtendedLinguisticServices.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Microsoft.WindowsAPICodePack.ExtendedLinguisticServices.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_BADCC784D0D64068ADC096E5E2844513"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_3C0988484063FAF679D47C24C7AA277C"
             {
             "AssemblyRegister" = "3:1"
@@ -2510,6 +2808,57 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_3E05C082A51C8F1BF71BF60BAC8D974A"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Microsoft.WindowsAPICodePack.Sensors, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_3E05C082A51C8F1BF71BF60BAC8D974A"
+                    {
+                    "Name" = "8:Microsoft.WindowsAPICodePack.Sensors.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Microsoft.WindowsAPICodePack.Sensors.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_BADCC784D0D64068ADC096E5E2844513"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3F0CAB75699F41B98A89914E032E7DF4"
+            {
+            "SourcePath" = "8:..\\..\\..\\src\\JuliusSweetland.OptiKey\\Resources\\Keyboards\\EyeTracker\\1_MC_5_1_build2.xml"
+            "TargetName" = "8:1_MC_5_1_build2.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_CE09BC372E9341E48749DB95FE788865"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_41688E790C6A8D806464288776BD6448"
@@ -2636,32 +2985,12 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_45751654FEA24FB6BEA438A0071B92A6"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_49B9EB0B850F46D9953A3C8B8397A36F"
             {
-            "SourcePath" = "8:..\\..\\..\\src\\JuliusSweetland.OptiKey\\Resources\\Keyboards\\3_InventoryKeyboard.xml"
-            "TargetName" = "8:3_InventoryKeyboard.xml"
+            "SourcePath" = "8:..\\..\\..\\src\\JuliusSweetland.OptiKey\\Resources\\Keyboards\\Mouse\\2_MC_8_2_1.xml"
+            "TargetName" = "8:2_MC_8_2_1.xml"
             "Tag" = "8:"
-            "Folder" = "8:_CD0F4D91D22744B9B361B576D714C154"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_459CD2415D88497C9564412CDE61FB0C"
-            {
-            "SourcePath" = "8:..\\..\\..\\src\\JuliusSweetland.OptiKey\\Resources\\Keyboards\\1_MC_5_1_1_advanced.xml"
-            "TargetName" = "8:1_MC_5_1_1_advanced.xml"
-            "Tag" = "8:"
-            "Folder" = "8:_CD0F4D91D22744B9B361B576D714C154"
+            "Folder" = "8:_BC05544926F14F04BC3B5EA3DA52C9FF"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -2736,26 +3065,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4BCCBF65C38D4BFFB4A15CD12CAC1A27"
-            {
-            "SourcePath" = "8:..\\..\\..\\src\\JuliusSweetland.OptiKey\\Resources\\Keyboards\\3_ChatKeyboard.xml"
-            "TargetName" = "8:3_ChatKeyboard.xml"
-            "Tag" = "8:"
-            "Folder" = "8:_CD0F4D91D22744B9B361B576D714C154"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_4D8F46F0A7E5E367722344489429DF80"
@@ -2902,6 +3211,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5623A28EEF454B3B9A437C26F94CE506"
+            {
+            "SourcePath" = "8:..\\..\\..\\src\\JuliusSweetland.OptiKey\\Resources\\Keyboards\\Mouse\\0_MC_5_1_2_intro.xml"
+            "TargetName" = "8:0_MC_5_1_2_intro.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_BC05544926F14F04BC3B5EA3DA52C9FF"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_572611EDA18D340C141B3A8C033FDA87"
             {
             "AssemblyRegister" = "3:1"
@@ -2953,6 +3282,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5CBA8649EEE54DA4822EFBC3AAFE8530"
+            {
+            "SourcePath" = "8:..\\..\\..\\src\\JuliusSweetland.OptiKey\\Resources\\Keyboards\\Mouse\\1_MC_5_1_misc.xml"
+            "TargetName" = "8:1_MC_5_1_misc.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_BC05544926F14F04BC3B5EA3DA52C9FF"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5D826F75227D4F9EA7311BF2F0D5B27E"
             {
             "SourcePath" = "8:..\\..\\..\\src\\JuliusSweetland.OptiKey\\packages.config"
@@ -2973,12 +3322,52 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_613EF8E2F037402D84522390BCCAFAF1"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5EC83DE4EC6743BBA0EBC2ACD509F4C2"
             {
-            "SourcePath" = "8:..\\..\\..\\src\\JuliusSweetland.OptiKey\\Resources\\Keyboards\\1_MC_5_1_build1.xml"
-            "TargetName" = "8:1_MC_5_1_build1.xml"
+            "SourcePath" = "8:..\\..\\..\\src\\JuliusSweetland.OptiKey\\Resources\\Keyboards\\EyeTracker\\3_MainKeyboard.xml"
+            "TargetName" = "8:3_MainKeyboard.xml"
             "Tag" = "8:"
-            "Folder" = "8:_CD0F4D91D22744B9B361B576D714C154"
+            "Folder" = "8:_CE09BC372E9341E48749DB95FE788865"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5F6DD1EE603F4366A7DD60C808A7EE5E"
+            {
+            "SourcePath" = "8:..\\..\\..\\src\\JuliusSweetland.OptiKey\\Resources\\Keyboards\\EyeTracker\\1_MC_5_1_misc.xml"
+            "TargetName" = "8:1_MC_5_1_misc.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_CE09BC372E9341E48749DB95FE788865"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_62A94F0441F940669966E619313C4DD9"
+            {
+            "SourcePath" = "8:..\\..\\..\\src\\JuliusSweetland.OptiKey\\Resources\\Keyboards\\EyeTracker\\0_MC_5_1_1_intro.xml"
+            "TargetName" = "8:0_MC_5_1_1_intro.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_CE09BC372E9341E48749DB95FE788865"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -3022,6 +3411,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_641F8F48F5FF4382B7DBF83D190B69FD"
+            {
+            "SourcePath" = "8:..\\..\\..\\src\\JuliusSweetland.OptiKey\\Resources\\Keyboards\\Mouse\\1_MC_5_1_1_advanced.xml"
+            "TargetName" = "8:1_MC_5_1_1_advanced.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_BC05544926F14F04BC3B5EA3DA52C9FF"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_688EB920DB7A8B2AA33CB0DFB5861863"
@@ -3106,12 +3515,12 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6C7EAE63B69F4F9E88E588DA23076211"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6AE474D157F5402799BFCBB4A79B73A3"
             {
-            "SourcePath" = "8:..\\..\\..\\src\\JuliusSweetland.OptiKey\\Resources\\Keyboards\\2_MC_8_2_2.xml"
+            "SourcePath" = "8:..\\..\\..\\src\\JuliusSweetland.OptiKey\\Resources\\Keyboards\\Mouse\\2_MC_8_2_2.xml"
             "TargetName" = "8:2_MC_8_2_2.xml"
             "Tag" = "8:"
-            "Folder" = "8:_CD0F4D91D22744B9B361B576D714C154"
+            "Folder" = "8:_BC05544926F14F04BC3B5EA3DA52C9FF"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -3188,6 +3597,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_74877B54919E4F4B89431ACEC6B7F67A"
+            {
+            "SourcePath" = "8:..\\..\\..\\src\\JuliusSweetland.OptiKey\\Resources\\Keyboards\\EyeTracker\\2_MC_8_2_2.xml"
+            "TargetName" = "8:2_MC_8_2_2.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_CE09BC372E9341E48749DB95FE788865"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_76BBC9E28EFE4C359C9388CF01914E52"
             {
             "SourcePath" = "8:..\\..\\..\\src\\JuliusSweetland.OptiKey\\bin\\Release\\System.Reactive.Linq.xml"
@@ -3237,6 +3666,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7C1287F1FBED4D66B0D7B041BDAB67C0"
+            {
+            "SourcePath" = "8:..\\..\\..\\src\\JuliusSweetland.OptiKey\\Resources\\Keyboards\\Mouse\\3_ChatKeyboard.xml"
+            "TargetName" = "8:3_ChatKeyboard.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_BC05544926F14F04BC3B5EA3DA52C9FF"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_7FE09E9F518221780468312DF5EB8B57"
@@ -3332,6 +3781,37 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_84EA7EDFF28238C1FD609FF50E78BB59"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Microsoft.WindowsAPICodePack, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_84EA7EDFF28238C1FD609FF50E78BB59"
+                    {
+                    "Name" = "8:Microsoft.WindowsAPICodePack.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Microsoft.WindowsAPICodePack.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_BADCC784D0D64068ADC096E5E2844513"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_88DC664441634B2CA466DBBF003E5204"
             {
             "SourcePath" = "8:..\\..\\..\\src\\JuliusSweetland.OptiKey\\bin\\Release\\MahApps.Metro.xml"
@@ -3381,26 +3861,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8F5573A277F84665A68BF3D81465DCF0"
-            {
-            "SourcePath" = "8:..\\..\\..\\src\\JuliusSweetland.OptiKey\\Resources\\Keyboards\\1_MC_5_1_misc.xml"
-            "TargetName" = "8:1_MC_5_1_misc.xml"
-            "Tag" = "8:"
-            "Folder" = "8:_CD0F4D91D22744B9B361B576D714C154"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_915DF1A1DF336417C88C2864C6303F10"
@@ -3547,6 +4007,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_96577B403D4B430C82026DD09FAA3C30"
+            {
+            "SourcePath" = "8:..\\..\\..\\src\\JuliusSweetland.OptiKey\\Resources\\Keyboards\\EyeTracker\\0_MC_5_1_2_intro.xml"
+            "TargetName" = "8:0_MC_5_1_2_intro.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_CE09BC372E9341E48749DB95FE788865"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_968AE25F2C413A758CB8B8D35323DD55"
             {
             "AssemblyRegister" = "3:1"
@@ -3607,6 +4087,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_99A16E5B7B6F4F11957317FD2AEF38D1"
+            {
+            "SourcePath" = "8:..\\..\\..\\src\\JuliusSweetland.OptiKey\\Resources\\Keyboards\\EyeTracker\\2_MC_8_2_inv.xml"
+            "TargetName" = "8:2_MC_8_2_inv.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_CE09BC372E9341E48749DB95FE788865"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9AA82DE7FDAB4E66B64E4C3AE0C96B2C"
@@ -3678,26 +4178,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9D63AA3C492F4A8AAA2516E8E21319F0"
-            {
-            "SourcePath" = "8:..\\..\\..\\src\\JuliusSweetland.OptiKey\\Resources\\Keyboards\\2_MC_8_2_inv.xml"
-            "TargetName" = "8:2_MC_8_2_inv.xml"
-            "Tag" = "8:"
-            "Folder" = "8:_CD0F4D91D22744B9B361B576D714C154"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A4670A715774A56D059B3A701270D6D5"
@@ -3844,12 +4324,12 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_AA5659CEE56245AE92EED9D8123566D4"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A87E43D6C2AC435983DC767867F1B6C6"
             {
-            "SourcePath" = "8:..\\..\\..\\src\\JuliusSweetland.OptiKey\\Resources\\Keyboards\\1_MC_5_1_build2.xml"
-            "TargetName" = "8:1_MC_5_1_build2.xml"
+            "SourcePath" = "8:..\\..\\..\\src\\JuliusSweetland.OptiKey\\Resources\\Keyboards\\Mouse\\0_MC_5_1_1_intro.xml"
+            "TargetName" = "8:0_MC_5_1_1_intro.xml"
             "Tag" = "8:"
-            "Folder" = "8:_CD0F4D91D22744B9B361B576D714C154"
+            "Folder" = "8:_BC05544926F14F04BC3B5EA3DA52C9FF"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -3924,6 +4404,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_AE62508314B04072BDB9FF858292787B"
+            {
+            "SourcePath" = "8:..\\..\\..\\src\\JuliusSweetland.OptiKey\\Resources\\Keyboards\\Mouse\\1_MC_5_1_2_advanced.xml"
+            "TargetName" = "8:1_MC_5_1_2_advanced.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_BC05544926F14F04BC3B5EA3DA52C9FF"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_B2DBD084516E84EB6BEF1C169736BE57"
@@ -4183,12 +4683,12 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C519FB91E58D4AA1BD376BE1716B8BD3"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C30270AEBA9A4E8D8EE461B71EBC4A2C"
             {
-            "SourcePath" = "8:..\\..\\..\\src\\JuliusSweetland.OptiKey\\Resources\\Keyboards\\0_MC_5_1_2_intro.xml"
-            "TargetName" = "8:0_MC_5_1_2_intro.xml"
+            "SourcePath" = "8:..\\..\\..\\src\\JuliusSweetland.OptiKey\\Resources\\Keyboards\\EyeTracker\\1_MC_5_1_1_advanced.xml"
+            "TargetName" = "8:1_MC_5_1_1_advanced.xml"
             "Tag" = "8:"
-            "Folder" = "8:_CD0F4D91D22744B9B361B576D714C154"
+            "Folder" = "8:_CE09BC372E9341E48749DB95FE788865"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -4232,26 +4732,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C5AAB3FE2E7047C985D6621062704D14"
-            {
-            "SourcePath" = "8:..\\..\\..\\src\\JuliusSweetland.OptiKey\\Resources\\Keyboards\\1_MC_5_1_2_advanced.xml"
-            "TargetName" = "8:1_MC_5_1_2_advanced.xml"
-            "Tag" = "8:"
-            "Folder" = "8:_CD0F4D91D22744B9B361B576D714C154"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_CB6E5385EC18BEFA2A9BA904CE9F9E24"
@@ -4396,6 +4876,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_CF52BFF1AFB44F6A82642E14E962F81A"
+            {
+            "SourcePath" = "8:..\\..\\..\\src\\JuliusSweetland.OptiKey\\Resources\\Keyboards\\EyeTracker\\3_ChatKeyboard.xml"
+            "TargetName" = "8:3_ChatKeyboard.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_CE09BC372E9341E48749DB95FE788865"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_D248BD2FA4E8EC3A6305D91D5393E02A"
@@ -4726,26 +5226,6 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_EF1CAC0E932D4BD5B3E1DC2AA3E178E7"
-            {
-            "SourcePath" = "8:..\\..\\..\\src\\JuliusSweetland.OptiKey\\Resources\\Keyboards\\2_MC_8_2_1.xml"
-            "TargetName" = "8:2_MC_8_2_1.xml"
-            "Tag" = "8:"
-            "Folder" = "8:_CD0F4D91D22744B9B361B576D714C154"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_F144EF5C7EBB677F8F02B67D3EFD1085"
             {
             "AssemblyRegister" = "3:1"
@@ -4828,6 +5308,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F7926B69433A460C846321F96204BE42"
+            {
+            "SourcePath" = "8:..\\..\\..\\src\\JuliusSweetland.OptiKey\\Resources\\Keyboards\\Mouse\\3_InventoryKeyboard.xml"
+            "TargetName" = "8:3_InventoryKeyboard.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_BC05544926F14F04BC3B5EA3DA52C9FF"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_F8B22C1D45D429953781D790E755893C"
             {
             "AssemblyRegister" = "3:1"
@@ -4842,6 +5342,37 @@
                     }
                 }
             "SourcePath" = "8:System.Diagnostics.Debug.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_BADCC784D0D64068ADC096E5E2844513"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_FA53E435CF6C4A3EE045334461AD6204"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Microsoft.WindowsAPICodePack.Shell, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_FA53E435CF6C4A3EE045334461AD6204"
+                    {
+                    "Name" = "8:Microsoft.WindowsAPICodePack.Shell.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Microsoft.WindowsAPICodePack.Shell.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_BADCC784D0D64068ADC096E5E2844513"
@@ -4919,6 +5450,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_FC1E65C12E9D4664942B210EC0DC9539"
+            {
+            "SourcePath" = "8:..\\..\\..\\src\\JuliusSweetland.OptiKey\\Resources\\Keyboards\\EyeTracker\\3_InventoryKeyboard.xml"
+            "TargetName" = "8:3_InventoryKeyboard.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_CE09BC372E9341E48749DB95FE788865"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_FDBB0E9FC504E14C7B4BF81F697987D1"
@@ -5069,6 +5620,28 @@
                                     "Property" = "8:_068119D2D5FF4079870FA27759E8B952"
                                         "Folders"
                                         {
+                                            "{9EF0B969-E518-4E46-987F-47570745A589}:_BC05544926F14F04BC3B5EA3DA52C9FF"
+                                            {
+                                            "Name" = "8:Mouse"
+                                            "AlwaysCreate" = "11:FALSE"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "Property" = "8:_0322AE9D27334F7EB5958BFE27ABF58E"
+                                                "Folders"
+                                                {
+                                                }
+                                            }
+                                            "{9EF0B969-E518-4E46-987F-47570745A589}:_CE09BC372E9341E48749DB95FE788865"
+                                            {
+                                            "Name" = "8:EyeTracker"
+                                            "AlwaysCreate" = "11:FALSE"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "Property" = "8:_379536880BBD4B9D9CC057A4AAF04C48"
+                                                "Folders"
+                                                {
+                                                }
+                                            }
                                         }
                                     }
                                 }
