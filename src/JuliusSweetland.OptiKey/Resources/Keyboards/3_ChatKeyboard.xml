@@ -2,7 +2,7 @@
 <Keyboard>
    <ShowOutputPanel>True</ShowOutputPanel>
     <Height>32</Height>
-   <Name>Minecraft 10x3 chat (2)</Name>
+   <Name>Minecraft 10x3 chat</Name>
    <SymbolMargin>20</SymbolMargin>
    <Grid>
       <Rows>3</Rows>
