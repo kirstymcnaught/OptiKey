@@ -29,7 +29,7 @@ namespace JuliusSweetland.OptiKey.UI.Views.Management
 
             if (folderBrowser.ShowDialog() == CommonFileDialogResult.Ok)
             {
-                // This is hooked up to the DynamicKeyboardsLocation property
+                // This is hooked up to the CustomDynamicKeyboardsLocation property
                 txtKeyboardsLocation.Text = folderBrowser.FileName;
             }            
         }
@@ -61,7 +61,7 @@ namespace JuliusSweetland.OptiKey.UI.Views.Management
             {
                 if (openFileDialog.FileName.EndsWith(@".xml"))
                 {
-                    // This is hooked up to the DynamicKeyboardsLocation property
+                    // This is hooked up to the CustomDynamicKeyboardsLocation property
                     txtStartupKeyboardLocation.Text = openFileDialog.FileName;
                 }                
             }

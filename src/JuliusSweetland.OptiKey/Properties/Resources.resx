@@ -1961,7 +1961,7 @@ The prediction method will be changed to NGram to prevent a crash on next run.</
   <data name="TOBII_PCEYE_GO_PLUS" xml:space="preserve">
     <value>Tobii PCEye Plus</value>
   </data>
-<data name="ALPHA_2" xml:space="preserve">
+  <data name="ALPHA_2" xml:space="preserve">
     <value>LETTERS 2</value>
   </data>
   <data name="CONVERSATION_ALPHA_2" xml:space="preserve">
@@ -2148,5 +2148,14 @@ walk (legacy)</value>
   </data>
   <data name="SELECT_FOLDER" xml:space="preserve">
     <value>Select folder</value>
+  </data>
+  <data name="BUILTIN_DYNAMIC_KEYBOARD" xml:space="preserve">
+    <value>Selection of (built in) Minecraft keyboards</value>
+  </data>
+  <data name="CUSTOM_DYNAMIC_KEYBOARDS" xml:space="preserve">
+    <value>Custom selection of keyboards</value>
+  </data>
+  <data name="SINGLE_DYNAMIC_KEYBOARD" xml:space="preserve">
+    <value>Single custom keyboard</value>
   </data>
 </root>

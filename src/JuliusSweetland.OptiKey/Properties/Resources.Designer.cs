@@ -410,6 +410,15 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Selection of (built in) Minecraft keyboards.
+        /// </summary>
+        public static string BUILTIN_DYNAMIC_KEYBOARD {
+            get {
+                return ResourceManager.GetString("BUILTIN_DYNAMIC_KEYBOARD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Calibration aborted with message: &apos;{0}&apos;.
         /// </summary>
         public static string CALIBRATION_ABORT_MESSAGE {
@@ -936,6 +945,15 @@ namespace JuliusSweetland.OptiKey.Properties {
         public static string CURSOR_WIDTH_LABEL {
             get {
                 return ResourceManager.GetString("CURSOR_WIDTH_LABEL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Custom selection of keyboards.
+        /// </summary>
+        public static string CUSTOM_DYNAMIC_KEYBOARDS {
+            get {
+                return ResourceManager.GetString("CUSTOM_DYNAMIC_KEYBOARDS", resourceCulture);
             }
         }
         
@@ -4873,6 +4891,15 @@ namespace JuliusSweetland.OptiKey.Properties {
         public static string SIMILAR_DICTIONARY_ENTRIES_EXIST {
             get {
                 return ResourceManager.GetString("SIMILAR_DICTIONARY_ENTRIES_EXIST", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Single custom keyboard.
+        /// </summary>
+        public static string SINGLE_DYNAMIC_KEYBOARD {
+            get {
+                return ResourceManager.GetString("SINGLE_DYNAMIC_KEYBOARD", resourceCulture);
             }
         }
         

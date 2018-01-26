@@ -1068,7 +1068,7 @@
     <Setting Name="CommuniKateKeyboardPrevious4Context" Roaming="true" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="DynamicKeyboardsLocation" Roaming="true" Type="System.String" Scope="User">
+    <Setting Name="CustomDynamicKeyboardsLocation" Roaming="true" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="StartupKeyboardFile" Type="System.String" Scope="User">
@@ -1084,6 +1084,9 @@
       <Value Profile="(Default)">100</Value>
     </Setting>
     <Setting Name="DefaultDynamicKeyboardsLocation" Roaming="true" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DynamicKeyboardsLocation" Roaming="true" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
   </Settings>

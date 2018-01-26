@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
@@ -320,6 +321,8 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                         break;
 
                     case Enums.Keyboards.CustomKeyboardFile:
+                    case Enums.Keyboards.DynamicKeyboardsCustom:
+                    case Enums.Keyboards.DynamicKeyboardsBuiltIn:
                         // No BackAction if we're starting from a custom keyboard, since it should be 
                         // the root menu.
                         SetKeyboardFromEnum(Settings.Default.StartupKeyboard,
@@ -385,8 +388,31 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                     Keyboard = new Diacritics3();
                     break;
 
-                case Enums.Keyboards.DynamicKeyboard:
-                    Keyboard = new DynamicKeyboardSelector(() => { }, 0);
+                case Enums.Keyboards.DynamicKeyboardsCustom:
+                {
+                    string folderLocation = Settings.Default.CustomDynamicKeyboardsLocation;
+                    Keyboard = new DynamicKeyboardSelector(backAction, folderLocation, 0);
+                }
+                    break;
+
+                case Enums.Keyboards.DynamicKeyboardsBuiltIn:                    
+                {
+                    string baseFolder = Settings.Default.DefaultDynamicKeyboardsLocation;
+                    string subFolder = "";
+                    switch (Settings.Default.PointsSource)
+                    {
+                            case PointsSources.MousePosition:
+                                subFolder = "Mouse";
+                                break;
+
+                            default:
+                                subFolder = "EyeTracker";
+                                break;
+                    }
+
+                    string fullFolder = Path.Combine(baseFolder, subFolder);
+                    Keyboard = new DynamicKeyboardSelector(backAction, fullFolder, 0);
+                }
                     break;
 
                 case Enums.Keyboards.Menu:

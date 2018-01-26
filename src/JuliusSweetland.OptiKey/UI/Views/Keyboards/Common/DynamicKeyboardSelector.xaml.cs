@@ -23,6 +23,7 @@ namespace JuliusSweetland.OptiKey.UI.Views.Keyboards.Common
         private static readonly ILog Log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
 
         private DynamicKeyboardFolder folder;
+        private string folderLocation;
         private int pageIndex = 0;
 
         // TODO: Could be user configurable at some point?
@@ -31,13 +32,14 @@ namespace JuliusSweetland.OptiKey.UI.Views.Keyboards.Common
 
         #endregion
 
-        public DynamicKeyboardSelector(int pageIndex)
+        public DynamicKeyboardSelector(string folderLocation, int pageIndex)
         {
             InitializeComponent();
             this.pageIndex = pageIndex;
+            this.folderLocation = folderLocation;
 
             // Populate model
-            folder = new DynamicKeyboardFolder();
+            folder = new DynamicKeyboardFolder(folderLocation);
             
             // Setup grid
             for (int i = 0; i < this.mRows; i++)
@@ -116,7 +118,7 @@ namespace JuliusSweetland.OptiKey.UI.Views.Keyboards.Common
                     newKey.SharedSizeGroup = "ErrorText2";
                     newKey.Text = JuliusSweetland.OptiKey.Properties.Resources.DYNAMIC_KEYBOARDS_LOCATION_LABEL;
                     newKey.Text += "\n";
-                    newKey.Text += Settings.Default.DynamicKeyboardsLocation;
+                    newKey.Text += this.folderLocation;
                     this.AddKey(newKey, 2, 1, 1, 2);
                 }
             }

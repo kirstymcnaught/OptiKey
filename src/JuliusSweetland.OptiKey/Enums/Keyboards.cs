@@ -9,7 +9,9 @@
         Currencies1,
         Currencies2,
         CustomKeyboardFile,
-        DynamicKeyboard,
+        DynamicKeyboard, // OBSOLETE: Use DynamicKeyboardsBuiltIn or DynamicKeyboardsBuiltIn
+        DynamicKeyboardsBuiltIn,
+        DynamicKeyboardsCustom,
         Diacritics1,
         Diacritics2,
         Diacritics3,

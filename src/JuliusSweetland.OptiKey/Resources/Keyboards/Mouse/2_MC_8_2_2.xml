@@ -1,0 +1,127 @@
+<Keyboard> 
+   <Height>32</Height>
+	<BorderThickness>1,30,1,1</BorderThickness>
+   <HideFromKeyboardMenu>True</HideFromKeyboardMenu>
+   <Name>Minecraft 8x2</Name>
+   <SymbolMargin>20</SymbolMargin>
+   <Grid>
+      <Rows>2</Rows>
+      <Cols>8</Cols>
+   </Grid>
+   <Keys>
+	  <ActionKey>
+        <Symbol>MinecraftPickBlock</Symbol>
+     	<Action>NumPad2</Action>
+         <Label>Pick\nBlock</Label>
+         <Row>0</Row>	
+         <Col>0</Col>
+      </ActionKey>	  
+	  <ChangeKeyboardKey>	
+		 <Symbol>ArrowPointingToLeftIcon</Symbol>
+		 <DestinationKeyboard>2_MC_8_2_1.xml</DestinationKeyboard>
+         <Row>1</Row>
+         <Col>0</Col>
+		 <ReturnToThisKeyboard>False</ReturnToThisKeyboard>
+      </ChangeKeyboardKey>
+	  
+	  
+	  <ActionKey>	  
+		<Action>NumPad4</Action>
+         <Label>Prev\nitem</Label>
+		 <Symbol>MinecraftPrev</Symbol>
+         <Row>0</Row>
+         <Col>1</Col>
+      </ActionKey>
+	  
+	<ActionKey>
+		 <Symbol>MouseRightDownUpIcon</Symbol>	 
+		 <Action>NumPad1</Action>
+         <Label>Toggle\nuse item</Label>
+         <Row>1</Row>
+         <Col>1</Col>
+      </ActionKey>
+	
+	
+	  <ActionKey>
+		<Action>NumPad5</Action>
+         <Label>Next\nitem</Label>
+		 <Symbol>MinecraftNext</Symbol>
+         <Row>0</Row>
+         <Col>2</Col>
+      </ActionKey>
+	  <ActionKey>
+		 <Symbol>MouseRightClickIcon</Symbol>	 
+		 <Action>NumPad0</Action>
+         <Label>Use\nitem</Label>
+         <Row>1</Row>
+         <Col>2</Col>
+      </ActionKey>
+	  <TextKey>
+		 <Symbol>MinecraftLookWithCursor</Symbol>	
+		 <Text>y</Text>
+         <Label>Look\nwith\nGaze</Label>
+         <Row>0</Row>		 
+         <Col>3</Col>
+		 <Width>2</Width>
+         <SharedSizeGroup>Look</SharedSizeGroup>
+    </TextKey> 
+	  
+	  <TextKey>
+         <Label>Toggle\nwalking</Label>
+		 <Symbol>MinecraftWalk</Symbol>
+         <Text>h</Text>
+         <Row>1</Row>
+         <Col>3</Col>
+		 <Width>2</Width>
+         <SharedSizeGroup>Walk</SharedSizeGroup>
+      </TextKey>
+	  
+	  <TextKey>
+         <Label>Walk\nbasic</Label>
+		 <Symbol>MinecraftMoveLegacy</Symbol>
+         <Text>b</Text>
+         <Row>0</Row>
+         <Col>5</Col>
+      </TextKey>
+
+	  <TextKey>
+         <Label>Toggle\nsneak</Label>
+		 <Symbol>MinecraftSneak</Symbol>
+         <Text>z</Text>
+         <Row>1</Row>
+         <Col>5</Col>
+      </TextKey>	 	 
+	
+	 <TextKey>
+         <Label>Mine x1</Label>
+		 <Symbol>MinecraftMineOnce</Symbol>
+         <Text>n</Text>
+         <Row>0</Row>
+         <Col>6</Col>
+      </TextKey>
+      <ActionKey>
+			<Label>Swap mine\nand place</Label>
+			<Symbol>MinecraftSwapMinePlace</Symbol>
+			<Action>F10</Action>
+            <Row>1</Row>
+            <Col>6</Col>
+       </ActionKey>
+	 
+    <TextKey>
+			<Label>Auto\nPillar</Label>
+			<Index>1</Index>
+			<Symbol>MinecraftPlaceBlock</Symbol>
+			<Text>l</Text>
+			<Row>0</Row>
+			<Col>7</Col>
+    </TextKey>
+	 
+	  <ChangeKeyboardKey>
+		<DestinationKeyboard>2_MC_8_2_inv.xml</DestinationKeyboard>
+		<Symbol>ArrowPointingToRightIcon</Symbol>
+		<Row>1</Row>
+		<Col>7</Col>
+		<ReturnToThisKeyboard>False</ReturnToThisKeyboard>
+      </ChangeKeyboardKey>	   
+	</Keys>
+</Keyboard>

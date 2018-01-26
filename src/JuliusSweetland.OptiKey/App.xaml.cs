@@ -70,6 +70,8 @@ namespace JuliusSweetland.OptiKey
                 Settings.Default.Save();
             };
 
+            HandleObsoleteSettings();
+
             HandleCorruptSettings();
 
             //Upgrade settings (if required) - this ensures that user settings migrate between version changes
@@ -507,6 +509,30 @@ namespace JuliusSweetland.OptiKey
 
         #endregion
 
+        // If e.g. some settings have been replaced, do backwards-compatible
+        // stuff here
+        private static void HandleObsoleteSettings()
+        {
+            // We have split 'DynamicKeyboard' + path into 
+            // 'DynamicKeyboardsBuiltIn' vs. 'CustomDynamicKeyboards' + path
+            // Here we make the conversion to the new setup
+            if (Settings.Default.StartupKeyboard == Keyboards.DynamicKeyboard)
+            {
+                // NB: deliberately using obsolete property for upgrade :)
+                if (Settings.Default.DynamicKeyboardsLocation ==
+                    Settings.Default.DefaultDynamicKeyboardsLocation)
+                {
+                    Settings.Default.StartupKeyboard = Keyboards.DynamicKeyboardsBuiltIn;
+                }
+                else
+                { 
+                    Settings.Default.StartupKeyboard = Keyboards.DynamicKeyboardsCustom;
+                    Settings.Default.CustomDynamicKeyboardsLocation = Settings.Default.DynamicKeyboardsLocation;
+                }
+            }
+    }
+
+
         #region Handle Corrupt Settings
 
         private static void HandleCorruptSettings()
@@ -924,10 +950,10 @@ namespace JuliusSweetland.OptiKey
             string defaultLocation = GetDefaultUserKeyboardFolder();
             Settings.Default.DefaultDynamicKeyboardsLocation = GetDefaultUserKeyboardFolder();
             
-            if (string.IsNullOrEmpty(Settings.Default.DynamicKeyboardsLocation))
+            if (string.IsNullOrEmpty(Settings.Default.CustomDynamicKeyboardsLocation))
             {
                 // First time we set to APPDATA location, user may move through settings later
-                Settings.Default.DynamicKeyboardsLocation = defaultLocation;
+                Settings.Default.CustomDynamicKeyboardsLocation = defaultLocation;
             }
         }
 

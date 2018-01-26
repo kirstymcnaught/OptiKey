@@ -689,13 +689,15 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                         };
 
                         int pageIndex = 0;
+                        string folderLocation = "";
                         if (Keyboard is DynamicKeyboardSelector)
                         {
                             var kb = Keyboard as DynamicKeyboardSelector;
                             backAction = kb.BackAction;
+                            folderLocation = kb.FolderLocation;
                             pageIndex = kb.PageIndex + 1;
                         }
-                        Keyboard = new DynamicKeyboardSelector(backAction, pageIndex);
+                        Keyboard = new DynamicKeyboardSelector(backAction, folderLocation, pageIndex);
                     }
                     break;
 
@@ -707,10 +709,12 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                         Action backAction;
                         var currentKeyboard2 = Keyboard;
                         int pageIndex = 0;
+                        string folderLocation = "";
                         if (Keyboard is DynamicKeyboardSelector)
                         {
                             var kb = Keyboard as DynamicKeyboardSelector;
                             backAction = kb.BackAction;
+                            folderLocation = kb.FolderLocation;
                             pageIndex = kb.PageIndex - 1;
                         }
                         else
@@ -721,7 +725,7 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                                 Keyboard = currentKeyboard2;
                             };
                         }
-                        Keyboard = new DynamicKeyboardSelector(backAction, pageIndex);
+                        Keyboard = new DynamicKeyboardSelector(backAction, folderLocation, pageIndex);
                     }
                     break;
 
@@ -732,10 +736,12 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                     Action backAction;
                     var currentKeyboard2 = Keyboard;
                     int pageIndex = 0;
+                    string folderLocation = "";
                     if (Keyboard is DynamicKeyboardSelector)
                     {
                         var kb = Keyboard as DynamicKeyboardSelector;
                         backAction = kb.BackAction;
+                        folderLocation = kb.FolderLocation;
                         pageIndex = kb.PageIndex + 1;
                     }
                     else
@@ -746,7 +752,7 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                             Keyboard = currentKeyboard2;
                         };
                     }
-                    Keyboard = new DynamicKeyboardSelector(backAction, pageIndex);
+                    Keyboard = new DynamicKeyboardSelector(backAction, folderLocation, pageIndex);
                 }
                 break;
 

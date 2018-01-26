@@ -124,8 +124,9 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels.Management
             {
                 return new List<KeyValuePair<string, Enums.Keyboards>>
                 {
-                    new KeyValuePair<string, Enums.Keyboards>(Resources.DYNAMIC_KEYBOARD_LAYOUT, Enums.Keyboards.DynamicKeyboard),
-                    new KeyValuePair<string, Enums.Keyboards>(Resources.CUSTOM_LAYOUT, Enums.Keyboards.CustomKeyboardFile),
+                    new KeyValuePair<string, Enums.Keyboards>(Resources.BUILTIN_DYNAMIC_KEYBOARD, Enums.Keyboards.DynamicKeyboardsBuiltIn),
+                    new KeyValuePair<string, Enums.Keyboards>(Resources.CUSTOM_DYNAMIC_KEYBOARDS, Enums.Keyboards.DynamicKeyboardsCustom),
+                    new KeyValuePair<string, Enums.Keyboards>(Resources.SINGLE_DYNAMIC_KEYBOARD, Enums.Keyboards.CustomKeyboardFile),
                 };
             }
         }
@@ -339,7 +340,9 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels.Management
         {
             get
             {
-                return Settings.Default.DynamicKeyboardsLocation != DynamicKeyboardsLocation
+                return Settings.Default.StartupKeyboard != StartupKeyboard
+                    || Settings.Default.StartupKeyboardFile != StartupKeyboardFile
+                    || Settings.Default.CustomDynamicKeyboardsLocation != CustomDynamicKeyboardsLocation
                     || Settings.Default.ConversationOnlyMode != ConversationOnlyMode
                     || Settings.Default.ConversationConfirmEnable != ConversationConfirmEnable
                     || Settings.Default.ConversationConfirmOnlyMode != ConversationConfirmOnlyMode
@@ -368,11 +371,11 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels.Management
             set { SetProperty(ref enableAttentionKey, value); }
         }
 
-        private string dynamicKeyboardsLocation;
-        public string DynamicKeyboardsLocation
+        private string customDynamicKeyboardsLocation;
+        public string CustomDynamicKeyboardsLocation
         {
-            get { return dynamicKeyboardsLocation; }
-            set { SetProperty(ref dynamicKeyboardsLocation, value); }
+            get { return customDynamicKeyboardsLocation; }
+            set { SetProperty(ref customDynamicKeyboardsLocation, value); }
         }
 
         private string startupKeyboardFile;
@@ -412,7 +415,7 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels.Management
             SimplifiedKeyboardCurrentContext = Settings.Default.SimplifiedKeyboardCurrentContext;
             EnableQuitKeys = Settings.Default.EnableQuitKeys;
             EnableAttentionKey = Settings.Default.EnableAttentionKey;
-            DynamicKeyboardsLocation = Settings.Default.DynamicKeyboardsLocation;
+            CustomDynamicKeyboardsLocation = Settings.Default.CustomDynamicKeyboardsLocation;
             StartupKeyboardFile = Settings.Default.StartupKeyboardFile;
             DockPosition = Settings.Default.MainWindowDockPosition;
         }
@@ -443,7 +446,7 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels.Management
             Settings.Default.SimplifiedKeyboardCurrentContext = SimplifiedKeyboardCurrentContext;
             Settings.Default.EnableQuitKeys = EnableQuitKeys;
             Settings.Default.EnableAttentionKey = EnableAttentionKey;
-            Settings.Default.DynamicKeyboardsLocation = DynamicKeyboardsLocation;
+            Settings.Default.CustomDynamicKeyboardsLocation = CustomDynamicKeyboardsLocation;
             Settings.Default.StartupKeyboardFile = StartupKeyboardFile;
             Settings.Default.MainWindowDockPosition = DockPosition;
         }
