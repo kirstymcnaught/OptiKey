@@ -260,7 +260,7 @@
                               SelectedValue="{Binding KeySelectionTriggerSource, Mode=TwoWay}" />
 
                     <TextBlock Grid.Row="1" Grid.Column="0" Text="{x:Static resx:Resources.KEY_FIXATION_TIME_TO_LOCK_ON_LABEL}" 
-                               VerticalAlignment="Center" Margin="5">
+                               VerticalAlignment="Center" Margin="20,5,5,5" >
                         <TextBlock.Style>
                             <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource {x:Type TextBlock}}">
                                 <Setter Property="Visibility" Value="Collapsed" />
@@ -288,7 +288,7 @@
                     </controls:NumericUpDown>
 
                     <TextBlock Grid.Row="2" Grid.Column="0" Text="{x:Static resx:Resources.RESUMING_INCOMPLETE_KEY_FIXATION_REQUIRES_NEW_LOCK_ON_LABEL}" 
-                               VerticalAlignment="Center" Margin="5">
+                               VerticalAlignment="Center" Margin="20,5,5,5">
                         <TextBlock.Style>
                             <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource {x:Type TextBlock}}">
                                 <Setter Property="Visibility" Value="Collapsed" />
@@ -316,7 +316,7 @@
                     </CheckBox>
 
                     <TextBlock Grid.Row="3" Grid.Column="0" Text="{x:Static resx:Resources.INCOMPLETE_KEY_FIXATION_TTL_LABEL}" 
-                               VerticalAlignment="Center" Margin="5">
+                               VerticalAlignment="Center" Margin="20,5,5,5">
                         <TextBlock.Style>
                             <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource {x:Type TextBlock}}">
                                 <Setter Property="Visibility" Value="Collapsed" />
@@ -344,7 +344,7 @@
                     </controls:NumericUpDown>
 
                     <TextBlock Grid.Row="4" Grid.Column="0" Text="{x:Static resx:Resources.KEY_FIXATION_TIME_TO_COMPLETE_LABEL}" 
-                               VerticalAlignment="Center" Margin="5">
+                               VerticalAlignment="Center" Margin="20,5,5,5">
                         <TextBlock.Style>
                             <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource {x:Type TextBlock}}">
                                 <Setter Property="Visibility" Value="Collapsed" />
@@ -372,7 +372,7 @@
                     </controls:NumericUpDown>
 
                     <TextBlock Grid.Row="7" Grid.Column="0" Text="{x:Static resx:Resources.KEY_SELECTION_KEYBOARD_KEY_LABEL}" 
-                               VerticalAlignment="Center" Margin="5">
+                               VerticalAlignment="Center" Margin="20,5,5,5">
                         <TextBlock.Style>
                             <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource {x:Type TextBlock}}">
                                 <Setter Property="Visibility" Value="Collapsed" />
@@ -400,7 +400,7 @@
                     </ComboBox>
 
                     <TextBlock Grid.Row="8" Grid.Column="0" Text="{x:Static resx:Resources.KEY_SELECTION_MOUSE_BUTTON_LABEL}" 
-                               VerticalAlignment="Center" Margin="5">
+                               VerticalAlignment="Center" Margin="20,5,5,5">
                         <TextBlock.Style>
                             <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource {x:Type TextBlock}}">
                                 <Setter Property="Visibility" Value="Collapsed" />
@@ -436,7 +436,7 @@
                               SelectedValue="{Binding PointSelectionTriggerSource, Mode=TwoWay}" />
 
                     <TextBlock Grid.Row="10" Grid.Column="0" Text="{x:Static resx:Resources.POINT_FIXATION_TIME_TO_LOCK_ON_LABEL}" 
-                               VerticalAlignment="Center" Margin="5">
+                               VerticalAlignment="Center" Margin="20,5,5,5">
                         <TextBlock.Style>
                             <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource {x:Type TextBlock}}">
                                 <Setter Property="Visibility" Value="Collapsed" />
@@ -464,7 +464,7 @@
                     </controls:NumericUpDown>
 
                     <TextBlock Grid.Row="11" Grid.Column="0" Text="{x:Static resx:Resources.POINT_FIXATION_TIME_TO_COMPLETE_LABEL}" 
-                               VerticalAlignment="Center" Margin="5">
+                               VerticalAlignment="Center" Margin="20,5,5,5">
                         <TextBlock.Style>
                             <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource {x:Type TextBlock}}">
                                 <Setter Property="Visibility" Value="Collapsed" />
@@ -492,7 +492,7 @@
                     </controls:NumericUpDown>
 
                     <TextBlock Grid.Row="12" Grid.Column="0" Text="{x:Static resx:Resources.POINT_LOCK_ON_RADIUS_LABEL}" 
-                               VerticalAlignment="Center" Margin="5">
+                               VerticalAlignment="Center" Margin="20,5,5,5">
                         <TextBlock.Style>
                             <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource {x:Type TextBlock}}">
                                 <Setter Property="Visibility" Value="Collapsed" />
@@ -520,7 +520,7 @@
                     </controls:NumericUpDown>
                     
                     <TextBlock Grid.Row="13" Grid.Column="0" Text="{x:Static resx:Resources.POINT_FIXATION_RADIUS_LABEL}" 
-                               VerticalAlignment="Center" Margin="5">
+                               VerticalAlignment="Center" Margin="20,5,5,5">
                         <TextBlock.Style>
                             <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource {x:Type TextBlock}}">
                                 <Setter Property="Visibility" Value="Collapsed" />
@@ -548,7 +548,7 @@
                     </controls:NumericUpDown>
             
                     <TextBlock Grid.Row="14" Grid.Column="0" Text="{x:Static resx:Resources.POINT_SELECTION_KEYBOARD_KEY_LABEL}" 
-                               VerticalAlignment="Center" Margin="5">
+                               VerticalAlignment="Center" Margin="20,5,5,5">
                         <TextBlock.Style>
                             <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource {x:Type TextBlock}}">
                                 <Setter Property="Visibility" Value="Collapsed" />
@@ -576,7 +576,7 @@
                     </ComboBox>
             
                     <TextBlock Grid.Row="15" Grid.Column="0" Text="{x:Static resx:Resources.POINT_SELECTION_MOUSE_BUTTON_LABEL}" 
-                               VerticalAlignment="Center" Margin="5">
+                               VerticalAlignment="Center" Margin="20,5,5,5">
                         <TextBlock.Style>
                             <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource {x:Type TextBlock}}">
                                 <Setter Property="Visibility" Value="Collapsed" />
@@ -604,7 +604,7 @@
                     </ComboBox>
 
                     <TextBlock Grid.Row="16" Grid.Column="0" Text="{x:Static resx:Resources.SELECTION_PROGRESS_INDICATOR_BEHAVIOUR_LABEL}" 
-                               VerticalAlignment="Center" Margin="5">
+                               VerticalAlignment="Center" Margin="20,5,5,5">
                         <TextBlock.Style>
                             <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource {x:Type TextBlock}}">
                                 <Setter Property="Visibility" Value="Collapsed" />
@@ -640,7 +640,7 @@
                     </ComboBox>
 
                     <TextBlock Grid.Row="17" Grid.Column="0" Text="{x:Static resx:Resources.SELECTION_PROGRESS_INDICATOR_START_SIZE_LABEL}" 
-                               VerticalAlignment="Center" Margin="5">
+                               VerticalAlignment="Center" Margin="20,5,5,5">
                         <TextBlock.Style>
                             <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource {x:Type TextBlock}}">
                                 <Setter Property="Visibility" Value="Collapsed" />
@@ -691,7 +691,7 @@
                     </controls:NumericUpDown>
 
                     <TextBlock Grid.Row="18" Grid.Column="0" Text="{x:Static resx:Resources.SELECTION_PROGRESS_INDICATOR_END_SIZE_LABEL}" 
-                               VerticalAlignment="Center" Margin="5">
+                               VerticalAlignment="Center" Margin="20,5,5,5">
                         <TextBlock.Style>
                             <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource {x:Type TextBlock}}">
                                 <Setter Property="Visibility" Value="Collapsed" />
