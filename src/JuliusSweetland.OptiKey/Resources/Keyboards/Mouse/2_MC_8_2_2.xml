@@ -116,12 +116,12 @@
 			<Col>7</Col>
     </TextKey>
 	 
-	  <ChangeKeyboardKey>
-		<DestinationKeyboard>2_MC_8_2_inv.xml</DestinationKeyboard>
-		<Symbol>ArrowPointingToRightIcon</Symbol>
-		<Row>1</Row>
-		<Col>7</Col>
-		<ReturnToThisKeyboard>False</ReturnToThisKeyboard>
-      </ChangeKeyboardKey>	   
+    <ActionKey>
+        <Symbol>BackIcon</Symbol>
+        <Action>BackFromKeyboard</Action>
+        <Row>1</Row>
+        <Col>7</Col>
+    </ActionKey>   
+    
 	</Keys>
 </Keyboard>

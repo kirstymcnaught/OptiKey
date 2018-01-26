@@ -888,7 +888,6 @@
     <Resource Include="Resources\Keyboards\Mouse\1_MC_5_1_misc.xml" />
     <Resource Include="Resources\Keyboards\Mouse\2_MC_8_2_1.xml" />
     <Resource Include="Resources\Keyboards\Mouse\2_MC_8_2_2.xml" />
-    <Resource Include="Resources\Keyboards\Mouse\2_MC_8_2_inv.xml" />
     <Resource Include="Resources\Keyboards\Mouse\3_ChatKeyboard.xml" />
     <Resource Include="Resources\Keyboards\Mouse\3_InventoryKeyboard.xml" />
     <Resource Include="Resources\Keyboards\Mouse\3_MainKeyboard.xml" />
