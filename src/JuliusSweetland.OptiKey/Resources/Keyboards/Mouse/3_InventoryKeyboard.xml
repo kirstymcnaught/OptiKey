@@ -4,7 +4,7 @@
    <Name>Minecraft 10x3 inventory</Name>
    <SymbolMargin>20</SymbolMargin>
    <Grid>
-      <Rows>3</Rows>
+      <Rows>2</Rows>
       <Cols>10</Cols>
    </Grid>
    <HideFromKeyboardMenu>True</HideFromKeyboardMenu>
@@ -13,90 +13,9 @@
      <KeyLockedDown>MouseMagnifier</KeyLockedDown>   
    </InitialKeyStates>
 	<Keys>
-		<TextKey>
-			<Label>1</Label>
-			<Index>0</Index>
-			<Text>1</Text>
-			<Row>0</Row>
-			<Col>0</Col>
-			<Height>1</Height>
-			<Width>1</Width>
-		</TextKey>
-		<TextKey>
-			<Label>2</Label>
-			<Index>1</Index>
-			<Text>2</Text>
-			<Row>0</Row>
-			<Col>1</Col>
-			<Height>1</Height>
-			<Width>1</Width>
-		</TextKey>
-		<TextKey>
-			<Label>3</Label>
-			<Index>2</Index>
-			<Text>3</Text>
-			<Row>0</Row>
-			<Col>2</Col>
-			<Height>1</Height>
-			<Width>1</Width>
-		</TextKey>
-		<TextKey>
-			<Label>4</Label>
-			<Index>3</Index>
-			<Text>4</Text>
-			<Row>0</Row>
-			<Col>3</Col>
-			<Height>1</Height>
-			<Width>1</Width>
-		</TextKey>
-		<TextKey>
-			<Label>5</Label>
-			<Index>4</Index>
-			<Text>5</Text>
-			<Row>0</Row>
-			<Col>4</Col>
-			<Height>1</Height>
-			<Width>1</Width>
-		</TextKey>
-		<TextKey>
-			<Label>6</Label>
-			<Index>5</Index>
-			<Text>6</Text>
-			<Row>0</Row>
-			<Col>5</Col>
-			<Height>1</Height>
-			<Width>1</Width>
-		</TextKey>
-		<TextKey>
-			<Label>7</Label>
-			<Index>6</Index>
-			<Text>7</Text>
-			<Row>0</Row>
-			<Col>6</Col>
-			<Height>1</Height>
-			<Width>1</Width>
-		</TextKey>
-		<TextKey>
-			<Label>8</Label>
-			<Index>7</Index>
-			<Text>8</Text>
-			<Row>0</Row>
-			<Col>7</Col>
-			<Height>1</Height>
-			<Width>1</Width>
-		</TextKey>
-		<TextKey>
-			<Label>9</Label>
-			<Index>8</Index>
-			<Text>9</Text>
-			<Row>0</Row>
-			<Col>8</Col>
-			<Height>1</Height>
-			<Width>1</Width>
-		</TextKey>
+		
 		<ActionKey>
 			<Label>Esc</Label>
-			<Index>9</Index>
 			<Symbol>MinecraftEscButton</Symbol>
 			<Action>Escape</Action>
 			<Row>0</Row>
@@ -106,199 +25,172 @@
 		</ActionKey>
 		<TextKey>
 			<Label>Open\nInventory</Label>
-			<Index>10</Index>
 			<Text>e</Text>
-			<Row>1</Row>
+			<Row>0</Row>
 			<Col>0</Col>
 			<Height>1</Height>
 			<Width>1</Width>
 		</TextKey>
 		<ActionKey>
 			<Label>Building</Label>
-			<Index>11</Index>
 			<Symbol>MinecraftTabBlocks</Symbol>
 			<Action>NumPad0</Action>
-			<Row>1</Row>
+			<Row>0</Row>
 			<Col>1</Col>
 			<Height>1</Height>
 			<Width>1</Width>
 		</ActionKey>
 		<ActionKey>
 			<Label>Decoration</Label>
-			<Index>12</Index>
 			<Symbol>MinecraftTabFlower</Symbol>
 			<Action>NumPad1</Action>
-			<Row>1</Row>
+			<Row>0</Row>
 			<Col>2</Col>
 			<Height>1</Height>
 			<Width>1</Width>
 		</ActionKey>
 		<ActionKey>
 			<Label>Redstone</Label>
-			<Index>13</Index>
 			<Symbol>MinecraftTabGem</Symbol>
 			<Action>NumPad2</Action>
-			<Row>1</Row>
+			<Row>0</Row>
 			<Col>3</Col>
 			<Height>1</Height>
 			<Width>1</Width>
 		</ActionKey>
 		<ActionKey>
 			<Label>Transport</Label>
-			<Index>14</Index>
 			<Symbol>MinecraftTabLadder</Symbol>
 			<Action>NumPad3</Action>
-			<Row>1</Row>
+			<Row>0</Row>
 			<Col>4</Col>
 			<Height>1</Height>
 			<Width>1</Width>
 		</ActionKey>
 		<ActionKey>
 			<Label>Misc</Label>
-			<Index>15</Index>
 			<Symbol>MinecraftTabBucket</Symbol>
 			<Action>NumPad4</Action>
-			<Row>1</Row>
+			<Row>0</Row>
 			<Col>5</Col>
 			<Height>1</Height>
 			<Width>1</Width>
 		</ActionKey>
-		<ActionKey>
-			<Label>Hover\nright</Label>
-			<Index>16</Index>
-			<Symbol>MinecraftHoverRight</Symbol>
-			<Action>F7</Action>
-			<Row>1</Row>
-			<Col>6</Col>
-			<Height>1</Height>
-			<Width>1</Width>
-		</ActionKey>
-		<ActionKey>
-			<Label>Hover</Label>
-			<Index>17</Index>
-			<Symbol>MouseMoveToIcon</Symbol>
-			<Action>MouseMoveTo</Action>
-			<Row>1</Row>
-			<Col>7</Col>
-			<Height>1</Height>
-			<Width>1</Width>
-		</ActionKey>
+
 		<ActionKey>
 			<Label>Search</Label>
             <Symbol>MinecraftTabSearch</Symbol>            
-			<Index>18</Index>
 			<Action>ArrowDown</Action>
-			<Row>1</Row>
-			<Col>8</Col>
+			<Row>0</Row>
+			<Col>7</Col>
 			<Height>1</Height>
 			<Width>1</Width>
 		</ActionKey>
 		<ChangeKeyboardKey>
 			<Label>ABC</Label>
-			<Index>19</Index>
 			<Symbol>AlphaIcon</Symbol>
             <DestinationKeyboard>3_ChatKeyboard</DestinationKeyboard>
             <ReturnToThisKeyboard>True</ReturnToThisKeyboard>
 			<Row>1</Row>
-			<Col>9</Col>
+			<Col>7</Col>
 			<Height>1</Height>
 			<Width>1</Width>
 		</ChangeKeyboardKey>
 		<TextKey>
-			<Label>Drop\nitem</Label>
-			<Index>20</Index>
+			<Label>Throw\nitem</Label>
 			<Text>q</Text>
-			<Row>2</Row>
+			<Row>1</Row>
 			<Col>0</Col>
 			<Height>1</Height>
 			<Width>1</Width>
 		</TextKey>
 		<ActionKey>
 			<Label>Foodstuffs</Label>
-			<Index>21</Index>
 			<Symbol>MinecraftTabApple</Symbol>
 			<Action>NumPad5</Action>
-			<Row>2</Row>
+			<Row>1</Row>
 			<Col>1</Col>
 			<Height>1</Height>
 			<Width>1</Width>
 		</ActionKey>
 		<ActionKey>
 			<Label>Tools</Label>
-			<Index>22</Index>
 			<Symbol>MinecraftTabAxe</Symbol>
 			<Action>NumPad6</Action>
-			<Row>2</Row>
+			<Row>1</Row>
 			<Col>2</Col>
 			<Height>1</Height>
 			<Width>1</Width>
 		</ActionKey>
 		<ActionKey>
 			<Label>Combat</Label>
-			<Index>23</Index>
 			<Symbol>MinecraftTabSword</Symbol>
 			<Action>NumPad7</Action>
-			<Row>2</Row>
+			<Row>1</Row>
 			<Col>3</Col>
 			<Height>1</Height>
 			<Width>1</Width>
 		</ActionKey>
 		<ActionKey>
 			<Label>Brewing</Label>
-			<Index>24</Index>
 			<Symbol>MinecraftTabPotion</Symbol>
 			<Action>NumPad8</Action>
-			<Row>2</Row>
+			<Row>1</Row>
 			<Col>4</Col>
 			<Height>1</Height>
 			<Width>1</Width>
 		</ActionKey>
 		<ActionKey>
 			<Label>Materials</Label>
-			<Index>25</Index>
 			<Symbol>MinecraftTabStick</Symbol>
 			<Action>NumPad9</Action>
-			<Row>2</Row>
+			<Row>1</Row>
 			<Col>5</Col>
 			<Height>1</Height>
 			<Width>1</Width>
 		</ActionKey>
+        
 		<ActionKey>
-			<Label>Hover\ndown</Label>
-			<Index>26</Index>
-			<Symbol>MinecraftHoverDown</Symbol>
-			<Action>F6</Action>
-			<Row>2</Row>
+			<Label>Left\nclick</Label>
+			<Symbol>MouseLeftClickWithMouseIcon</Symbol>
+			<Action>MouseMoveAndLeftClick</Action>
+			<Row>0</Row>
+			<Col>8</Col>
+			<Height>1</Height>
+			<Width>1</Width>
+		</ActionKey>
+        <ActionKey>
+			<Label>Discard</Label>			
+			<Action>Home</Action>
+			<Row>1</Row>
+			<Col>8</Col>
+			<Height>1</Height>
+			<Width>1</Width>
+		</ActionKey>
+        
+        <ActionKey>
+			<Label>Scroll\nUp</Label>
+			<Symbol>MouseScrollToTopIcon</Symbol>
+			<Action>MouseScrollToTop</Action>
+			<Row>0</Row>
 			<Col>6</Col>
 			<Height>1</Height>
 			<Width>1</Width>
 		</ActionKey>
 		<ActionKey>
-			<Label>Left\nclick</Label>
-			<Index>27</Index>
-			<Symbol>MouseLeftClickWithMouseIcon</Symbol>
-			<Action>MouseMoveAndLeftClick</Action>
-			<Row>2</Row>
-			<Col>7</Col>
-			<Height>1</Height>
-			<Width>1</Width>
-		</ActionKey>
-		<ActionKey>
 			<Label>Scroll\nDown</Label>
-			<Index>28</Index>
 			<Symbol>MouseScrollToBottomIcon</Symbol>
 			<Action>MouseScrollToBottom</Action>
-			<Row>2</Row>
-			<Col>8</Col>
+			<Row>1</Row>
+			<Col>6</Col>
 			<Height>1</Height>
 			<Width>1</Width>
 		</ActionKey>
 		<ActionKey>
 			<Label>Back</Label>
-			<Index>29</Index>
 			<Symbol>BackIcon</Symbol>
 			<Action>BackFromKeyboard</Action>
-			<Row>2</Row>
+			<Row>1</Row>
 			<Col>9</Col>
 			<Height>1</Height>
 			<Width>1</Width>
