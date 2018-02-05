@@ -34,29 +34,6 @@
                 <CheckBox Grid.Row="1" Grid.Column="1" 
                           VerticalAlignment="Center"
                           IsChecked="{Binding CheckForUpdates, Mode=TwoWay}" />
-                <TextBlock Grid.Row="2" Grid.Column="0" Text="{x:Static resx:Resources.PUBLISH_VIRTUAL_KEY_CODES_FOR_CHARACTERS_LABEL}" 
-                           VerticalAlignment="Center" Margin="5" />
-                <CheckBox Grid.Row="2" Grid.Column="1" 
-                          VerticalAlignment="Center"
-                          IsChecked="{Binding PublishVirtualKeyCodesForCharacters, Mode=TwoWay}" />
-                <TextBlock Grid.Row="3" Grid.Column="0" Text="{x:Static resx:Resources.SUPPRESS_MODIFIERS_FOR_ALL_MOUSE_ACTIONS}" 
-                           VerticalAlignment="Center" Margin="5" />
-                <CheckBox Grid.Row="3" Grid.Column="1" 
-                          VerticalAlignment="Center"
-                          IsChecked="{Binding SuppressModifierKeysForAllMouseActions, Mode=TwoWay}" />
-                <TextBlock Grid.Row="4" Grid.Column="0" Text="{x:Static resx:Resources.SUPPRESS_MODIFIERS_IN_MOUSE_KEYBOARD_LABEL}" 
-                           VerticalAlignment="Center" Margin="5">
-                    <TextBlock.Style>
-                        <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource {x:Type TextBlock}}">
-                            <Setter Property="Visibility" Value="Collapsed" />
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding SuppressModifierKeysForAllMouseActions}" Value="False">
-                                    <Setter Property="Visibility" Value="Visible" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBlock.Style>
-                </TextBlock>
                 <CheckBox Grid.Row="4" Grid.Column="1" 
                           VerticalAlignment="Center"
                           IsChecked="{Binding SuppressModifierKeysWhenInMouseKeyboard, Mode=TwoWay}">
