@@ -640,7 +640,7 @@
                     </ComboBox>
 
                     <TextBlock Grid.Row="17" Grid.Column="0" Text="{x:Static resx:Resources.SELECTION_PROGRESS_INDICATOR_START_SIZE_LABEL}" 
-                               VerticalAlignment="Center" Margin="20,5,5,5">
+                               VerticalAlignment="Center" Margin="5">
                         <TextBlock.Style>
                             <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource {x:Type TextBlock}}">
                                 <Setter Property="Visibility" Value="Collapsed" />
@@ -691,7 +691,7 @@
                     </controls:NumericUpDown>
 
                     <TextBlock Grid.Row="18" Grid.Column="0" Text="{x:Static resx:Resources.SELECTION_PROGRESS_INDICATOR_END_SIZE_LABEL}" 
-                               VerticalAlignment="Center" Margin="20,5,5,5">
+                               VerticalAlignment="Center" Margin="5">
                         <TextBlock.Style>
                             <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource {x:Type TextBlock}}">
                                 <Setter Property="Visibility" Value="Collapsed" />
