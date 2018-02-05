@@ -743,61 +743,7 @@
                 </Grid>
             </GroupBox>
 
-            <GroupBox Grid.Row="2" Header="{x:Static resx:Resources.MULTI_KEY_SELECTION}">
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto" SharedSizeGroup="LabelColumn" />
-                        <ColumnDefinition Width="*" />
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto" />
-                        <RowDefinition Height="Auto" />
-                        <RowDefinition Height="Auto" />
-                    </Grid.RowDefinitions>
             
-                    <TextBlock Grid.Row="0" Grid.Column="0" Text="{x:Static resx:Resources.STOP_SIGNAL_LABEL}" 
-                               VerticalAlignment="Center" Margin="5">
-                        <TextBlock.Style>
-                            <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource {x:Type TextBlock}}">
-                                <Setter Property="Visibility" Value="Visible" />
-                                <Style.Triggers>
-                                    <DataTrigger Binding="{Binding KeySelectionTriggerSource}" Value="{x:Static enums:TriggerSources.Fixations}">
-                                        <Setter Property="Visibility" Value="Collapsed" />
-                                    </DataTrigger>
-                                </Style.Triggers>
-                            </Style>
-                        </TextBlock.Style>    
-                    </TextBlock>
-                    <ComboBox Grid.Row="0" Grid.Column="1" 
-                              ItemsSource="{Binding TriggerStopSignals}"
-                              DisplayMemberPath="Key"
-                              SelectedValuePath="Value"
-                              SelectedValue="{Binding MultiKeySelectionTriggerStopSignal, Mode=TwoWay}">
-                        <ComboBox.Style>
-                            <Style TargetType="{x:Type ComboBox}" BasedOn="{StaticResource {x:Type ComboBox}}">
-                                <Setter Property="Visibility" Value="Visible" />
-                                <Style.Triggers>
-                                    <DataTrigger Binding="{Binding KeySelectionTriggerSource}" Value="{x:Static enums:TriggerSources.Fixations}">
-                                        <Setter Property="Visibility" Value="Collapsed" />
-                                    </DataTrigger>
-                                </Style.Triggers>
-                            </Style>
-                        </ComboBox.Style>
-                    </ComboBox>
-                
-                    <TextBlock Grid.Row="1" Grid.Column="0" Text="{x:Static resx:Resources.MINIMUM_DWELL_TIME_TO_INCLUDE_IN_CAPTURE}" 
-                               VerticalAlignment="Center" Margin="5"/>
-                    <controls:NumericUpDown Grid.Row="1" Grid.Column="1" TextAlignment="Left"
-                                            Minimum="1" Interval="10" StringFormat="###,##0"
-                                            Value="{Binding MultiKeySelectionFixationMinDwellTimeInMs, Mode=TwoWay}"/>
-
-                    <TextBlock Grid.Row="2" Grid.Column="0" Text="{x:Static resx:Resources.CAPTURE_TIMEOUT_LABEL}" 
-                               VerticalAlignment="Center" Margin="5"/>
-                    <controls:NumericUpDown Grid.Row="2" Grid.Column="1" TextAlignment="Left"
-                                            Minimum="1" Interval="10" StringFormat="###,##0"
-                                            Value="{Binding MultiKeySelectionMaxDurationInMs, Mode=TwoWay}"/>
-                </Grid>
-            </GroupBox>
         </Grid>
     </ScrollViewer>
 </UserControl>
