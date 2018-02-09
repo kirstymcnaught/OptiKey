@@ -4174,7 +4174,7 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Pointing: {0}.
+        ///   Looks up a localized string similar to Input source: {0}.
         /// </summary>
         public static string POINTING_SOURCE_DESCRIPTION {
             get {

@@ -896,7 +896,7 @@ KEYS</value>
     <value>Pointing</value>
   </data>
   <data name="POINTING_SOURCE_DESCRIPTION" xml:space="preserve">
-    <value>Pointing: {0}</value>
+    <value>Input source: {0}</value>
   </data>
   <data name="PREV" xml:space="preserve">
     <value>PREVIOUS</value>

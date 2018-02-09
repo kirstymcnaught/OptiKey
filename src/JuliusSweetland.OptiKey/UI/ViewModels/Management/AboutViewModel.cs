@@ -36,6 +36,12 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels.Management
             get { return DiagnosticInfo.MinecraftModVersion; }
         }
 
+        private string minecraftForgeVersion;
+        public string MinecraftForgeVersion
+        {
+            get { return DiagnosticInfo.MinecraftForgeVersion; }
+        }
+
         #endregion
 
         #region Methods

@@ -24,15 +24,21 @@
                     <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
 
-                <TextBlock Grid.Row="0" Grid.Column="0" Text="OptiKeyMinecraft Version:" 
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="EyeMine Version:" 
                            VerticalAlignment="Center" Margin="5" />
                 <TextBlock Grid.Row="0" Grid.Column="1" 
                           VerticalAlignment="Center"
                           Text="{Binding OptiKeyVersion, Mode=OneWay}" />
-                
-                <TextBlock Grid.Row="1" Grid.Column="0" Text="Requires Minecraft mod version:" 
+
+                <TextBlock Grid.Row="1" Grid.Column="0" Text="Requires Minecraft forge version:" 
                            VerticalAlignment="Center" Margin="5" />
                 <TextBlock Grid.Row="1" Grid.Column="1" 
+                           VerticalAlignment="Center"
+                           Text="{Binding MinecraftForgeVersion, Mode=OneWay}" />
+                
+                <TextBlock Grid.Row="2" Grid.Column="0" Text="...with EyeGaze mod version:" 
+                           VerticalAlignment="Center" Margin="5" />
+                <TextBlock Grid.Row="2" Grid.Column="1" 
                           VerticalAlignment="Center"
                           Text="{Binding MinecraftModVersion, Mode=OneWay}" />
                 

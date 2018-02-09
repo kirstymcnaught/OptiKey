@@ -31,6 +31,14 @@ namespace JuliusSweetland.OptiKey.Static
             }
         }
 
+        public static string MinecraftForgeVersion
+        {
+            get
+            {
+                return "1.11.2";
+            }
+        }
+
         public static string AssemblyVersion
         {
             get
