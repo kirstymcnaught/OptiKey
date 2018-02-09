@@ -2624,7 +2624,7 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to OptiKey Settings.
+        ///   Looks up a localized string similar to EyeMine Settings.
         /// </summary>
         public static string MANAGEMENT_CONSOLE_TITLE {
             get {
@@ -3973,7 +3973,7 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to OptiKey Minecraft.
+        ///   Looks up a localized string similar to EyeMine.
         /// </summary>
         public static string OPTIKEY_DESCRIPTION {
             get {

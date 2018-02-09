@@ -32,7 +32,7 @@ namespace JuliusSweetland.OptiKey.Models
 
         #region Constants
 
-        private const string ApplicationDataSubPath = @"SpecialEffect\OptiKeyMinecraftV1\Keyboards\";
+        private const string ApplicationDataSubPath = @"SpecialEffect\EyeMine\Keyboards\";
         private const string OriginalKeyboardsSubPath = @"Keyboards\";
 
         #endregion

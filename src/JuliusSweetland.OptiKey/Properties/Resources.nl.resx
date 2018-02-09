@@ -573,7 +573,7 @@ CURSOR</value>
     <value>Management console: ALT + M</value>
   </data>
   <data name="MANAGEMENT_CONSOLE_TITLE" xml:space="preserve">
-    <value>OptiKey Settings</value>
+    <value>EyeMine Settings</value>
   </data>
   <data name="MAX_DICTIONARY_MATCHES_LABEL" xml:space="preserve">
     <value>Maximale aantal woordenboek overeenkomsten:</value>
@@ -808,7 +808,7 @@ SYM</value>
     <value>OK</value>
   </data>
   <data name="OPTIKEY_DESCRIPTION" xml:space="preserve">
-    <value>OptiKey Minecraft</value>
+    <value>EyeMine</value>
   </data>
   <data name="OTHER" xml:space="preserve">
     <value>Overige</value>
