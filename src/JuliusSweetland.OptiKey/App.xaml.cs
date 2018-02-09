@@ -70,9 +70,9 @@ namespace JuliusSweetland.OptiKey
                 Settings.Default.Save();
             };
 
-            HandleObsoleteSettings();
-
             HandleCorruptSettings();
+
+            HandleObsoleteSettings();
 
             //Upgrade settings (if required) - this ensures that user settings migrate between version changes
             if (Settings.Default.SettingsUpgradeRequired)
