@@ -1452,6 +1452,6 @@
     <Message Text="### Post Cleanup Task: Done ###" Importance="high" />
   </Target>
   <PropertyGroup>
-    <PostBuildEvent>move /y "$(TargetPath)" "EyeMine.exe"</PostBuildEvent>
+    <PostBuildEvent>copy /y "$(TargetPath)" "EyeMine.exe"</PostBuildEvent>
   </PropertyGroup>
 </Project>
