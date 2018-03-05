@@ -10,7 +10,7 @@
 	</Grid>
 	<Keys>
 		<TextKey>
-			<Label>Walk\nbasic</Label>
+			<Label>Careful\nwalk</Label>
 			<Index>0</Index>
 			<Symbol>MinecraftMoveLegacy</Symbol>
 			<Text>b</Text>

@@ -77,7 +77,7 @@
       </TextKey>
 	  
 	  <TextKey>
-         <Label>Walk\nbasic</Label>
+         <Label>Careful\nwalk</Label>
 		 <Symbol>MinecraftMoveLegacy</Symbol>
          <Text>b</Text>
          <Row>0</Row>
