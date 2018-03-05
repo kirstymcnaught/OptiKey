@@ -47,8 +47,9 @@ def safeExit():
 #    safeProcess("git reset --hard head")
 
 def update_assembly_version(filename):
-    pattern = re.compile("\[assembly:\s*AssemblyVersion\(\"(\d).(\d).(\d)\"\)\]")
+    pattern = re.compile("\[assembly:\s*AssemblyVersion\(\"(\d*).(\d*).(\d*)\"\)\]")
     
+    new_version = None
     for line in fileinput.input(filename, inplace=True):
         if re.search(pattern, line): 
             major = int(pattern.search(line).groups()[0])
@@ -67,6 +68,8 @@ def update_assembly_version(filename):
             new_version =  "{}.{}.{}".format(major, minor, revision)
             line = re.sub(pattern, "[assembly: AssemblyVersion(\"{}\")]".format(new_version), line);        
         print(line.rstrip('\n'))
+    if not new_version:
+        raise Exception("Could not find version in file {}".format(filename))
     return new_version
 
 def update_vdproj_version(filename, new_version):
