@@ -26,10 +26,11 @@ fbak = a(0) & ".bak"
 if fso.fileexists(fbak) then fso.deletefile fbak
 fso.movefile a(0), fbak
 
+set re = new regexp
+re.global = true
+
 ' This is now done in update_version.py
 'find, increment and replace version number
-'set re = new regexp
-'re.global = true
 're.pattern = "(""ProductVersion"" = ""8:)(\d+(\.\d+)+)"""
 'set m = re.execute(s)
 'v = m(0).submatches(1)
