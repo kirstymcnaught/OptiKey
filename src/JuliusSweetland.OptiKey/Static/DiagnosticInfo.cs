@@ -27,7 +27,8 @@ namespace JuliusSweetland.OptiKey.Static
         {
             get
             {
-                return "1.0.3";
+                // currently we increment versions in lock-step 
+                return System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
             }
         }
 
