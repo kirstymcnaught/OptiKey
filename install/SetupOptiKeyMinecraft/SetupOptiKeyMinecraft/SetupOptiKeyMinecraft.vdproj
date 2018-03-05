@@ -5853,8 +5853,8 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:EyeMine"
-        "ProductCode" = "8:{0E01BC7D-2668-4A84-AE35-16D35D0D667B}"
-        "PackageCode" = "8:{806E4801-C470-4E67-B31D-0AB2C1D15798}"
+        "ProductCode" = "8:{46C39F71-86E1-482B-9B7D-8DC0632FA2B5}"
+        "PackageCode" = "8:{31C89958-DC03-4903-9BA5-5C92C7F3BA84}"
         "UpgradeCode" = "8:{F624771D-D580-42B7-9ECC-6D46B129230B}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
