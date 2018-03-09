@@ -812,7 +812,7 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to OptiKey has detected that your user settings file has become corrupted and must be repaired. This will be done by restoring an old version, or a default version if that isn&apos;t possible.
+        ///   Looks up a localized string similar to EyeMine has detected that your user settings file has become corrupted and must be repaired. This will be done by restoring an old version, or a default version if that isn&apos;t possible.
         ///
         ///Click Yes to reset your user settings and restart.
         ///
@@ -834,7 +834,7 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bad news - OptiKey has tripped over its feet and has to close down.
+        ///   Looks up a localized string similar to Bad news - EyeMine has tripped over its feet and has to close down.
         ///
         ///An email with details of what happened would be very helpful: optikeyminecraft@gmail.com
         ///
@@ -1407,7 +1407,7 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to An error has occurred during the magnification process. Please disable magnification and contact OptiKey for further support..
+        ///   Looks up a localized string similar to An error has occurred during the magnification process. Please disable magnification and contact EyeMine for further support..
         /// </summary>
         public static string ERROR_MAGNIFYING {
             get {
@@ -4204,9 +4204,9 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Either a 64 bit version of Presage is installed (OptiKey only supports the 32 bit version), or the Presage files have been moved, deleted, or corrupted.
+        ///   Looks up a localized string similar to Either a 64 bit version of Presage is installed (EyeMine only supports the 32 bit version), or the Presage files have been moved, deleted, or corrupted.
         ///Please uninstall Presage and install the 32 bit version of 0.9.2.
-        ///OptiKey will attempt to continue, but there is a good chance it will crash shortly.
+        ///EyeMine will attempt to continue, but there is a good chance it will crash shortly.
         ///The prediction method will be changed to NGram to prevent a crash on next run..
         /// </summary>
         public static string PRESAGE_CONSTRUCTOR_EXCEPTION_MESSAGE {
@@ -4380,7 +4380,7 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to OptiKey needs to restart to apply your changes.
+        ///   Looks up a localized string similar to EyeMine needs to restart to apply your changes.
         ///Please click OK to continue with the restart, or CANCEL to discard your changes.
         /// </summary>
         public static string RESTART_MESSAGE {
@@ -5671,7 +5671,7 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to May I restart OptiKey?.
+        ///   Looks up a localized string similar to May I restart EyeMine?.
         /// </summary>
         public static string VERIFY_RESTART {
             get {
@@ -5762,7 +5762,7 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Website: www.optikey.org.
+        ///   Looks up a localized string similar to Website: www.specialeffect.org.uk.
         /// </summary>
         public static string WEBSITE_DESCRIPTION {
             get {
@@ -5780,7 +5780,7 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to OptiKey v{0}.
+        ///   Looks up a localized string similar to EyeMine v{0}.
         /// </summary>
         public static string WINDOW_TITLE {
             get {
