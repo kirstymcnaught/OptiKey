@@ -836,7 +836,7 @@ namespace JuliusSweetland.OptiKey.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Bad news - EyeMine has tripped over its feet and has to close down.
         ///
-        ///An email with details of what happened would be very helpful: optikeyminecraft@gmail.com
+        ///An email with details of what happened would be very helpful: eyemine@specialeffect.org.uk
         ///
         ///Sorry for the inconvenience..
         /// </summary>
