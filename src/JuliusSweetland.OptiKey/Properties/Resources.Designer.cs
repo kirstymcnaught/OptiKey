@@ -5602,8 +5602,11 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Please visit www.optikey.org to download latest version ({0})
-        ///You can turn off update checks from the Settings (ALT + M)..
+        ///   Looks up a localized string similar to Please visit
+        ///https://github.com/SpecialEffect/EyeMine/releases
+        ///to download latest version ({0})
+        ///    
+        ///You can turn off update checks from Settings (Right click -&gt; Settings)..
         /// </summary>
         public static string URL_DOWNLOAD_PROMPT {
             get {

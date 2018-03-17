@@ -1187,8 +1187,11 @@ ARROW</value>
     <value>All in upper case</value>
   </data>
   <data name="URL_DOWNLOAD_PROMPT" xml:space="preserve">
-    <value>Please visit www.optikey.org to download latest version ({0})
-You can turn off update checks from the Settings (ALT + M).</value>
+    <value>Please visit
+https://github.com/SpecialEffect/EyeMine/releases
+to download latest version ({0})
+    
+You can turn off update checks from Settings (Right click -> Settings).</value>
   </data>
   <data name="VERIFY_RESTART" xml:space="preserve">
     <value>May I restart EyeMine?</value>

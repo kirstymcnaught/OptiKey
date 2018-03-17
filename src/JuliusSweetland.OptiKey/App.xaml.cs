@@ -39,8 +39,8 @@ namespace JuliusSweetland.OptiKey
         #region Constants
 
         private const string GazeTrackerUdpRegex = @"^STREAM_DATA\s(?<instanceTime>\d+)\s(?<x>-?\d+(\.[0-9]+)?)\s(?<y>-?\d+(\.[0-9]+)?)";
-        private const string GitHubRepoName = "optikey";
-        private const string GitHubRepoOwner = "optikey";
+        private const string GitHubRepoName = "EyeMine";
+        private const string GitHubRepoOwner = "SpecialEffect";
         private const string ExpectedMaryTTSLocationSuffix = @"\bin\marytts-server.bat";
 
         #endregion
@@ -218,9 +218,7 @@ namespace JuliusSweetland.OptiKey
 
                     inputService.RequestResume(); //Start the input service
 
-                    // TODO: Currently not checknig for updates with minecraft fork.
-                    // If re-enabled, don't forget to change repo details!
-                    //await CheckForUpdates(inputService, audioService, mainViewModel);
+                    await CheckForUpdates(inputService, audioService, mainViewModel);
                 };
 
                 if (mainWindowManipulationService.SizeAndPositionIsInitialised)
@@ -852,12 +850,16 @@ namespace JuliusSweetland.OptiKey
                 {
                     Log.InfoFormat("Checking GitHub for updates (repo owner:'{0}', repo name:'{1}').", GitHubRepoOwner, GitHubRepoName);
 
-                    var github = new GitHubClient(new ProductHeaderValue("OptiKey"));
+                    var github = new GitHubClient(new ProductHeaderValue("OptiKeyMinecraft"));
                     var releases = await github.Repository.Release.GetAll(GitHubRepoOwner, GitHubRepoName);
-                    var latestRelease = releases.FirstOrDefault(release => !release.Prerelease);
+                    
+                    var latestRelease = releases.FirstOrDefault(release => !release.Prerelease);                    
                     if (latestRelease != null)
                     {
                         var currentVersion = new Version(DiagnosticInfo.AssemblyVersion); //Convert from string
+
+                        Log.InfoFormat("Latest release = '{0} (tag:{1})'", latestRelease, latestRelease.TagName);
+                        Log.InfoFormat("Current version = '{0}'", currentVersion);
 
                         //Discard revision (4th number) as my GitHub releases are tagged with "vMAJOR.MINOR.PATCH"
                         currentVersion = new Version(currentVersion.Major, currentVersion.Minor, currentVersion.Build);
@@ -865,16 +867,24 @@ namespace JuliusSweetland.OptiKey
                         if (!string.IsNullOrEmpty(latestRelease.TagName))
                         {
                             var tagNameWithoutLetters =
-                                new string(latestRelease.TagName.ToCharArray().Where(c => !char.IsLetter(c)).ToArray());
+                                new string(latestRelease.TagName.ToCharArray().Where(c => c != '/' && !char.IsLetter(c))
+                                    .ToArray());
+                            Log.InfoFormat("tagNameWithoutLetters = '{0}'", tagNameWithoutLetters);
+
+                            // Version class convention: major.minor.build.revision
+                            // We only use first 3. (but I might call third number a "revision" elsewhere)
+
                             var latestAvailableVersion = new Version(tagNameWithoutLetters);
-                            if (latestAvailableVersion > currentVersion)
-                            {
+                           
+                            if (latestAvailableVersion.Major > currentVersion.Major ||
+                                latestAvailableVersion.Minor > currentVersion.Minor)
+                            { 
                                 Log.InfoFormat(
                                     "An update is available. Current version is {0}. Latest version on GitHub repo is {1}",
                                     currentVersion, latestAvailableVersion);
 
                                 inputService.RequestSuspend();
-                                audioService.PlaySound(Settings.Default.InfoSoundFile, Settings.Default.InfoSoundVolume);
+                                        audioService.PlaySound(Settings.Default.InfoSoundFile, Settings.Default.InfoSoundVolume);
                                 mainViewModel.RaiseToastNotification(OptiKey.Properties.Resources.UPDATE_AVAILABLE,
                                     string.Format(OptiKey.Properties.Resources.URL_DOWNLOAD_PROMPT, latestRelease.TagName),
                                     NotificationTypes.Normal,
