@@ -891,6 +891,7 @@
     <Resource Include="Resources\Keyboards\Mouse\3_ChatKeyboard.xml" />
     <Resource Include="Resources\Keyboards\Mouse\3_InventoryKeyboard.xml" />
     <Resource Include="Resources\Keyboards\Mouse\3_MainKeyboard.xml" />
+    <Resource Include="Resources\Keyboards\Mouse\2_MC_8_2_inv.xml" />
     <Content Include="Resources\Sounds\Attention.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

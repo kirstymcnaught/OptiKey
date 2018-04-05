@@ -126,23 +126,6 @@
 			<Width>1</Width>
 		</ActionKey>
         
-        <ActionKey>
-			<Label>Left\nclick</Label>
-			<Symbol>MouseLeftClickWithMouseIcon</Symbol>
-			<Action>MouseMoveAndLeftClick</Action>
-			<Row>1</Row>
-			<Col>4</Col>
-			<Height>1</Height>
-			<Width>1</Width>
-		</ActionKey>
-        <ActionKey>
-			<Label>Discard</Label>			
-			<Action>Home</Action>
-			<Row>1</Row>
-			<Col>5</Col>
-			<Height>1</Height>
-			<Width>1</Width>
-		</ActionKey>       
         
 		<ActionKey>
 			<Label>Scroll\ndown</Label>
@@ -150,10 +133,31 @@
             <Symbol>MouseScrollToBottomIcon</Symbol>
 			<Action>MouseScrollToBottom</Action>
 			<Row>1</Row>
-			<Col>6</Col>
+			<Col>4</Col>
 			<Height>1</Height>
 			<Width>1</Width>
 		</ActionKey>
+        
+        <ActionKey>
+			<Label>Left\nclick</Label>
+			<Symbol>MouseLeftClickWithMouseIcon</Symbol>
+			<Action>MouseMoveAndLeftClick</Action>
+			<Row>1</Row>
+			<Col>5</Col>
+			<Height>1</Height>
+			<Width>1</Width>
+		</ActionKey>
+        
+        <ActionKey>
+			<Label>Discard</Label>			
+			<Action>Home</Action>
+			<Row>1</Row>
+			<Col>6</Col>
+			<Height>1</Height>
+			<Width>1</Width>
+		</ActionKey>       
+        
+        
         <ActionKey>
             <Symbol>BackIcon</Symbol>
 			<Action>BackFromKeyboard</Action>

@@ -1029,6 +1029,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_E12894AF4F7B4F25ACA2A969A54C597D"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_E22C96E5771140FA9657B4EF6E1F1DAB"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -1174,13 +1180,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_B5D2AF4A5C274EECBC8F93316832815C"
+        "OwnerKey" = "8:_FD846ED28DB82A515A41BB31E4B2B8E3"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_FD846ED28DB82A515A41BB31E4B2B8E3"
+        "OwnerKey" = "8:_B5D2AF4A5C274EECBC8F93316832815C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -4702,7 +4708,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:OptiKey, Version=1.0.5.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:OptiKey, Version=1.0.17.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
                     "_B5D2AF4A5C274EECBC8F93316832815C"
@@ -5261,6 +5267,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E12894AF4F7B4F25ACA2A969A54C597D"
+            {
+            "SourcePath" = "8:..\\..\\..\\src\\JuliusSweetland.OptiKey\\Resources\\Keyboards\\Mouse\\2_MC_8_2_inv.xml"
+            "TargetName" = "8:2_MC_8_2_inv.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_BC05544926F14F04BC3B5EA3DA52C9FF"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E22C96E5771140FA9657B4EF6E1F1DAB"
