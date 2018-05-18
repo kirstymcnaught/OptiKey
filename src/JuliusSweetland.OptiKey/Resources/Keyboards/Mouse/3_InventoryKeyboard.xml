@@ -171,7 +171,7 @@
         <ActionKey>
 			<Label>Scroll\nUp</Label>
 			<Symbol>MouseScrollToTopIcon</Symbol>
-			<Action>MouseScrollToTop</Action>
+			<Action>F8</Action>
 			<Row>0</Row>
 			<Col>6</Col>
 			<Height>1</Height>
@@ -180,7 +180,7 @@
 		<ActionKey>
 			<Label>Scroll\nDown</Label>
 			<Symbol>MouseScrollToBottomIcon</Symbol>
-			<Action>MouseScrollToBottom</Action>
+			<Action>F9</Action>
 			<Row>1</Row>
 			<Col>6</Col>
 			<Height>1</Height>

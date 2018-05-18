@@ -130,15 +130,15 @@
 		<ActionKey>
 			<Label>Scroll\ndown</Label>
 			<Index>14</Index>
-            <Symbol>MouseScrollToBottomIcon</Symbol>
-			<Action>MouseScrollToBottom</Action>
+      <Symbol>MouseScrollToBottomIcon</Symbol>
+			<Action>F9</Action>
 			<Row>1</Row>
 			<Col>4</Col>
 			<Height>1</Height>
 			<Width>1</Width>
 		</ActionKey>
         
-        <ActionKey>
+    <ActionKey>
 			<Label>Left\nclick</Label>
 			<Symbol>MouseLeftClickWithMouseIcon</Symbol>
 			<Action>MouseMoveAndLeftClick</Action>
