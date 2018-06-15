@@ -1905,7 +1905,7 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Gaze Tracker.
+        ///   Looks up a localized string similar to ITU Gaze Tracker (DIY).
         /// </summary>
         public static string GAZE_TRACKER {
             get {
@@ -5310,7 +5310,7 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tobii EyeX.
+        ///   Looks up a localized string similar to Tobii Gaming (EyeX, 4C, Alienware, Steel Series Sentry etc).
         /// </summary>
         public static string TOBII_EYEX {
             get {
@@ -5355,7 +5355,7 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tobii PCEye Go.
+        ///   Looks up a localized string similar to Tobii Dynavox trackers (e.g. PCEye Go, PCEye Mini, PCEye Explore, PCEye Plus etc).
         /// </summary>
         public static string TOBII_PCEYE_GO {
             get {

@@ -455,7 +455,7 @@ UP</value>
     <value>Full dock thickness (as % of screen):</value>
   </data>
   <data name="GAZE_TRACKER" xml:space="preserve">
-    <value>Gaze Tracker</value>
+    <value>ITU Gaze Tracker (DIY)</value>
   </data>
   <data name="GROW" xml:space="preserve">
     <value>Grow</value>
@@ -1126,7 +1126,7 @@ POSITION</value>
     <value>Words are capitalized</value>
   </data>
   <data name="TOBII_EYEX" xml:space="preserve">
-    <value>Tobii EyeX</value>
+    <value>Tobii Gaming eye tracker (EyeX, 4C, Alienware, Steel Series Sentry etc)</value>
   </data>
   <data name="TOBII_EYEX_CALIBRATION_SUCCESS" xml:space="preserve">
     <value>Calibration completed, or possibly cancelled, but everything is working again!</value>
@@ -1138,7 +1138,7 @@ POSITION</value>
     <value>Tobii EyeX Engine is not running. Please start the EyeX Engine and try again.</value>
   </data>
   <data name="TOBII_PCEYE_GO" xml:space="preserve">
-    <value>Tobii PCEye Go</value>
+    <value>Tobii Dynavox eye trackers (e.g. PCEye Go, PCEye Mini, PCEye Explore, PCEye Plus etc)</value>
   </data>
   <data name="TOBII_REX" xml:space="preserve">
     <value>Tobii REX</value>

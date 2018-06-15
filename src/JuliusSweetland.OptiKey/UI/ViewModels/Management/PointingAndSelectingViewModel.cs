@@ -69,19 +69,11 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels.Management
             {
                 return new List<KeyValuePair<string, PointsSources>>
                 {
-                    new KeyValuePair<string, PointsSources>(Enums.PointsSources.Alienware17.ToDescription(), Enums.PointsSources.Alienware17),
                     new KeyValuePair<string, PointsSources>(Enums.PointsSources.GazeTracker.ToDescription(), Enums.PointsSources.GazeTracker),
                     new KeyValuePair<string, PointsSources>(Enums.PointsSources.MousePosition.ToDescription(), Enums.PointsSources.MousePosition),
-                    new KeyValuePair<string, PointsSources>(Enums.PointsSources.SteelseriesSentry.ToDescription(), Enums.PointsSources.SteelseriesSentry),
                     new KeyValuePair<string, PointsSources>(Enums.PointsSources.TheEyeTribe.ToDescription(), Enums.PointsSources.TheEyeTribe),
-                    new KeyValuePair<string, PointsSources>(Enums.PointsSources.TobiiEyeTracker4C.ToDescription(), Enums.PointsSources.TobiiEyeTracker4C),
                     new KeyValuePair<string, PointsSources>(Enums.PointsSources.TobiiEyeX.ToDescription(), Enums.PointsSources.TobiiEyeX),
                     new KeyValuePair<string, PointsSources>(Enums.PointsSources.TobiiPcEyeGo.ToDescription(), Enums.PointsSources.TobiiPcEyeGo),
-                    new KeyValuePair<string, PointsSources>(Enums.PointsSources.TobiiPcEyeGoPlus.ToDescription(), Enums.PointsSources.TobiiPcEyeGoPlus),
-                    new KeyValuePair<string, PointsSources>(Enums.PointsSources.TobiiPcEyeMini.ToDescription(), Enums.PointsSources.TobiiPcEyeMini),
-                    new KeyValuePair<string, PointsSources>(Enums.PointsSources.TobiiRex.ToDescription(), Enums.PointsSources.TobiiRex),
-                    new KeyValuePair<string, PointsSources>(Enums.PointsSources.TobiiX2_30.ToDescription(), Enums.PointsSources.TobiiX2_30),
-                    new KeyValuePair<string, PointsSources>(Enums.PointsSources.TobiiX2_60.ToDescription(), Enums.PointsSources.TobiiX2_60),
                 };
             }
         }
