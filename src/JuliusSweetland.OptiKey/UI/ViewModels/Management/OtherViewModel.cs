@@ -72,6 +72,12 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels.Management
             set { SetProperty(ref debug, value); }
         }
 
+
+        public string WarningBeforeExit
+        {
+            get { return null; }
+        }
+
         public bool ChangesRequireRestart
         {
             get

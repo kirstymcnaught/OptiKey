@@ -3973,6 +3973,15 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Please press OK to continue with your choice, or cancel to go back to Settings..
+        /// </summary>
+        public static string OKAY_CONTINUE_CANCEL_CHANGE {
+            get {
+                return ResourceManager.GetString("OKAY_CONTINUE_CANCEL_CHANGE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to EyeMine.
         /// </summary>
         public static string OPTIKEY_DESCRIPTION {
@@ -5301,6 +5310,15 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Tobii Dynavox eye tracker (e.g. PCEye Go, PCEye Mini, PCEye Explore, PCEye Plus, ...).
+        /// </summary>
+        public static string TOBII_DYNAVOX_LONG {
+            get {
+                return ResourceManager.GetString("TOBII_DYNAVOX_LONG", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Tobii Eye Tracker 4C.
         /// </summary>
         public static string TOBII_EYE_TRACKER_4C {
@@ -5310,7 +5328,7 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tobii Gaming (EyeX, 4C, Alienware, Steel Series Sentry etc).
+        ///   Looks up a localized string similar to Tobii Gaming eye tracker.
         /// </summary>
         public static string TOBII_EYEX {
             get {
@@ -5355,7 +5373,16 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tobii Dynavox trackers (e.g. PCEye Go, PCEye Mini, PCEye Explore, PCEye Plus etc).
+        ///   Looks up a localized string similar to Tobii Gaming eye tracker (e.g. EyeX, 4C, Alienware, Steel Series Sentry, ...).
+        /// </summary>
+        public static string TOBII_GAMING_LONG {
+            get {
+                return ResourceManager.GetString("TOBII_GAMING_LONG", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tobii Dynavox eye tracker.
         /// </summary>
         public static string TOBII_PCEYE_GO {
             get {
@@ -5742,6 +5769,15 @@ namespace JuliusSweetland.OptiKey.Properties {
         public static string VOLUME_LABEL {
             get {
                 return ResourceManager.GetString("VOLUME_LABEL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to WARNING.
+        /// </summary>
+        public static string WARNING {
+            get {
+                return ResourceManager.GetString("WARNING", resourceCulture);
             }
         }
         

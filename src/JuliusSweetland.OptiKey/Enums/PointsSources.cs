@@ -21,7 +21,7 @@ namespace JuliusSweetland.OptiKey.Enums
 
     public static partial class EnumExtensions
     {
-        public static string ToDescription(this PointsSources pointSource)
+        public static string ToShortDescription(this PointsSources pointSource)
         {
             switch (pointSource)
             {
@@ -42,6 +42,17 @@ namespace JuliusSweetland.OptiKey.Enums
             }
 
             return pointSource.ToString();
+        }
+
+        public static string ToLongDescription(this PointsSources pointSource)
+        {
+            // Optional longer description, for management console
+            switch (pointSource)
+            {
+                case PointsSources.TobiiPcEyeGo: return Resources.TOBII_DYNAVOX_LONG;
+                case PointsSources.TobiiEyeX: return Resources.TOBII_GAMING_LONG;
+                default: return pointSource.ToShortDescription();
+            }            
         }
     }
 }

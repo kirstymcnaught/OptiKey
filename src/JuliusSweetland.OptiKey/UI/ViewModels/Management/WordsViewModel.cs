@@ -283,11 +283,16 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels.Management
                     || Settings.Default.CommuniKateStagedForDeletion == true; }
         }
 
-        #endregion
+        public string WarningBeforeExit
+        {
+            get { return null; }
+        }
 
-        #region Methods
+#endregion
 
-        private void Load()
+#region Methods
+
+private void Load()
         {
             KeyboardAndDictionaryLanguage = Settings.Default.KeyboardAndDictionaryLanguage;
             UiLanguage = Settings.Default.UiLanguage;

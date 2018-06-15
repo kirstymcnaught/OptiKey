@@ -61,6 +61,12 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels.Management
             }
         }
 
+
+        public string WarningBeforeExit
+        {
+            get { return null; }
+        }
+
         public bool ChangesRequireRestart
         {
             get { return false; }

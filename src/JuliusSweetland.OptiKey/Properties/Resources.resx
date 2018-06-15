@@ -1126,7 +1126,7 @@ POSITION</value>
     <value>Words are capitalized</value>
   </data>
   <data name="TOBII_EYEX" xml:space="preserve">
-    <value>Tobii Gaming eye tracker (EyeX, 4C, Alienware, Steel Series Sentry etc)</value>
+    <value>Tobii Gaming eye tracker</value>
   </data>
   <data name="TOBII_EYEX_CALIBRATION_SUCCESS" xml:space="preserve">
     <value>Calibration completed, or possibly cancelled, but everything is working again!</value>
@@ -1138,7 +1138,7 @@ POSITION</value>
     <value>Tobii EyeX Engine is not running. Please start the EyeX Engine and try again.</value>
   </data>
   <data name="TOBII_PCEYE_GO" xml:space="preserve">
-    <value>Tobii Dynavox eye trackers (e.g. PCEye Go, PCEye Mini, PCEye Explore, PCEye Plus etc)</value>
+    <value>Tobii Dynavox eye tracker</value>
   </data>
   <data name="TOBII_REX" xml:space="preserve">
     <value>Tobii REX</value>
@@ -1191,7 +1191,7 @@ ARROW</value>
 https://github.com/SpecialEffect/EyeMine/releases
 to download latest version ({0})
     
-You can turn off update checks from Settings (Right click -> Settings).</value>
+You can turn off update checks from Settings (Right click -&gt; Settings).</value>
   </data>
   <data name="VERIFY_RESTART" xml:space="preserve">
     <value>May I restart EyeMine?</value>
@@ -2160,5 +2160,17 @@ walk (legacy)</value>
   </data>
   <data name="SINGLE_DYNAMIC_KEYBOARD" xml:space="preserve">
     <value>Single custom keyboard</value>
+  </data>
+  <data name="OKAY_CONTINUE_CANCEL_CHANGE" xml:space="preserve">
+    <value>Please press OK to continue with your choice, or cancel to go back to Settings.</value>
+  </data>
+  <data name="TOBII_DYNAVOX_LONG" xml:space="preserve">
+    <value>Tobii Dynavox eye tracker (e.g. PCEye Go, PCEye Mini, PCEye Explore, PCEye Plus, ...)</value>
+  </data>
+  <data name="TOBII_GAMING_LONG" xml:space="preserve">
+    <value>Tobii Gaming eye tracker (e.g. EyeX, 4C, Alienware, Steel Series Sentry, ...)</value>
+  </data>
+  <data name="WARNING" xml:space="preserve">
+    <value>WARNING</value>
   </data>
 </root>

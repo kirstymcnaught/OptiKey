@@ -336,6 +336,11 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels.Management
             set { SetProperty(ref conversationBorderThickness, value); }
         }
 
+        public string WarningBeforeExit
+        {
+            get { return null; }
+        }
+
         public bool ChangesRequireRestart
         {
             get
