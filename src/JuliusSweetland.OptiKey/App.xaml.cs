@@ -45,6 +45,17 @@ namespace JuliusSweetland.OptiKey
 
         #endregion
 
+        #region Main
+        [STAThread]
+        public static void Main()
+        {
+            var application = new App();
+            application.InitializeComponent();
+            application.Run();
+        }
+
+        #endregion
+
         #region Private Member Vars
 
         private static readonly ILog Log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
