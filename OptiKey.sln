@@ -4,6 +4,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JuliusSweetland.OptiKey", "src\JuliusSweetland.OptiKey\JuliusSweetland.OptiKey.csproj", "{6865C5AF-C6F0-4BDA-BA1C-7AE8BC225234}"
+	ProjectSection(ProjectDependencies) = postProject
+		{36B2699D-69D9-486E-8253-E63230CB50E2} = {36B2699D-69D9-486E-8253-E63230CB50E2}
+		{2A8B4AE0-48BE-4A49-9C9C-654C195C8AB2} = {2A8B4AE0-48BE-4A49-9C9C-654C195C8AB2}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{117E0D45-AA2F-4A2B-AAD5-C3101E1CBCA8}"
 	ProjectSection(SolutionItems) = preProject
@@ -32,6 +36,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OptiKeyLocaleGuideImages", 
 	EndProjectSection
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupOptiKeyMinecraft", "install\SetupOptiKeyMinecraft\SetupOptiKeyMinecraft\SetupOptiKeyMinecraft.vdproj", "{CCA006AB-9254-4F68-9C4B-F5440A5E8C5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleInstance.Wpf", "src\SingleInstance.Wpf\SingleInstance.Wpf.csproj", "{2A8B4AE0-48BE-4A49-9C9C-654C195C8AB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleInstance", "src\SingleInstance\SingleInstance.csproj", "{36B2699D-69D9-486E-8253-E63230CB50E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,11 +79,30 @@ Global
 		{CCA006AB-9254-4F68-9C4B-F5440A5E8C5E}.Release|Any CPU.Build.0 = Release
 		{CCA006AB-9254-4F68-9C4B-F5440A5E8C5E}.Release|x86.ActiveCfg = Release
 		{CCA006AB-9254-4F68-9C4B-F5440A5E8C5E}.Release|x86.Build.0 = Release
+		{2A8B4AE0-48BE-4A49-9C9C-654C195C8AB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A8B4AE0-48BE-4A49-9C9C-654C195C8AB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A8B4AE0-48BE-4A49-9C9C-654C195C8AB2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2A8B4AE0-48BE-4A49-9C9C-654C195C8AB2}.Debug|x86.Build.0 = Debug|Any CPU
+		{2A8B4AE0-48BE-4A49-9C9C-654C195C8AB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A8B4AE0-48BE-4A49-9C9C-654C195C8AB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A8B4AE0-48BE-4A49-9C9C-654C195C8AB2}.Release|x86.ActiveCfg = Release|Any CPU
+		{2A8B4AE0-48BE-4A49-9C9C-654C195C8AB2}.Release|x86.Build.0 = Release|Any CPU
+		{36B2699D-69D9-486E-8253-E63230CB50E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36B2699D-69D9-486E-8253-E63230CB50E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36B2699D-69D9-486E-8253-E63230CB50E2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{36B2699D-69D9-486E-8253-E63230CB50E2}.Debug|x86.Build.0 = Debug|Any CPU
+		{36B2699D-69D9-486E-8253-E63230CB50E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36B2699D-69D9-486E-8253-E63230CB50E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36B2699D-69D9-486E-8253-E63230CB50E2}.Release|x86.ActiveCfg = Release|Any CPU
+		{36B2699D-69D9-486E-8253-E63230CB50E2}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{7468759C-A5A4-4228-B61C-41DE35482069} = {117E0D45-AA2F-4A2B-AAD5-C3101E1CBCA8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0F2F78E8-3B75-46F8-AA06-8F4D6DCDF15E}
 	EndGlobalSection
 EndGlobal
