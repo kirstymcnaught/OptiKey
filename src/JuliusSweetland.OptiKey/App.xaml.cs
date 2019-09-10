@@ -48,10 +48,16 @@ namespace JuliusSweetland.OptiKey
 
         #endregion
 
+        private static SplashScreen splashScreen;
+
         #region Main
         [STAThread]
         public static void Main()
         {
+
+            splashScreen = new SplashScreen("/Resources/Icons/EyeMine_Logo_black.png");
+            splashScreen.Show(false);
+
             using (SingleInstanceManager manager = SingleInstanceManager.Initialize(GetSingleInstanceManagerSetup()))
             {
                 var application = new App();
@@ -144,6 +150,10 @@ namespace JuliusSweetland.OptiKey
             try
             {
                 Log.Info("Boot strapping the services and UI.");
+
+                // We manually close this because automatic closure steals focus from the 
+                // dynamic splash screen. 
+                splashScreen.Close(TimeSpan.FromSeconds(0.5f));
 
                 //Apply theme
                 applyTheme();
