@@ -49,6 +49,7 @@ namespace JuliusSweetland.OptiKey
         #endregion
 
         private static SplashScreen splashScreen;
+        private static SingleInstanceManager _manager;
 
         #region Main
         [STAThread]
@@ -58,12 +59,21 @@ namespace JuliusSweetland.OptiKey
             splashScreen = new SplashScreen("/Resources/Icons/EyeMine_Logo_black.png");
             splashScreen.Show(false);
 
-            using (SingleInstanceManager manager = SingleInstanceManager.Initialize(GetSingleInstanceManagerSetup()))
+            using (_manager = SingleInstanceManager.Initialize(GetSingleInstanceManagerSetup()))
             {
                 var application = new App();
                 application.InitializeComponent();
                 application.Run();
             }
+        }
+        public static void RestartApp()
+        {
+            // Release single-instance mutex if we've got one
+            if (_manager != null)
+            {
+                _manager.Dispose();
+            }
+            System.Windows.Forms.Application.Restart();
         }
 
         private static SingleInstanceManagerSetup GetSingleInstanceManagerSetup()
@@ -586,7 +596,7 @@ namespace JuliusSweetland.OptiKey
                     File.Delete(filename);
                     try
                     {
-                        System.Windows.Forms.Application.Restart();
+                        RestartApp();
                     }
                     catch {} //Swallow any exceptions (e.g. DispatcherExceptions) - we're shutting down so it doesn't matter.
                 }

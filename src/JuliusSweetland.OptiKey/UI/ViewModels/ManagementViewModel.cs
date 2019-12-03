@@ -116,7 +116,7 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
                         ApplyChanges();
                         try
                         {
-                            System.Windows.Forms.Application.Restart();
+                            App.RestartApp();
                         }
                         catch { } //Swallow any exceptions (e.g. DispatcherExceptions) - we're shutting down so it doesn't matter.
                         Application.Current.Shutdown();
