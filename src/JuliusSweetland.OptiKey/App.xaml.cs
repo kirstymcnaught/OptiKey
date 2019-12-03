@@ -55,12 +55,11 @@ namespace JuliusSweetland.OptiKey
         [STAThread]
         public static void Main()
         {
-
-            splashScreen = new SplashScreen("/Resources/Icons/EyeMine_Logo_black.png");
-            splashScreen.Show(false);
-
             using (_manager = SingleInstanceManager.Initialize(GetSingleInstanceManagerSetup()))
             {
+                splashScreen = new SplashScreen("/Resources/Icons/EyeMine_Logo_black.png");
+                splashScreen.Show(false);
+
                 var application = new App();
                 application.InitializeComponent();
                 application.Run();
