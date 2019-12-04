@@ -270,6 +270,13 @@ namespace JuliusSweetland.OptiKey
                 {
                     mainWindowManipulationService.SizeAndPositionInitialised += sizeAndPositionInitialised;
                 }
+
+                Current.Exit += (o, args) =>
+                {
+                    mainWindowManipulationService.PersistSizeAndPosition();
+                    Settings.Default.Save();
+                };
+
             }
             catch (Exception ex)
             {
