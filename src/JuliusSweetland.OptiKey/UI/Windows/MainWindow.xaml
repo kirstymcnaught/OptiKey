@@ -54,4 +54,9 @@
     </i:Interaction.Triggers>
     
     <views:MainView x:Name="MainView" />
+        <WindowChrome.WindowChrome>
+            <WindowChrome 
+                CaptionHeight="0"
+                ResizeBorderThickness="5" />
+        </WindowChrome.WindowChrome>
 </Window>
