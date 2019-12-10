@@ -13,5 +13,11 @@ namespace JuliusSweetland.OptiKey.Extensions
         {
             return Math.Max(value, lowerLimit);
         }
+
+        public static bool CloseTo(this double left, double right, int dp = 1)
+        {
+            double thresh = Math.Pow(10, -dp);
+            return Math.Abs(left - right) < thresh;
+        }
     }
 }
