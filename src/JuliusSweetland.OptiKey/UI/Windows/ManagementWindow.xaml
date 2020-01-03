@@ -7,6 +7,7 @@
                      Title="{x:Static resx:Resources.MANAGEMENT_CONSOLE_TITLE}"
                      WindowStartupLocation="CenterOwner"
                      WindowState="Maximized"
+                     ResizeMode="CanResizeWithGrip"
                      MinWidth="300" MinHeight="200"
                      Icon="..\..\Resources\Icons\Management.ico">
     <views:ManagementView x:Name="ManagementView" />
