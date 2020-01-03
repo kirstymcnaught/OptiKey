@@ -1,5 +1,4 @@
 <Keyboard> 
-   <Height>32</Height>
 	<BorderThickness>1,30,1,1</BorderThickness>
    <HideFromKeyboardMenu>True</HideFromKeyboardMenu>
    <Name>Minecraft 8x2</Name>
