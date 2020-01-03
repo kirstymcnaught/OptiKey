@@ -22,13 +22,14 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels
 
         public ManagementViewModel(
             IAudioService audioService,
-            IDictionaryService dictionaryService)
+            IDictionaryService dictionaryService, 
+            IWindowManipulationService windowManipulationService)
         {
             //Instantiate child VMs
             DictionaryViewModel = new DictionaryViewModel(dictionaryService);
             OtherViewModel = new OtherViewModel();
             PointingAndSelectingViewModel = new PointingAndSelectingViewModel();
-            VisualsViewModel = new VisualsViewModel();
+            VisualsViewModel = new VisualsViewModel(windowManipulationService);
             AboutViewModel = new AboutViewModel();
             
             //Instantiate interaction requests and commands

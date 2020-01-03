@@ -8,6 +8,7 @@ namespace JuliusSweetland.OptiKey.Models
         public bool ModalWindow { get; set; }
         public IAudioService AudioService { get; set; }
         public IDictionaryService DictionaryService { get; set; }
+        public IWindowManipulationService WindowManipulationService { get; set; }
 
         #region INotification
 

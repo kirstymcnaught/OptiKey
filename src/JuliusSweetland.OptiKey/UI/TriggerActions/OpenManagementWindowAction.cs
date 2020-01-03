@@ -34,7 +34,8 @@ namespace JuliusSweetland.OptiKey.UI.TriggerActions
                 if (managementWindow == null)
                 {
                     managementWindow = new ManagementWindow(notificationWithServicesAndState.AudioService,
-                        notificationWithServicesAndState.DictionaryService);
+                        notificationWithServicesAndState.DictionaryService,
+                        notificationWithServicesAndState.WindowManipulationService);
 
                     EventHandler closeHandler = null;
                     closeHandler = (sender, e) =>

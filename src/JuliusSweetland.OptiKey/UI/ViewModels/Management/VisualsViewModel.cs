@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Windows;
 using JuliusSweetland.OptiKey.Enums;
 using JuliusSweetland.OptiKey.Properties;
+using JuliusSweetland.OptiKey.Services;
 using log4net;
 using Prism.Mvvm;
 using FontStretches = JuliusSweetland.OptiKey.Enums.FontStretches;
@@ -20,11 +21,14 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels.Management
         private static readonly ILog Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
         #endregion
-        
+
         #region Ctor
 
-        public VisualsViewModel()
+        private IWindowManipulationService windowManipulationService;
+
+        public VisualsViewModel(IWindowManipulationService windowManipulationService)
         {
+            this.windowManipulationService = windowManipulationService;
             Load();
         }
         
@@ -139,8 +143,21 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels.Management
                 {
                     new KeyValuePair<string, Enums.DockEdges>(Resources.TOP, Enums.DockEdges.Top),
                     new KeyValuePair<string, Enums.DockEdges>(Resources.BOTTOM, Enums.DockEdges.Bottom),
-                    new KeyValuePair<string, Enums.DockEdges>(Resources.LEFT, Enums.DockEdges.Left),
-                    new KeyValuePair<string, Enums.DockEdges>(Resources.RIGHT, Enums.DockEdges.Right),
+                    //new KeyValuePair<string, Enums.DockEdges>(Resources.LEFT, Enums.DockEdges.Left),
+                    //new KeyValuePair<string, Enums.DockEdges>(Resources.RIGHT, Enums.DockEdges.Right),
+                };
+            }
+        }
+
+        public List<KeyValuePair<string, Enums.WindowStates>> MainWindowStates
+        {
+            get
+            {
+                return new List<KeyValuePair<string, Enums.WindowStates>>
+                {
+                    new KeyValuePair<string, Enums.WindowStates>("Floating", Enums.WindowStates.Floating),
+                    new KeyValuePair<string, Enums.WindowStates>("Docked", Enums.WindowStates.Docked),
+                    
                 };
             }
         }
@@ -346,12 +363,12 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels.Management
             get
             {
                 return Settings.Default.StartupKeyboard != StartupKeyboard
-                    || Settings.Default.StartupKeyboardFile != StartupKeyboardFile
-                    || Settings.Default.CustomDynamicKeyboardsLocation != CustomDynamicKeyboardsLocation
-                    || Settings.Default.ConversationOnlyMode != ConversationOnlyMode
-                    || Settings.Default.ConversationConfirmEnable != ConversationConfirmEnable
-                    || Settings.Default.ConversationConfirmOnlyMode != ConversationConfirmOnlyMode
-                    || Settings.Default.MainWindowDockPosition != DockPosition;
+                       || Settings.Default.StartupKeyboardFile != StartupKeyboardFile
+                       || Settings.Default.CustomDynamicKeyboardsLocation != CustomDynamicKeyboardsLocation
+                       || Settings.Default.ConversationOnlyMode != ConversationOnlyMode
+                       || Settings.Default.ConversationConfirmEnable != ConversationConfirmEnable
+                       || Settings.Default.ConversationConfirmOnlyMode != ConversationConfirmOnlyMode;
+                //|| Settings.Default.MainWindowDockPosition != DockPosition;
             }
         }
 
@@ -390,6 +407,13 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels.Management
             set { SetProperty(ref startupKeyboardFile, value); }
         }
 
+        private WindowStates mainWindowState;
+        public WindowStates MainWindowState
+        {
+            get { return mainWindowState; }
+            set { SetProperty(ref mainWindowState, value); }
+        }
+
         #endregion
 
         #region Methods
@@ -423,6 +447,7 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels.Management
             CustomDynamicKeyboardsLocation = Settings.Default.CustomDynamicKeyboardsLocation;
             StartupKeyboardFile = Settings.Default.StartupKeyboardFile;
             DockPosition = Settings.Default.MainWindowDockPosition;
+            MainWindowState = Settings.Default.MainWindowState;
         }
 
         public void ApplyChanges()
@@ -453,7 +478,12 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels.Management
             Settings.Default.EnableAttentionKey = EnableAttentionKey;
             Settings.Default.CustomDynamicKeyboardsLocation = CustomDynamicKeyboardsLocation;
             Settings.Default.StartupKeyboardFile = StartupKeyboardFile;
-            Settings.Default.MainWindowDockPosition = DockPosition;
+            if (Settings.Default.MainWindowState != MainWindowState || Settings.Default.MainWindowDockPosition != DockPosition)
+            {
+                // this also saves the changes
+                windowManipulationService.ChangeState(MainWindowState, DockPosition);
+            }
+            // TODO: deal with currently-minimised state?? necessary for Optikey proper
         }
 
         #endregion
