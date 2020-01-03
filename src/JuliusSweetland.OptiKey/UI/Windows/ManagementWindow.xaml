@@ -8,6 +8,7 @@
                      WindowStartupLocation="CenterOwner"
                      WindowState="Maximized"
                      ResizeMode="CanResizeWithGrip"
+                     Topmost="True"
                      MinWidth="300" MinHeight="200"
                      Icon="..\..\Resources\Icons\Management.ico">
     <views:ManagementView x:Name="ManagementView" />
