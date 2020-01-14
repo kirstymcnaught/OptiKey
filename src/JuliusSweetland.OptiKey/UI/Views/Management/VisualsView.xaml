@@ -218,14 +218,64 @@
                               SelectedValuePath="Value"
                               SelectedValue="{Binding MainWindowState, Mode=TwoWay}" />
 
+                    
                     <TextBlock Grid.Row="1" Grid.Column="0" Text="{x:Static resx:Resources.DOCK_POSITON_LABEL}" 
-                               VerticalAlignment="Center" Margin="5" />
+                               VerticalAlignment="Center" Margin="5" >
+                        <TextBlock.Style>
+                            <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource {x:Type TextBlock}}">
+                                <Setter Property="Visibility" Value="Collapsed" />
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding MainWindowState}" Value="Docked">
+                                        <Setter Property="Visibility" Value="Visible" />
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </TextBlock.Style>
+                    </TextBlock>
                     <ComboBox Grid.Row="1" Grid.Column="1" 
                               ItemsSource="{Binding DockPositions}"
                               DisplayMemberPath="Key"
                               SelectedValuePath="Value"
-                              SelectedValue="{Binding DockPosition, Mode=TwoWay}" />
+                              SelectedValue="{Binding DockPosition, Mode=TwoWay}" >
+                        <ComboBox.Style>
+                            <Style TargetType="{x:Type ComboBox}" BasedOn="{StaticResource {x:Type ComboBox}}">
+                                <Setter Property="Visibility" Value="Collapsed" />
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding MainWindowState}" Value="Docked">
+                                        <Setter Property="Visibility" Value="Visible" />
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </ComboBox.Style>
+                    </ComboBox>
 
+                    <TextBlock Grid.Row="2" Grid.Column="0" Text="Dock height (%)" 
+                               VerticalAlignment="Center" Margin="5" >
+                        <TextBlock.Style>
+                            <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource {x:Type TextBlock}}">
+                                <Setter Property="Visibility" Value="Collapsed" />
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding MainWindowState}" Value="Docked">
+                                        <Setter Property="Visibility" Value="Visible" />
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </TextBlock.Style>
+                    </TextBlock>
+                    <controls:NumericUpDown Grid.Row="2" Grid.Column="1" TextAlignment="Left"
+                                            Minimum="10" Maximum="70" Interval="5"
+                                            Value="{Binding MainWindowFullDockThicknessAsPercentageOfScreen, Mode=TwoWay}">
+                        <controls:NumericUpDown.Style>
+                            <Style TargetType="{x:Type controls:NumericUpDown}" BasedOn="{StaticResource {x:Type controls:NumericUpDown}}">
+                                <Setter Property="Visibility" Value="Collapsed" />
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding MainWindowState}" Value="Docked">
+                                        <Setter Property="Visibility" Value="Visible" />
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </controls:NumericUpDown.Style>
+                    </controls:NumericUpDown>
                 </Grid>
             </GroupBox>
 

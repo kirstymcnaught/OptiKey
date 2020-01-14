@@ -12,7 +12,7 @@
         Topmost="True"
         Icon="..\..\Resources\Icons\Main.ico"
         AllowsTransparency="True"
-        ResizeMode="NoResize"
+        ResizeMode="CanResizeWithGrip"
         Style="{DynamicResource MainWindowStyle}"
         Tag="{Binding RelativeSource={RelativeSource Mode=Self}}">
         <!--Don't set the window's Width and Height properties on the window itself - they are loaded and applied from settings-->
