@@ -425,7 +425,7 @@ namespace JuliusSweetland.OptiKey.UI.Controls
 
         private void OnMouseEnter(object sender, System.EventArgs e)
         {
-            if (Settings.Default.PointsSource == PointsSources.MousePosition &&
+            if (
                 Settings.Default.PointsMousePositionHideCursor)
             {
                 this.Cursor = System.Windows.Input.Cursors.None;
