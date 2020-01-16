@@ -249,7 +249,7 @@
                         </ComboBox.Style>
                     </ComboBox>
 
-                    <TextBlock Grid.Row="2" Grid.Column="0" Text="Dock height (%)" 
+                    <TextBlock Grid.Row="2" Grid.Column="0" Text="Dock height (as % of screen)" 
                                VerticalAlignment="Center" Margin="5" >
                         <TextBlock.Style>
                             <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource {x:Type TextBlock}}">
@@ -263,7 +263,8 @@
                         </TextBlock.Style>
                     </TextBlock>
                     <controls:NumericUpDown Grid.Row="2" Grid.Column="1" TextAlignment="Left"
-                                            Minimum="10" Maximum="70" Interval="5"
+                                            Minimum="10" Maximum="70" Interval="1"
+                                            StringFormat="{}{0:N1} %"
                                             Value="{Binding MainWindowFullDockThicknessAsPercentageOfScreen, Mode=TwoWay}">
                         <controls:NumericUpDown.Style>
                             <Style TargetType="{x:Type controls:NumericUpDown}" BasedOn="{StaticResource {x:Type controls:NumericUpDown}}">
