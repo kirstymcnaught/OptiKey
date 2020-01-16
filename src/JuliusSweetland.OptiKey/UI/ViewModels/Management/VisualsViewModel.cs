@@ -333,6 +333,33 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels.Management
             set { SetProperty(ref minimsedPosition, value); }
         }
 
+        private double leftBorder;
+        public double LeftBorder
+        {
+            get { return leftBorder; }
+            set { SetProperty(ref leftBorder, value); }
+        }
+
+        private double rightBorder;
+        public double RightBorder
+        {
+            get { return rightBorder; }
+            set { SetProperty(ref rightBorder, value); }
+        }
+
+        private double topBorder;
+        public double TopBorder{
+            get { return topBorder; }
+            set { SetProperty(ref topBorder, value); }
+        }
+
+        private double bottomBorder;
+        public double BottomBorder
+        {
+            get { return bottomBorder; }
+            set { SetProperty(ref bottomBorder, value); }
+        }
+
         private double mainWindowFullDockThicknessAsPercentageOfScreen;
         public double MainWindowFullDockThicknessAsPercentageOfScreen
         {
@@ -457,6 +484,11 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels.Management
             DockPosition = Settings.Default.MainWindowDockPosition;
             MainWindowState = Settings.Default.MainWindowState;
             MainWindowOpacity = Settings.Default.MainWindowOpacity;
+            var border = Settings.Default.BorderThickness;
+            LeftBorder = border.Left;
+            RightBorder = border.Right;
+            TopBorder = border.Top;
+            BottomBorder = border.Bottom;
         }
 
         public void ApplyChanges()
@@ -487,6 +519,7 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels.Management
             Settings.Default.EnableAttentionKey = EnableAttentionKey;
             Settings.Default.CustomDynamicKeyboardsLocation = CustomDynamicKeyboardsLocation;
             Settings.Default.StartupKeyboardFile = StartupKeyboardFile;
+            Settings.Default.BorderThickness = new Thickness(LeftBorder, TopBorder, RightBorder, BottomBorder);
             
             // Changes to window state, these methods will save the new values also
             if (Settings.Default.MainWindowState != MainWindowState || 
@@ -504,3 +537,4 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels.Management
         #endregion
     }
 }
+    

@@ -15,6 +15,7 @@
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
 
             <GroupBox Grid.Row="0" Header="{x:Static resx:Resources.CONTENT}">
@@ -343,10 +344,49 @@
                 </Grid>
             </GroupBox>
 
+            <GroupBox Grid.Row="3" Header="Keyboard borders">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" SharedSizeGroup="LabelColumn" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
 
-            
+                    <TextBlock Grid.Row="0" Grid.Column="0" Text="Left (pixels)" 
+                               VerticalAlignment="Center" Margin="5" />
+                    <controls:NumericUpDown Grid.Row="0" Grid.Column="1" TextAlignment="Left"
+                                            Minimum="0" Maximum="100" Interval="5"
+                                            Value="{Binding LeftBorder, Mode=TwoWay}" />
 
-            <GroupBox Grid.Row="3" Header="{x:Static resx:Resources.FONT}">
+                    <TextBlock Grid.Row="1" Grid.Column="0" Text="Right (pixels)" 
+                               VerticalAlignment="Center" Margin="5" />
+                    <controls:NumericUpDown Grid.Row="1" Grid.Column="1" TextAlignment="Left"
+                                            Minimum="0" Maximum="100" Interval="5"
+                                            Value="{Binding RightBorder, Mode=TwoWay}" />
+
+                    <TextBlock Grid.Row="2" Grid.Column="0" Text="Top (pixels)" 
+                               VerticalAlignment="Center" Margin="5" />
+                    <controls:NumericUpDown Grid.Row="2" Grid.Column="1" TextAlignment="Left"
+                                            Minimum="0" Maximum="100" Interval="5"
+                                            Value="{Binding TopBorder, Mode=TwoWay}" />
+
+                    <TextBlock Grid.Row="3" Grid.Column="0" Text="Bottom (pixels)" 
+                               VerticalAlignment="Center" Margin="5" />
+                    <controls:NumericUpDown Grid.Row="3" Grid.Column="1" TextAlignment="Left"
+                                            Minimum="0" Maximum="100" Interval="5"
+                                            Value="{Binding BottomBorder, Mode=TwoWay}" />
+
+                </Grid>
+            </GroupBox>
+
+
+            <GroupBox Grid.Row="4" Header="{x:Static resx:Resources.FONT}">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto" SharedSizeGroup="LabelColumn" />

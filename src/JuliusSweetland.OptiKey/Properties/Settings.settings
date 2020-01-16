@@ -1089,5 +1089,8 @@
     <Setting Name="DynamicKeyboardsLocation" Roaming="true" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
+    <Setting Name="BorderThickness" Type="System.Windows.Thickness" Scope="User">
+      <Value Profile="(Default)">1,30,1,1</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

@@ -75,7 +75,7 @@
 
             <Style x:Key="MainWindowStyle" TargetType="{x:Type windows:MainWindow}" BasedOn="{StaticResource {x:Type Window}}">
                 <Setter Property="BorderBrush" Value="{StaticResource WindowBorderBrush}" />
-                <Setter Property="BorderThickness" Value="1" />
+                <Setter Property="BorderThickness" Value="{Binding Source={x:Static properties:Settings.Default}, Path=BorderThickness}"/>
                 <Style.Triggers>
                     <!--Is the keyboard an IConversationKeyboard-->
                     <DataTrigger Binding="{Binding DataContext.Keyboard, ElementName=MainView, Converter={StaticResource ObjectIsType}, ConverterParameter={x:Type keyboardBase:IConversationKeyboard}, Mode=OneWay}" Value="True">

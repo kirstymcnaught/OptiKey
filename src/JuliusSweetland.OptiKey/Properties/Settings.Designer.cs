@@ -2058,5 +2058,17 @@ namespace JuliusSweetland.OptiKey.Properties {
                 this["DynamicKeyboardsLocation"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1,30,1,1")]
+        public global::System.Windows.Thickness BorderThickness {
+            get {
+                return ((global::System.Windows.Thickness)(this["BorderThickness"]));
+            }
+            set {
+                this["BorderThickness"] = value;
+            }
+        }
     }
 }
