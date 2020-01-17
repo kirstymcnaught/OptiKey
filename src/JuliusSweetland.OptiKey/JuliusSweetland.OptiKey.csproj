@@ -895,6 +895,7 @@
     <Resource Include="Resources\Keyboards\Mouse\3_InventoryKeyboard.xml" />
     <Resource Include="Resources\Keyboards\Mouse\3_MainKeyboard.xml" />
     <Resource Include="Resources\Keyboards\Mouse\2_MC_8_2_inv.xml" />
+    <Resource Include="Resources\Keyboards\EyeTracker\4_Minecraft_Survival.xml" />
     <Content Include="Resources\Sounds\Attention.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
