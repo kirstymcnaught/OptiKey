@@ -6,6 +6,10 @@
         <Rows>3</Rows>
         <Cols>10</Cols>
     </Grid>
+    <InitialKeyStates>
+     <KeyUp>MouseMagneticCursor</KeyUp>
+     <KeyLockedDown>MouseMagnifier</KeyLockedDown>   
+    </InitialKeyStates>
     <Keys>
         <TextKey>
             <Row>0</Row>
