@@ -127,8 +127,8 @@ namespace JuliusSweetland.OptiKey.Services
         private const Int32 WM_ENTERSIZEMOVE = 0x0231;
         private const Int32 WM_EXITSIZEMOVE = 0x0232;
         private const Int32 WM_DPICHANGED = 0x02E0;
-
-
+ 	private const Int32 WM_NCLBUTTONDBLCLK = 0x00A3; 
+        
         private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
         {
             switch (msg)
@@ -147,6 +147,9 @@ namespace JuliusSweetland.OptiKey.Services
                     Log.Info("WM_DPICHANGED called");
                     // Just being per-monitor DPI-aware is enough, we don't seem to need to *do* 
                     // anything here
+                    break;
+		case WM_NCLBUTTONDBLCLK:
+                    handled = true;  //prevent double click from maximizing the window.
                     break;
             }
 
