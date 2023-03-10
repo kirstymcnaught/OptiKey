@@ -20,10 +20,10 @@
     <ROW Property="Manufacturer" Value="SpecialEffect"/>
     <ROW Property="MsiLogging" MultiBuildValue="DefaultBuild:vp"/>
     <ROW Property="NUMBER_OF_SAVES" Value="0"/>
-    <ROW Property="ProductCode" Value="1033:{48A2E7C3-3F08-4754-8095-37C019F7EFF4} 2057:{48A2E7C3-3F08-4754-8095-37C019F7EFF4} " Type="16"/>
+    <ROW Property="ProductCode" Value="1033:{2A0B7FE4-0663-46AF-BC9F-AE55F1A129A1} 2057:{2A0B7FE4-0663-46AF-BC9F-AE55F1A129A1} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1033"/>
     <ROW Property="ProductName" Value="EyeMineV2"/>
-    <ROW Property="ProductVersion" Value="2.2.7"/>
+    <ROW Property="ProductVersion" Value="2.2.8"/>
     <ROW Property="RUNAPPLICATION" Value="1" Type="4"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND;AI_SETUPEXEPATH;SETUPEXEDIR"/>
     <ROW Property="TOBII_SUPPORTED" Value="false"/>
@@ -247,7 +247,7 @@
     <ROW Component="edbd23475bd5466f8a3e5fceb85cd13b.dat" ComponentId="{7213F8A4-6C63-4E20-BD9F-492A658E2FB5}" Directory_="playerdata_Dir" Attributes="0" KeyPath="edbd23475bd5466f8a3e5fceb85cd13b.dat" Type="0"/>
     <ROW Component="edbd23475bd5466f8a3e5fceb85cd13b.json" ComponentId="{B52A0319-BB22-474A-B299-191C368F48F7}" Directory_="stats_Dir" Attributes="0" KeyPath="edbd23475bd5466f8a3e5fceb85cd13b.json" Type="0"/>
     <ROW Component="edbd23475bd5466f8a3e5fceb85cd13b.json_1" ComponentId="{F749AF28-9718-467A-B49C-391EED676995}" Directory_="advancements_Dir" Attributes="0" KeyPath="edbd23475bd5466f8a3e5fceb85cd13b.json_1" Type="0"/>
-    <ROW Component="eyemine1.14.4.jar" ComponentId="{61388323-2DF1-43BD-86BC-8C54E1A1076F}" Directory_="libs_Dir" Attributes="0" KeyPath="eyemine2.2.7.jar" Type="0"/>
+    <ROW Component="eyemine1.14.4.jar" ComponentId="{61388323-2DF1-43BD-86BC-8C54E1A1076F}" Directory_="libs_Dir" Attributes="0" KeyPath="eyemine2.2.8.jar" Type="0"/>
     <ROW Component="eyemine2.0.12.jar" ComponentId="{B42179B6-D266-4B7F-ACB5-A2D839801563}" Directory_="ModInstaller_Dir" Attributes="0" KeyPath="eyemineclientmouse.toml" Type="0"/>
     <ROW Component="forgeserver.toml" ComponentId="{4D73FC67-274C-46B7-B36C-3BD91E93D3C4}" Directory_="serverconfig_Dir" Attributes="0" KeyPath="forgeserver.toml" Type="0"/>
     <ROW Component="forgeserver.toml_1" ComponentId="{502D773A-B20D-461F-A436-0AABB8502B51}" Directory_="serverconfig_1_Dir" Attributes="0" KeyPath="forgeserver.toml_1" Type="0"/>
@@ -1131,7 +1131,6 @@
     <ROW File="MinecraftBuild.xml_2" Component_="MenuNav.xml_2" FileName="MINECR~1.XML|MinecraftBuild.xml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.EyeMine\bin\Release\Resources\EyeMineKeyboards\EyeTracker\Bonus Keyboards\MinecraftBuild.xml" SelfReg="false"/>
     <ROW File="MinecraftDebug.xml_2" Component_="MenuNav.xml_2" FileName="MINECR~2.XML|MinecraftDebug.xml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.EyeMine\bin\Release\Resources\EyeMineKeyboards\EyeTracker\Bonus Keyboards\MinecraftDebug.xml" SelfReg="false"/>
     <ROW File="SavedToolbars.xml_2" Component_="MenuNav.xml_2" FileName="SAVEDT~1.XML|SavedToolbars.xml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.EyeMine\bin\Release\Resources\EyeMineKeyboards\EyeTracker\Bonus Keyboards\SavedToolbars.xml" SelfReg="false"/>
-    <ROW File="eyemine2.2.7.jar" Component_="eyemine1.14.4.jar" FileName="EYEMIN~1.JAR|eyemine-2.2.7.jar" Attributes="0" SourcePath="..\..\mods\build\libs\eyemine-2.2.7.jar" SelfReg="false"/>
     <ROW File="avcodec58.dll" Component_="avcodec58.dll" FileName="AVCODE~1.DLL|avcodec-58.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.EyeMine\bin\Release\avcodec-58.dll" SelfReg="false"/>
     <ROW File="avdevice58.dll" Component_="avdevice58.dll" FileName="AVDEVI~1.DLL|avdevice-58.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.EyeMine\bin\Release\avdevice-58.dll" SelfReg="false"/>
     <ROW File="avfilter7.dll" Component_="avfilter7.dll" FileName="AVFILT~1.DLL|avfilter-7.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.EyeMine\bin\Release\avfilter-7.dll" SelfReg="false"/>
@@ -1356,6 +1355,7 @@
     <ROW File="WindowsRecipes.TaskbarSingleInstance.Wpf.pdb" Component_="WindowsRecipes.TaskbarSingleInstance.Wpf.dll" FileName="WINDOW~3.PDB|WindowsRecipes.TaskbarSingleInstance.Wpf.pdb" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.EyeMine\bin\Release\WindowsRecipes.TaskbarSingleInstance.Wpf.pdb" SelfReg="false"/>
     <ROW File="WindowsRecipes.TaskbarSingleInstance.Wpf.xml" Component_="Bass.Net.xml" FileName="WINDOW~2.XML|WindowsRecipes.TaskbarSingleInstance.Wpf.xml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.EyeMine\bin\Release\WindowsRecipes.TaskbarSingleInstance.Wpf.xml" SelfReg="false"/>
     <ROW File="WindowsRecipes.TaskbarSingleInstance.xml" Component_="Bass.Net.xml" FileName="WINDOW~3.XML|WindowsRecipes.TaskbarSingleInstance.xml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.EyeMine\bin\Release\WindowsRecipes.TaskbarSingleInstance.xml" SelfReg="false"/>
+    <ROW File="eyemine2.2.8.jar" Component_="eyemine1.14.4.jar" FileName="EYEMIN~2.JAR|eyemine-2.2.8.jar" Attributes="0" SourcePath="..\..\mods\build\libs\eyemine-2.2.8.jar" SelfReg="false"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
     <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
