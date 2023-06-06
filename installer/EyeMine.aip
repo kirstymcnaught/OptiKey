@@ -20,10 +20,10 @@
     <ROW Property="Manufacturer" Value="SpecialEffect"/>
     <ROW Property="MsiLogging" MultiBuildValue="DefaultBuild:vp"/>
     <ROW Property="NUMBER_OF_SAVES" Value="0"/>
-    <ROW Property="ProductCode" Value="1033:{63E59FC8-3CB2-42E3-A3FC-EE85FDE8A4F1} 2057:{63E59FC8-3CB2-42E3-A3FC-EE85FDE8A4F1} " Type="16"/>
+    <ROW Property="ProductCode" Value="1033:{81109B81-4C57-43B7-A8D4-39D89059B6A4} 2057:{81109B81-4C57-43B7-A8D4-39D89059B6A4} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1033"/>
     <ROW Property="ProductName" Value="EyeMineV2"/>
-    <ROW Property="ProductVersion" Value="2.2.14"/>
+    <ROW Property="ProductVersion" Value="2.3.0"/>
     <ROW Property="RUNAPPLICATION" Value="1" Type="4"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND;AI_SETUPEXEPATH;SETUPEXEDIR"/>
     <ROW Property="TOBII_SUPPORTED" Value="false"/>
@@ -61,6 +61,7 @@
     <ROW Directory="Mouse_1_Dir" Directory_Parent="EyeMineKeyboards_Dir" DefaultDir="Mouse"/>
     <ROW Directory="Mouse_Dir" Directory_Parent="EyeMineKeyboards_1_Dir" DefaultDir="Mouse"/>
     <ROW Directory="Optikey_Dir" Directory_Parent="ProgramMenuFolder" DefaultDir="Optikey"/>
+    <ROW Directory="Plugins_Dir" Directory_Parent="Resources_Dir" DefaultDir="Plugins"/>
     <ROW Directory="ProgramMenuFolder" Directory_Parent="TARGETDIR" DefaultDir="PROGRA~1|ProgramMenuFolder" IsPseudoRoot="1"/>
     <ROW Directory="Release_1_Dir" Directory_Parent="ModInstaller_Dir" DefaultDir=".:Release"/>
     <ROW Directory="Release_Dir" Directory_Parent="APPDIR" DefaultDir=".:Release"/>
@@ -195,6 +196,7 @@
     <ROW Component="OptiKey.resources.dll_8" ComponentId="{E8F2D141-5D6D-4B5C-8AB0-78C9CF6D0A49}" Directory_="fiFI_Dir" Attributes="0" KeyPath="OptiKey.resources.dll_8"/>
     <ROW Component="OptiKey.resources.dll_9" ComponentId="{9250ED18-D38A-4313-8D7C-8F43623CD06D}" Directory_="fr_Dir" Attributes="0" KeyPath="OptiKey.resources.dll_9"/>
     <ROW Component="OptiKeyStandardPlugins.dll" ComponentId="{0DD6CCD9-7B28-4D0B-A8DF-B75A38646362}" Directory_="Release_Dir" Attributes="0" KeyPath="OptiKeyStandardPlugins.dll"/>
+    <ROW Component="OptiKeyStandardPlugins.dll_1" ComponentId="{12046247-E44F-4342-8E5A-25A7BD5FFC07}" Directory_="Plugins_Dir" Attributes="0" KeyPath="OptiKeyStandardPlugins.dll_1"/>
     <ROW Component="Optikey" ComponentId="{E7578126-FD95-4ECC-B74B-CE6A8DCAA90E}" Directory_="Optikey_Dir" Attributes="0"/>
     <ROW Component="PGRFlyCapture.dll" ComponentId="{8CDF6783-7E3B-4C31-8C03-32B7930E8FB2}" Directory_="Release_Dir" Attributes="0" KeyPath="PGRFlyCapture.dll"/>
     <ROW Component="Prism.Wpf.dll" ComponentId="{CA884D25-6547-4753-9B6A-4DBAD83C7FFF}" Directory_="Release_Dir" Attributes="0" KeyPath="Prism.Wpf.dll"/>
@@ -247,7 +249,7 @@
     <ROW Component="edbd23475bd5466f8a3e5fceb85cd13b.dat" ComponentId="{7213F8A4-6C63-4E20-BD9F-492A658E2FB5}" Directory_="playerdata_Dir" Attributes="0" KeyPath="edbd23475bd5466f8a3e5fceb85cd13b.dat" Type="0"/>
     <ROW Component="edbd23475bd5466f8a3e5fceb85cd13b.json" ComponentId="{B52A0319-BB22-474A-B299-191C368F48F7}" Directory_="stats_Dir" Attributes="0" KeyPath="edbd23475bd5466f8a3e5fceb85cd13b.json" Type="0"/>
     <ROW Component="edbd23475bd5466f8a3e5fceb85cd13b.json_1" ComponentId="{F749AF28-9718-467A-B49C-391EED676995}" Directory_="advancements_Dir" Attributes="0" KeyPath="edbd23475bd5466f8a3e5fceb85cd13b.json_1" Type="0"/>
-    <ROW Component="eyemine1.14.4.jar" ComponentId="{61388323-2DF1-43BD-86BC-8C54E1A1076F}" Directory_="libs_Dir" Attributes="0" KeyPath="eyemine2.2.14.jar" Type="0"/>
+    <ROW Component="eyemine1.14.4.jar" ComponentId="{61388323-2DF1-43BD-86BC-8C54E1A1076F}" Directory_="libs_Dir" Attributes="0" KeyPath="eyemine2.3.0.jar" Type="0"/>
     <ROW Component="eyemine2.0.12.jar" ComponentId="{B42179B6-D266-4B7F-ACB5-A2D839801563}" Directory_="ModInstaller_Dir" Attributes="0" KeyPath="eyemineclientmouse.toml" Type="0"/>
     <ROW Component="forgeserver.toml" ComponentId="{4D73FC67-274C-46B7-B36C-3BD91E93D3C4}" Directory_="serverconfig_Dir" Attributes="0" KeyPath="forgeserver.toml" Type="0"/>
     <ROW Component="forgeserver.toml_1" ComponentId="{502D773A-B20D-461F-A436-0AABB8502B51}" Directory_="serverconfig_1_Dir" Attributes="0" KeyPath="forgeserver.toml_1" Type="0"/>
@@ -1355,7 +1357,8 @@
     <ROW File="WindowsRecipes.TaskbarSingleInstance.Wpf.pdb" Component_="WindowsRecipes.TaskbarSingleInstance.Wpf.dll" FileName="WINDOW~3.PDB|WindowsRecipes.TaskbarSingleInstance.Wpf.pdb" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.EyeMine\bin\Release\WindowsRecipes.TaskbarSingleInstance.Wpf.pdb" SelfReg="false"/>
     <ROW File="WindowsRecipes.TaskbarSingleInstance.Wpf.xml" Component_="Bass.Net.xml" FileName="WINDOW~2.XML|WindowsRecipes.TaskbarSingleInstance.Wpf.xml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.EyeMine\bin\Release\WindowsRecipes.TaskbarSingleInstance.Wpf.xml" SelfReg="false"/>
     <ROW File="WindowsRecipes.TaskbarSingleInstance.xml" Component_="Bass.Net.xml" FileName="WINDOW~3.XML|WindowsRecipes.TaskbarSingleInstance.xml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.EyeMine\bin\Release\WindowsRecipes.TaskbarSingleInstance.xml" SelfReg="false"/>
-    <ROW File="eyemine2.2.14.jar" Component_="eyemine1.14.4.jar" FileName="EYEMIN~1.JAR|eyemine-2.2.14.jar" Attributes="0" SourcePath="..\..\mods\build\libs\eyemine-2.2.14.jar" SelfReg="false"/>
+    <ROW File="OptiKeyStandardPlugins.dll_1" Component_="OptiKeyStandardPlugins.dll_1" FileName="OPTIKE~1.DLL|OptiKeyStandardPlugins.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.EyeMine\bin\Release\Resources\Plugins\OptiKeyStandardPlugins.dll" SelfReg="false"/>
+    <ROW File="eyemine2.3.0.jar" Component_="eyemine1.14.4.jar" FileName="EYEMIN~2.JAR|eyemine-2.3.0.jar" Attributes="0" SourcePath="..\..\mods\build\libs\eyemine-2.3.0.jar" SelfReg="false"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
     <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
@@ -1974,6 +1977,7 @@
     <ROW Feature_="MainFeature" Component_="WindowsInput.dll"/>
     <ROW Feature_="MainFeature" Component_="WindowsRecipes.TaskbarSingleInstance.dll"/>
     <ROW Feature_="MainFeature" Component_="WindowsRecipes.TaskbarSingleInstance.Wpf.dll"/>
+    <ROW Feature_="MainFeature" Component_="OptiKeyStandardPlugins.dll_1"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
     <ROW Name="EyeMineV2.exe" SourcePath="..\src\JuliusSweetland.OptiKey.EyeMine\EyeMineV2.ico" Index="0"/>
